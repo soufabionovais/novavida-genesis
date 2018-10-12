@@ -23,6 +23,7 @@ $doc_sidebar-largura: 1000px;
 		justify-content: space-between;
 		overflow: hidden;
 		position: relative;
+		right: 0;
 		min-width: 1280px;
 		width: 100%;
 		height: calc(100vh - #{$header-altura});
