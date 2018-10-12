@@ -1,0 +1,74 @@
+$header-altura: 60px;
+$doc_bg: #090e1c;
+$doc_menu-bg-color: #a6a6c4;
+$doc_sidebar-largura: 1000px;
+
+.ls-main.doc {
+	height: auto;
+	margin: 0;
+	padding-top: $header-altura;
+}
+
+.doc-wrapper {
+	white-space: nowrap;
+	position: relative;
+	min-width: 1280px;
+	max-width: 100%;
+	height: 100%;
+	background: $doc_bg;
+
+	.doc-principal {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		overflow: hidden;
+		position: relative;
+		min-width: 1280px;
+		width: 100%;
+		height: calc(100vh - #{$header-altura});
+		margin: 0 auto;
+		background: #f60;
+		transition: all 300ms ease-in-out;
+
+		.doc-menu {
+			float: left;
+			width: 260px;
+			background: #cc0;
+		}
+
+		.doc-pagina {
+			float: left;
+			width: 875px;
+			height: 1348px;
+			background: #fff;
+		}
+
+		.sidebar-menu {
+			float: left;
+			width: 150px;
+			margin-right: auto;
+			background: #c6c;
+		}
+	}
+
+	.doc-sidebar {
+		position: fixed;
+		top: 0;
+		right: calc( #{$doc_sidebar-largura} * -1 );
+		bottom: 0;
+		width: $doc_sidebar-largura;
+		height: calc(100vh - #{$header-altura});
+		background: #f66;
+		transition: all 300ms ease-in-out;
+	}
+
+	&.open {
+		.doc-principal {
+			right: $doc_sidebar-largura;
+		}
+
+		.doc-sidebar {
+			right: 0;
+		}
+	}
+}

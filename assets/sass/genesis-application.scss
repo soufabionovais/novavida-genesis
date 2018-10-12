@@ -4,6 +4,7 @@
 @import "../../vendors/bootstrap/bootstrap-grid.min.css";
 
 @import "variaveis";
+@import "_doc";
 @import "mixins";
 @import "partials/grids";
 @import "partials/estrutura";
@@ -14,4 +15,3 @@
 @import "partials/boxes";
 @import "partials/breadcrumb";
 @import "partials/formularios";
-
