@@ -1,0 +1,38 @@
+@import url(../assets/fonts/SegoeUI/stylesheet.css);
+@import url(../assets/fonts/icones-novavida/css/nova-vida-icones.css);
+@import url(../assets/fonts/icomoon-novavida/style.css);
+/*Estrutura*/
+/*Textos*/
+/*Links*/
+body {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 100;
+  color: #a6a6c4;
+  font-size: 14px; }
+
+.ls-main {
+  background-color: #f5f6fa; }
+
+.ls-sidebar {
+  background: #fff; }
+
+html .ls-menu li {
+  border: none; }
+html .ls-menu a {
+  color: #a6a6c4;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 30px 20px 30px 30px;
+  transition: 0.5s; }
+  html .ls-menu a:hover {
+    color: #7ea1f3;
+    background-color: transparent;
+    padding-left: 30px; }
+  html .ls-menu a:before {
+    position: static;
+    margin-right: 10px;
+    transition: none; }
+html .ls-menu .ls-menu > ul {
+  padding-bottom: 0; }
+
+/*# sourceMappingURL=genesis-application.css.map */

@@ -1,0 +1,33 @@
+.ls-sidebar {
+    background: $sidebar-bg;
+}
+html {
+    .ls-menu {
+        li {
+            border: none;
+        }
+        a {
+            color: $sidebar-link-color;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 30px 20px 30px 30px;
+            transition: 0.5s;            
+            &:hover {
+                color: $sidebar-link-color-hover;
+                background-color: transparent;
+                padding-left: 30px;
+            }
+            &:before {
+                position: static;
+                margin-right: 10px;
+                transition: none;
+            }
+        }
+        .ls-menu {
+            > ul {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
