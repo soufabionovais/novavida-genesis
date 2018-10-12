@@ -1,0 +1,8 @@
+.sass-cache
+.cache/
+node_modules/
+.vscode/
+/css/
+Thumbs.db
+.DS_store
+assets/.sass-cache
