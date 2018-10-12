@@ -2,6 +2,7 @@ $header-altura: 60px;
 $doc_bg: #090e1c;
 $doc_menu-bg-color: #a6a6c4;
 $doc_sidebar-largura: 1000px;
+$doc_pagina-largura: 875px;
 
 .ls-main.doc {
 	height: auto;
@@ -39,7 +40,7 @@ $doc_sidebar-largura: 1000px;
 
 		.doc-pagina {
 			float: left;
-			width: 875px;
+			width: $doc_pagina-largura;
 			height: 1348px;
 			background: #fff;
 		}
@@ -55,7 +56,7 @@ $doc_sidebar-largura: 1000px;
 	.doc-sidebar {
 		position: fixed;
 		top: 0;
-		right: calc( #{$doc_sidebar-largura} * -1 );
+		right: $doc_sidebar-largura * -1;
 		bottom: 0;
 		width: $doc_sidebar-largura;
 		height: calc(100vh - #{$header-altura});
@@ -70,6 +71,34 @@ $doc_sidebar-largura: 1000px;
 
 		.doc-sidebar {
 			right: 0;
+		}
+	}
+
+	@media screen and (max-width: 1279px) {
+		$doc_sidebar-menu-largura--smallscreen: 40px;
+		$doc_sidebar-largura--smallscreen: 840px;
+
+		min-width: $doc_pagina-largura;
+
+		.doc-principal {
+			.doc-menu {
+				width: 0;
+			}
+	
+			.sidebar-menu {
+				width: $doc_sidebar-menu-largura--smallscreen;
+			}
+		}
+
+		.doc-sidebar {
+			right: $doc_sidebar-largura--smallscreen * -1;
+			width: $doc_sidebar-largura--smallscreen;
+		}
+
+		&.open {
+			.doc-principal {
+				right: $doc_sidebar-largura--smallscreen;
+			}
 		}
 	}
 }
