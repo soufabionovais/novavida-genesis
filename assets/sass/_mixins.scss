@@ -1,0 +1,59 @@
+@mixin pseudoElemento($position: absolute, $tipo: after){
+    &:#{$tipo} {
+        content: "";
+        display: block;
+        position: $position;
+        @content;
+    }
+}
+
+@mixin placeholders($cor-texto) {
+    &::-webkit-input-placeholder {color: $cor-texto;}
+    &:-moz-placeholder {color: $cor-texto;}
+    &::-moz-placeholder {color: $cor-texto;}
+    &:-ms-input-placeholder {color: $cor-texto;}    
+}
+
+@mixin gradiente($cor-inicial, $cor-final, $direcao: "horizontal"){
+    @if $direcao == "horizontal" {
+      background: $cor-inicial;
+      background: -moz-linear-gradient(left, $cor-inicial 0%, $cor-final 100%);
+      background: -webkit-linear-gradient(left, $cor-inicial 0%,$cor-final 100%);
+      background: linear-gradient(to right, $cor-inicial 0%,$cor-final 100%); 
+           
+    } @else if ($direcao == "vertical") {
+      background: $cor-inicial;
+      background: -moz-linear-gradient(top, $cor-inicial 0%, $cor-final 100%);
+      background: -webkit-linear-gradient(top, $cor-inicial 0%,$cor-final 100%);
+      background: linear-gradient(to bottom, $cor-inicial 0%,$cor-final 100%);  
+            
+    } @else if ($direcao == "diagonalParaBaixo")  {
+      background: $cor-inicial;
+      background: -moz-linear-gradient(-45deg, $cor-inicial 0%, $cor-final 100%);
+      background: -webkit-linear-gradient(-45deg, $cor-inicial 0%, $cor-final 100%);
+      background: linear-gradient(135deg, $cor-inicial 0%, $cor-final 100%);
+      
+    } @else if ($direcao == "diagonalParaCima")  {
+      background: $cor-inicial;
+      background: -moz-linear-gradient(45deg, $cor-inicial 0%, $cor-final 100%);
+      background: -webkit-linear-gradient(45deg, $cor-inicial 0%,$cor-final 100%);
+      background: linear-gradient(45deg, $cor-inicial 0%,$cor-final 100%);
+    
+    } @else if ($direcao == "radial")  {
+      background: $cor-inicial;
+      background: -moz-radial-gradient(center, ellipse cover, $cor-inicial 0%, $cor-final 100%);
+      background: -webkit-radial-gradient(center, ellipse cover, $cor-inicial 0%, $cor-final 100%);
+      background: radial-gradient(ellipse at center, $cor-inicial 0%, $cor-final 100%);
+    }      
+}
+
+%clear {
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+}

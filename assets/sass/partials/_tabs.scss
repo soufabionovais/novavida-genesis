@@ -1,0 +1,59 @@
+html {
+    .ls-tabs-container {
+        .ls-tab-content {
+            padding: 0;
+            border: none;
+        }
+    }
+}
+
+
+
+
+html {
+    .page-title-tabs {
+        &:not(.in-dropdown) {
+            position: relative;
+            @include pseudoElemento{
+                bottom: 0;
+                height: 2px;
+                width: 100%;
+                background: #eaeaee;
+            }
+            li {
+                background: transparent;
+                border: none;
+                position: relative;
+                @include pseudoElemento {
+                    width: 100%;
+                    height: 2px;
+                    background-color: transparent;
+                    bottom: 0;                    
+                }
+                &:hover {
+                    background: transparent;
+                    a {
+                        color: $page-tab-hover-color;
+                    }
+                }
+                a {
+                    font-size: 30px;
+                    color: $page-tab-color;
+                    padding: 15px 16px 20px;
+                }                
+                &.ls-active {
+                    background: transparent;
+                    z-index: 1;
+                    @include pseudoElemento {
+                        background-color: #8399f5;
+                    }
+                    a {
+                        color: $page-tab-active-color;
+                        padding: 15px 16px 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

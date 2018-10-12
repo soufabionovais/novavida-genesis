@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Genesis - Nova Vida TI</title>
-
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="Insira aqui a descrição da página.">
-    <link href="vendors/ls/stylesheets/locastyle.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/genesis-application.css">
-  </head>
+<?php include("includes/head.php"); ?>
   <body>
+    
+    <?php include("includes/header.php"); ?>
 
-    <div include-html="includes/header.html"></div> 
-
-    <div include-html="includes/sidebar.html"></div> 
+    <?php include("includes/sidebar.php"); ?>
 
 
-    <main class="ls-main ">
+    <main class="ls-main">
       <div class="container-fluid">
-        <h1 class="ls-title-intro ls-ico-home">Página inicial</h1>
+        <div class="page-header">
+          <h1 class="ls-title-intro">Página inicial</h1>
+        </div>
 
 
           <ul class="ls-tabs-nav">
@@ -38,18 +29,12 @@
             <div id="fontes" class="ls-tab-content">
               <p>Fontes Inventore consectetur ad est praesentium dolorem et voluptatem quod ratione et aut molestiae voluptatem explicabo. corporis autem nam eos ab omnis qui nostrum eum ab iste distinctio. aut sit iusto eum in consectetur quisquam exercitationem dolorem sunt et</p>
             </div>            
-          </div>
-        
+          </div>       
 
       </div>
     </main>
 
+    <?php include("includes/scripts.php"); ?>
 
-
-    
-    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
-    <script src="vendors/ls/javascripts/locastyle.js"></script>
-    <script src="assets/js/utilitarios.js"></script>
-    <script src="assets/js/genesis-application.js"></script>
   </body>
 </html>

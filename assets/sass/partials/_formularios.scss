@@ -1,0 +1,24 @@
+.ls-label .ls-input-text, 
+.ls-label input[type="color"], 
+.ls-label input[type="date"], 
+.ls-label input[type="datetime"], 
+.ls-label input[type="datetime-local"], 
+.ls-label input[type="email"], 
+.ls-label input[type="month"], 
+.ls-label input[type="number"], 
+.ls-label input[type="password"], 
+.ls-label input[type="search"], 
+.ls-label input[type="tel"], 
+.ls-label input[type="text"], 
+.ls-label input[type="time"], 
+.ls-label input[type="url"], 
+.ls-label input[type="week"], 
+.ls-label textarea {
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #e2e2e2;   
+    box-shadow: none;
+    @include placeholders(#a6a6c4); 
+    font-size: 13px;
+    font-weight: 100;
+}

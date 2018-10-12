@@ -1,8 +1,17 @@
 @import "../assets/fonts/SegoeUI/stylesheet.css";
 @import "../assets/fonts/icones-novavida/css/nova-vida-icones.css";
 @import "../assets/fonts/icomoon-novavida/style.css";
+@import "../../vendors/bootstrap/bootstrap-grid.min.css";
 
 @import "variaveis";
+@import "mixins";
+@import "partials/grids";
 @import "partials/estrutura";
 @import "partials/sidebar";
+
+/*Componentes*/
+@import "partials/tabs";
+@import "partials/boxes";
+@import "partials/breadcrumb";
+@import "partials/formularios";
 

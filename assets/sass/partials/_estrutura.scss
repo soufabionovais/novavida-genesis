@@ -7,3 +7,19 @@ body {
 .ls-main {
     background-color: $conteudo-principal-bg;
 }
+
+.page-header {
+    padding: 29px 0 20px;    
+}
+
+.ls-title-intro {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    font-size: 32px;
+    color: $titulo-pagina-color;
+    font-weight: 400;
+    padding: 0;
+}
