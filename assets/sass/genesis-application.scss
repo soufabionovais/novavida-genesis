@@ -8,6 +8,7 @@
 
 
 @import "variaveis";
+@import "_doc";
 @import "mixins";
 @import "partials/grids";
 @import "partials/estrutura";
@@ -17,6 +18,7 @@
 @import "partials/tabs";
 @import "partials/boxes";
 @import "partials/breadcrumb";
+<<<<<<< HEAD
 @import "partials/formularios";
 @import "partials/botoes";
 @import "partials/filtros";
@@ -26,3 +28,6 @@
 @import "partials/upload";
 @import "auxiliares";
 
+=======
+@import "partials/formularios";
+>>>>>>> 29788f62238bf8592aedda837efd8a007e0cb2de

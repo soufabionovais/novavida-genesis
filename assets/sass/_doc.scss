@@ -1,0 +1,111 @@
+$header-altura: 60px;
+$doc_bg: #090e1c;
+$doc_menu-bg-color: #a6a6c4;
+$doc_sidebar-largura: 1000px;
+$doc_pagina-largura: 875px;
+
+.ls-main.doc {
+	height: auto;
+	margin: 0;
+	padding-top: $header-altura;
+}
+
+// Estrutura base
+.doc-wrapper {
+	position: relative;
+	min-width: 1280px;
+	max-width: 100%;
+	height: 100%;
+	background: $doc_bg;
+
+	&.open {
+		.doc-principal {
+			overflow: hidden;
+			right: $doc_sidebar-largura;
+		}
+
+		.doc-sidebar {
+			right: 0;
+		}
+	}
+
+	@media screen and (max-width: 1279px) {
+		$doc_sidebar-menu-largura--smallscreen: 40px;
+		$doc_sidebar-largura--smallscreen: 840px;
+
+		min-width: $doc_pagina-largura;
+
+		.doc-principal {
+			.doc-menu {
+				width: 0;
+			}
+	
+			.sidebar-menu {
+				width: $doc_sidebar-menu-largura--smallscreen;
+			}
+		}
+
+		.doc-sidebar {
+			right: $doc_sidebar-largura--smallscreen * -1;
+			width: $doc_sidebar-largura--smallscreen;
+		}
+
+		&.open {
+			.doc-principal {
+				right: $doc_sidebar-largura--smallscreen;
+			}
+		}
+	}
+
+	&.no-sidebar {
+		.doc-principal {
+			justify-content: center;
+		}
+	}
+}
+
+.doc-principal {
+	overflow: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	right: 0;
+	min-width: 1280px;
+	width: 100%;
+	height: calc(100vh - #{$header-altura});
+	margin: 0 auto;
+	transition: all 300ms ease-in-out;
+}
+
+.doc-menu {
+	float: left;
+	width: 260px;
+}
+
+.doc-pagina {
+	float: left;
+	width: $doc_pagina-largura;
+	height: 1348px;
+	background: #f9f9f9 url(../img/doc/brasao-republica.png) center no-repeat;
+
+	&.capa {
+		height: 1010px;
+	}
+}
+
+.sidebar-menu {
+	float: left;
+	width: 150px;
+	margin-right: auto;
+}
+
+.doc-sidebar {
+	position: fixed;
+	top: 0;
+	right: $doc_sidebar-largura * -1;
+	bottom: 0;
+	width: $doc_sidebar-largura;
+	height: calc(100vh - #{$header-altura});
+	transition: all 300ms ease-in-out;
+}
