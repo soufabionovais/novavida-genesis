@@ -1,0 +1,29 @@
+.right-aligned {
+    text-align: right !important;
+}
+
+.center-aligned {
+    text-align: center !important;
+}
+
+.bg-grey {
+    background-color: #f9f9f9;   
+}
+
+.bg-medium-grey {
+    background-color: #eeeeee;
+}
+
+.bg-action-grey {
+    background-color: #eef1f3;
+}
+
+.bg-blue-gradient {
+    background-image: linear-gradient(to bottom, #8399f5, #7aa9f1);
+}
+
+
+.texto-destaque {
+    color: $texto-destaque;
+}
+

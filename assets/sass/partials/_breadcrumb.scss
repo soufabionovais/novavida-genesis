@@ -29,3 +29,34 @@
         }
     }
 }
+
+.ls-box {
+    .passos {
+        margin-bottom: 0;
+        counter-reset: contador;
+        display: flex;
+        li {
+            display: flex;
+            align-items: center;
+            &:before {
+                counter-increment: contador;
+                display: inline-block;
+                content: counter(contador);
+                border: none;
+                float: left;
+                width: 38px;
+                height: 38px;
+                background: #eaeaee;
+                border-radius: 100%;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;   
+                justify-content: center;
+                color: #a6a6c4;             
+            } 
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

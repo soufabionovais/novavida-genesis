@@ -1,0 +1,133 @@
+.featherlight {
+    .featherlight-content {
+        padding: 0;
+        border-bottom: none;
+        border-radius: 8px;
+        p {
+            color: #a6a6c4;
+        }
+    }
+    .featherlight-close-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        text-align: center;
+        font-family: "Segoe UI";
+        background: transparent;
+        color: #7ea0f3;
+        border: none;
+        padding: 0;
+        font-size: 20px;        
+    }
+}
+
+.with-featherlight {
+    html, body {
+        overflow: hidden;
+    }
+}
+
+.modal-popup {
+    min-width: 400px;
+}
+
+.modal-popup-header {
+    border-bottom:  solid 1px #ececec;
+    padding: 20px;
+    color: #a6a6c4;
+    p {
+        font-size: 16px;
+    }
+}
+
+.modal-popup-imagem {
+    text-align: center;
+}
+
+.modal-popup-conteudo {
+    .ui.checkbox label, 
+    .ui.checkbox + label {
+        color: #7ea1f3;
+    }
+
+    .ui.segment.buttons-segment {
+      .botoes-acao {
+          display: block;
+      }  
+    }
+
+    .botoes-acao {
+        margin-top: 20px;
+        padding: 0 10px 20px;
+        @extend %clear;
+    }
+    .grupo-botoes {
+        float: right;
+    }
+    .ui.search.input {
+        input {
+            background: #fff;
+        }
+    }
+} 
+
+.ui.segment.segment-content {
+    max-height: 250px;
+    overflow: auto;
+}
+
+.modal-popup-titulo {
+  font-size: 18px;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #544364;    
+  margin-bottom: 0;
+}
+
+/***** Customizações de Modais *****/
+
+.modal-relacionar-perfil {
+    .featherlight-content {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+.modal-termos-uso {
+    .featherlight-content {
+        max-width: 600px;
+        width: 100%;
+    }    
+}
+
+.modal-confirmacao-compra {
+    .featherlight-content {
+        width: 100%;
+        max-width: 400px;
+    }
+    .modal-popup-header {
+        min-height: 320px;
+        padding-top: 50px;
+    }
+    .modal-popup-titulo {
+        font-size: 24px;
+        color: #a6a6c4;
+        text-align: center;
+        text-transform: uppercase
+    }
+    .modal-popup-conteudo {            
+        .grupo-botoes {
+            display: block;
+            .ui.button {
+                min-width: 120px;
+            }
+        }
+    }
+}
+
+
+

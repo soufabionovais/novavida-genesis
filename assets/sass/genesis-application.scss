@@ -1,7 +1,11 @@
-@import "../assets/fonts/SegoeUI/stylesheet.css";
-@import "../assets/fonts/icones-novavida/css/nova-vida-icones.css";
-@import "../assets/fonts/icomoon-novavida/style.css";
+@import "../fonts/SegoeUI/stylesheet.css";
+@import "../fonts/icones-novavida/css/nova-vida-icones.css";
+@import "../fonts/icomoon-novavida/style.css";
 @import "../../vendors/bootstrap/bootstrap-grid.min.css";
+@import "../../vendors/featherlight-1.7.13/featherlight.css";
+@import "../../vendors/pretty-checkbox/pretty-checkbox.min.css";
+@import "../../vendors/dropzone/dropzone.css";
+
 
 @import "variaveis";
 @import "mixins";
@@ -14,4 +18,11 @@
 @import "partials/boxes";
 @import "partials/breadcrumb";
 @import "partials/formularios";
+@import "partials/botoes";
+@import "partials/filtros";
+@import "partials/tabelas";
+@import "partials/paginacao";
+@import "partials/modais";
+@import "partials/upload";
+@import "auxiliares";
 

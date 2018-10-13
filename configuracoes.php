@@ -26,39 +26,285 @@
             <!-- Aba Templates -->
             <div id="templates" class="ls-tab-content ls-active">
                 <div class="ls-boxes">  
-                    <div class="ls-box">
+                    <div class="ls-box container-filtros">
                         <div class="ls-form ls-form-horizontal row">
-                            <label class="ls-label col">
-                              <b class="ls-label-text">Nome</b>
-                              <input type="text" name="nome" placeholder="Primeiro nome" class="ls-field" required>
+                            <label class="ls-label col-9 field-has-icon ls-ico-search">
+                              <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
                             </label>
-                            <label class="ls-label col">
-                              <b class="ls-label-text">Sobrenome</b>
-                              <input type="text" name="nome" placeholder="Sobrenome" class="ls-field" required>
-                            </label>
-                            <label class="ls-label col">
-                              <b class="ls-label-text">Nome</b>
-                              <input type="text" name="nome" placeholder="Primeiro nome" class="ls-field" required>
-                            </label>
-                            <label class="ls-label col">
-                              <b class="ls-label-text">Nome</b>
-                              <input type="text" name="nome" placeholder="Primeiro nome" class="ls-field" required>
-                            </label>                            
+                            <div class="col right-aligned">
+                              <button class="ls-btn ls-btn-secondary outlined">Adicionar</button>
+                            </div>        
                         </div>
                     </div>
                     <div class="ls-box">
-                      <p>Uma caixa genérica lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dicta, alias accusantium est unde autem ipsam libero tempora tempore nesciunt eveniet eaque laudantium qui facilis aut deserunt sequi suscipit perspiciatis.</p>
+                        <table class="ls-table ls-no-margin-top">
+                        <colgroup>
+                          <col>
+                          <col width="24%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>Template</th>
+                            <th>Ações</th>
+                          </tr>
+                        </thead>						
+                        <tbody>
+                          <tr>
+                            <td>
+                              Nome do template 1
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 2
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
+                            </td>				      				      				      				      
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 3
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
+                            </td>				      				      				      				      
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 4
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
+                            </td>				      				      				      				      
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 5
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
+                            </td>		      
+                          </tr>	
+                        </tbody>
+                        </table> 
+
+                        <div class="ls-pagination-filter">
+                          <ul class="ls-pagination ls-float-left">
+                            <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="ls-active"><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><span class="icon">&raquo;</span></a></li>
+                          </ul>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="ls-boxes"> 
+                    <div class="ls-box container-filtros">
+                        <div class="ls-form ls-form-horizontal row">
+                            <label class="ls-label col-6 field-has-icon">
+                              <input type="text" placeholder="Escolha o nome" class="ls-field" required>
+                            </label>
+                            <label class="ls-label col-6 field-has-icon">
+                              <input type="text" placeholder="Texto da marca d'água" class="ls-field" required>
+                            </label>
+                            <label class="ls-label col-12 field-has-icon">
+                              <input type="text" placeholder="Termos" class="ls-field" required>
+                            </label>
+                        </div>                    
+                    </div>
+                    <div class="ls-box area-upload">
+                        <div class="row">
+                          <div class="col">
+                            <div class="conteudo-upload">
+                              <p>Upload de arquivo para Logotipo Oficial</p>
+                              <button class="ls-btn ls-btn-secondary outlined large" id="btnUploadLoad">Selecionar arquivo</button>
+                              <small>Tamanho máximo: 3MB | Extensões permitidas: .jpg, .png ou .gif</small>
+                            </div>	
+                          </div>
+                          <div class="col">
+                              <form action="" class="dropzone zone-upload-image" id="uploadImage"></form>						
+                          </div>
+                        </div>
                     </div>
                     <div class="ls-box">
-                      <p>Uma caixa genérica lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dicta, alias accusantium est unde autem ipsam libero tempora tempore nesciunt eveniet eaque laudantium qui facilis aut deserunt sequi suscipit perspiciatis.</p>
+                        <div class="row">
+                          <div class="col right-aligned">
+                            <button class="ls-btn ls-btn-secondary outlined">Cancelar</button>
+                            <button class="ls-btn ls-btn-primary">Salvar</button>
+                          </div>
+                        </div>
                     </div>
-                  </div>
+                
+                </div>
             </div>
             <!-- Fim Aba Templates -->
 
             <!-- Aba Perfil Relatórios -->
             <div id="perfilRelatorio" class="ls-tab-content">
-              <p>Inventore consectetur ad est praesentium dolorem et voluptatem quod ratione et aut molestiae voluptatem explicabo. corporis autem nam eos ab omnis qui nostrum eum ab iste distinctio. aut sit iusto eum in consectetur quisquam exercitationem dolorem sunt et</p>
+                <div class="ls-boxes">  
+                    <div class="ls-box container-filtros">
+                        <div class="ls-form ls-form-horizontal row">
+                            <label class="ls-label col-6 field-has-icon ls-ico-search">
+                              <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
+                            </label>
+                            <label class="ls-label col-3 field-has-icon ls-ico-search">
+                                <div class="ls-custom-select">
+                                    <select class="ls-select">
+                                        <option value="1"> Opção 1 </option>
+                                        <option value="2"> Opção 2 </option>
+                                        <option value="3"> Opção 3 </option>
+                                        <option value="4"> Opção 4 </option>
+                                    </select>
+                                </div>  
+                            </label>
+                            <div class="col right-aligned">
+                              <button class="ls-btn ls-btn-secondary outlined">Adicionar</button>
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="ls-box">
+                        <table class="ls-table ls-no-margin-top">
+                        <colgroup>
+                            <col span="2">
+                            <col width="28%">                        
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>Versão</th>
+                            <th>Perfil</th>
+                            <th class="actions">Ações</th>
+                          </tr>
+                        </thead>						
+                        <tbody>
+                          <tr>
+                            <td><span class="texto-destaque">V1</span></td>
+                            <td>
+                              Nome do perfil 1
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td><span class="texto-destaque">V1.1</span></td>                      
+                            <td>
+                              Nome do perfil 2
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
+                            </td>				      				      				      				      
+                          </tr>
+                          <tr>
+                            <td><span class="texto-destaque">V2.0</span></td>
+                            <td>
+                              Nome do perfil 3
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
+                            </td>				      				      				      				      
+                          </tr>
+                          <tr>
+                            <td><span class="texto-destaque">V2.1</span></td>
+                            <td>
+                              Nome do perfil 4
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
+                            </td>				      				      				      				      
+                          </tr>
+                          <tr>
+                            <td><span class="texto-destaque">V2.2</span></td>
+                            <td>
+                              Nome do perfil 5
+                            </td>
+                            <td class="right-aligned">
+                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
+                            </td>		      
+                          </tr>	
+                        </tbody>
+                        </table> 
+
+                        <div class="ls-pagination-filter">
+                          <ul class="ls-pagination ls-float-left">
+                            <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="ls-active"><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><span class="icon">&raquo;</span></a></li>
+                          </ul>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="ls-boxes">
+                    <div class="ls-box">
+                        <div class="row">
+                          <div class="col d-flex align-items-center">
+                            <h2 class="ls-title">Novo Perfil</h2>
+                          </div>
+                          <div class="col right-aligned">
+                              <ol class="ls-breadcrumb passos">
+                                <li><a href="#">Configurações gerais</a></li>
+                                <li><a href="#">Configurações de fontes</a></li>
+                              </ol>                          
+                          </div>
+                        </div>
+                    </div>
+                    <div class="ls-box container-filtros">
+                        <div class="ls-form ls-form-horizontal row">
+                            <label class="ls-label col-6 field-has-icon ls-ico-search">
+                              <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
+                            </label>
+                            <label class="ls-label col-3 field-has-icon ls-ico-search">
+                                <div class="ls-custom-select">
+                                    <select class="ls-select">
+                                        <option value="1"> Opção 1 </option>
+                                        <option value="2"> Opção 2 </option>
+                                        <option value="3"> Opção 3 </option>
+                                        <option value="4"> Opção 4 </option>
+                                    </select>
+                                </div>  
+                            </label>
+                            <div class="col right-aligned">
+                              <button class="ls-btn ls-btn-secondary outlined">Pré-visualizar</button>
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="ls-box">
+                      <p>Relacione as Fontes que Deseja Utilizar</p>
+                    </div>
+                    <div class="ls-box bg-grey">
+                      <div class="row">
+                        <div class="col relacionar-listas bg-medium-grey">
+                            <label class="ls-label col field-has-icon ls-ico-search">
+                              <input type="text" placeholder="Filtrar por nome" class="ls-field" required="">
+                            </label>                            
+                        </div>
+                        <div class="col relacionar-listas bg-blue-gradient">
+                    
+                        </div>                      
+                      </div>
+                    </div>                    
+                    <div class="ls-box">
+                        <div class="row">
+                          <div class="col right-aligned">
+                            <button class="ls-button ls-btn-secondary">Voltar</button>
+                            <button class="ls-button ls-btn-secondary outlined">Cancelar</button>
+                            <button class="ls-button ls-btn-primary">Avançar</button>
+                          </div>
+                      </div>
+                    </div>                                        
+                </div>
             </div>
             <!-- Fim Aba Perfil Rel atórios-->
 

@@ -1,17 +1,27 @@
-.ls-float-left,
-.ls-info-header>[class*="ls-ico"]:before,
-.ls-group-btn [class*="ls-btn"],
-.ls-form-horizontal .ls-label[class*="col-"],
-.ls-prefix-group input,
-.ls-box[class*="ls-ico-"]:before,
-[class*="ls-ico-"].ls-box-filter:before,
-[class*="ls-ico-"].ls-alert-box:before,
-[class*="ls-pagination"] li,
-[class*="ls-pagination"] li .ls-gap,
-[class*="ls-pagination"] li a,
-.ls-pager li.ls-previous a,
-.pika-lendar,
-.pika-prev,
-.is-rtl .pika-next {
+.ls-form-horizontal .ls-label[class*="col-"] {
     float: none !important;
+    &:focus {
+        outline: none;
+    }    
 }
+
+// .ls-float-left,
+// .ls-info-header>[class*="ls-ico"]:before,
+// .ls-group-btn [class*="ls-btn"],
+// .ls-form-horizontal .ls-label[class*="col-"],
+// .ls-prefix-group input,
+// .ls-box[class*="ls-ico-"]:before,
+// [class*="ls-ico-"].ls-box-filter:before,
+// [class*="ls-ico-"].ls-alert-box:before,
+// [class*="ls-pagination"] li,
+// [class*="ls-pagination"] li .ls-gap,
+// [class*="ls-pagination"] li a,
+// .ls-pager li.ls-previous a,
+// .pika-lendar,
+// .pika-prev,
+// .is-rtl .pika-next {
+//     float: none !important;
+//     &:focus {
+//         outline: none;
+//     }
+// }

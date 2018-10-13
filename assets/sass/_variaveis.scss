@@ -4,7 +4,16 @@ $lilas-2: #a6a6c4;
 $lilas-3: #a9b2c4;
 $azul-1: #7ea1f3;
 $azul-2: #7da2f2;
+
+$azul-3: #809ef3;
+$azul-4: #577ade;
+
 $cinza-1: #a9b2c4;
+
+$verde-1: #27deac;
+$verde-2: #19cb9b;
+
+
 
 /*Estrutura*/
 $font-family-padrao: 'Segoe UI', sans-serif;
@@ -17,6 +26,8 @@ $texto-principal-size: 14px;
 
 $titulo-pagina-color: $lilas-3;
 
+$texto-destaque: $azul-1;
+
 /*Links*/
 $sidebar-link-color: $lilas-2;
 $sidebar-link-color-hover: $azul-1;
@@ -25,3 +36,9 @@ $sidebar-link-color-hover: $azul-1;
 $page-tab-color: $cinza-1;
 $page-tab-active-color: $azul-2;
 $page-tab-hover-color: $azul-2;
+
+/* Botões */
+$btn-primario: $verde-1;
+$btn-primario-hover: $verde-2;
+$btn-secundario: $azul-3;
+$btn-secundario-hover: $azul-4;

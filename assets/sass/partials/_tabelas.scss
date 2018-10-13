@@ -1,0 +1,42 @@
+html {
+    .ls-table {
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 0 8px;   
+        border-bottom: none; 
+        thead {
+            th {
+                font-weight: 400;
+                padding-bottom: 20px;
+                border: none;
+            }
+        }
+        tbody {
+            tr {
+                background-color: #f4f4f4;
+                border: solid 1px #f1f1f1;
+                transition: 0.4s;
+                transition-property: background-color;
+                &:hover {
+                    background-color: darken(#f4f4f4, 3%);        
+                }
+                td {
+                    &:first-child {
+                        border-radius: 4px 0 0 4px;
+                    }
+                    &:last-child {
+                        border-radius: 0 4px 4px 0;
+                    }                
+                } 
+            }
+        }
+        th,
+        td {
+            padding: 7px 14px;
+        }
+        td {
+            font-size: 13px;
+            word-wrap:break-word        
+        }
+    }
+}

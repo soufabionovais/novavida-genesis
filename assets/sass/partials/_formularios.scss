@@ -14,11 +14,81 @@
 .ls-label input[type="url"], 
 .ls-label input[type="week"], 
 .ls-label textarea {
+    @include placeholders(#a6a6c4); 
     height: 40px;
     border-radius: 3px;
     border: solid 1px #e2e2e2;   
     box-shadow: none;
-    @include placeholders(#a6a6c4); 
     font-size: 13px;
     font-weight: 100;
+    font-family: $font-family-padrao;
+    &:focus {
+        outline: none;
+    }
 }
+
+.field-has-icon {
+    &:before {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        font-size: 20px;
+        pointer-events: none;
+        color: #4388ff;
+    }
+    input {
+        padding-right: 40px;
+    }
+}
+
+/*Checkox*/
+.checkbox-container {
+    background: #fff;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 15px;
+    padding: 13px 15px;
+    color: #7ea1f3;
+    margin-right: 0;
+    .state {
+        position: relative;
+    }
+}
+
+.pretty .state label:after, 
+.pretty .state label:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: solid 1px #809cf4;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: calc((0% - (100% - 1em)) - 8%);
+    background-color: transparent;
+ }
+
+ .pretty .state label {
+     padding-left: 10px;
+     margin-top: 1;
+ }
+
+ .pretty input:checked~.state.p-primary-o label:before, 
+ .pretty.p-toggle .state.p-primary-o label:before {
+     border: solid 1px #809cf4;
+ }
+
+.pretty.p-tada:not(.p-default) input:checked+.state .icon {
+    color: #809cf4;
+    width: 20px;
+    height: 20px;
+}
+
+/*Select*/
+.ls-custom-select {
+    height: 39px;
+}
+

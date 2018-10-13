@@ -1,0 +1,30 @@
+html {
+    [class*="ls-pagination"] {
+        li{
+            a {
+                color: #4d4f5c;
+            }
+            &.ls-active {
+                background: #7fa1f3;
+            }
+            .icon {
+                font-size: 30px;
+            }
+            &:first-child,
+            &:last-child {
+                a {
+                    padding: 0 7px 1px;
+                    color: #808495;
+                }
+            }
+            &:first-child,
+            &:last-child {
+                &.ls-disabled {
+                    a {
+                        color: #ccc;
+                    }
+                }  
+            }
+        }
+    }
+}
