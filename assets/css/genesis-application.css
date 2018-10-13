@@ -1,49 +1,693 @@
-/*
-Error: Invalid CSS after "...ls/formularios"": expected "{", was ";"
-        on line 22 of sass/genesis-application.scss
+@charset "UTF-8";
+@import url(../fonts/SegoeUI/stylesheet.css);
+@import url(../fonts/icones-novavida/css/nova-vida-icones.css);
+@import url(../fonts/icomoon-novavida/style.css);
+@import url(../../vendors/bootstrap/bootstrap-grid.min.css);
+@import url(../../vendors/featherlight-1.7.13/featherlight.css);
+@import url(../../vendors/pretty-checkbox/pretty-checkbox.min.css);
+@import url(../../vendors/dropzone/dropzone.css);
+/*Estrutura*/
+/*Textos*/
+/*Links*/
+/*Tabs*/
+/* Botões */
+.ls-main.doc {
+  height: auto;
+  margin: 0;
+  padding-top: 60px; }
 
-17: /*Componentes*\/
-18: @import "partials/tabs";
-19: @import "partials/boxes";
-20: @import "partials/breadcrumb";
-21: <<<<<<< HEAD
-22: @import "partials/formularios";
-23: @import "partials/botoes";
-24: @import "partials/filtros";
-25: @import "partials/tabelas";
-26: @import "partials/paginacao";
-27: @import "partials/modais";
+.doc-wrapper {
+  position: relative;
+  min-width: 1280px;
+  max-width: 100%;
+  height: 100%;
+  background: #090e1c; }
+  .doc-wrapper.open .doc-principal {
+    overflow: hidden;
+    right: 1000px; }
+  .doc-wrapper.open .doc-sidebar {
+    right: 0; }
+  @media screen and (max-width: 1279px) {
+    .doc-wrapper {
+      min-width: 875px; }
+      .doc-wrapper .doc-principal .doc-menu {
+        width: 0; }
+      .doc-wrapper .doc-principal .sidebar-menu {
+        width: 40px; }
+      .doc-wrapper .doc-sidebar {
+        right: -840px;
+        width: 840px; }
+      .doc-wrapper.open .doc-principal {
+        right: 840px; } }
+  .doc-wrapper.no-sidebar .doc-principal {
+    justify-content: center; }
 
-Backtrace:
-sass/genesis-application.scss:22
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:677:in `block'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ls/formularios\"\": expected \"{\", was \";\"\A         on line 22 of sass/genesis-application.scss\A \A 17: /*Componentes*/\A 18: @import \"partials/tabs\";\A 19: @import \"partials/boxes\";\A 20: @import \"partials/breadcrumb\";\A 21: <<<<<<< HEAD\A 22: @import \"partials/formularios\";\A 23: @import \"partials/botoes\";\A 24: @import \"partials/filtros\";\A 25: @import \"partials/tabelas\";\A 26: @import \"partials/paginacao\";\A 27: @import \"partials/modais\";"; }
+.doc-principal {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  right: 0;
+  min-width: 1280px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin: 0 auto;
+  transition: all 300ms ease-in-out; }
+
+.doc-menu {
+  float: left;
+  width: 260px; }
+
+.doc-pagina {
+  float: left;
+  width: 875px;
+  height: 1348px;
+  background: #f9f9f9 url(../img/doc/brasao-republica.png) center no-repeat; }
+  .doc-pagina.capa {
+    height: 1010px; }
+
+.sidebar-menu {
+  float: left;
+  width: 150px;
+  margin-right: auto; }
+
+.doc-sidebar {
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  bottom: 0;
+  width: 1000px;
+  height: calc(100vh - 60px);
+  transition: all 300ms ease-in-out; }
+
+.modal-popup-conteudo .botoes-acao:before, .modal-popup-conteudo .botoes-acao:after {
+  display: table;
+  content: "";
+  width: 100%;
+  clear: both;
+  float: none; }
+
+.ls-form-horizontal .ls-label[class*="col-"] {
+  float: none !important; }
+  .ls-form-horizontal .ls-label[class*="col-"]:focus {
+    outline: none; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 100;
+  color: #a6a6c4;
+  font-size: 14px; }
+
+p {
+  margin-bottom: 0; }
+  p ~ p {
+    margin-top: 10px; }
+
+.ls-main {
+  background-color: #f5f6fa;
+  height: auto;
+  padding-bottom: 30px; }
+
+.page-header {
+  padding: 29px 0 20px; }
+
+.ls-title-intro {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  font-size: 32px;
+  color: #a9b2c4;
+  font-weight: 400;
+  padding: 0; }
+
+.ls-sidebar {
+  background: #fff; }
+
+html .ls-menu li {
+  border: none; }
+html .ls-menu a {
+  color: #a6a6c4;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 30px 20px 30px 30px;
+  transition: 0.5s; }
+  html .ls-menu a:hover {
+    color: #7ea1f3;
+    background-color: transparent;
+    padding-left: 30px; }
+  html .ls-menu a:before {
+    position: static;
+    margin-right: 10px;
+    transition: none; }
+html .ls-menu .ls-menu > ul {
+  padding-bottom: 0; }
+
+/*Componentes*/
+html .ls-tabs-container .ls-tab-content {
+  padding: 0;
+  border: none; }
+
+html .page-title-tabs:not(.in-dropdown) {
+  position: relative; }
+  html .page-title-tabs:not(.in-dropdown):after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #eaeaee; }
+  html .page-title-tabs:not(.in-dropdown) li {
+    background: transparent;
+    border: none;
+    position: relative; }
+    html .page-title-tabs:not(.in-dropdown) li:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      bottom: 0; }
+    html .page-title-tabs:not(.in-dropdown) li:hover {
+      background: transparent; }
+      html .page-title-tabs:not(.in-dropdown) li:hover a {
+        color: #7da2f2; }
+    html .page-title-tabs:not(.in-dropdown) li a {
+      font-size: 30px;
+      color: #a9b2c4;
+      padding: 15px 16px 20px; }
+    html .page-title-tabs:not(.in-dropdown) li.ls-active {
+      background: transparent;
+      z-index: 1; }
+      html .page-title-tabs:not(.in-dropdown) li.ls-active:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #8399f5; }
+      html .page-title-tabs:not(.in-dropdown) li.ls-active a {
+        color: #7da2f2;
+        padding: 15px 16px 20px; }
+
+.ls-tabs-container .ls-tab-content {
+  margin-bottom: 0; }
+
+.ls-boxes .ls-box {
+  margin-bottom: 0;
+  border-radius: 0;
+  position: relative;
+  margin-top: -1px;
+  padding: 20px; }
+  .ls-boxes .ls-box:first-child {
+    border-radius: 4px 4px 0 0; }
+  .ls-boxes .ls-box:last-child {
+    border-radius: 0 0 4px 4px; }
+  .ls-boxes .ls-box:only-child {
+    border-radius: 4px; }
+.ls-boxes .ls-title {
+  color: #544364;
+  font-size: 18px; }
+
+/*Relacionar listas*/
+.relacionar-listas {
+  height: 430px;
+  overflow: auto;
+  padding: 25px 20px; }
+
+.ls-breadcrumb {
+  margin-bottom: 20px;
+  border: none;
+  font-size: 13px; }
+  .ls-breadcrumb li {
+    color: #8399f5;
+    padding: 0 6px 0 0; }
+    .ls-breadcrumb li:first-child {
+      padding-left: 0; }
+    .ls-breadcrumb li:last-child:after {
+      content: "";
+      display: block;
+      position: absolute;
+      display: none; }
+    .ls-breadcrumb li:before {
+      display: none; }
+    .ls-breadcrumb li:after {
+      content: "";
+      display: block;
+      position: absolute;
+      position: relative;
+      content: ">";
+      color: #a9b2c4;
+      float: right;
+      margin-left: 5px; }
+    .ls-breadcrumb li a {
+      color: #a9b2c4;
+      text-decoration: none; }
+
+.ls-box .passos {
+  margin-bottom: 0;
+  counter-reset: contador;
+  display: flex; }
+  .ls-box .passos li {
+    display: flex;
+    align-items: center; }
+    .ls-box .passos li:before {
+      counter-increment: contador;
+      display: inline-block;
+      content: counter(contador);
+      border: none;
+      float: left;
+      width: 38px;
+      height: 38px;
+      background: #eaeaee;
+      border-radius: 100%;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a6a6c4; }
+    .ls-box .passos li:after {
+      display: none; }
+
+.ls-label .ls-input-text,
+.ls-label input[type="color"],
+.ls-label input[type="date"],
+.ls-label input[type="datetime"],
+.ls-label input[type="datetime-local"],
+.ls-label input[type="email"],
+.ls-label input[type="month"],
+.ls-label input[type="number"],
+.ls-label input[type="password"],
+.ls-label input[type="search"],
+.ls-label input[type="tel"],
+.ls-label input[type="text"],
+.ls-label input[type="time"],
+.ls-label input[type="url"],
+.ls-label input[type="week"],
+.ls-label textarea {
+  height: 40px;
+  border-radius: 3px;
+  border: solid 1px #e2e2e2;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 100;
+  font-family: "Segoe UI", sans-serif; }
+  .ls-label .ls-input-text::-webkit-input-placeholder,
+  .ls-label input[type="color"]::-webkit-input-placeholder,
+  .ls-label input[type="date"]::-webkit-input-placeholder,
+  .ls-label input[type="datetime"]::-webkit-input-placeholder,
+  .ls-label input[type="datetime-local"]::-webkit-input-placeholder,
+  .ls-label input[type="email"]::-webkit-input-placeholder,
+  .ls-label input[type="month"]::-webkit-input-placeholder,
+  .ls-label input[type="number"]::-webkit-input-placeholder,
+  .ls-label input[type="password"]::-webkit-input-placeholder,
+  .ls-label input[type="search"]::-webkit-input-placeholder,
+  .ls-label input[type="tel"]::-webkit-input-placeholder,
+  .ls-label input[type="text"]::-webkit-input-placeholder,
+  .ls-label input[type="time"]::-webkit-input-placeholder,
+  .ls-label input[type="url"]::-webkit-input-placeholder,
+  .ls-label input[type="week"]::-webkit-input-placeholder,
+  .ls-label textarea::-webkit-input-placeholder {
+    color: #a6a6c4; }
+  .ls-label .ls-input-text:-moz-placeholder,
+  .ls-label input[type="color"]:-moz-placeholder,
+  .ls-label input[type="date"]:-moz-placeholder,
+  .ls-label input[type="datetime"]:-moz-placeholder,
+  .ls-label input[type="datetime-local"]:-moz-placeholder,
+  .ls-label input[type="email"]:-moz-placeholder,
+  .ls-label input[type="month"]:-moz-placeholder,
+  .ls-label input[type="number"]:-moz-placeholder,
+  .ls-label input[type="password"]:-moz-placeholder,
+  .ls-label input[type="search"]:-moz-placeholder,
+  .ls-label input[type="tel"]:-moz-placeholder,
+  .ls-label input[type="text"]:-moz-placeholder,
+  .ls-label input[type="time"]:-moz-placeholder,
+  .ls-label input[type="url"]:-moz-placeholder,
+  .ls-label input[type="week"]:-moz-placeholder,
+  .ls-label textarea:-moz-placeholder {
+    color: #a6a6c4; }
+  .ls-label .ls-input-text::-moz-placeholder,
+  .ls-label input[type="color"]::-moz-placeholder,
+  .ls-label input[type="date"]::-moz-placeholder,
+  .ls-label input[type="datetime"]::-moz-placeholder,
+  .ls-label input[type="datetime-local"]::-moz-placeholder,
+  .ls-label input[type="email"]::-moz-placeholder,
+  .ls-label input[type="month"]::-moz-placeholder,
+  .ls-label input[type="number"]::-moz-placeholder,
+  .ls-label input[type="password"]::-moz-placeholder,
+  .ls-label input[type="search"]::-moz-placeholder,
+  .ls-label input[type="tel"]::-moz-placeholder,
+  .ls-label input[type="text"]::-moz-placeholder,
+  .ls-label input[type="time"]::-moz-placeholder,
+  .ls-label input[type="url"]::-moz-placeholder,
+  .ls-label input[type="week"]::-moz-placeholder,
+  .ls-label textarea::-moz-placeholder {
+    color: #a6a6c4; }
+  .ls-label .ls-input-text:-ms-input-placeholder,
+  .ls-label input[type="color"]:-ms-input-placeholder,
+  .ls-label input[type="date"]:-ms-input-placeholder,
+  .ls-label input[type="datetime"]:-ms-input-placeholder,
+  .ls-label input[type="datetime-local"]:-ms-input-placeholder,
+  .ls-label input[type="email"]:-ms-input-placeholder,
+  .ls-label input[type="month"]:-ms-input-placeholder,
+  .ls-label input[type="number"]:-ms-input-placeholder,
+  .ls-label input[type="password"]:-ms-input-placeholder,
+  .ls-label input[type="search"]:-ms-input-placeholder,
+  .ls-label input[type="tel"]:-ms-input-placeholder,
+  .ls-label input[type="text"]:-ms-input-placeholder,
+  .ls-label input[type="time"]:-ms-input-placeholder,
+  .ls-label input[type="url"]:-ms-input-placeholder,
+  .ls-label input[type="week"]:-ms-input-placeholder,
+  .ls-label textarea:-ms-input-placeholder {
+    color: #a6a6c4; }
+  .ls-label .ls-input-text:focus,
+  .ls-label input[type="color"]:focus,
+  .ls-label input[type="date"]:focus,
+  .ls-label input[type="datetime"]:focus,
+  .ls-label input[type="datetime-local"]:focus,
+  .ls-label input[type="email"]:focus,
+  .ls-label input[type="month"]:focus,
+  .ls-label input[type="number"]:focus,
+  .ls-label input[type="password"]:focus,
+  .ls-label input[type="search"]:focus,
+  .ls-label input[type="tel"]:focus,
+  .ls-label input[type="text"]:focus,
+  .ls-label input[type="time"]:focus,
+  .ls-label input[type="url"]:focus,
+  .ls-label input[type="week"]:focus,
+  .ls-label textarea:focus {
+    outline: none; }
+
+.field-has-icon:before {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  font-size: 20px;
+  pointer-events: none;
+  color: #4388ff; }
+.field-has-icon input {
+  padding-right: 40px; }
+
+/*Checkox*/
+.checkbox-container {
+  background: #fff;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 15px;
+  padding: 13px 15px;
+  color: #7ea1f3;
+  margin-right: 0; }
+  .checkbox-container .state {
+    position: relative; }
+
+.pretty .state label:after,
+.pretty .state label:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: solid 1px #809cf4;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: calc((0% - (100% - 1em)) - 8%);
+  background-color: transparent; }
+
+.pretty .state label {
+  padding-left: 10px;
+  margin-top: 1; }
+
+.pretty input:checked ~ .state.p-primary-o label:before,
+.pretty.p-toggle .state.p-primary-o label:before {
+  border: solid 1px #809cf4; }
+
+.pretty.p-tada:not(.p-default) input:checked + .state .icon {
+  color: #809cf4;
+  width: 20px;
+  height: 20px; }
+
+/*Select*/
+.ls-custom-select {
+  height: 39px; }
+
+[class*="ls-btn"] {
+  padding: 11px 40px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase; }
+  [class*="ls-btn"].ls-btn-sm, [class*="ls-btn"].small, [class*="ls-btn"].sm {
+    padding: 7px 30px; }
+  [class*="ls-btn"].ls-btn-lg, [class*="ls-btn"].large, [class*="ls-btn"].lg {
+    padding: 15px 30px; }
+  [class*="ls-btn"].ls-btn-primary {
+    background: #27deac; }
+    [class*="ls-btn"].ls-btn-primary:hover, [class*="ls-btn"].ls-btn-primary:focus {
+      background: #19cb9b;
+      outline: none; }
+  [class*="ls-btn"].ls-btn-secondary {
+    background: #809ef3;
+    color: #fff; }
+    [class*="ls-btn"].ls-btn-secondary:hover, [class*="ls-btn"].ls-btn-secondary:hover:focus {
+      background: #577ade;
+      outline: none; }
+    [class*="ls-btn"].ls-btn-secondary.outlined {
+      box-shadow: inset 0 0 0 1px;
+      background: transparent;
+      color: #809ef3; }
+      [class*="ls-btn"].ls-btn-secondary.outlined:hover, [class*="ls-btn"].ls-btn-secondary.outlined:focus {
+        border-color: #809ef3;
+        box-shadow: none;
+        box-shadow: inset 0 0 0 2px;
+        outline: none; }
+
+.ls-form-horizontal [class*="ls-btn"] {
+  margin-top: 0; }
+
+.ls-boxes .container-filtros {
+  padding-bottom: 5px; }
+
+html .ls-table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  border-bottom: none; }
+  html .ls-table thead th {
+    font-weight: 400;
+    padding-bottom: 20px;
+    border: none; }
+  html .ls-table tbody tr {
+    background-color: #f4f4f4;
+    border: solid 1px #f1f1f1;
+    transition: 0.4s;
+    transition-property: background-color; }
+    html .ls-table tbody tr:hover {
+      background-color: #ececec; }
+    html .ls-table tbody tr td:first-child {
+      border-radius: 4px 0 0 4px; }
+    html .ls-table tbody tr td:last-child {
+      border-radius: 0 4px 4px 0; }
+  html .ls-table th,
+  html .ls-table td {
+    padding: 7px 14px; }
+  html .ls-table td {
+    font-size: 13px;
+    word-wrap: break-word; }
+
+html [class*="ls-pagination"] li a {
+  color: #4d4f5c; }
+html [class*="ls-pagination"] li.ls-active {
+  background: #7fa1f3; }
+html [class*="ls-pagination"] li .icon {
+  font-size: 30px; }
+html [class*="ls-pagination"] li:first-child a, html [class*="ls-pagination"] li:last-child a {
+  padding: 0 7px 1px;
+  color: #808495; }
+html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pagination"] li:last-child.ls-disabled a {
+  color: #ccc; }
+
+.featherlight .featherlight-content {
+  padding: 0;
+  border-bottom: none;
+  border-radius: 8px; }
+  .featherlight .featherlight-content p {
+    color: #a6a6c4; }
+.featherlight .featherlight-close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: center;
+  font-family: "Segoe UI";
+  background: transparent;
+  color: #7ea0f3;
+  border: none;
+  padding: 0;
+  font-size: 20px; }
+
+.with-featherlight html, .with-featherlight body {
+  overflow: hidden; }
+
+.modal-popup {
+  min-width: 400px; }
+
+.modal-popup-header {
+  border-bottom: solid 1px #ececec;
+  padding: 20px;
+  color: #a6a6c4; }
+  .modal-popup-header p {
+    font-size: 16px; }
+
+.modal-popup-imagem {
+  text-align: center; }
+
+.modal-popup-conteudo .ui.checkbox label,
+.modal-popup-conteudo .ui.checkbox + label {
+  color: #7ea1f3; }
+.modal-popup-conteudo .ui.segment.buttons-segment .botoes-acao {
+  display: block; }
+.modal-popup-conteudo .botoes-acao {
+  margin-top: 20px;
+  padding: 0 10px 20px; }
+.modal-popup-conteudo .grupo-botoes {
+  float: right; }
+.modal-popup-conteudo .ui.search.input input {
+  background: #fff; }
+
+.ui.segment.segment-content {
+  max-height: 250px;
+  overflow: auto; }
+
+.modal-popup-titulo {
+  font-size: 18px;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #544364;
+  margin-bottom: 0; }
+
+/***** Customizações de Modais *****/
+.modal-relacionar-perfil .featherlight-content {
+  max-width: 600px;
+  width: 100%; }
+
+.modal-termos-uso .featherlight-content {
+  max-width: 600px;
+  width: 100%; }
+
+.modal-confirmacao-compra .featherlight-content {
+  width: 100%;
+  max-width: 400px; }
+.modal-confirmacao-compra .modal-popup-header {
+  min-height: 320px;
+  padding-top: 50px; }
+.modal-confirmacao-compra .modal-popup-titulo {
+  font-size: 24px;
+  color: #a6a6c4;
+  text-align: center;
+  text-transform: uppercase; }
+.modal-confirmacao-compra .modal-popup-conteudo .grupo-botoes {
+  display: block; }
+  .modal-confirmacao-compra .modal-popup-conteudo .grupo-botoes .ui.button {
+    min-width: 120px; }
+
+.zone-upload-image {
+  width: 350px;
+  height: 350px;
+  background: url(../assets/img/placeholder-imagem-upload.png) center 80px no-repeat #f0f2f8;
+  margin: 0 auto;
+  border: none;
+  font-size: 13px;
+  color: #a6a6c4;
+  font-weight: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 70px;
+  position: relative; }
+  .zone-upload-image.dz-started {
+    padding: 0; }
+
+.dropzone .dz-preview .dz-remove {
+  color: #7ea1f3;
+  display: block;
+  margin-top: 5px;
+  text-align: right; }
+
+.dropzone .dz-preview.dz-image-preview {
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+  .dropzone .dz-preview.dz-image-preview .dz-image {
+    border-radius: 0;
+    width: 100%;
+    height: 100%; }
+    .dropzone .dz-preview.dz-image-preview .dz-image img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s; }
+  .dropzone .dz-preview.dz-image-preview:hover .dz-image img {
+    filter: none;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none; }
+
+.ls-box.area-upload {
+  background: #f9f9f9;
+  padding: 45px 30px;
+  margin-top: 0; }
+  .ls-box.area-upload .conteudo-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column; }
+    .ls-box.area-upload .conteudo-upload p {
+      font-size: 16px;
+      color: #a6a6c4;
+      margin: 0; }
+    .ls-box.area-upload .conteudo-upload .ls-btn {
+      padding: 22px 80px;
+      margin-top: 30px;
+      font-size: 16px;
+      text-transform: uppercase; }
+    .ls-box.area-upload .conteudo-upload small {
+      font-size: 13px;
+      color: #7ea1f3;
+      display: block;
+      margin-top: 10px; }
+
+.right-aligned {
+  text-align: right !important; }
+
+.center-aligned {
+  text-align: center !important; }
+
+.bg-grey {
+  background-color: #f9f9f9; }
+
+.bg-medium-grey {
+  background-color: #eeeeee; }
+
+.bg-action-grey {
+  background-color: #eef1f3; }
+
+.bg-blue-gradient {
+  background-image: linear-gradient(to bottom, #8399f5, #7aa9f1); }
+
+.texto-destaque {
+  color: #7ea1f3; }
+
+/*# sourceMappingURL=genesis-application.css.map */
