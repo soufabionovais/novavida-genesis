@@ -107,6 +107,9 @@ p {
   p a {
     border: none; }
 
+.ls-sidebar .ls-sidebar-toggle {
+  display: none !important; }
+
 .ls-main {
   background-color: #f5f6fa;
   height: auto;
@@ -741,6 +744,16 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
   float: none; }
   .ls-collapse-body .checkbox-container ~ .checkbox-container {
     margin-top: 5px; }
+
+.rating .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d9dde6;
+  margin: 0 4px;
+  display: inline-block; }
+  .rating .dot.filled {
+    background-color: #27deac; }
 
 .right-aligned {
   text-align: right !important; }

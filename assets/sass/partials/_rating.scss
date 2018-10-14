@@ -1,0 +1,13 @@
+.rating {
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #d9dde6;
+        margin: 0 4px;
+        display: inline-block;
+        &.filled {
+            background-color: #27deac;
+        }
+    }
+}

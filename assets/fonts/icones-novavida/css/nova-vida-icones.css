@@ -20,8 +20,8 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "nova-vida-icones";
+ [class^="nv-icon"]:before, [class*=" nv-icon"]:before {
+  font-family: "nova-vida-icones" !important;
   font-style: normal;
   font-weight: normal;
   speak: none;

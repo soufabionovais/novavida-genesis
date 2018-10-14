@@ -15,6 +15,12 @@ p {
     }
 }
 
+.ls-sidebar {
+    .ls-sidebar-toggle {
+        display: none !important;
+    }
+}
+
 .ls-main {
     background-color: $conteudo-principal-bg;
     height: auto;

@@ -542,7 +542,13 @@
                               Nome do template 1
                             </td>
                             <td>
-                              xxx
+                              <div class="rating">  
+                                <i class="dot filled"></i>
+                                <i class="dot filled"></i>
+                                <i class="dot filled"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                              </div>
                             </td>
                             <td>
                               Texto de observação
@@ -556,7 +562,13 @@
                               Nome do template 1
                             </td>
                             <td>
-                              xxx
+                              <div class="rating">  
+                                <i class="dot filled"></i>
+                                <i class="dot filled"></i>
+                                <i class="dot filled"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                              </div>
                             </td>
                             <td>
                               Texto de observação
@@ -570,7 +582,13 @@
                               Nome do template 1
                             </td>
                             <td>
-                              xxx
+                              <div class="rating">  
+                                <i class="dot filled"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                              </div>
                             </td>
                             <td>
                               Texto de observação
@@ -584,7 +602,13 @@
                               Nome do template 1
                             </td>
                             <td>
-                              xxx
+                              <div class="rating">  
+                                <i class="dot filled"></i>
+                                <i class="dot filled"></i>
+                                <i class="dot filled"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                              </div>
                             </td>
                             <td>
                               Texto de observação
@@ -598,7 +622,13 @@
                               Nome do template 1
                             </td>
                             <td>
-                              xxx
+                              <div class="rating">  
+                                <i class="dot filled"></i>
+                                <i class="dot filled"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                                <i class="dot"></i>
+                              </div>
                             </td>
                             <td>
                               Texto de observação
