@@ -8,12 +8,12 @@
 				<div id="docPrincipal" class="doc-principal">
 
 					<div class="doc-menu">
-					<a href="capa.php" class="doc-menu-titulo">
+					<a href="capa.php" class="doc-menu-titulo atual">
 							<span class="ls-show-sidebar ls-ico-text2"></span>
 							Capa
 						</a>
 						<ol>
-							<li class="doc-menu-item atual">
+							<li class="doc-menu-item">
 								<span class="marcador"></span>
 								<a href="folha-rosto.php">01. Folha de rosto</a>
 							</li>
