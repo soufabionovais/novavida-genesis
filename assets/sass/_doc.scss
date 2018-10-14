@@ -165,7 +165,8 @@ $doc_pagina-largura: 875px;
 	height: 1348px;
 	background: #f9f9f9 url(../img/doc/brasao-republica.png) center no-repeat;
 
-	&.capa {
+	&.capa,
+	&.folha-rosto {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -220,6 +221,28 @@ $doc_pagina-largura: 875px;
 					}
 				}
 			}
+
+			.titulo {
+				width: 380px;
+				margin: 0 auto 40px;
+				padding: 45px 0;
+				text-align: center;
+				font-size: 32px;
+				color: #544364;
+				border-bottom: 1px solid #d8d8d8;
+			}
+
+			.data {
+				text-align: center;
+				font-size: 16px;
+				color: #7ea1f3;
+			}
+		}
+	}
+
+	&.folha-rosto {
+		.conteudo-wrapper {
+			margin-bottom: 10%;
 		}
 	}
 }
