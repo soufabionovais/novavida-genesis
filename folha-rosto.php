@@ -8,7 +8,7 @@
 				<div id="docPrincipal" class="doc-principal">
 
 					<div class="doc-menu">
-					<a href="capa.php" class="doc-menu-titulo">
+						<a href="capa.php" class="doc-menu-titulo">
 							<span class="ls-show-sidebar ls-ico-text2"></span>
 							Capa
 						</a>
@@ -40,39 +40,14 @@
 						</ol>
 					</div>
 
-					<div class="doc-pagina capa">
+					<div class="doc-pagina folha-rosto">
 						<div class="conteudo-wrapper">
-							<div class="item">
-								<span class="item-nome">Critério Consultado:</span>
-								<span class="item-valor">111.111.111-11</span>
-							</div>
-							
-							<div class="item">
-								<span class="item-nome">Nome:</span>
-								<span class="item-valor">Joaquim Antônio da Silva</span>
-							</div>
-							
-							<div class="item">
-								<span class="item-nome">Homônimo:</span>
-								<span class="item-valor">Joaquim Antônio da Silva</span>
+							<div class="titulo">
+								Jinglebell Representações Comercias
 							</div>
 
-							<div class="item duas-colunas">
-								<div class="item-col">
-									<span class="item-nome">Criado em:</span>
-									<span class="item-valor">15 de janeiro de 2018</span>
-								</div>
-								<div class="item-col">
-									<span class="item-nome">Última atualização</span>
-									<span class="item-valor">18 de junho de 2018</span>
-								</div>
-							</div>
-							
-							<div class="item centralizado">
-								<span class="item-nome">Pessoas envolvidas na análise:</span>
-								<span class="item-valor">
-								Wanderley Marmello - Dpto. Jurídico | Shirley Sanches - Dpto. de cobrança Cássio Ferreira Martins - Análise de Crédito
-								</span>
+							<div class="data">
+								14/06/2014 às 14:00
 							</div>
 						</div>
 					</div>
