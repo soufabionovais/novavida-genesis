@@ -3,35 +3,37 @@
     
     <?php include("includes/header.php"); ?>
 
-    <?php include("includes/sidebar.php"); ?>
-
 		<main class="ls-main doc">
 			<div id="docWrapper" class="doc-wrapper no-sidebar">
 				<div id="docPrincipal" class="doc-principal">
 
 					<div class="doc-menu">
-						<div class="doc-menu-titulo">
+						<a href="" class="doc-menu-titulo atual">
 							<span class="ls-show-sidebar ls-ico-text2"></span>
 							Capa
-						</div>
+						</a>
 						<ol>
-							<li>
-								<a href="">Folha de rosto</a>
+							<li class="doc-menu-item">
+								<span class="marcador"></span>
+								<a href="">01. Folha de rosto</a>
 							</li>
-							<li>
-								<a href="">Sumário</a>
+							<li class="doc-menu-item">
+								<span class="marcador"></span>
+								<a href="">02. Sumário</a>
 							</li>
-							<li>
-								<a href="">Prefácio</a>
+							<li class="doc-menu-item">
+								<span class="marcador"></span>
+								<a href="">03. Prefácio</a>
 							</li>
-							<li>
-								<a href="">Grupo Fonte 01</a>
-								<ol>
-									<li>
-										<a href="">Nome da Fonte 1</a>
+							<li class="doc-menu-item">
+								<span class="marcador"></span>
+								<a href="">04. Grupo Fonte 01</a>
+								<ol class="doc-submenu">
+									<li class="doc-menu-item">
+										<a href="">04.1 Nome da Fonte 1</a>
 									</li>
-									<li>
-										<a href="">Nome da Fonte 2</a>
+									<li class="doc-menu-item">
+										<a href="">04.2 Nome da Fonte 2</a>
 									</li>
 								</ol>
 							</li>

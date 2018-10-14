@@ -7,7 +7,7 @@ $doc_pagina-largura: 875px;
 .ls-main.doc {
 	height: auto;
 	margin: 0;
-	padding-top: $header-altura;
+	padding: $header-altura 0 0;
 }
 
 // Estrutura base
@@ -81,6 +81,81 @@ $doc_pagina-largura: 875px;
 .doc-menu {
 	float: left;
 	width: 260px;
+	padding-top: 40px;
+
+	ol {
+		list-style: none;
+		padding-left: 30px;
+	}
+
+	&-item,
+	&-titulo {
+		line-height: 1.2;
+		margin: 15px 0;
+		text-align: left;
+		font-family: $font-family-padrao;
+		font-size: 13px;
+		color: rgba( $doc_menu-bg-color, .5 );
+		
+		a {
+			color: rgba( $doc_menu-bg-color, .5 );
+			transition: .25s;
+		}
+		
+		&.atual,
+		&:hover {
+			color: #27deac;
+
+			> a {
+				color: #27deac;
+			}
+
+			.marcador {
+				background-color: #27deac;
+			}
+		}
+	}
+
+	&-titulo {
+		font-size: 20px;
+	}
+
+	&-item {
+		position: relative;
+
+		.marcador {
+			display: inline-block;
+			position: absolute;
+			left: -25px;
+    		top: 3px;
+			width: 10px;
+			height: 10px;
+			border-radius: 100%;
+			background: rgba( $doc_menu-bg-color, .5 );
+
+			&:before {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				bottom: 100%;
+				left: 50%;
+				width: 1px;
+				height: 20px;
+				background: rgba( $doc_menu-bg-color, .5 );
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	.doc-submenu {
+		padding-left: 15px;
+
+		.doc-menu-item {
+			&:before {
+				display: none;
+			}
+		}
+	}
 }
 
 .doc-pagina {
