@@ -37,6 +37,7 @@ $doc_pagina-largura: 875px;
 
 		.doc-principal {
 			.doc-menu {
+				overflow: hidden;
 				width: 0;
 			}
 	
@@ -165,7 +166,61 @@ $doc_pagina-largura: 875px;
 	background: #f9f9f9 url(../img/doc/brasao-republica.png) center no-repeat;
 
 	&.capa {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
 		height: 1010px;
+		padding: 74px 110px;
+
+		.conteudo-wrapper {
+			.item {
+				padding: 12px 0;
+				line-height: 1.22;
+				text-align: left;
+				font-size: 18px;
+				border-bottom: 1px solid #d8d8d8;
+
+				&-nome {
+					color: #544364
+				}
+
+				&-valor {
+					color: #7ea1f3
+				}
+
+				&.duas-colunas {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					padding: 35px 0;
+
+					.item-col {
+						font-size: 13px;
+
+						.item-nome {
+							display: block;
+						}
+					}
+				}
+
+				&.centralizado {
+					max-width: 70%;
+					margin: 0 auto;
+					text-align: center;
+					font-size: 13px;
+					border: none;
+
+					.item-nome {
+						display: block;
+						margin: 20px auto 10px;
+					}
+					
+					.item-valor {
+						color: #a6a6c4;
+					}
+				}
+			}
+		}
 	}
 }
 
