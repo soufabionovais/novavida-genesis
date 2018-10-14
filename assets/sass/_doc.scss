@@ -166,61 +166,70 @@ $doc_pagina-largura: 875px;
 	background: #f9f9f9 url(../img/doc/brasao-republica.png) center no-repeat;
 
 	&.capa,
-	&.folha-rosto {
+	&.folha-rosto,
+	&.sumario {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		height: 1010px;
 		padding: 74px 110px;
 
-		.conteudo-wrapper {
-			.item {
-				padding: 12px 0;
-				line-height: 1.22;
-				text-align: left;
-				font-size: 18px;
-				border-bottom: 1px solid #d8d8d8;
+		.conteudo-wrapper {}
+	}
 
-				&-nome {
-					color: #544364
-				}
+	&.capa {
+		.item {
+			padding: 12px 0;
+			line-height: 1.22;
+			text-align: left;
+			font-size: 18px;
+			border-bottom: 1px solid #d8d8d8;
 
-				&-valor {
-					color: #7ea1f3
-				}
+			&-nome {
+				color: #544364
+			}
 
-				&.duas-colunas {
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					padding: 35px 0;
+			&-valor {
+				color: #7ea1f3
+			}
 
-					.item-col {
-						font-size: 13px;
+			&.duas-colunas {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding: 35px 0;
 
-						.item-nome {
-							display: block;
-						}
-					}
-				}
-
-				&.centralizado {
-					max-width: 70%;
-					margin: 0 auto;
-					text-align: center;
+				.item-col {
 					font-size: 13px;
-					border: none;
 
 					.item-nome {
 						display: block;
-						margin: 20px auto 10px;
-					}
-					
-					.item-valor {
-						color: #a6a6c4;
 					}
 				}
 			}
+
+			&.centralizado {
+				max-width: 70%;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 13px;
+				border: none;
+
+				.item-nome {
+					display: block;
+					margin: 20px auto 10px;
+				}
+				
+				.item-valor {
+					color: #a6a6c4;
+				}
+			}
+		}
+	}
+
+	&.folha-rosto {
+		.conteudo-wrapper {
+			margin-bottom: 10%;
 
 			.titulo {
 				width: 380px;
@@ -240,9 +249,38 @@ $doc_pagina-largura: 875px;
 		}
 	}
 
-	&.folha-rosto {
-		.conteudo-wrapper {
-			margin-bottom: 10%;
+	&.sumario {
+		.titulo {
+			margin-bottom: 40px;
+			text-align: left;
+			font-size: 48px;
+			color: #7ea1f3;
+		}
+
+		.sumario-itens {
+			.item {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				line-height: 22px;
+				margin: 15px 0;
+				font-size: 18px;
+
+				.nome {
+					color: #544364;
+				}
+
+				.espacador {
+					flex-grow: 1;
+					align-self: flex-end;
+					height: 1px;
+					background-color: #a6a6c4;
+				}
+
+				.pagina {
+					color: #7ea1f3;
+				}
+			}
 		}
 	}
 }
