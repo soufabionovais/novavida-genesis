@@ -69,3 +69,10 @@ function deselecionarTodosCheckRadio(p_contexto) {
 $("#switchableArea-1, #switchableArea-2").sortable({
 	connectWith: ".switchable-area"
 }).disableSelection();
+
+/* Conteúdos de abas */
+$("[data-conteudo-alvo]").on("click", function(){
+	var conteudoAlvo = $(this).data("conteudo-alvo");
+	$(this).parents("[data-etapa]").attr("hidden", "hidden");
+	$("[data-id=" + conteudoAlvo +"]").removeAttr("hidden");
+});

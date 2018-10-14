@@ -43,7 +43,33 @@
         }        
     }   
     &.ls-btn-icon {
-        padding: 6px 11px 7px;        
+        padding: 6px 11px 7px;  
+        
+        &:hover {
+            border: none;
+            box-shadow: none;
+            background: none;
+        }        
+        [class*="ico"] {
+            font-size: 16px;
+            transition: 0.5s;
+        }        
+        &.primary {
+            [class*="ico"] {
+                color: $btn-primario;
+                &:hover {
+                    color: $btn-primario-hover;
+                }
+            }
+        }
+        &.secondary {
+            [class*="ico"] {
+                color: $btn-secundario;
+                &:hover {
+                    color: $btn-secundario-hover;
+                }                
+            }
+        }
     }    
     &.no-bg {
         background: transparent;

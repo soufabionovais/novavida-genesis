@@ -24,15 +24,15 @@
           <!-- Conteúdos Abas -->
           <div class="ls-tabs-container">
             <!-- Aba Templates -->
-            <div id="templates" class="ls-tab-content">
-                <div class="ls-boxes">  
+            <div id="templates" class="ls-tab-content ls-active">
+                <div class="ls-boxes" data-id="templates-etapa-1" data-etapa>  
                     <div class="ls-box container-filtros">
                         <div class="ls-form ls-form-horizontal row">
                             <label class="ls-label col-9 field-has-icon ls-ico-search">
                               <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
                             </label>
                             <div class="col right-aligned">
-                              <button class="ls-btn ls-btn-secondary outlined">Adicionar</button>
+                              <button class="ls-btn ls-btn-secondary outlined" data-conteudo-alvo="templates-etapa-2">Adicionar</button>
                             </div>        
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="ls-boxes"> 
+                <div class="ls-boxes" data-id="templates-etapa-2" data-etapa hidden> 
                     <div class="ls-box container-filtros">
                         <div class="ls-form ls-form-horizontal row">
                             <label class="ls-label col-6 field-has-icon">
@@ -130,14 +130,14 @@
                             </div>	
                           </div>
                           <div class="col">
-                              <form action="" class="dropzone zone-upload-image" id="uploadImage"></form>						
+                              <form action="upload/upload.html" class="dropzone zone-upload-image" id="uploadImage"></form>						
                           </div>
                         </div>
                     </div>
                     <div class="ls-box">
                         <div class="row">
                           <div class="col right-aligned">
-                            <button class="ls-btn ls-btn-secondary outlined">Cancelar</button>
+                            <button class="ls-btn ls-btn-secondary outlined" data-conteudo-alvo="templates-etapa-1">Cancelar</button>
                             <button class="ls-btn ls-btn-primary">Salvar</button>
                           </div>
                         </div>
@@ -149,24 +149,24 @@
 
             <!-- Aba Perfil Relatórios -->
             <div id="perfilRelatorio" class="ls-tab-content">
-                <div class="ls-boxes">  
+                <div class="ls-boxes" data-id="perfil-relatorios-etapa-1" data-etapa>  
                     <div class="ls-box container-filtros">
                         <div class="ls-form ls-form-horizontal row">
                             <label class="ls-label col-6 field-has-icon ls-ico-search">
                               <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
                             </label>
                             <label class="ls-label col-3 field-has-icon ls-ico-search">
-                                <div class="ls-custom-select">
+                                <span class="ls-custom-select">
                                     <select class="ls-select">
                                         <option value="1"> Opção 1 </option>
                                         <option value="2"> Opção 2 </option>
                                         <option value="3"> Opção 3 </option>
                                         <option value="4"> Opção 4 </option>
                                     </select>
-                                </div>  
+                                </span>  
                             </label>
                             <div class="col right-aligned">
-                              <button class="ls-btn ls-btn-secondary outlined">Adicionar</button>
+                              <button class="ls-btn ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-2">Adicionar</button>
                             </div>        
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                     </div>
                 </div>
 
-                <div class="ls-boxes">
+                <div class="ls-boxes" data-id="perfil-relatorios-etapa-2" data-etapa hidden>
                     <div class="ls-box">
                         <div class="row">
                           <div class="col d-flex align-items-center">
@@ -266,24 +266,23 @@
                               <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
                             </label>
                             <label class="ls-label col-3 field-has-icon ls-ico-search">
-                                <div class="ls-custom-select">
+                                <span class="ls-custom-select">
                                     <select class="ls-select">
                                         <option value="1"> Opção 1 </option>
                                         <option value="2"> Opção 2 </option>
                                         <option value="3"> Opção 3 </option>
                                         <option value="4"> Opção 4 </option>
                                     </select>
-                                </div>  
+                                </span>  
                             </label>
                             <div class="col right-aligned">
                               <button class="ls-btn ls-btn-secondary outlined">Pré-visualizar</button>
                             </div>        
                         </div>
                     </div>
-                    <div class="ls-box">
-                      <p>Permissão de acesso <a href="#" class="link" id="btnSelecionarTodoPerfis" ><span class="texto-destaque" data-ls-module="toggleText" data-toggle-text="Desmarcar todas">Marcar todas</span></a></p>
-                    </div>
                     <div class="ls-box bg-grey" id="containerTodosPerfis">
+                      <p>Permissão de acesso <a href="#" class="link" id="btnSelecionarTodoPerfis" ><span class="texto-destaque" data-ls-module="toggleText" data-toggle-text="Desmarcar todas">Marcar todas</span></a></p> 
+                     
                         <div class="ls-collapse-group">
                           <div data-ls-module="collapse" data-target="#accordeon0" class="ls-collapse">
                               <div class="pretty p-icon p-curve p-tada checkbox-container">
@@ -372,9 +371,34 @@
                           </div>
                         </div>
                     </div> 
-                      
+  
+                    <div class="ls-box">
+                        <div class="row">
+                          <div class="col right-aligned">
+                            <!-- <button class="ls-button ls-btn-secondary">Voltar</button> -->
+                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
+                            <button class="ls-button ls-btn-primary" data-conteudo-alvo="perfil-relatorios-etapa-3">Avançar</button>
+                          </div>
+                      </div>
+                    </div>                                        
+                </div>
+
+                <div class="ls-boxes" data-id="perfil-relatorios-etapa-3" data-etapa hidden>
+                    <div class="ls-box">
+                        <div class="row">
+                          <div class="col d-flex align-items-center">
+                            <h2 class="ls-title">Novo Perfil</h2>
+                          </div>
+                          <div class="col right-aligned">
+                              <ol class="ls-breadcrumb passos">
+                                <li><a href="#">Configurações gerais</a></li>
+                                <li><a href="#">Configurações de fontes</a></li>
+                              </ol>                          
+                          </div>
+                        </div>
+                    </div>                
                     <div class="ls-box bg-grey">
-                      <div class="row">
+                     <div class="row">
                         <div class="col">
                           <div class="relacionar-listas bg-medium-grey">
                             <label class="ls-label field-has-icon ls-ico-search">
@@ -498,35 +522,37 @@
                                     <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
                                   </div>
 
-
                               </div>                            
                             </div>
                         </div>                      
-                    </div>  
-                    </div>     
+                    </div>   
+
                     <div class="ls-box">
                         <div class="row">
+                          <div class="col">
+                            <button class="ls-button ls-btn-secondary" data-conteudo-alvo="perfil-relatorios-etapa-2">Voltar</button>                          
+                          </div>
                           <div class="col right-aligned">
-                            <button class="ls-button ls-btn-secondary">Voltar</button>
-                            <button class="ls-button ls-btn-secondary outlined">Cancelar</button>
+                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
                             <button class="ls-button ls-btn-primary">Avançar</button>
                           </div>
                       </div>
-                    </div>                                        
+                    </div>                                     
                 </div>
+            </div>
             </div>
             <!-- Fim Aba Perfil Rel atórios-->
 
             <!-- Aba Fontes -->         
-            <div id="fontes" class="ls-tab-content ls-active">
-                <div class="ls-boxes">
+            <div id="fontes" class="ls-tab-content">
+                <div class="ls-boxes" data-id="fontes-etapa-1" data-etapa>
                     <div class="ls-box">
                         <table class="ls-table ls-no-margin-top">
                         <colgroup>
                           <col>
                           <col>
                           <col>
-                          <col width="10%">
+                          <col width="8%">
                         </colgroup>
                         <thead>
                           <tr>
@@ -554,7 +580,9 @@
                               Texto de observação
                             </td>                                                        
                             <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
+                                <i class="nv-icon icon-reader-mode"></i>
+                              </button>
                             </td> 
                           </tr>
                           <tr>
@@ -574,7 +602,9 @@
                               Texto de observação
                             </td>                                                        
                             <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
+                                <i class="nv-icon icon-reader-mode"></i>
+                              </button>
                             </td> 
                           </tr>
                           <tr>
@@ -594,7 +624,9 @@
                               Texto de observação
                             </td>                                                        
                             <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
+                                <i class="nv-icon icon-reader-mode"></i>
+                              </button>
                             </td> 
                           </tr>
                           <tr>
@@ -614,7 +646,9 @@
                               Texto de observação
                             </td>                                                        
                             <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
+                                <i class="nv-icon icon-reader-mode"></i>
+                              </button>
                             </td> 
                           </tr>
                           <tr>
@@ -634,7 +668,9 @@
                               Texto de observação
                             </td>                                                        
                             <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
+                                <i class="nv-icon icon-reader-mode"></i>
+                              </button>
                             </td> 
                           </tr>
                         </tbody>
@@ -654,7 +690,7 @@
                     </div>              
                 </div>
 
-                <div class="ls-boxes">
+                <div class="ls-boxes" data-id="fontes-etapa-2" data-etapa hidden>
 
                     <div class="ls-box container-filtros">
                         <div class="ls-form ls-form-horizontal row">
@@ -749,14 +785,15 @@
                     <div class="ls-box">
                         <div class="row">
                           <div class="col right-aligned">
-                            <button class="ls-button ls-btn-secondary">Voltar</button>
-                            <button class="ls-button ls-btn-secondary outlined">Cancelar</button>
+                            <button class="ls-button ls-btn-secondary" data-conteudo-alvo="perfil-relatorios-etapa-2">Voltar</button>
+                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
                             <button class="ls-button ls-btn-primary">Avançar</button>
                           </div>
                       </div>
                     </div>                 
 
                 </div>
+                
             </div>   
             <!-- Fim Aba Fontes -->         
           </div>
