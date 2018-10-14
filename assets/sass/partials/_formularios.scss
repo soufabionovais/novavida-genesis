@@ -1,3 +1,7 @@
+.ls-label {
+    position: relative;
+}
+
 .ls-label .ls-input-text, 
 .ls-label input[type="color"], 
 .ls-label input[type="date"], 
@@ -27,6 +31,10 @@
     }
 }
 
+.ls-label textarea {
+    height: 95px;
+}
+
 .field-has-icon {
     &:before {
         position: absolute;
@@ -53,6 +61,20 @@
     .state {
         position: relative;
     }
+    &.with-avatar {
+        .state {
+            label {
+                padding-left: 50px;
+            }
+        }
+        .user-avatar {
+            width: 20px;
+            position: absolute;
+            left: 50px;
+            top: 11px;
+            border-radius: 50%;
+        }            
+    }    
 }
 
 .pretty .state label:after, 
@@ -73,7 +95,7 @@
 
  .pretty .state label {
      padding-left: 10px;
-     margin-top: 1;
+     margin-top: 1px;
  }
 
  .pretty input:checked~.state.p-primary-o label:before, 
@@ -85,6 +107,44 @@
     color: #809cf4;
     width: 20px;
     height: 20px;
+}
+
+/* Checkbox Estilo Radio */
+.radio-style {
+    background-color: #fff;
+    border: solid 1px #eeeeee;
+    padding: 11px 15px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    .state {
+        position: relative;
+        label {
+            color: #a6a6c4;
+            position: relative;
+            font-weight: 100;
+            padding-left: 5px;
+            &:before {
+                // border-color: #87a9f3;
+                // background-color: #87a9f3;  
+                border-color: #87a9f3;
+                background-color: #fff; 
+                width: 16px;
+                height: 16px;             
+            }
+            &:after {
+                //background-color: #fff;
+                left: -2px;
+                top: -3px;
+                border: none;
+                transform: scale(0) !important;
+                transition: 0.3s;
+            }
+        }
+    }
+    &.pretty.p-default input:checked ~ .state label:after {
+        background: #87a9f3 !important;
+        transform: scale(.3) !important;
+    }
 }
 
 /*Select*/

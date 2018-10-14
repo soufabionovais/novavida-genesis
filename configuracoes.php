@@ -24,7 +24,7 @@
           <!-- Conteúdos Abas -->
           <div class="ls-tabs-container">
             <!-- Aba Templates -->
-            <div id="templates" class="ls-tab-content ls-active">
+            <div id="templates" class="ls-tab-content">
                 <div class="ls-boxes">  
                     <div class="ls-box container-filtros">
                         <div class="ls-form ls-form-horizontal row">
@@ -281,20 +281,229 @@
                         </div>
                     </div>
                     <div class="ls-box">
-                      <p>Relacione as Fontes que Deseja Utilizar</p>
+                      <p>Permissão de acesso <a href="#" class="link" id="btnSelecionarTodoPerfis" ><span class="texto-destaque" data-ls-module="toggleText" data-toggle-text="Desmarcar todas">Marcar todas</span></a></p>
                     </div>
+                    <div class="ls-box bg-grey" id="containerTodosPerfis">
+                        <div class="ls-collapse-group">
+                          <div data-ls-module="collapse" data-target="#accordeon0" class="ls-collapse">
+                              <div class="pretty p-icon p-curve p-tada checkbox-container">
+                                <input type="checkbox" name="radio66" data-ls-module="checkboxToggle" data-checkbox-target="grupo-1">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label></label>
+                                </div>
+                              </div>   
+                            <a href="#" class="ls-collapse-header">
+                              <h3 class="ls-collapse-title">Título 1</h3>
+                            </a>
+                            <div class="ls-collapse-body bg-blue-gradient" id="accordeon0">
+
+                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                  <div class="state p-primary-o">
+                                      <i class="icon ls-ico-checkmark"></i>
+                                      <label>Alexandre Lopez Paes</label>
+                                  </div>
+                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
+                                </div> 
+
+                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                  <div class="state p-primary-o">
+                                      <i class="icon ls-ico-checkmark"></i>
+                                      <label>Alexandre Lopez Paes</label>
+                                  </div>
+                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
+                                </div> 
+                                
+                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                  <div class="state p-primary-o">
+                                      <i class="icon ls-ico-checkmark"></i>
+                                      <label>Alexandre Lopez Paes</label>
+                                  </div>
+                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
+                                </div>  
+
+                            </div>
+                          </div>
+                          <div data-ls-module="collapse" data-target="#accordeon1" class="ls-collapse">
+
+                              <div class="pretty p-icon p-curve p-tada checkbox-container">
+                                <input type="checkbox" name="radio66" data-ls-module="checkboxToggle" data-checkbox-target="grupo-2">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label></label>
+                                </div>
+                              </div>                            
+                            <a href="#" class="ls-collapse-header">
+                              <h3 class="ls-collapse-title">Título 2</h3>
+                            </a>
+                            <div class="ls-collapse-body bg-blue-gradient" id="accordeon1">
+
+                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-2">
+                                  <div class="state p-primary-o">
+                                      <i class="icon ls-ico-checkmark"></i>
+                                      <label>Alexandre Lopez Paes</label>
+                                  </div>
+                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
+                                </div> 
+
+                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-2">
+                                  <div class="state p-primary-o">
+                                      <i class="icon ls-ico-checkmark"></i>
+                                      <label>Alexandre Lopez Paes</label>
+                                  </div>
+                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
+                                </div> 
+                                
+                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-2">
+                                  <div class="state p-primary-o">
+                                      <i class="icon ls-ico-checkmark"></i>
+                                      <label>Alexandre Lopez Paes</label>
+                                  </div>
+                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
+                                </div>  
+
+                            </div>
+                          </div>
+                        </div>
+                    </div> 
+                      
                     <div class="ls-box bg-grey">
                       <div class="row">
-                        <div class="col relacionar-listas bg-medium-grey">
-                            <label class="ls-label col field-has-icon ls-ico-search">
+                        <div class="col">
+                          <div class="relacionar-listas bg-medium-grey">
+                            <label class="ls-label field-has-icon ls-ico-search">
                               <input type="text" placeholder="Filtrar por nome" class="ls-field" required="">
-                            </label>                            
+                            </label>  
+                            <div class="switchable-area" id="switchableArea-1">
+
+                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label>Alexandre Lopez Paes</label>
+                                </div>
+                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                              </div> 
+
+                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label>Alexandre Lopez Paes</label>
+                                </div>
+                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                              </div> 
+
+                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label>Alexandre Lopez Paes</label>
+                                </div>
+                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                              </div> 
+
+                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label>Alexandre Lopez Paes</label>
+                                </div>
+                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                              </div> 
+
+                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label>Alexandre Lopez Paes</label>
+                                </div>
+                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                              </div> 
+
+                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                <div class="state p-primary-o">
+                                    <i class="icon ls-ico-checkmark"></i>
+                                    <label>Alexandre Lopez Paes</label>
+                                </div>
+                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                              </div>
+
+                            </div> 
+
+                          </div>   
                         </div>
-                        <div class="col relacionar-listas bg-blue-gradient">
-                    
+                        <div class="col">
+                            <div class="relacionar-listas bg-blue-gradient">
+                              <div class="switchable-area" id="switchableArea-2">
+
+                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                    <div class="state p-primary-o">
+                                        <i class="icon ls-ico-checkmark"></i>
+                                        <label>Alexandre Lopez Paes</label>
+                                    </div>
+                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                                  </div> 
+
+                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                    <div class="state p-primary-o">
+                                        <i class="icon ls-ico-checkmark"></i>
+                                        <label>Alexandre Lopez Paes</label>
+                                    </div>
+                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                                  </div> 
+
+                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                    <div class="state p-primary-o">
+                                        <i class="icon ls-ico-checkmark"></i>
+                                        <label>Alexandre Lopez Paes</label>
+                                    </div>
+                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                                  </div> 
+
+                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                    <div class="state p-primary-o">
+                                        <i class="icon ls-ico-checkmark"></i>
+                                        <label>Alexandre Lopez Paes</label>
+                                    </div>
+                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                                  </div> 
+
+                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                    <div class="state p-primary-o">
+                                        <i class="icon ls-ico-checkmark"></i>
+                                        <label>Alexandre Lopez Paes</label>
+                                    </div>
+                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                                  </div> 
+
+                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                                    <div class="state p-primary-o">
+                                        <i class="icon ls-ico-checkmark"></i>
+                                        <label>Alexandre Lopez Paes</label>
+                                    </div>
+                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                                  </div>
+
+
+                              </div>                            
+                            </div>
                         </div>                      
-                      </div>
-                    </div>                    
+                    </div>  
+                    </div>     
                     <div class="ls-box">
                         <div class="row">
                           <div class="col right-aligned">
@@ -309,8 +518,215 @@
             <!-- Fim Aba Perfil Rel atórios-->
 
             <!-- Aba Fontes -->         
-            <div id="fontes" class="ls-tab-content">
-              <p>Fontes Inventore consectetur ad est praesentium dolorem et voluptatem quod ratione et aut molestiae voluptatem explicabo. corporis autem nam eos ab omnis qui nostrum eum ab iste distinctio. aut sit iusto eum in consectetur quisquam exercitationem dolorem sunt et</p>
+            <div id="fontes" class="ls-tab-content ls-active">
+                <div class="ls-boxes">
+                    <div class="ls-box">
+                        <table class="ls-table ls-no-margin-top">
+                        <colgroup>
+                          <col>
+                          <col>
+                          <col>
+                          <col width="10%">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>Nome da fonte</th>
+                            <th>Relevância</th>
+                            <th>Observação</th>
+                            <th>Ações</th>
+                          </tr>
+                        </thead>						
+                        <tbody>
+                          <tr>
+                            <td>
+                              Nome do template 1
+                            </td>
+                            <td>
+                              xxx
+                            </td>
+                            <td>
+                              Texto de observação
+                            </td>                                                        
+                            <td class="center-aligned">
+                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 1
+                            </td>
+                            <td>
+                              xxx
+                            </td>
+                            <td>
+                              Texto de observação
+                            </td>                                                        
+                            <td class="center-aligned">
+                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 1
+                            </td>
+                            <td>
+                              xxx
+                            </td>
+                            <td>
+                              Texto de observação
+                            </td>                                                        
+                            <td class="center-aligned">
+                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 1
+                            </td>
+                            <td>
+                              xxx
+                            </td>
+                            <td>
+                              Texto de observação
+                            </td>                                                        
+                            <td class="center-aligned">
+                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>
+                              Nome do template 1
+                            </td>
+                            <td>
+                              xxx
+                            </td>
+                            <td>
+                              Texto de observação
+                            </td>                                                        
+                            <td class="center-aligned">
+                              <button class="ls-btn ls-btn-icon no-bg ls-ico-cog"></button>
+                            </td> 
+                          </tr>
+                        </tbody>
+                        </table> 
+
+                        <div class="ls-pagination-filter">
+                          <ul class="ls-pagination ls-float-left">
+                            <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="ls-active"><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><span class="icon">&raquo;</span></a></li>
+                          </ul>
+                        </div>                        
+                    </div>              
+                </div>
+
+                <div class="ls-boxes">
+
+                    <div class="ls-box container-filtros">
+                        <div class="ls-form ls-form-horizontal row">
+                            <div class="col">
+                              <label class="ls-label field-has-icon">
+                                <input type="text" placeholder="Nome" class="ls-field" required>
+                              </label>                            
+                              <label class="ls-label field-has-icon">
+                                <input type="text" placeholder="Parâmetros de busca" class="ls-field" required>
+                              </label>                                                          
+                            </div>
+                            <div class="col">
+                              <label class="ls-label field-has-icon">
+                                <textarea rows="4" placeholder="Descrição"></textarea>
+                              </label>
+                            </div>        
+                        </div>
+                    </div>
+
+                    <div class="ls-box bg-grey">
+                        <div class="row">
+                          <div class="col">
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Thick</label>
+                                  </div>
+                              </div>   
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Termo 2</label>
+                                  </div>
+                              </div>    
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Termo 555</label>
+                                  </div>
+                              </div>                  
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Lorem Ipsum</label>
+                                  </div>
+                              </div>  
+                            <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Lorem Ipsum Calium Sared</label>
+                                  </div>
+                              </div> 
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Lorem Ipsum</label>
+                                  </div>
+                              </div>                                                                                                   <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Thick</label>
+                                  </div>
+                              </div>   
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Termo 2</label>
+                                  </div>
+                              </div>    
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Termo 555</label>
+                                  </div>
+                              </div>                  
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Lorem Ipsum</label>
+                                  </div>
+                              </div>  
+                              <div class="pretty p-default p-round p-thick radio-style">
+                                  <input type="checkbox" />
+                                  <div class="state">
+                                      <label>Termo 134</label>
+                                  </div>
+                              </div>                                                                                 
+                          </div>
+                        </div>
+                    </div>                    
+                
+                    <div class="ls-box">
+                        <div class="row">
+                          <div class="col right-aligned">
+                            <button class="ls-button ls-btn-secondary">Voltar</button>
+                            <button class="ls-button ls-btn-secondary outlined">Cancelar</button>
+                            <button class="ls-button ls-btn-primary">Avançar</button>
+                          </div>
+                      </div>
+                    </div>                 
+
+                </div>
             </div>   
             <!-- Fim Aba Fontes -->         
           </div>

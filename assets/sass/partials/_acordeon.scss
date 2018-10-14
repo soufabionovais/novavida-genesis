@@ -1,0 +1,29 @@
+.ls-collapse-title {
+    font-weight: normal;
+    font-size: 13px;
+    color: #a6a6c4;
+}
+
+.ls-collapse-header {
+    padding: 18px 35px 17px 10px;    
+}
+
+.ls-collapse {
+    .checkbox-container {
+        float: left;
+        margin-bottom: 0;
+        margin-top: 2px;
+    }  
+    &-body {
+        .checkbox-container {
+            float: none;
+            ~ .checkbox-container {
+                margin-top: 5px;
+            }
+        }
+    }    
+}
+
+
+
+

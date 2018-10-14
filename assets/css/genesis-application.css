@@ -6,6 +6,7 @@
 @import url(../../vendors/featherlight-1.7.13/featherlight.css);
 @import url(../../vendors/pretty-checkbox/pretty-checkbox.min.css);
 @import url(../../vendors/dropzone/dropzone.css);
+@import url(../../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css);
 /*Estrutura*/
 /*Textos*/
 /*Links*/
@@ -103,6 +104,8 @@ p {
   margin-bottom: 0; }
   p ~ p {
     margin-top: 10px; }
+  p a {
+    border: none; }
 
 .ls-main {
   background-color: #f5f6fa;
@@ -216,6 +219,12 @@ html .page-title-tabs:not(.in-dropdown) {
   height: 430px;
   overflow: auto;
   padding: 25px 20px; }
+  .relacionar-listas .checkbox-container {
+    margin-bottom: 8px; }
+
+/**/
+.ls-box .link {
+  margin-left: 10px; }
 
 .ls-breadcrumb {
   margin-bottom: 20px;
@@ -270,6 +279,9 @@ html .page-title-tabs:not(.in-dropdown) {
       color: #a6a6c4; }
     .ls-box .passos li:after {
       display: none; }
+
+.ls-label {
+  position: relative; }
 
 .ls-label .ls-input-text,
 .ls-label input[type="color"],
@@ -380,6 +392,9 @@ html .page-title-tabs:not(.in-dropdown) {
   .ls-label textarea:focus {
     outline: none; }
 
+.ls-label textarea {
+  height: 95px; }
+
 .field-has-icon:before {
   position: absolute;
   right: 25px;
@@ -401,6 +416,14 @@ html .page-title-tabs:not(.in-dropdown) {
   margin-right: 0; }
   .checkbox-container .state {
     position: relative; }
+  .checkbox-container.with-avatar .state label {
+    padding-left: 50px; }
+  .checkbox-container.with-avatar .user-avatar {
+    width: 20px;
+    position: absolute;
+    left: 50px;
+    top: 11px;
+    border-radius: 50%; }
 
 .pretty .state label:after,
 .pretty .state label:before {
@@ -419,7 +442,7 @@ html .page-title-tabs:not(.in-dropdown) {
 
 .pretty .state label {
   padding-left: 10px;
-  margin-top: 1; }
+  margin-top: 1px; }
 
 .pretty input:checked ~ .state.p-primary-o label:before,
 .pretty.p-toggle .state.p-primary-o label:before {
@@ -429,6 +452,35 @@ html .page-title-tabs:not(.in-dropdown) {
   color: #809cf4;
   width: 20px;
   height: 20px; }
+
+/* Checkbox Estilo Radio */
+.radio-style {
+  background-color: #fff;
+  border: solid 1px #eeeeee;
+  padding: 11px 15px;
+  border-radius: 30px;
+  margin-bottom: 15px; }
+  .radio-style .state {
+    position: relative; }
+    .radio-style .state label {
+      color: #a6a6c4;
+      position: relative;
+      font-weight: 100;
+      padding-left: 5px; }
+      .radio-style .state label:before {
+        border-color: #87a9f3;
+        background-color: #fff;
+        width: 16px;
+        height: 16px; }
+      .radio-style .state label:after {
+        left: -2px;
+        top: -3px;
+        border: none;
+        transform: scale(0) !important;
+        transition: 0.3s; }
+  .radio-style.pretty.p-default input:checked ~ .state label:after {
+    background: #87a9f3 !important;
+    transform: scale(0.3) !important; }
 
 /*Select*/
 .ls-custom-select {
@@ -463,6 +515,10 @@ html .page-title-tabs:not(.in-dropdown) {
         box-shadow: none;
         box-shadow: inset 0 0 0 2px;
         outline: none; }
+  [class*="ls-btn"].ls-btn-icon {
+    padding: 6px 11px 7px; }
+  [class*="ls-btn"].no-bg {
+    background: transparent; }
 
 .ls-form-horizontal [class*="ls-btn"] {
   margin-top: 0; }
@@ -599,7 +655,7 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
 .zone-upload-image {
   width: 350px;
   height: 350px;
-  background: url(../assets/img/placeholder-imagem-upload.png) center 80px no-repeat #f0f2f8;
+  background: url(../img/placeholder-imagem-upload.png) center 80px no-repeat #f0f2f8;
   margin: 0 auto;
   border: none;
   font-size: 13px;
@@ -669,6 +725,23 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
       display: block;
       margin-top: 10px; }
 
+.ls-collapse-title {
+  font-weight: normal;
+  font-size: 13px;
+  color: #a6a6c4; }
+
+.ls-collapse-header {
+  padding: 18px 35px 17px 10px; }
+
+.ls-collapse .checkbox-container {
+  float: left;
+  margin-bottom: 0;
+  margin-top: 2px; }
+.ls-collapse-body .checkbox-container {
+  float: none; }
+  .ls-collapse-body .checkbox-container ~ .checkbox-container {
+    margin-top: 5px; }
+
 .right-aligned {
   text-align: right !important; }
 
@@ -689,5 +762,8 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
 
 .texto-destaque {
   color: #7ea1f3; }
+
+.unstyled-link {
+  text-decoration: none; }
 
 /*# sourceMappingURL=genesis-application.css.map */

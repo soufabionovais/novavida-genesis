@@ -42,3 +42,30 @@ Dropzone.options.uploadImage = {
 		});
 	}		
 };
+
+/* Selecionar Todos os Perfis */
+var btnSelecionarTodosPerfis = $("#btnSelecionarTodoPerfis");
+btnSelecionarTodosPerfis.on("click", function(e){
+	e.preventDefault();
+	var contexto = $("#containerTodosPerfis");
+	selecionarTodosCheckRadio(contexto);
+});
+
+// $('#btnSelecionarTodoPerfis').find("span").on('toggleText:change', function(event, target, text) {
+// 	e.preventDefault();
+// 	var contexto = $("#containerTodosPerfis");
+// 	selecionarTodosCheckRadio(contexto);	
+// });
+
+function selecionarTodosCheckRadio(p_contexto) {
+	$(p_contexto).find(':checkbox').prop("checked", true);
+}
+
+function deselecionarTodosCheckRadio(p_contexto) {
+	$(p_contexto).find(':checkbox').prop("checked", false);
+}
+
+/* Listas cambiáveis */
+$("#switchableArea-1, #switchableArea-2").sortable({
+	connectWith: ".switchable-area"
+}).disableSelection();
