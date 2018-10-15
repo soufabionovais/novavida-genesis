@@ -63,6 +63,125 @@
 
 							</div>
 
+							<div class="doc-bloco">
+								<h3 class="doc-bloco-titulo">
+									SUBTÍTULO
+								</h3>
+
+								<div class="doc-bloco-tabela">
+									<table cellspacing="0">
+										<tr>
+											<th>Variável</th>
+											<th>Variável</th> 
+											<th>Variável</th>
+										</tr>
+										<tr>
+											<td>423</td>
+											<td>Aenean euismod</td> 
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+										</tr>
+										<tr>
+											<td>423</td>
+											<td>Aenean euismod</td> 
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+										</tr>
+										<tr>
+											<td>423</td>
+											<td>Aenean euismod</td> 
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+
+							<div class="doc-bloco">
+
+								<h3 class="doc-bloco-titulo">
+									SUBTÍTULO
+								</h3>
+
+								<h2 class="doc-bloco-subtitulo">
+									#123987345 (1234534)
+								</h2>
+
+								<div class="doc-bloco-detalhes">
+
+									<div class="detalhes-row">
+										<div class="detalhes-titulo">
+											Variável
+										</div>
+										<div class="detalhes-descricao">
+											Aenean euismod
+										</div>
+									</div>
+
+									<div class="detalhes-row">
+										<div class="detalhes-titulo">
+											Variável
+										</div>
+										<div class="detalhes-descricao">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, 
+											tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. 
+											Fusce commodo sapien sed viverra pharetra. Vivamus convallis lobortis nunc, 
+											vitae dictum ligula facilisis eget. Proin dolor metus, sodales id lob.
+										</div>
+									</div>
+
+									<div class="detalhes-row duas-colunas">
+										<div class="detalhes-col">
+											<div class="detalhes-titulo">
+												Variável
+											</div>
+											<div class="detalhes-descricao">
+												Aenean
+											</div>
+										</div>
+										
+										<div class="detalhes-col">
+											<div class="detalhes-titulo">
+												Variável
+											</div>
+											<div class="detalhes-descricao">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla,b
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="doc-bloco">
+								<h3 class="doc-bloco-titulo">
+									SUBTÍTULO
+								</h3>
+
+								<div class="doc-bloco-tabela">
+									<table cellspacing="0">
+										<tr>
+											<th>Variável</th>
+											<th>Variável</th> 
+											<th>Variável</th>
+										</tr>
+										<tr>
+											<td>423</td>
+											<td>Aenean euismod</td> 
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+										</tr>
+										<tr>
+											<td>423</td>
+											<td>Aenean euismod</td> 
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+										</tr>
+										<tr>
+											<td>423</td>
+											<td>Aenean euismod</td> 
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+
 						</div>
 					</div>
 
