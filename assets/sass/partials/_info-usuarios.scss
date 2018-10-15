@@ -1,0 +1,24 @@
+.user-data {
+    .avatar {
+        width: 35px;
+        float: left;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    .user-data-info {
+        float: left;
+    }
+    .user-data-header {
+        color: $texto-destaque;
+        margin: 0;
+    }
+    .user-data-description {
+        margin: 2px 0 0 0;        
+    }
+    [class*="nv-icon"] {
+        &:before {
+            font-size: 11px;
+            margin: 0 8px 0 0;   
+        }
+    }
+}

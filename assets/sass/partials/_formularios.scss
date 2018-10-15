@@ -2,26 +2,28 @@
     position: relative;
 }
 
-.ls-label .ls-input-text, 
-.ls-label input[type="color"], 
-.ls-label input[type="date"], 
-.ls-label input[type="datetime"], 
-.ls-label input[type="datetime-local"], 
-.ls-label input[type="email"], 
-.ls-label input[type="month"], 
-.ls-label input[type="number"], 
-.ls-label input[type="password"], 
-.ls-label input[type="search"], 
-.ls-label input[type="tel"], 
-.ls-label input[type="text"], 
-.ls-label input[type="time"], 
-.ls-label input[type="url"], 
-.ls-label input[type="week"], 
+.ls-label .ls-input-text,
+.ls-label input[type="color"],
+.ls-label input[type="date"],
+.ls-label input[type="datetime"],
+.ls-label input[type="datetime-local"],
+.ls-label input[type="email"],
+.ls-label input[type="month"],
+.ls-label input[type="number"],
+.ls-label input[type="password"],
+.ls-label input[type="search"],
+.ls-label input[type="tel"],
+.ls-label input[type="text"],
+.ls-label input[type="time"],
+.ls-label input[type="url"],
+.ls-label input[type="week"],
 .ls-label textarea {
-    @include placeholders(#a6a6c4); 
+    color: #a6a6c4;
+    background: #f6f6f6;
+    @include placeholders(#a6a6c4);
     height: 40px;
     border-radius: 3px;
-    border: solid 1px #e2e2e2;   
+    border: solid 1px #e2e2e2;
     box-shadow: none;
     font-size: 13px;
     font-weight: 100;
@@ -50,6 +52,7 @@
 }
 
 /*Checkox*/
+
 .checkbox-container {
     background: #fff;
     border-radius: 3px;
@@ -73,11 +76,11 @@
             left: 50px;
             top: 11px;
             border-radius: 50%;
-        }            
-    }    
+        }
+    }
 }
 
-.pretty .state label:after, 
+.pretty .state label:after,
 .pretty .state label:before {
     content: '';
     width: 20px;
@@ -91,17 +94,17 @@
     left: 0;
     top: calc((0% - (100% - 1em)) - 8%);
     background-color: transparent;
- }
+}
 
- .pretty .state label {
-     padding-left: 10px;
-     margin-top: 1px;
- }
+.pretty .state label {
+    padding-left: 10px;
+    margin-top: 1px;
+}
 
- .pretty input:checked~.state.p-primary-o label:before, 
- .pretty.p-toggle .state.p-primary-o label:before {
-     border: solid 1px #809cf4;
- }
+.pretty input:checked~.state.p-primary-o label:before,
+.pretty.p-toggle .state.p-primary-o label:before {
+    border: solid 1px #809cf4;
+}
 
 .pretty.p-tada:not(.p-default) input:checked+.state .icon {
     color: #809cf4;
@@ -110,6 +113,7 @@
 }
 
 /* Checkbox Estilo Radio */
+
 .radio-style {
     background-color: #fff;
     border: solid 1px #eeeeee;
@@ -127,9 +131,9 @@
                 // border-color: #87a9f3;
                 // background-color: #87a9f3;  
                 border-color: #87a9f3;
-                background-color: #fff; 
+                background-color: #fff;
                 width: 16px;
-                height: 16px;             
+                height: 16px;
             }
             &:after {
                 //background-color: #fff;
@@ -141,15 +145,30 @@
             }
         }
     }
-    &.pretty.p-default input:checked ~ .state label:after {
+    &.pretty.p-default input:checked~.state label:after {
         background: #87a9f3 !important;
         transform: scale(.3) !important;
     }
 }
 
 /*Select*/
-.ls-custom-select {
-    height: 39px;
-    display: block;
+
+.select2-container--default {
+    &:focus {
+        outline: none;
+    }
+    .select2-selection--single {
+        height: 40px;
+        border-radius: 3px;
+        border: solid 1px #e2e2e2; 
+        .select2-selection__rendered {
+            line-height: 40px;
+            color: #a6a6c4;
+            text-align: left;
+            padding: 0 11px;            
+        }       
+    }
 }
+
+
 

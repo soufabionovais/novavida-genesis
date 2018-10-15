@@ -116,7 +116,7 @@
                               <input type="text" placeholder="Texto da marca d'água" class="ls-field" required>
                             </label>
                             <label class="ls-label col-12 field-has-icon">
-                              <input type="text" placeholder="Termos" class="ls-field" required>
+                              <input type="text" placeholder="Termos" class="ls-field" data-tags>
                             </label>
                         </div>                    
                     </div>
@@ -155,15 +155,14 @@
                             <label class="ls-label col-6 field-has-icon ls-ico-search">
                               <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
                             </label>
-                            <label class="ls-label col-3 field-has-icon ls-ico-search">
-                                <span class="ls-custom-select">
-                                    <select class="ls-select">
-                                        <option value="1"> Opção 1 </option>
-                                        <option value="2"> Opção 2 </option>
-                                        <option value="3"> Opção 3 </option>
-                                        <option value="4"> Opção 4 </option>
-                                    </select>
-                                </span>  
+                            <label class="col-3">
+                                <select class="select-field" style="width: 100%">
+                                    <option value="1" selected> Opção 1 </option>
+                                    <option value="1"> Opção 1 </option>
+                                    <option value="2"> Opção 2 </option>
+                                    <option value="3"> Opção 3 </option>
+                                    <option value="4"> Opção 4 </option>
+                                </select>
                             </label>
                             <div class="col right-aligned">
                               <button class="ls-btn ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-2">Adicionar</button>
@@ -265,15 +264,13 @@
                             <label class="ls-label col-6 field-has-icon ls-ico-search">
                               <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
                             </label>
-                            <label class="ls-label col-3 field-has-icon ls-ico-search">
-                                <span class="ls-custom-select">
-                                    <select class="ls-select">
-                                        <option value="1"> Opção 1 </option>
-                                        <option value="2"> Opção 2 </option>
-                                        <option value="3"> Opção 3 </option>
-                                        <option value="4"> Opção 4 </option>
-                                    </select>
-                                </span>  
+                            <label class="col-3">
+                                <select class="select-field" style="width: 100%">
+                                    <option value="1"> Opção 1 </option>
+                                    <option value="2"> Opção 2 </option>
+                                    <option value="3"> Opção 3 </option>
+                                    <option value="4"> Opção 4 </option>
+                                </select>
                             </label>
                             <div class="col right-aligned">
                               <button class="ls-btn ls-btn-secondary outlined">Pré-visualizar</button>
@@ -530,7 +527,7 @@
                     <div class="ls-box">
                         <div class="row">
                           <div class="col">
-                            <button class="ls-button ls-btn-secondary" data-conteudo-alvo="perfil-relatorios-etapa-2">Voltar</button>                          
+                            <button class="ls-button ls-btn-secondary" data-conteudo-alvo="perfil-relatorios-etapa-2">Voltar</button>  
                           </div>
                           <div class="col right-aligned">
                             <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
@@ -577,7 +574,7 @@
                               </div>
                             </td>
                             <td>
-                              Texto de observação
+                              <span class="nv-icon icon-talk">Texto de observação</span>
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
@@ -599,7 +596,7 @@
                               </div>
                             </td>
                             <td>
-                              Texto de observação
+                              <span class="nv-icon icon-talk">Texto de observação</span>
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
@@ -621,7 +618,7 @@
                               </div>
                             </td>
                             <td>
-                              Texto de observação
+                              <span class="nv-icon icon-talk">Texto de observação</span>
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
@@ -643,7 +640,7 @@
                               </div>
                             </td>
                             <td>
-                              Texto de observação
+                              <span class="nv-icon icon-talk">Texto de observação</span>
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
@@ -665,7 +662,7 @@
                               </div>
                             </td>
                             <td>
-                              Texto de observação
+                              <span class="nv-icon icon-talk">Texto de observação</span>
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
@@ -699,7 +696,7 @@
                                 <input type="text" placeholder="Nome" class="ls-field" required>
                               </label>                            
                               <label class="ls-label field-has-icon">
-                                <input type="text" placeholder="Parâmetros de busca" class="ls-field" required>
+                                <input type="text" placeholder="Parâmetros de busca" class="ls-field">
                               </label>                                                          
                             </div>
                             <div class="col">
@@ -785,8 +782,7 @@
                     <div class="ls-box">
                         <div class="row">
                           <div class="col right-aligned">
-                            <button class="ls-button ls-btn-secondary" data-conteudo-alvo="perfil-relatorios-etapa-2">Voltar</button>
-                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
+                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="fontes-etapa-1">Cancelar</button>
                             <button class="ls-button ls-btn-primary">Avançar</button>
                           </div>
                       </div>

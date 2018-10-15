@@ -20,7 +20,6 @@ btnRelacionarPerfil.on("click", function(){
 	abrirModalPopup(relacionarPefil);
 });
 
-
 /** Upload de Imagem **/
 Dropzone.options.uploadImage = {
 	acceptedFiles: "image/*",
@@ -51,11 +50,31 @@ btnSelecionarTodosPerfis.on("click", function(e){
 	selecionarTodosCheckRadio(contexto);
 });
 
-// $('#btnSelecionarTodoPerfis').find("span").on('toggleText:change', function(event, target, text) {
-// 	e.preventDefault();
-// 	var contexto = $("#containerTodosPerfis");
-// 	selecionarTodosCheckRadio(contexto);	
-// });
+/* Comprar Fontes */
+var btnComprarFonte = $("[data-comprar-fonte]");
+btnComprarFonte.on("click", function(){
+	var comprarFonte = {
+		url: "modais/termo-de-uso-fonte.html",
+		cssClass: "modal-termos-uso",
+	};
+	abrirModalPopup(comprarFonte);
+});
+
+/* Aceite de compra de fontes */
+function termosDeUsoAceito(){
+	fechaInstanciasModal();
+	var confirmacaoCompra = {
+		url: "modais/confirmacao-compra-fontes.html",
+		cssClass: "modal-confirmacao-compra",
+	};
+	abrirModalPopup(confirmacaoCompra);
+	return false;	
+}
+
+/* Encerra todos os modais abertos */
+function fechaInstanciasModal(){
+	$.featherlight.close();
+}
 
 function selecionarTodosCheckRadio(p_contexto) {
 	$(p_contexto).find(':checkbox').prop("checked", true);
@@ -76,3 +95,38 @@ $("[data-conteudo-alvo]").on("click", function(){
 	$(this).parents("[data-etapa]").attr("hidden", "hidden");
 	$("[data-id=" + conteudoAlvo +"]").removeAttr("hidden");
 });
+
+
+
+/* Adicionar à Black list */
+var btnAdicionarBlackList = $("[data-adicionar-blacklist]");
+btnAdicionarBlackList.on("click", function(){
+	var adicionarBlackList = {
+		url: "modais/adicionar-blacklist.html"
+	};
+	abrirModalPopup(adicionarBlackList);
+});
+
+function adicionaListaEmBlackList(){
+	alert("Método para adicionar item à Black List");
+}
+
+/* Resultado da busca */
+var resultadoBuscador = $("#resultadoBuscador");
+var btnPesquisa = $("[data-pesquisar-pf], [data-pesquisar-pj]");
+$(btnPesquisa).on("click", function(e){
+	e.preventDefault();
+	resultadoBuscador.removeAttr("hidden");
+	TweenMax.to(window, 1, {scrollTo: {y: resultadoBuscador[0], delay: 1.5, offsetY:70}});
+});
+
+
+
+$('[data-tags]').tagify().on('add', function(e, tagName){
+    console.log('added', tagName);
+});
+
+
+ $('.select-field').select2({
+	
+ });
