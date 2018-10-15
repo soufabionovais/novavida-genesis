@@ -1,6 +1,6 @@
 html {
     .ls-table {
-        table-layout: fixed;
+        table-layout: initial;
         border-collapse: separate;
         border-spacing: 0 8px;   
         border-bottom: none; 
@@ -37,6 +37,11 @@ html {
         td {
             font-size: 13px;
             word-wrap:break-word        
+        }
+        .nv-icon {
+            &:before {
+                margin-right: 10px;
+            }
         }
     }
 }

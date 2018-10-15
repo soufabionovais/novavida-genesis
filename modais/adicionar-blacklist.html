@@ -1,0 +1,74 @@
+<div class="modal-popup">
+    <header class="modal-popup-header">
+        <h2 class="modal-popup-titulo">Adicionar à uma blacklist</h2>
+    </header>
+    <div class="modal-popup-conteudo">
+        <div class="ls-boxes">
+            <div class="ls-box">
+                <div class="row">
+                    <div class="col">
+                        <div class="pretty p-default p-round p-thick radio-style">
+                            <input type="radio" name="permitirRelatorios" />
+                            <div class="state">
+                                <label>Bloquear relatórios</label>
+                            </div>
+                        </div> 
+                        <div class="pretty p-default p-round p-thick radio-style">
+                            <input type="radio" name="permitirRelatorios" />
+                            <div class="state">
+                                <label>Permitir relatórios, mas notificar gestor</label>
+                            </div>
+                        </div> 
+                        <div class="pretty p-default p-round p-thick radio-style">
+                            <input type="radio" name="permitirRelatorios" />
+                            <div class="state">
+                                <label>Bloquear relatórios e notificar gestor</label>
+                            </div>
+                        </div>                                                                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="ls-box">
+                <div class="row">
+                    <div class="col right-aligned">
+                    <button class="ls-button ls-btn-secondary outlined" fecha-modal>Cancelar</button>
+                    <button class="ls-button ls-btn-primary" onClick="adicionaListaEmBlackList()">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <form class="ui form" action="" onsubmit="return adicionaListaEmBlackList();">
+            <label for="regras"><b>Selecionar regras</b></label>
+            <br><br>       
+            <div class="inline fields">            
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="bloquearRelatorios" name="regra" checked="" tabindex="0" class="hidden">
+                        <label for="bloquearRelatorios">Bloquear relatórios</label>
+                    </div>
+                    </div>
+                    <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="permitirENotificar" name="regra" tabindex="0" class="hidden">
+                        <label for="permitirENotificar">Permitir relatórios, mas notificar gestor</label>
+                    </div>
+                    </div>
+                    <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" id="bloquearENotificar" name="regra" tabindex="0" class="hidden">
+                        <label for="bloquearENotificar">Bloquear relatórios e notificar gestor</label>
+                    </div>
+                    </div>
+                </div>
+            
+            <div class="botoes-acao right floated">
+                <button class="ui basic button primary large" fecha-modal>Cancelar</button>
+                <button class="ui button secondary large" type="submit">Finalizar</button>
+            </div>  
+        </form> -->
+    </div>
+</div>

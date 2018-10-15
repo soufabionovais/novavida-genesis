@@ -1,21 +1,27 @@
+@import "variaveis";
+@import "mixins";
+/* Fontes e Ícones */
+
 @import "../fonts/SegoeUI/stylesheet.css";
 @import "../fonts/icones-novavida/css/nova-vida-icones.css";
 @import "../fonts/icomoon-novavida/style.css";
+/*Vendors*/
+
 @import "../../vendors/bootstrap/bootstrap-grid.min.css";
 @import "../../vendors/featherlight-1.7.13/featherlight.css";
 @import "../../vendors/pretty-checkbox/pretty-checkbox.min.css";
 @import "../../vendors/dropzone/dropzone.css";
 @import "../../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css";
+@import "../../vendors/select2/select2.min.css";
+@import "../../vendors/tagify/tagify.scss";
 
 
-@import "variaveis";
 @import "doc";
-@import "mixins";
 @import "partials/grids";
 @import "partials/estrutura";
 @import "partials/sidebar";
-
 /*Componentes*/
+
 @import "partials/tabs";
 @import "partials/boxes";
 @import "partials/breadcrumb";
@@ -28,8 +34,6 @@
 @import "partials/upload";
 @import "partials/acordeon";
 @import "partials/rating";
+@import "partials/tags";
+@import "partials/info-usuarios";
 @import "auxiliares";
-
-
-
-
