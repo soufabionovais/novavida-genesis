@@ -1,5 +1,6 @@
 .ls-sidebar {
     background: $sidebar-bg;
+    width: 240px;
 }
 html {
     .ls-menu {
@@ -10,17 +11,35 @@ html {
             color: $sidebar-link-color;
             font-weight: 400;
             text-transform: uppercase;
-            padding: 30px 20px 30px 30px;
-            transition: 0.5s;            
+            //padding: 30px 10px 30px 10px;
+            padding: 22px 10px 22px 10px;
+            transition: 0.5s;      
+            width: 100%;     
+            position: relative; 
+            @include pseudoElemento{
+                height: 100%;
+                width: 4px;
+                background: transparent;
+                right: 0;
+                top: 0;
+                transition: 0.5s;
+                background-color: #8399f5;
+                transform: scale(0);
+            }            
             &:hover {
                 color: $sidebar-link-color-hover;
                 background-color: transparent;
-                padding-left: 30px;
+                padding-left: 10px;
+                @include pseudoElemento {
+                    transform: scale(1);
+                }
             }
             &:before {
                 position: static;
                 margin-right: 10px;
                 transition: none;
+                font-size: 16px;
+                margin-right: 10px;
             }
         }
         .ls-menu {

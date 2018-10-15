@@ -578,7 +578,7 @@
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon icon-reader-mode"></i>
+                                <i class="nv-icon-reader-mode"></i>
                               </button>
                             </td> 
                           </tr>
@@ -600,7 +600,7 @@
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon icon-reader-mode"></i>
+                                <i class="nv-icon-reader-mode"></i>
                               </button>
                             </td> 
                           </tr>
@@ -622,7 +622,7 @@
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon icon-reader-mode"></i>
+                                <i class="nv-icon-reader-mode"></i>
                               </button>
                             </td> 
                           </tr>
@@ -644,7 +644,7 @@
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon icon-reader-mode"></i>
+                                <i class="nv-icon-reader-mode"></i>
                               </button>
                             </td> 
                           </tr>
@@ -666,7 +666,7 @@
                             </td>                                                        
                             <td class="center-aligned">
                               <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon icon-reader-mode"></i>
+                                <i class="nv-icon-reader-mode"></i>
                               </button>
                             </td> 
                           </tr>

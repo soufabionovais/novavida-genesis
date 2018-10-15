@@ -1,4 +1,5 @@
 .rating {
+    position: relative;
     .dot {
         width: 10px;
         height: 10px;
@@ -6,8 +7,24 @@
         background-color: #d9dde6;
         margin: 0 4px;
         display: inline-block;
+        position: relative;
+        z-index: 1;
         &.filled {
             background-color: #27deac;
+        }
+    }
+    &.status {
+        position: relative;
+        @include pseudoElemento {
+            content: "";
+            display: block;
+            position: absolute;
+            width: calc(100% - 30px);
+            height: 1px;
+            background: #e5e5e5;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
         }
     }
 }

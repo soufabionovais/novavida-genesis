@@ -4,5 +4,11 @@
         input {
             background: #fff;
         }
+        &.small-gutters {
+            [class*="col"] {
+                padding-right: 0;
+                //padding-left: 8px;
+            }
+        }
     }
 }

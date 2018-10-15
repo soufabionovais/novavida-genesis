@@ -269,7 +269,7 @@
 .doc-menu {
   float: left;
   width: 260px;
-  padding-top: 40px; }
+  padding: 40px; }
   .doc-menu ol {
     list-style: none;
     padding-left: 30px; }
@@ -383,6 +383,7 @@
     justify-content: space-between;
     line-height: 22px;
     margin: 15px 0;
+    text-transform: uppercase;
     font-size: 18px; }
     .doc-pagina.sumario .sumario-itens .item .nome {
       color: #544364; }
@@ -393,6 +394,105 @@
       background-color: #a6a6c4; }
     .doc-pagina.sumario .sumario-itens .item .pagina {
       color: #7ea1f3; }
+  .doc-pagina.consulta-receita-federal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 1345px;
+    margin: 32px 0;
+    padding: 30px 50px; }
+    .doc-pagina.consulta-receita-federal .doc-row {
+      display: flex;
+      flex-direction: row; }
+    .doc-pagina.consulta-receita-federal .doc-header {
+      padding-bottom: 32px;
+      border-bottom: 1px solid #d8d8d8; }
+      .doc-pagina.consulta-receita-federal .doc-header .doc-titulo {
+        flex-grow: 1;
+        font-size: 36px;
+        line-height: 1.19;
+        font-weight: 300;
+        color: #a6a6c4; }
+      .doc-pagina.consulta-receita-federal .doc-header .doc-status {
+        display: flex;
+        justify-content: space-around;
+        width: 200px; }
+        .doc-pagina.consulta-receita-federal .doc-header .doc-status .icon {
+          font-size: 32px;
+          color: #27deac; }
+        .doc-pagina.consulta-receita-federal .doc-header .doc-status .descricao {
+          padding-left: 10px;
+          font-size: 12px; }
+      .doc-pagina.consulta-receita-federal .doc-header .aviso-grau-risco {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 30px;
+        color: #fff;
+        border-radius: 4px;
+        background: #8399f5;
+        background: -moz-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+        background: -webkit-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+        background: linear-gradient(to bottom, #8399f5 0%, #7aa9f1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8399f5', endColorstr='#7aa9f1',GradientType=0 ); }
+    .doc-pagina.consulta-receita-federal .doc-bloco-titulo {
+      margin: 35px 0 15px;
+      line-height: 1.22;
+      font-size: 18px;
+      color: #544364; }
+    .doc-pagina.consulta-receita-federal .doc-bloco-subtitulo {
+      margin-bottom: 15px;
+      line-height: 1.22;
+      font-size: 18px;
+      font-weight: 600;
+      color: #7ea1f3; }
+    .doc-pagina.consulta-receita-federal .doc-bloco-tabela {
+      margin-top: 35px;
+      font-size: 13px; }
+      .doc-pagina.consulta-receita-federal .doc-bloco-tabela th {
+        padding-bottom: 15px;
+        text-align: left;
+        font-weight: bold;
+        color: #544364; }
+      .doc-pagina.consulta-receita-federal .doc-bloco-tabela td {
+        vertical-align: top;
+        line-height: 1.25;
+        padding: 20px 0;
+        text-align: left;
+        border-top: 1px solid #d8d8d8; }
+        .doc-pagina.consulta-receita-federal .doc-bloco-tabela td:nth-child(1) {
+          width: 140px;
+          color: #7ea1f3; }
+        .doc-pagina.consulta-receita-federal .doc-bloco-tabela td:nth-child(2) {
+          width: 240px;
+          color: #7ea1f3; }
+    .doc-pagina.consulta-receita-federal .doc-bloco-detalhes {
+      display: flex;
+      flex-direction: column; }
+      .doc-pagina.consulta-receita-federal .doc-bloco-detalhes .detalhes-row {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 0;
+        font-size: 13px; }
+        .doc-pagina.consulta-receita-federal .doc-bloco-detalhes .detalhes-row .detalhes-titulo {
+          flex: 0 0 15%;
+          line-height: 1.25;
+          font-weight: bold;
+          color: #544364; }
+        .doc-pagina.consulta-receita-federal .doc-bloco-detalhes .detalhes-row .detalhes-descricao {
+          line-height: 1.25;
+          color: #a6a6c4; }
+        .doc-pagina.consulta-receita-federal .doc-bloco-detalhes .detalhes-row:first-child .detalhes-descricao {
+          color: #7ea1f3; }
+        .doc-pagina.consulta-receita-federal .doc-bloco-detalhes .detalhes-row.duas-colunas .detalhes-col:first-child {
+          flex: 0 0 20%;
+          border-right: 1px solid #d8d8d8; }
+          .doc-pagina.consulta-receita-federal .doc-bloco-detalhes .detalhes-row.duas-colunas .detalhes-col:first-child .detalhes-descricao {
+            font-size: 18px;
+            color: #544364; }
+        .doc-pagina.consulta-receita-federal .doc-bloco-detalhes .detalhes-row.duas-colunas .detalhes-col:nth-child(2) {
+          padding-left: 45px; }
+    .doc-pagina.consulta-receita-federal .doc-bloco:last-child {
+      margin-top: 70px; }
 
 .sidebar-menu {
   float: left;
@@ -426,6 +526,70 @@ p {
   p a {
     border: none; }
 
+html .ls-topbar {
+  background: transparent; }
+html .ls-user-account {
+  background: transparent; }
+  html .ls-user-account .user-data-header {
+    font-size: 14px;
+    color: #a9b2c4;
+    font-weight: 400; }
+  html .ls-user-account .user-data-description {
+    font-size: 13px;
+    color: #7ea1f3;
+    font-weight: 400; }
+  html .ls-user-account .ls-ico-user {
+    color: #000; }
+    html .ls-user-account .ls-ico-user:before {
+      display: none; }
+    html .ls-user-account .ls-ico-user img {
+      position: static;
+      float: left;
+      margin-right: 15px; }
+html .ls-notification-topbar {
+  background: #fff;
+  margin-right: 20px;
+  border-radius: 0 0 10px 10px;
+  padding: 0 15px; }
+
+@media screen and (min-width: 768px) {
+  .ls-topbar .ls-brand-name {
+    font-size: 26px;
+    text-align: left;
+    width: auto;
+    display: inline-block;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+    background: transparent; }
+  .ls-topbar .ls-notification-topbar .ls-alerts-list {
+    height: auto; }
+    .ls-topbar .ls-notification-topbar .ls-alerts-list a {
+      position: relative; }
+      .ls-topbar .ls-notification-topbar .ls-alerts-list a:before {
+        color: #a9b2c4;
+        font-size: 18px; }
+      .ls-topbar .ls-notification-topbar .ls-alerts-list a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        content: attr(data-counter);
+        color: blue;
+        width: 15px;
+        height: 15px;
+        background: #8399f5;
+        color: #fff;
+        border-radius: 100%;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        line-height: 15px;
+        top: -10px;
+        left: 10px; } }
+.ls-topbar .ls-brand-name {
+  margin-left: 40px;
+  padding-top: 6px; }
+
 .ls-sidebar .ls-sidebar-toggle {
   display: none !important; }
 
@@ -434,6 +598,14 @@ p {
   height: auto;
   padding-bottom: 30px; }
 
+@media screen and (min-width: 768px) {
+  .ls-main {
+    margin-left: 240px; }
+
+  .ls-container,
+  .ls-main > .container-fluid,
+  .ls-main > .container {
+    padding: 0 20px; } }
 .page-header {
   padding: 29px 0 20px; }
 
@@ -462,7 +634,8 @@ p {
   margin-bottom: 0; }
 
 .ls-sidebar {
-  background: #fff; }
+  background: #fff;
+  width: 240px; }
 
 html .ls-menu li {
   border: none; }
@@ -470,16 +643,37 @@ html .ls-menu a {
   color: #a6a6c4;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 30px 20px 30px 30px;
-  transition: 0.5s; }
+  padding: 22px 10px 22px 10px;
+  transition: 0.5s;
+  width: 100%;
+  position: relative; }
+  html .ls-menu a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: transparent;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    background-color: #8399f5;
+    transform: scale(0); }
   html .ls-menu a:hover {
     color: #7ea1f3;
     background-color: transparent;
-    padding-left: 30px; }
+    padding-left: 10px; }
+    html .ls-menu a:hover:after {
+      content: "";
+      display: block;
+      position: absolute;
+      transform: scale(1); }
   html .ls-menu a:before {
     position: static;
     margin-right: 10px;
-    transition: none; }
+    transition: none;
+    font-size: 16px;
+    margin-right: 10px; }
 html .ls-menu .ls-menu > ul {
   padding-bottom: 0; }
 
@@ -782,7 +976,7 @@ html .box-tabs + .ls-tabs-container {
 
 .field-has-icon:before {
   position: absolute;
-  right: 25px;
+  right: 10px;
   top: 10px;
   font-size: 20px;
   pointer-events: none;
@@ -941,16 +1135,30 @@ html .box-tabs + .ls-tabs-container {
     margin: 0;
     background: #fff;
     color: #a6a6c4;
-    box-shadow: 0 0 0 1px #e2e2e2; }
+    box-shadow: 0 0 0 1px #e2e2e2;
+    padding-left: 20px;
+    padding-right: 20px; }
     .ls-form .ls-group-btn [class*="ls-btn"].ls-active {
       border: none;
       background-image: linear-gradient(to bottom, #8399f5, #7aa9f1);
       color: #fff; }
 
+.icon-buttons-group {
+  display: flex;
+  justify-content: space-between; }
+  .icon-buttons-group [class*="ls-btn"].ls-btn-icon {
+    padding: 0; }
+    .icon-buttons-group [class*="ls-btn"].ls-btn-icon [class*="ico"] {
+      font-size: 12px; }
+    .icon-buttons-group [class*="ls-btn"].ls-btn-icon [class*="icon-remove"] {
+      font-size: 20px; }
+
 .ls-boxes .container-filtros {
   padding-bottom: 5px; }
   .ls-boxes .container-filtros input {
     background: #fff; }
+  .ls-boxes .container-filtros.small-gutters [class*="col"] {
+    padding-right: 0; }
 
 html .ls-table {
   table-layout: initial;
@@ -1170,15 +1378,34 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
   .ls-collapse-body .checkbox-container ~ .checkbox-container {
     margin-top: 5px; }
 
-.rating .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #d9dde6;
-  margin: 0 4px;
-  display: inline-block; }
-  .rating .dot.filled {
-    background-color: #27deac; }
+.rating {
+  position: relative; }
+  .rating .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d9dde6;
+    margin: 0 4px;
+    display: inline-block;
+    position: relative;
+    z-index: 1; }
+    .rating .dot.filled {
+      background-color: #27deac; }
+  .rating.status {
+    position: relative; }
+    .rating.status:after {
+      content: "";
+      display: block;
+      position: absolute;
+      content: "";
+      display: block;
+      position: absolute;
+      width: calc(100% - 30px);
+      height: 1px;
+      background: #e5e5e5;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%; }
 
 /*Tags*/
 .tagify tag > div {
@@ -1214,6 +1441,24 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
 .user-data [class*="nv-icon"]:before {
   font-size: 11px;
   margin: 0 8px 0 0; }
+
+html div[data-ls-module="progressBar"] {
+  width: 180px;
+  height: 13px;
+  min-height: 13px;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  padding: 0; }
+  html div[data-ls-module="progressBar"] span {
+    background: #8399f5;
+    background: -moz-linear-gradient(left, #8399f5 0%, #7aa9f1 100%);
+    background: -webkit-linear-gradient(left, #8399f5 0%, #7aa9f1 100%);
+    background: linear-gradient(to right, #8399f5 0%, #7aa9f1 100%);
+    border-radius: 20px;
+    height: 13px;
+    min-height: 13px; }
+    html div[data-ls-module="progressBar"] span:before {
+      display: none; }
 
 .right-aligned {
   text-align: right !important; }
