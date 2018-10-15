@@ -5,6 +5,34 @@
     <div class="modal-popup-conteudo">
         <div class="ls-boxes">
             <div class="ls-box">
+            <ul class="ls-tabs-nav box-tabs">
+              <li class="ls-active"><a data-ls-module="tabs" href="#blackListPessosFisica">Inserir Pessoa Física</a></li>
+              <li><a data-ls-module="tabs" href="#blacklistPessosJuridica">Inserir Pessoa Jurídica</a></li>
+            </ul>
+            <div class="ls-tabs-container">
+                <div id="blackListPessosFisica" class="ls-tab-content ls-active">
+                    <div class="ls-form ls-form-horizontal row">
+                        <div class="col">
+                            <label class="ls-label">
+                                <input type="text" name="nome" placeholder="Inserir CPF" class="ls-field ls-mask-cpf" required>
+                            </label>
+                        </div>
+                    </div>                    
+                </div>
+                <div id="blacklistPessosJuridica" class="ls-tab-content">
+                    <div class="ls-form ls-form-horizontal row">
+                        <div class="col">
+                            <label class="ls-label">
+                                <input type="text" name="nome" placeholder="Inserir CNPJ" class="ls-field ls-mask-cnpj" required>
+                            </label>
+                        </div>
+                    </div>  
+                </div>                
+            </div>            
+
+            </div>
+            <div class="ls-box">
+                <p>Selecionar regra:</p>
                 <div class="row">
                     <div class="col">
                         <div class="pretty p-default p-round p-thick radio-style">

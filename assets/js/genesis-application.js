@@ -6,6 +6,7 @@ function abrirModalPopup(data) {
 		closeOnClick: false,
 		afterOpen: function(){
 			///habilitaCheckbox();
+			locastyle.init();
 		}
 	});
 }
