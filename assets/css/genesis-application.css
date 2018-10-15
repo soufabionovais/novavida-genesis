@@ -605,7 +605,11 @@ html .ls-notification-topbar {
   .ls-container,
   .ls-main > .container-fluid,
   .ls-main > .container {
-    padding: 0 20px; } }
+    padding: 0 20px; }
+
+  .ls-sidebar .ls-menu > ul {
+    padding-bottom: 0;
+    padding-top: 30px; } }
 .page-header {
   padding: 29px 0 0;
   display: flex;
@@ -654,7 +658,7 @@ html .ls-menu a {
   color: #a6a6c4;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 22px 10px 22px 10px;
+  padding: 22px 15px 22px 15px;
   transition: 0.5s;
   width: 100%;
   position: relative; }
@@ -664,16 +668,15 @@ html .ls-menu a {
     position: absolute;
     height: 100%;
     width: 4px;
-    background: transparent;
     right: 0;
     top: 0;
-    transition: 0.5s;
+    transition: 1s;
     background-color: #8399f5;
     transform: scale(0); }
   html .ls-menu a:hover {
     color: #7ea1f3;
     background-color: transparent;
-    padding-left: 10px; }
+    padding-left: 15px; }
     html .ls-menu a:hover:after {
       content: "";
       display: block;
@@ -716,7 +719,8 @@ html .page-title-tabs:not(.in-dropdown) {
       background-color: transparent;
       bottom: 0; }
     html .page-title-tabs:not(.in-dropdown) li:hover {
-      background: transparent; }
+      background: transparent;
+      transition: 0.5s; }
       html .page-title-tabs:not(.in-dropdown) li:hover a {
         color: #7da2f2; }
     html .page-title-tabs:not(.in-dropdown) li a {
@@ -764,7 +768,9 @@ html .box-tabs:not(.in-dropdown) {
       width: 100%;
       height: 2px;
       background: transparent;
-      z-index: 1; }
+      z-index: 1;
+      transform: scaleX(0);
+      transition: 0.8s; }
     html .box-tabs:not(.in-dropdown) li:hover {
       background-color: #fff; }
     html .box-tabs:not(.in-dropdown) li a {
@@ -774,12 +780,14 @@ html .box-tabs:not(.in-dropdown) {
       font-size: 13px;
       text-transform: uppercase;
       padding: 26px 20px;
-      width: 100%; }
+      width: 100%;
+      transition: 0.5s; }
     html .box-tabs:not(.in-dropdown) li.ls-active:after {
       content: "";
       display: block;
       position: absolute;
-      background-color: #7da2f2; }
+      background-color: #7da2f2;
+      transform: scaleX(1); }
     html .box-tabs:not(.in-dropdown) li.ls-active a {
       padding: 26px 20px;
       color: #7da2f2; }
