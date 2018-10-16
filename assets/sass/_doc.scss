@@ -444,6 +444,35 @@ $doc_pagina-largura: 875px;
 	}
 }
 
+.bloco-relevante {
+	position: relative;
+
+	span {
+		background: lighten(#a6a6c4, 20%);
+	}
+
+	.btn-bloco-relevante {
+		position: absolute;
+		right: 80px;
+		bottom: -4px;
+		width: 55px;
+		height: 55px;
+		text-align: center;
+		font-size: 32px;
+		font-weight: 900;
+		color: #fff;
+		background: #8399f5;
+		background: -moz-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+		background: -webkit-linear-gradient(top, #8399f5 0%,#7aa9f1 100%);
+		background: linear-gradient(to bottom, #8399f5 0%,#7aa9f1 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8399f5', endColorstr='#7aa9f1',GradientType=0 );
+		border: none;
+		border-radius: 100%;
+		box-shadow: 0 3px 6px 0 rgba(126, 162, 243, 0.43);
+		cursor: pointer;
+	}
+}
+
 .sidebar-menu {
 	float: left;
 	width: 150px;

@@ -166,7 +166,10 @@
 										<tr>
 											<td>423</td>
 											<td>Aenean euismod</td> 
-											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+											<td class="bloco-relevante">
+												<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</span>
+												<button class="btn-bloco-relevante">...</button>
+											</td>
 										</tr>
 										<tr>
 											<td>423</td>
