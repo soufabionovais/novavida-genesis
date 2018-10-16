@@ -79,9 +79,9 @@
                           <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
                       </td>
                       <td>
-                        <div class="icon-buttons-group">
+                        <div class="icon-buttons-group justify-content-start">
                           <button class="ls-btn ls-btn-icon primary no-bg"><i class="nv-icon-check-circle"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove-circle"></i></button>
+                          <button class="ls-btn ls-btn-icon no-bg"><i class="nv-icon-remove-circle"></i></button>
                         </div>                      
                       </td>
                     </tr>
@@ -99,9 +99,9 @@
                           <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
                       </td>
                       <td>
-                        <div class="icon-buttons-group">
+                        <div class="icon-buttons-group justify-content-start">
                           <button class="ls-btn ls-btn-icon primary no-bg"><i class="nv-icon-check-circle"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove-circle"></i></button>
+                          <button class="ls-btn ls-btn-icon no-bg"><i class="nv-icon-remove-circle"></i></button>
                         </div>                      
                       </td>
                     </tr>  
@@ -119,9 +119,9 @@
                           <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
                       </td>
                       <td>
-                        <div class="icon-buttons-group">
+                        <div class="icon-buttons-group justify-content-start">
                           <button class="ls-btn ls-btn-icon primary no-bg"><i class="nv-icon-check-circle"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove-circle"></i></button>
+                          <button class="ls-btn ls-btn-icon no-bg"><i class="nv-icon-remove-circle"></i></button>
                         </div>                      
                       </td>
                     </tr>                                      
