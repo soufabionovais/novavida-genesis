@@ -21,7 +21,11 @@ $( '#sidebarMenu' ).find( '.btn' ).off().on('click', function(){
 	$( '#sidebarMenu' ).find( '.btn' ).removeClass( 'atual' );
 	$( '#sidebarMenu' ).find( '.btn-' + tipoConteudo ).addClass( 'atual' );
 
-	if( !$( '#docWrapper' ).hasClass( 'open' ) || tipoConteudo == 'fechar' ) {
+	if( tipoConteudo == 'impressora' ) {
+
+		$( '#impressoraSidebar' ).toggle();
+
+	} else if( !$( '#docWrapper' ).hasClass( 'open' ) || tipoConteudo == 'fechar' ) {
 
 		toggleSidebar();
 	}

@@ -192,7 +192,33 @@
 						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
 						<button class="btn btn-marcador" data-conteudo="marcador"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
 						<button class="btn btn-olho" data-conteudo="olho"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
-						<button class="btn btn-impressora" data-conteudo="impressora"><img src="assets/img/doc/icons/icon-print.png" alt="" /></button>
+
+						<div class="menu-impressao-wrapper">
+							<button class="btn btn-impressora" data-conteudo="impressora"><img src="assets/img/doc/icons/icon-print.png" alt="" /></button>
+								
+							<div id="impressoraSidebar" class="impressora-menu">
+								<div class="pretty p-icon p-curve p-tada checkbox-container">
+									<input type="checkbox" name="comentarios">
+									<div class="state p-primary-o">
+										<i class="icon ls-ico-checkmark"></i>
+										<label>Com comentários</label>
+									</div>
+								</div>
+								
+								<div class="pretty p-icon p-curve p-tada checkbox-container">
+									<input type="checkbox" name="evidencias">
+									<div class="state p-primary-o">
+										<i class="icon ls-ico-checkmark"></i>
+										<label>Com evidências</label>
+									</div>
+								</div>
+								
+								<button>
+									<img src="assets/img/doc/icons/icon-print.png" alt="" />
+								</button>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
@@ -215,10 +241,6 @@
 
 				<div id="olhoSidebar" class="doc-sidebar olho-sidebar">
 					5
-				</div>
-
-				<div id="impressoraSidebar" class="impressora-sidebar">
-					6
 				</div>
 			</div>
 		</main>
