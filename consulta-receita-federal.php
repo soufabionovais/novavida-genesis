@@ -166,7 +166,10 @@
 										<tr>
 											<td>423</td>
 											<td>Aenean euismod</td> 
-											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+											<td class="bloco-relevante">
+												<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</span>
+												<button class="btn-bloco-relevante">...</button>
+											</td>
 										</tr>
 										<tr>
 											<td>423</td>
@@ -186,11 +189,62 @@
 					</div>
 
 					<div id="sidebarMenu" class="sidebar-menu">
-						<button class="btn btn-info" data-conteudo="info">Info</button>
+						<button class="btn btn-fechar" data-conteudo="fechar">X</button>
+						<button class="btn btn-info" data-conteudo="info"><img src="assets/img/doc/icons/icon-info.png" alt="" /></button>
+						<button class="btn btn-chat" data-conteudo="chat"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
+						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
+						<button class="btn btn-marcador" data-conteudo="marcador"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
+						<button class="btn btn-olho" data-conteudo="olho"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
+
+						<div class="menu-impressao-wrapper">
+							<button class="btn btn-impressora" data-conteudo="impressora"><img src="assets/img/doc/icons/icon-print.png" alt="" /></button>
+								
+							<div id="impressoraSidebar" class="impressora-menu">
+								<div class="pretty p-icon p-curve p-tada checkbox-container">
+									<input type="checkbox" name="comentarios">
+									<div class="state p-primary-o">
+										<i class="icon ls-ico-checkmark"></i>
+										<label>Com comentários</label>
+									</div>
+								</div>
+								
+								<div class="pretty p-icon p-curve p-tada checkbox-container">
+									<input type="checkbox" name="evidencias">
+									<div class="state p-primary-o">
+										<i class="icon ls-ico-checkmark"></i>
+										<label>Com evidências</label>
+									</div>
+								</div>
+								
+								<button>
+									<img src="assets/img/doc/icons/icon-print.png" alt="" />
+								</button>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
-				<div id="docSidebar" class="doc-sidebar"></div>
+
+				<div id="docSidebar" class="doc-sidebar info-sidebar">
+					1
+				</div>
+
+				<div id="chatSidebar" class="doc-sidebar chat-sidebar">
+					2
+				</div>
+
+				<div id="filtroSidebar" class="doc-sidebar filtro-sidebar">
+					3
+				</div>
+
+				<div id="marcadorSidebar" class="doc-sidebar marcador-sidebar">
+					4
+				</div>
+
+				<div id="olhoSidebar" class="doc-sidebar olho-sidebar">
+					5
+				</div>
 			</div>
 		</main>
 
