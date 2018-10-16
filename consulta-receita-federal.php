@@ -186,7 +186,13 @@
 					</div>
 
 					<div id="sidebarMenu" class="sidebar-menu">
-						<button class="btn btn-info" data-conteudo="info">Info</button>
+						<button class="btn btn-fechar" data-conteudo="info">X</button>
+						<button class="btn btn-info" data-conteudo="info"><img src="assets/img/doc/icons/icon-info.png" alt="" /></button>
+						<button class="btn btn-chat" data-conteudo="chat"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
+						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
+						<button class="btn btn-marcador" data-conteudo="marcador"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
+						<button class="btn btn-olho" data-conteudo="olho"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
+						<button class="btn btn-impressora" data-conteudo="impressora"><img src="assets/img/doc/icons/icon-print.png" alt="" /></button>
 					</div>
 
 				</div>

@@ -3,7 +3,7 @@
 /*Textos*/
 /*Links*/
 /*Tabs*/
-/* Botões */
+/* Bot├Áes */
 @import url(../fonts/SegoeUI/stylesheet.css);
 @import url(../fonts/icones-novavida/css/nova-vida-icones.css);
 @import url(../fonts/icomoon-novavida/style.css);
@@ -20,7 +20,7 @@
   clear: both;
   float: none; }
 
-/* Fontes e Ícones */
+/* Fontes e ├ìcones */
 /*Vendors*/
 .tagify {
   display: flex;
@@ -497,7 +497,30 @@
 .sidebar-menu {
   float: left;
   width: 150px;
-  margin-right: auto; }
+  margin: 40px auto 0 54px; }
+  .sidebar-menu .btn {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-color: #66687e;
+    border: none;
+    border-radius: 100%;
+    transition: .25s background;
+    cursor: pointer; }
+    .sidebar-menu .btn ~ .btn {
+      margin-top: 10px; }
+    .sidebar-menu .btn.btn-fechar {
+      margin-bottom: 40px;
+      color: #fff;
+      background-color: #66687e; }
+    .sidebar-menu .btn.atual {
+      background: #8399f5;
+      background: -moz-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+      background: -webkit-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+      background: linear-gradient(to bottom, #8399f5 0%, #7aa9f1 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8399f5', endColorstr='#7aa9f1',GradientType=0 ); }
+    .sidebar-menu .btn:hover {
+      background-color: #9c9dae; }
 
 .doc-sidebar {
   position: fixed;
@@ -1282,7 +1305,7 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
   color: #544364;
   margin-bottom: 0; }
 
-/***** Customizações de Modais *****/
+/***** Customiza├º├Áes de Modais *****/
 .modal-relacionar-perfil .featherlight-content {
   max-width: 600px;
   width: 100%; }
