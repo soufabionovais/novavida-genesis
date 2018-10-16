@@ -186,7 +186,7 @@
 					</div>
 
 					<div id="sidebarMenu" class="sidebar-menu">
-						<button class="btn btn-fechar" data-conteudo="info">X</button>
+						<button class="btn btn-fechar" data-conteudo="fechar">X</button>
 						<button class="btn btn-info" data-conteudo="info"><img src="assets/img/doc/icons/icon-info.png" alt="" /></button>
 						<button class="btn btn-chat" data-conteudo="chat"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
 						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
@@ -196,7 +196,30 @@
 					</div>
 
 				</div>
-				<div id="docSidebar" class="doc-sidebar"></div>
+
+				<div id="docSidebar" class="doc-sidebar info-sidebar">
+					1
+				</div>
+
+				<div id="chatSidebar" class="doc-sidebar chat-sidebar">
+					2
+				</div>
+
+				<div id="filtroSidebar" class="doc-sidebar filtro-sidebar">
+					3
+				</div>
+
+				<div id="marcadorSidebar" class="doc-sidebar marcador-sidebar">
+					4
+				</div>
+
+				<div id="olhoSidebar" class="doc-sidebar olho-sidebar">
+					5
+				</div>
+
+				<div id="impressoraSidebar" class="impressora-sidebar">
+					6
+				</div>
 			</div>
 		</main>
 

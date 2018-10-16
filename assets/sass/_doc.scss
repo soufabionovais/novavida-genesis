@@ -1,7 +1,7 @@
 $header-altura: 60px;
 $doc_bg: #090e1c;
 $doc_menu-bg-color: #a6a6c4;
-$doc_sidebar-largura: 1000px;
+$doc_sidebar-largura: 1100px;
 $doc_pagina-largura: 875px;
 
 .ls-main.doc {
@@ -22,6 +22,10 @@ $doc_pagina-largura: 875px;
 		.doc-principal {
 			overflow: hidden;
 			right: $doc_sidebar-largura;
+		}
+
+		.sidebar-menu {
+			margin-right: 0;
 		}
 
 		.doc-sidebar {
@@ -452,7 +456,7 @@ $doc_pagina-largura: 875px;
 		background-color: #66687e;
 		border: none;
 		border-radius: 100%;
-		transition: .25s background;
+		transition: .25s;
 		cursor: pointer;
 
 		~ .btn {
@@ -460,6 +464,7 @@ $doc_pagina-largura: 875px;
 		}
 
 		&.btn-fechar {
+			display: none;
 			margin-bottom: 40px;
 			color: #fff;
 			background-color: #66687e;
@@ -480,11 +485,13 @@ $doc_pagina-largura: 875px;
 }
 
 .doc-sidebar {
+	display: none;
 	position: fixed;
-	top: 0;
+	top: $header-altura;
 	right: $doc_sidebar-largura * -1;
 	bottom: 0;
 	width: $doc_sidebar-largura;
 	height: calc(100vh - #{$header-altura});
+	background: #ccc;
 	transition: all 300ms ease-in-out;
 }
