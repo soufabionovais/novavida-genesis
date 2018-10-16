@@ -7,4 +7,6 @@
     <script src="vendors/select2/select2.min.js"></script>
     <script src="vendors/TweenMax/TweenMax.min.js"></script>
     <script src="vendors/TweenMax/ScrollToPlugin.min.js"></script>
+    <script src="vendors/chartjs/Chart.bundle.min.js"></script>
+    <script src="assets/js/graficos.js"></script>
     <script src="assets/js/genesis-application.js"></script>

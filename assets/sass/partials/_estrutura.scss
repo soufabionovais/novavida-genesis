@@ -18,6 +18,9 @@ p {
 html {
     .ls-topbar {
         background: transparent;
+        &:after {
+            display: none;
+        }
     } 
     .ls-user-account {
         background: transparent; 

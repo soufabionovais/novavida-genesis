@@ -6,6 +6,11 @@ html {
     .ls-menu {
         li {
             border: none;
+            &[disabled] {
+                &:hover {
+                    cursor: default;
+                }
+            }
         }
         a {
             color: $sidebar-link-color;
@@ -25,7 +30,9 @@ html {
                 background-color: #8399f5;
                 transform: scale(0);
             }            
-            &:hover {
+            &:hover,
+            &:focus,
+            &:active {
                 color: $sidebar-link-color-hover;
                 background-color: transparent;
                 padding-left: 15px;

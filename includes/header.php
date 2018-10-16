@@ -1,7 +1,7 @@
 <div class="ls-topbar">
 
     <h1 class="ls-brand-name">
-      <a href="home">
+      <a href="index.php">
         <img src="assets/img/logo-nova-vida.png" alt="Nova Vida TI - Genesis" />
       </a>
     </h1>
