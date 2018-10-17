@@ -4,6 +4,9 @@ html {
         border-collapse: separate;
         border-spacing: 0 8px;   
         border-bottom: none; 
+        &.fluid {
+            width: 100%;
+        }
         thead {
             th {
                 font-weight: 400;

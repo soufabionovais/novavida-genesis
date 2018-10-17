@@ -17,12 +17,13 @@
         color: #7ea0f3;
         border: none;
         padding: 0;
-        font-size: 20px;        
+        font-size: 20px;
     }
 }
 
 .with-featherlight {
-    html, body {
+    html,
+    body {
         overflow: hidden;
     }
 }
@@ -32,7 +33,7 @@
 }
 
 .modal-popup-header {
-    border-bottom:  solid 1px #ececec;
+    border-bottom: solid 1px #ececec;
     padding: 20px;
     color: #a6a6c4;
     p {
@@ -45,17 +46,15 @@
 }
 
 .modal-popup-conteudo {
-    .ui.checkbox label, 
-    .ui.checkbox + label {
+    .ui.checkbox label,
+    .ui.checkbox+label {
         color: #7ea1f3;
     }
-
     .ui.segment.buttons-segment {
-      .botoes-acao {
-          display: block;
-      }  
+        .botoes-acao {
+            display: block;
+        }
     }
-
     .botoes-acao {
         margin-top: 20px;
         padding: 0 10px 20px;
@@ -69,7 +68,7 @@
             background: #fff;
         }
     }
-} 
+}
 
 .ui.segment.segment-content {
     max-height: 250px;
@@ -77,15 +76,15 @@
 }
 
 .modal-popup-titulo {
-  font-size: 18px;
-  font-weight: 100;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #544364;    
-  margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #544364;
+    margin-bottom: 0;
 }
 
 /***** Customizações de Modais *****/
@@ -101,7 +100,7 @@
     .featherlight-content {
         max-width: 600px;
         width: 100%;
-    }    
+    }
 }
 
 .modal-confirmacao-compra {
@@ -119,7 +118,7 @@
         text-align: center;
         text-transform: uppercase
     }
-    .modal-popup-conteudo {            
+    .modal-popup-conteudo {
         .grupo-botoes {
             display: block;
             .ui.button {
@@ -129,5 +128,35 @@
     }
 }
 
+.barra-progresso-container {
+    position: relative;
+}
 
 
+.featherlight {
+    &.modal-popover {
+        .featherlight-close {
+            top: 5px;
+            right: 10px;            
+        }
+        .featherlight-content {
+            margin-left: 0;
+            margin-right: 0;
+            box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+            border: solid 1px #ececec;
+        }
+        &:last-of-type {
+            background: transparent;
+        }
+    }
+}
+
+.modal-popover {
+    width: 500px;
+    min-height: 300px;
+    background: cyan;
+    position: absolute; // left: -520px;
+    z-index: 2;
+    top: -100px;
+    transform: translateX(calc(-100% - 15px));
+}

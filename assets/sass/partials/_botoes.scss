@@ -79,6 +79,9 @@
     &.no-bg {
         background: transparent;
     }
+    &.no-padding {
+        padding: 0 !important;
+    }    
 }
 
 .ls-form-horizontal {

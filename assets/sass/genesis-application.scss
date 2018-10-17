@@ -15,13 +15,16 @@
 @import "../../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css";
 @import "../../vendors/select2/select2.min.css";
 @import "../../vendors/tagify/tagify.scss";
-@import "../../vendors/pophover/css/pophover.css";
+@import "../../vendors/pophover/css/pophover.min.css";
+@import "../../vendors/pophover/css/pophover_animations.min.css";
+@import "../../vendors/pophover/css/pophover_themes.min.css";
 
 /*Partials*/
+
 @import "doc";
 @import "dashboard";
-
 /*Partials*/
+
 @import "partials/grids";
 @import "partials/estrutura";
 @import "partials/sidebar";
@@ -32,7 +35,7 @@
 @import "partials/breadcrumb";
 @import "partials/formularios";
 @import "partials/botoes";
-@import "partials/filtros";
+@import "partials/filtros"; 
 @import "partials/tabelas";
 @import "partials/paginacao";
 @import "partials/modais";
@@ -44,4 +47,5 @@
 @import "partials/barra-progresso";
 @import "partials/box-notificacao";
 @import "partials/graficos";
+@import "partials/popovers";
 @import "auxiliares";

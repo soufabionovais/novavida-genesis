@@ -91,7 +91,9 @@
                   </thead>
                   <tbody>	
                     <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
+                      <td>
+                        <a href="#" class="texto-destaque">#999</a>
+                      </td>
                       <td>
                         <div class="user-data">
                           <div class="user-data-info">
@@ -102,10 +104,14 @@
                       </td>
                       <td>Livro ABC-02</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td>
+                        <span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+                      </td>
                       <td class="center-aligned">
-                          <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
-                          <td>
+                          <div class="barra-progresso-container" data-popover="modais/relatorios-em-processamento.html">
+                            <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
+                          </div>
+                      </td>
                       </tr>
                       <tr>
                       <td><a href="#" class="texto-destaque">#999</a></td>
@@ -121,7 +127,9 @@
                       <td>Felipe Coutinho Almeida</td>
                       <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
-                          <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
+                          <div class="barra-progresso-container" data-popover="modais/relatorios-em-processamento.html">
+                            <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
+                          </div>
                       </td>
                     </tr>
                     <tr>
@@ -138,12 +146,14 @@
                       <td>Felipe Coutinho Almeida</td>
                       <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
-                          <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
+                          <div class="barra-progresso-container" data-popover="modais/relatorios-em-processamento.html">
+                            <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
+                          </div>
                       </td>
                     </tr>													
-                    </tbody>
-					
+                  </tbody>
                 </table>
+
                 <div class="ls-pagination-filter">
                   <ul class="ls-pagination ls-float-left">
                     <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
@@ -187,11 +197,13 @@
                       <td>Felipe Coutinho Almeida</td>
                       <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
+                        <div class="barra-progresso-container" data-popover="modais/detalhes-relatorios-pendentes.html">               
                           <div class="rating status">
                             <i class="dot filled"></i>
                             <i class="dot"></i>
                             <i class="dot"></i>
                           </div>
+                        </div>
                       </td>
                       <td>
                         <div class="icon-buttons-group">
@@ -406,6 +418,7 @@
     </main>
 
     <?php include("includes/scripts.php"); ?>
+
 
   </body>
 </html>

@@ -27,11 +27,16 @@
     color: $texto-destaque !important;
 }
 
+
 a.texto-destaque {
     color: #0aabf4 !important;
 }
 
 .unstyled-link {
     text-decoration: none;
+}
+
+.uppercase  {
+    text-transform: uppercase !important;
 }
 

@@ -129,3 +129,30 @@ $('[data-tags]').tagify().on('add', function(e, tagName){
 	
  });
 
+
+$(".ls-table").off("click").on("click", ".toggle", function(e){
+	$(this).next("tr").toggle();
+	$(this).toggleClass("open");
+});
+
+
+$("[data-popover]").each(function(){
+	var $self = $(this);
+	var url = $self.data("popover");
+	
+	$self.one("mouseenter", function(){
+		fechaInstanciasModal();
+		$.featherlight(url, {
+			root: $self,
+			variant: "modal-popover",
+			afterOpen: function(){
+				$("html").removeClass("with-featherlight");
+				var contentWidth = $(".featherlight").find(".relatorios-processamento").outerWidth(true);
+				var contentHeight = $(".featherlight").find(".relatorios-processamento").outerHeight(true);
+				$(".featherlight").width(contentWidth).height(contentHeight);
+				locastyle.init();
+				
+			}
+		});
+	});
+});
