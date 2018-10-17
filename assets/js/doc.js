@@ -1,3 +1,4 @@
+// MENU SIDEBAR
 function toggleSidebar() {
 
 	$( '#docWrapper' ).toggleClass( 'open' );
@@ -30,4 +31,30 @@ $( '#sidebarMenu' ).find( '.btn' ).off().on('click', function(){
 		toggleSidebar();
 	}
 
+});
+
+// BLOCO RELEVANTE
+$( '#abreMenuBlocoRelevante' ).off().on('click', toggleMenuBlocoRelevante);
+$( '#fechaMenuBlocoRelevante' ).off().on('click', toggleMenuBlocoRelevante);
+
+function toggleMenuBlocoRelevante() {
+
+	$( '#menuBlocoRelevante' ).toggleClass( 'open' );
+
+	if( $( '#menuBlocoRelevante' ).hasClass( 'open' ) ) {
+
+		$( '#abreMenuBlocoRelevante' ).fadeOut();
+
+	} else {
+		$( '#abreMenuBlocoRelevante' ).fadeIn();
+	}
+}
+
+// ADICIONAR MONITORIA
+var btnAdicionarMonitoria = $("[data-adicionar-monitoria]");
+btnAdicionarMonitoria.on("click", function(){
+	var adicionarMonitoria = {
+		url: "modais/adicionar-monitoria.html"
+	};
+	abrirModalPopup(adicionarMonitoria);
 });

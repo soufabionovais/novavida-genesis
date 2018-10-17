@@ -1,9 +1,9 @@
 <?php include("includes/head.php"); ?>
-  <body>
-    
-    <?php include("includes/header.php"); ?>
+<body>
 
-    <?php include("includes/sidebar.php"); ?>
+	<?php include("includes/header.php"); ?>
+
+	<?php include("includes/sidebar.php"); ?>
 
 		<main class="ls-main doc">
 			<div id="docWrapper" class="doc-wrapper">
@@ -72,22 +72,22 @@
 									<table cellspacing="0">
 										<tr>
 											<th>Variável</th>
-											<th>Variável</th> 
+											<th>Variável</th>
 											<th>Variável</th>
 										</tr>
 										<tr>
 											<td>423</td>
-											<td>Aenean euismod</td> 
+											<td>Aenean euismod</td>
 											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
 										</tr>
 										<tr>
 											<td>423</td>
-											<td>Aenean euismod</td> 
+											<td>Aenean euismod</td>
 											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
 										</tr>
 										<tr>
 											<td>423</td>
-											<td>Aenean euismod</td> 
+											<td>Aenean euismod</td>
 											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
 										</tr>
 									</table>
@@ -120,9 +120,9 @@
 											Variável
 										</div>
 										<div class="detalhes-descricao">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, 
-											tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. 
-											Fusce commodo sapien sed viverra pharetra. Vivamus convallis lobortis nunc, 
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla,
+											tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate.
+											Fusce commodo sapien sed viverra pharetra. Vivamus convallis lobortis nunc,
 											vitae dictum ligula facilisis eget. Proin dolor metus, sodales id lob.
 										</div>
 									</div>
@@ -136,7 +136,7 @@
 												Aenean
 											</div>
 										</div>
-										
+
 										<div class="detalhes-col">
 											<div class="detalhes-titulo">
 												Variável
@@ -160,25 +160,36 @@
 									<table cellspacing="0">
 										<tr>
 											<th>Variável</th>
-											<th>Variável</th> 
+											<th>Variável</th>
 											<th>Variável</th>
 										</tr>
 										<tr>
 											<td>423</td>
-											<td>Aenean euismod</td> 
+											<td>Aenean euismod</td>
 											<td class="bloco-relevante">
 												<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</span>
-												<button class="btn-bloco-relevante">...</button>
+												<button id="abreMenuBlocoRelevante" class="btn-bloco-relevante">...</button>
+
+												<div id="menuBlocoRelevante" class="menu-bloco-relevante">
+													<button id="fechaMenuBlocoRelevante" class="btn btn-fechar" data-conteudo="fechar">X</button>
+													<div class="menu-bloco-relevante-opcoes">
+														<button class="btn-opcoes">Muito</button>
+														<button class="btn-opcoes">Médio</button>
+														<button class="btn-opcoes">Pouco</button>
+														<button class="btn-opcoes"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
+													</div>
+													<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
+												</div>
 											</td>
 										</tr>
 										<tr>
 											<td>423</td>
-											<td>Aenean euismod</td> 
+											<td>Aenean euismod</td>
 											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
 										</tr>
 										<tr>
 											<td>423</td>
-											<td>Aenean euismod</td> 
+											<td>Aenean euismod</td>
 											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
 										</tr>
 									</table>
@@ -194,11 +205,11 @@
 						<button class="btn btn-chat" data-conteudo="chat"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
 						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
 						<button class="btn btn-marcador" data-conteudo="marcador"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
-						<button class="btn btn-olho" data-conteudo="olho"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
+						<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
 
 						<div class="menu-impressao-wrapper">
 							<button class="btn btn-impressora" data-conteudo="impressora"><img src="assets/img/doc/icons/icon-print.png" alt="" /></button>
-								
+
 							<div id="impressoraSidebar" class="impressora-menu">
 								<div class="pretty p-icon p-curve p-tada checkbox-container">
 									<input type="checkbox" name="comentarios">
@@ -207,7 +218,7 @@
 										<label>Com comentários</label>
 									</div>
 								</div>
-								
+
 								<div class="pretty p-icon p-curve p-tada checkbox-container">
 									<input type="checkbox" name="evidencias">
 									<div class="state p-primary-o">
@@ -215,7 +226,7 @@
 										<label>Com evidências</label>
 									</div>
 								</div>
-								
+
 								<button>
 									<img src="assets/img/doc/icons/icon-print.png" alt="" />
 								</button>
@@ -235,15 +246,165 @@
 				</div>
 
 				<div id="filtroSidebar" class="doc-sidebar filtro-sidebar">
-					3
+					<div class="doc-sidebar-header">
+						<h2>Filtrar</h2>
+					</div>
+
+					<div class="content-inner">
+						<div class="ls-form ls-form">
+							<div class="col">
+								<label class="ls-label">
+									<input type="text" name="nome_filtro" placeholder="Nome filtro" class="ls-field">
+								</label>
+							</div>
+
+							<div class="col">
+								<label class="ls-label">
+									<input type="text" name="nome_filtro" placeholder="Nome filtro" class="ls-field">
+								</label>
+							</div>
+
+							<div class="col">
+								<h3 class="form-subtitulo">Checkbox</h3>
+								<div class="pretty p-icon p-curve p-tada checkbox-container">
+									<input type="checkbox" name="checkbox-1">
+									<div class="state p-primary-o">
+										<i class="icon ls-ico-checkmark"></i>
+										<label>Checkbox</label>
+									</div>
+								</div>
+								
+								<div class="pretty p-icon p-curve p-tada checkbox-container">
+									<input type="checkbox" name="checkbox-2">
+									<div class="state p-primary-o">
+										<i class="icon ls-ico-checkmark"></i>
+										<label>Checkbox</label>
+									</div>
+								</div>
+								
+								<div class="pretty p-icon p-curve p-tada checkbox-container">
+									<input type="checkbox" name="checkbox-3">
+									<div class="state p-primary-o">
+										<i class="icon ls-ico-checkmark"></i>
+										<label>Checkbox</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="col">
+								<h3 class="form-subtitulo">Radio Button</h3>
+
+								<div class="pretty p-default p-round p-thick radio-style">
+									<input type="radio" name="radio-1" />
+									<div class="state">
+										<label>Radio Button</label>
+									</div>
+								</div>
+
+								<div class="pretty p-default p-round p-thick radio-style">
+									<input type="radio" name="radio-2" />
+									<div class="state">
+										<label>Radio Button</label>
+									</div>
+								</div>
+
+								<div class="pretty p-default p-round p-thick radio-style">
+									<input type="radio" name="radio-3" />
+									<div class="state">
+										<label>Radio Button</label>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col right-aligned">
+							<button class="ls-btn ls-btn-primary large">Filtrar</button>
+						</div>
+
+					</div>
 				</div>
 
 				<div id="marcadorSidebar" class="doc-sidebar marcador-sidebar">
 					4
 				</div>
 
-				<div id="olhoSidebar" class="doc-sidebar olho-sidebar">
-					5
+				<div id="monitoriaSidebar" class="doc-sidebar monitoria-sidebar">
+					<div class="doc-sidebar-header">
+						<h2>Monitoria</h2>
+						<button class="ls-btn ls-btn-primary">
+							COMPARAR
+						</button>
+					</div>
+
+					<!-- POSSUI MONITORIA -->
+					<!-- <div class="content-inner">
+
+						<div class="item">
+							<span class="pretty p-icon p-curve p-tada checkbox-container">
+								<input type="checkbox" name="comentarios">
+								<div class="state p-primary-o">
+									<i class="icon ls-ico-checkmark"></i>
+									<label>Alteração na fonte 001 linha 02</label>
+								</div>
+							</span>
+							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+						</div>
+						
+						<div class="item">
+							<span class="pretty p-icon p-curve p-tada checkbox-container">
+								<input type="checkbox" name="comentarios">
+								<div class="state p-primary-o">
+									<i class="icon ls-ico-checkmark"></i>
+									<label>Alteração na fonte 001 linha 02</label>
+								</div>
+							</span>
+							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+						</div>
+						
+						<div class="item">
+							<span class="pretty p-icon p-curve p-tada checkbox-container">
+								<input type="checkbox" name="comentarios">
+								<div class="state p-primary-o">
+									<i class="icon ls-ico-checkmark"></i>
+									<label>Alteração na fonte 001 linha 02</label>
+								</div>
+							</span>
+							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+						</div>
+						
+						<div class="item">
+							<span class="pretty p-icon p-curve p-tada checkbox-container">
+								<input type="checkbox" name="comentarios">
+								<div class="state p-primary-o">
+									<i class="icon ls-ico-checkmark"></i>
+									<label>Alteração na fonte 001 linha 02</label>
+								</div>
+							</span>
+							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+						</div>
+						
+						<div class="item">
+							<span class="pretty p-icon p-curve p-tada checkbox-container">
+								<input type="checkbox" name="comentarios">
+								<div class="state p-primary-o">
+									<i class="icon ls-ico-checkmark"></i>
+									<label>Alteração na fonte 001 linha 02</label>
+								</div>
+							</span>
+							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+						</div>
+
+					</div> -->
+
+					<!-- NÃO POSSUI MONITORIA -->
+					<div class="content-inner lista-monitoria-vazia">
+						<span>
+							Você ainda não tem nada sendo monitorado.
+						</span>
+						<button class="ls-btn ls-btn-primary" data-adicionar-monitoria>Adicionar monitoria</button>
+					</div>
 				</div>
 			</div>
 		</main>
