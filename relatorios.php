@@ -105,6 +105,8 @@
                       <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
+                          <td>
+                      </tr>
                       <tr>
                       <td><a href="#" class="texto-destaque">#999</a></td>
                       <td>

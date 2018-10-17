@@ -1,5 +1,6 @@
 @import "variaveis";
 @import "mixins";
+@import "funcoes";
 /* Fontes e Ícones */
 
 @import "../fonts/SegoeUI/stylesheet.css";
@@ -14,9 +15,13 @@
 @import "../../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css";
 @import "../../vendors/select2/select2.min.css";
 @import "../../vendors/tagify/tagify.scss";
+@import "../../vendors/pophover/css/pophover.css";
 
-
+/*Partials*/
 @import "doc";
+@import "dashboard";
+
+/*Partials*/
 @import "partials/grids";
 @import "partials/estrutura";
 @import "partials/sidebar";
@@ -37,4 +42,6 @@
 @import "partials/tags";
 @import "partials/info-usuarios";
 @import "partials/barra-progresso";
+@import "partials/box-notificacao";
+@import "partials/graficos";
 @import "auxiliares";
