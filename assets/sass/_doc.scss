@@ -620,6 +620,13 @@ $doc_pagina-largura: 875px;
 			text-transform: uppercase;
 			font-size: 40px;
 			font-weight: 400;
+
+			span {
+				line-height: 1.17;
+				font-size: 12px;
+				font-weight: normal;
+				color: #7da4f2;
+			}
 		}
 	}
 
@@ -661,6 +668,72 @@ $doc_pagina-largura: 875px;
 				padding: 60px 40px;
 				font-size: 18px;
 				color: #544364;
+			}
+		}
+	}
+
+	&.trechos-sidebar {
+		.item {
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+			width: 100%;
+			padding: 20px 14px;
+			border-bottom: 1px solid #f1f1f1;
+
+			~ .item {
+				margin-top: 8px;
+			}
+
+			&:last-child {
+				border: none;
+			}
+
+			.dados,
+			.acoes {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.dados {
+				.trecho {
+					margin-bottom: 15px;
+					
+					.subtitulo {
+						margin-bottom: 5px;
+						line-height: 1.21;
+						text-transform: uppercase;
+						font-size: 24px;
+						font-weight: normal;
+						color: #a6a6c4;
+					}
+	
+					.codigo {
+						line-height: 1.23;
+						font-size: 13px;
+						font-weight: 600;
+						color: #544364;
+					}
+				}
+
+				.autor {
+
+					.usuario {
+						margin-bottom: 5px;
+						font-size: 13px;
+						color: #a6a6c4;
+					}
+				}
+
+			}
+
+			.acoes {
+				.ls-btn {
+					~ .ls-btn {
+						margin: 8px 0 0;
+					}
+				}
 			}
 		}
 	}

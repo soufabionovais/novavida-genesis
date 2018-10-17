@@ -204,7 +204,7 @@
 						<button class="btn btn-info" data-conteudo="info"><img src="assets/img/doc/icons/icon-info.png" alt="" /></button>
 						<button class="btn btn-chat" data-conteudo="chat"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
 						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
-						<button class="btn btn-marcador" data-conteudo="marcador"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
+						<button class="btn btn-trechos" data-conteudo="trechos"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
 						<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
 
 						<div class="menu-impressao-wrapper">
@@ -326,8 +326,90 @@
 					</div>
 				</div>
 
-				<div id="marcadorSidebar" class="doc-sidebar marcador-sidebar">
-					4
+				<div id="trechosSidebar" class="doc-sidebar trechos-sidebar">
+					<div class="doc-sidebar-header">
+						<h2>Trechos irrelevantes <span class="contador">(12)</span></h2>
+					</div>
+
+					<div class="content-inner">
+
+						<div class="item">
+							<div class="dados">
+								<div class="trecho">
+									<h3 class="subtitulo">Subtítulo</h3>
+									<span class="codigo">#123987345 (1234534)</span>
+								</div>
+								<div class="autor">
+									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
+									<div class="data">
+										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+									</div>
+								</div>
+							</div>
+							<div class="acoes">
+								<button class="ls-btn ls-btn-primary">Desmarcar</button>
+								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="dados">
+								<div class="trecho">
+									<h3 class="subtitulo">Subtítulo</h3>
+									<span class="codigo">#123987345 (1234534)</span>
+								</div>
+								<div class="autor">
+									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
+									<div class="data">
+										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+									</div>
+								</div>
+							</div>
+							<div class="acoes">
+								<button class="ls-btn ls-btn-primary">Desmarcar</button>
+								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="dados">
+								<div class="trecho">
+									<h3 class="subtitulo">Subtítulo</h3>
+									<span class="codigo">#123987345 (1234534)</span>
+								</div>
+								<div class="autor">
+									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
+									<div class="data">
+										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+									</div>
+								</div>
+							</div>
+							<div class="acoes">
+								<button class="ls-btn ls-btn-primary">Desmarcar</button>
+								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="dados">
+								<div class="trecho">
+									<h3 class="subtitulo">Subtítulo</h3>
+									<span class="codigo">#123987345 (1234534)</span>
+								</div>
+								<div class="autor">
+									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
+									<div class="data">
+										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+									</div>
+								</div>
+							</div>
+							<div class="acoes">
+								<button class="ls-btn ls-btn-primary">Desmarcar</button>
+								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+							</div>
+						</div>
+
+					</div>
 				</div>
 
 				<div id="monitoriaSidebar" class="doc-sidebar monitoria-sidebar">
