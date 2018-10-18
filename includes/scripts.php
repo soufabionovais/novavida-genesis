@@ -10,5 +10,6 @@
     <script src="vendors/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/js/graficos.js"></script>
     <script src="vendors/pophover/js/pophover.min.js"></script>
+    <script src="vendors/number-input/jquery.nice-number.min.js"></script>
     <!-- <script src="https://unpkg.com/popper.js@1.14.4/dist/umd/popper.js"></script> -->
     <script src="assets/js/genesis-application.js"></script>

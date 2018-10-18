@@ -7,6 +7,18 @@ function abrirModalPopup(data) {
 		afterOpen: function(){
 			///habilitaCheckbox();
 			locastyle.init();
+
+			if( $('input[type="number"]').length ) {
+				$('input[type="number"]').niceNumber({
+					buttonDecrement: '-',
+					buttonIncrement: "+",
+					buttonPosition: 'right'
+				});
+			}
+
+			if( $('.select-field').length ) {
+				$('.select-field').select2();
+			}
 		}
 	});
 }
@@ -151,8 +163,10 @@ $("[data-popover]").each(function(){
 				var contentHeight = $(".featherlight").find(".relatorios-processamento").outerHeight(true);
 				$(".featherlight").width(contentWidth).height(contentHeight);
 				locastyle.init();
-				
 			}
 		});
 	});
 });
+
+// PLUGIN INPUT NUMERICO
+$('input[type="number"]').niceNumber();
