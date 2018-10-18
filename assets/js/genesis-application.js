@@ -129,30 +129,53 @@ $('[data-tags]').tagify().on('add', function(e, tagName){
 	
  });
 
+habilitarClickToggleTabelas();
+function habilitarClickToggleTabelas(){
+	$(".ls-table").off("click").on("click", ".toggle", function(e){
+		$(this).next("tr").toggle();
+		$(this).toggleClass("open");
+	});
+}
 
-$(".ls-table").off("click").on("click", ".toggle", function(e){
-	$(this).next("tr").toggle();
-	$(this).toggleClass("open");
+$('[data-toggle="popover"]').on("mouseenter", function () {
+	esconderPopovers();
+	$(this).trigger("click");
 });
 
+$('[data-toggle="popover"]').on("mouseenter", function(){
+	console.log("TesteXXXX");
+});
 
-$("[data-popover]").each(function(){
-	var $self = $(this);
-	var url = $self.data("popover");
-	
-	$self.one("mouseenter", function(){
-		fechaInstanciasModal();
-		$.featherlight(url, {
-			root: $self,
-			variant: "modal-popover",
-			afterOpen: function(){
-				$("html").removeClass("with-featherlight");
-				var contentWidth = $(".featherlight").find(".relatorios-processamento").outerWidth(true);
-				var contentHeight = $(".featherlight").find(".relatorios-processamento").outerHeight(true);
-				$(".featherlight").width(contentWidth).height(contentHeight);
-				locastyle.init();
-				
-			}
-		});
+$('[data-toggle="popover"]').each(function () {
+	$(this).popover({
+		trigger: 'click',
+		html: true,
+		placement: 'left',
+		content: function (element) {
+			var conteudo = null;
+			var pop = $(this).data("popover-target");
+			$.ajax({
+				url: pop,
+				dataType: "html",
+				async: false,
+				success: function (data) {
+					conteudo = data;
+				}
+			});
+			return conteudo;
+		}
 	});
+});
+
+function esconderPopovers(){
+	$('[data-toggle="popover"]').popover('hide');	
+}
+
+$('[data-toggle="popover"]').on('shown.bs.popover', function () {
+	habilitarClickToggleTabelas();
+});
+
+/* Tabs */
+$('[data-ls-module="tabs"]').on('tab:activated', function () {
+	esconderPopovers();
 });

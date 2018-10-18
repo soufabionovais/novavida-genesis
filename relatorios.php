@@ -68,7 +68,7 @@
           <!-- Fim Filtros -->
 
           <div class="ls-box">
-            <ul class="ls-tabs-nav box-tabs">
+            <ul class="ls-tabs-nav box-tabs bg">
               <li class="ls-active"><a data-ls-module="tabs" href="#relatoriosEmProcessamento">Em processamento</a></li>
               <li><a data-ls-module="tabs" href="#relatoriosPendentes">Pendente de análise</a></li>
               <li><a data-ls-module="tabs" href="#relatoriosConcluidos">Concluídos</a></li>
@@ -108,7 +108,7 @@
                         <span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
                       </td>
                       <td class="center-aligned">
-                          <div class="barra-progresso-container" data-popover="modais/relatorios-em-processamento.html">
+                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
                             <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
                           </div>
                       </td>
@@ -127,7 +127,7 @@
                       <td>Felipe Coutinho Almeida</td>
                       <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
-                          <div class="barra-progresso-container" data-popover="modais/relatorios-em-processamento.html">
+                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
                             <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
                           </div>
                       </td>
@@ -146,7 +146,7 @@
                       <td>Felipe Coutinho Almeida</td>
                       <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
-                          <div class="barra-progresso-container" data-popover="modais/relatorios-em-processamento.html">
+                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
                             <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
                           </div>
                       </td>
@@ -197,7 +197,7 @@
                       <td>Felipe Coutinho Almeida</td>
                       <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
-                        <div class="barra-progresso-container" data-popover="modais/detalhes-relatorios-pendentes.html">               
+                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-pendentes-analise.html">
                           <div class="rating status">
                             <i class="dot filled"></i>
                             <i class="dot"></i>

@@ -10,12 +10,11 @@
         }
         &:last-child {
             border-radius: 0 0 4px 4px;
-        }   
+        }
         &:only-child {
             border-radius: 4px;
-        }     
+        }
     }
-   
     .ls-title {
         color: #544364;
         font-size: 18px;
@@ -23,9 +22,10 @@
 }
 
 /*Relacionar listas*/
+
 .relacionar-listas {
-	height: 430px;
-	overflow: auto;
+    height: 430px;
+    overflow: auto;
     padding: 25px 20px;
     .checkbox-container {
         margin-bottom: 8px;
@@ -33,8 +33,58 @@
 }
 
 /**/
+
 .ls-box {
     .link {
         margin-left: 10px;
+    }
+}
+
+/* Boxes Em tabs */
+.box-linha-conteudo {
+    + * {
+        margin-top: 15px;
+    }
+    &__header {
+        background: #f4f4f4;
+    }
+    &__titulo {
+        font-size: 14px;
+        color: #a6a6c4;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .label {
+        color: #fff;
+        padding: 5px 20px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        //justify-content: space-evenly;
+        border: solid 1px #e9e9e9;
+        background-color: #ffffff;
+        color: #a6a6c4;
+        &:before {
+            margin-right: 15px;
+        }
+        &.positivo {
+            background-color: #27deac;
+            color: #fff;
+        }
+        &.negativo {
+            background-color: #ff6565;
+            color: #fff;
+        }
+        &.neutro {
+            &:before {
+                color: #8399f5;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        +* {
+            margin-top: 4px;
+        }
     }
 }

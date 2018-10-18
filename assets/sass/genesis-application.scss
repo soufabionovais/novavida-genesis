@@ -8,8 +8,8 @@
 @import "../fonts/icomoon-novavida/style.css";
 /*Vendors*/
 
-@import "../../vendors/bootstrap/bootstrap-grid.min.css";
-@import "../../vendors/featherlight-1.7.13/featherlight.css";
+// @import "../../vendors/bootstrap/bootstrap-grid.min.css";
+@import "../../vendors/bootstrap/bootstrap.css";
 @import "../../vendors/pretty-checkbox/pretty-checkbox.min.css";
 @import "../../vendors/dropzone/dropzone.css";
 @import "../../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css";
@@ -18,7 +18,6 @@
 @import "../../vendors/pophover/css/pophover.min.css";
 @import "../../vendors/pophover/css/pophover_animations.min.css";
 @import "../../vendors/pophover/css/pophover_themes.min.css";
-
 /*Partials*/
 
 @import "doc";
@@ -35,7 +34,7 @@
 @import "partials/breadcrumb";
 @import "partials/formularios";
 @import "partials/botoes";
-@import "partials/filtros"; 
+@import "partials/filtros";
 @import "partials/tabelas";
 @import "partials/paginacao";
 @import "partials/modais";

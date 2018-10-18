@@ -4,6 +4,7 @@
 
 .center-aligned {
     text-align: center !important;
+    justify-content: center;
 }
 
 .bg-grey {
@@ -22,11 +23,9 @@
     background-image: linear-gradient(to bottom, #8399f5, #7aa9f1);
 }
 
-
 .texto-destaque {
     color: $texto-destaque !important;
 }
-
 
 a.texto-destaque {
     color: #0aabf4 !important;
@@ -39,4 +38,3 @@ a.texto-destaque {
 .uppercase  {
     text-transform: uppercase !important;
 }
-

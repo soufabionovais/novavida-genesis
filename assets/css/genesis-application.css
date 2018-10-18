@@ -7,8 +7,7 @@
 @import url(../fonts/SegoeUI/stylesheet.css);
 @import url(../fonts/icones-novavida/css/nova-vida-icones.css);
 @import url(../fonts/icomoon-novavida/style.css);
-@import url(../../vendors/bootstrap/bootstrap-grid.min.css);
-@import url(../../vendors/featherlight-1.7.13/featherlight.css);
+@import url(../../vendors/bootstrap/bootstrap.css);
 @import url(../../vendors/pretty-checkbox/pretty-checkbox.min.css);
 @import url(../../vendors/dropzone/dropzone.css);
 @import url(../../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css);
@@ -16,7 +15,7 @@
 @import url(../../vendors/pophover/css/pophover.min.css);
 @import url(../../vendors/pophover/css/pophover_animations.min.css);
 @import url(../../vendors/pophover/css/pophover_themes.min.css);
-.modal-popup-conteudo .botoes-acao:before, .detalhes-status-relatorio .tab.segment:before, .modal-popup-conteudo .botoes-acao:after, .detalhes-status-relatorio .tab.segment:after {
+.modal-popup-conteudo .botoes-acao:before, .modal-popup-conteudo .botoes-acao:after {
   display: table;
   content: "";
   width: 100%;
@@ -1212,6 +1211,41 @@ html .box-tabs + .ls-tabs-container {
 .ls-box .link {
   margin-left: 10px; }
 
+/* Boxes Em tabs */
+.box-linha-conteudo + * {
+  margin-top: 15px; }
+.box-linha-conteudo__header {
+  background: #f4f4f4; }
+.box-linha-conteudo__titulo {
+  font-size: 14px;
+  color: #a6a6c4;
+  font-weight: 500;
+  margin-bottom: 0; }
+.box-linha-conteudo .label {
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  border: solid 1px #e9e9e9;
+  background-color: #ffffff;
+  color: #a6a6c4; }
+  .box-linha-conteudo .label:before {
+    margin-right: 15px; }
+  .box-linha-conteudo .label.positivo {
+    background-color: #27deac;
+    color: #fff; }
+  .box-linha-conteudo .label.negativo {
+    background-color: #ff6565;
+    color: #fff; }
+  .box-linha-conteudo .label.neutro:before {
+    color: #8399f5;
+    font-size: 16px;
+    font-weight: bold; }
+  .box-linha-conteudo .label + * {
+    margin-top: 4px; }
+
 .ls-breadcrumb {
   margin-bottom: 20px;
   border: none;
@@ -1599,7 +1633,8 @@ html .ls-table {
     padding: 7px 14px; }
   html .ls-table td {
     font-size: 13px;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    color: #a6a6c4; }
   html .ls-table .nv-icon:before {
     margin-right: 10px; }
 
@@ -1966,32 +2001,35 @@ html div[data-ls-module="progressBar"] {
       display: block;
       margin-top: 5px; }
 
-.relatorios-processamento {
+.popover {
+  max-width: none; }
+
+.detalhes-relatorios-processamento {
   width: 640px;
   padding: 15px; }
-  .relatorios-processamento .icone-relogio {
+  .detalhes-relatorios-processamento .icone-relogio {
     font-size: 18px;
     position: relative;
     top: 5px; }
-  .relatorios-processamento .ls-table {
+  .detalhes-relatorios-processamento .ls-table {
     margin: 0;
     border-spacing: 0 0; }
-    .relatorios-processamento .ls-table + * {
+    .detalhes-relatorios-processamento .ls-table + * {
       margin-top: 8px; }
-    .relatorios-processamento .ls-table tr:nth-child(even) {
+    .detalhes-relatorios-processamento .ls-table tr:nth-child(even) {
       display: none; }
-      .relatorios-processamento .ls-table tr:nth-child(even) td {
+      .detalhes-relatorios-processamento .ls-table tr:nth-child(even) td {
         background: #fff;
         border: solid 1px #eee; }
-        .relatorios-processamento .ls-table tr:nth-child(even) td:first-child {
+        .detalhes-relatorios-processamento .ls-table tr:nth-child(even) td:first-child {
           width: 170px; }
-    .relatorios-processamento .ls-table tr.open th:first-child:after {
+    .detalhes-relatorios-processamento .ls-table tr.open th:first-child:after {
       content: "\e937"; }
-    .relatorios-processamento .ls-table th {
+    .detalhes-relatorios-processamento .ls-table th {
       text-transform: uppercase;
       color: #809ef3;
       position: relative; }
-      .relatorios-processamento .ls-table th:first-child:after {
+      .detalhes-relatorios-processamento .ls-table th:first-child:after {
         display: block;
         content: "\e936";
         font-family: 'icomoon-novavida';
@@ -2001,35 +2039,35 @@ html div[data-ls-module="progressBar"] {
         margin-right: 5px;
         position: relative;
         top: 1px; }
-      .relatorios-processamento .ls-table th .icone {
+      .detalhes-relatorios-processamento .ls-table th .icone {
         font-size: 18px;
         position: absolute;
         left: -10px; }
-      .relatorios-processamento .ls-table th.warning {
+      .detalhes-relatorios-processamento .ls-table th.warning {
         color: #ffca83; }
-      .relatorios-processamento .ls-table th.success {
+      .detalhes-relatorios-processamento .ls-table th.success {
         color: #27deac; }
-    .relatorios-processamento .ls-table td:last-child,
-    .relatorios-processamento .ls-table th:last-child {
+    .detalhes-relatorios-processamento .ls-table td:last-child,
+    .detalhes-relatorios-processamento .ls-table th:last-child {
       width: 220px;
       padding-left: 20px; }
-    .relatorios-processamento .ls-table .icone {
+    .detalhes-relatorios-processamento .ls-table .icone {
       color: #809ef3;
       font-size: 30px;
       float: left;
       margin-top: 2px;
       margin-right: 4px;
       font-weight: bold; }
-    .relatorios-processamento .ls-table .ui.header {
+    .detalhes-relatorios-processamento .ls-table .ui.header {
       display: flex;
       justify-content: space-between; }
-      .relatorios-processamento .ls-table .ui.header .button {
+      .detalhes-relatorios-processamento .ls-table .ui.header .button {
         padding: 0; }
-        .relatorios-processamento .ls-table .ui.header .button .icone {
+        .detalhes-relatorios-processamento .ls-table .ui.header .button .icone {
           font-size: 30px; }
-    .relatorios-processamento .ls-table:first-child {
+    .detalhes-relatorios-processamento .ls-table:first-child {
       margin-top: 40px; }
-      .relatorios-processamento .ls-table:first-child th:before {
+      .detalhes-relatorios-processamento .ls-table:first-child th:before {
         display: block;
         position: absolute;
         top: -30px;
@@ -2039,80 +2077,10 @@ html div[data-ls-module="progressBar"] {
         text-transform: none;
         padding-left: 20px; }
 
-.detalhes-status-relatorio {
-  width: 675px;
-  height: 100%;
-  height: 350px;
-  overflow: auto; }
-  .detalhes-status-relatorio .ls-table {
-    width: 580px;
-    float: right;
-    position: relative; }
-    .detalhes-status-relatorio .ls-table:before {
-      display: block;
-      position: absolute;
-      left: -30px;
-      content: "";
-      width: 1px;
-      height: 100%;
-      background: #e6e6e6;
-      top: 30px; }
-    .detalhes-status-relatorio .ls-table:last-child:before {
-      display: none; }
-    .detalhes-status-relatorio .ls-table tr:nth-child(even) {
-      display: none;
-      background: #fff; }
-    .detalhes-status-relatorio .ls-table th {
-      padding: 15px;
-      background-color: #f1f1f1;
-      font-weight: 100;
-      position: relative; }
-      .detalhes-status-relatorio .ls-table th:first-child:before {
-        display: block;
-        font-size: 30px;
-        position: absolute;
-        font-family: "Icons";
-        left: -45px; }
-      .detalhes-status-relatorio .ls-table th:first-child.aprovado:before {
-        content: "\f058";
-        color: #27deac; }
-      .detalhes-status-relatorio .ls-table th:first-child.reprovado:before {
-        content: "\f06a";
-        color: red; }
-      .detalhes-status-relatorio .ls-table th:first-child.aguardando:before {
-        content: "\f141";
-        color: #fff;
-        background: #a6a6c4;
-        display: block;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        line-height: 30px;
-        font-size: 16px;
-        text-align: center; }
-      .detalhes-status-relatorio .ls-table th:last-child {
-        width: 165px; }
-    .detalhes-status-relatorio .ls-table .label {
-      width: 100%;
-      text-align: center;
-      margin: 0;
-      font-size: 13px;
-      font-weight: 100; }
-      .detalhes-status-relatorio .ls-table .label + * {
-        margin-top: 5px; }
-    .detalhes-status-relatorio .ls-table + * {
-      margin-top: 15px; }
-    .detalhes-status-relatorio .ls-table .ui.header .content .sub.header {
-      padding-left: 15px;
-      position: relative; }
-      .detalhes-status-relatorio .ls-table .ui.header .content .sub.header .icon {
-        position: absolute;
-        left: 0;
-        top: 1px; }
-  .detalhes-status-relatorio .dados-status-relatorio {
-    width: 100%; }
-    .detalhes-status-relatorio .dados-status-relatorio:before {
-      display: none; }
+.detalhes-relatorios-pendentes {
+  width: 650px; }
+  .detalhes-relatorios-pendentes .tab-workflow .box-linha-conteudo {
+    padding-left: 50px; }
 
 .ui.popup-detalhes-departamento {
   background: #8399f5;
@@ -2131,11 +2099,25 @@ html div[data-ls-module="progressBar"] {
     margin-bottom: 0;
     font-size: 12px; }
 
+.link-anchor {
+  position: relative;
+  width: 0;
+  font-size: .8em;
+  opacity: 0;
+  transition: opacity .2s ease-in-out; }
+
+.anchor-wrapper {
+  border: none; }
+
+.anchor-wrapper:hover .link-anchor {
+  opacity: 1; }
+
 .right-aligned {
   text-align: right !important; }
 
 .center-aligned {
-  text-align: center !important; }
+  text-align: center !important;
+  justify-content: center; }
 
 .bg-grey {
   background-color: #f9f9f9; }

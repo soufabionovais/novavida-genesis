@@ -7,9 +7,6 @@ html {
     }
 }
 
-
-
-
 html {
     .page-title-tabs {
         &:not(.in-dropdown) {
@@ -56,8 +53,7 @@ html {
                         color: $page-tab-active-color;
                         padding: 15px 16px 20px;
                     }
-                }
-                
+                }                
             }
         }
     }

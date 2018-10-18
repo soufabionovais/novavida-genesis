@@ -2,8 +2,8 @@ html {
     .ls-table {
         table-layout: initial;
         border-collapse: separate;
-        border-spacing: 0 8px;   
-        border-bottom: none; 
+        border-spacing: 0 8px;
+        border-bottom: none;
         &.fluid {
             width: 100%;
         }
@@ -21,7 +21,7 @@ html {
                 transition: 0.4s;
                 transition-property: background-color;
                 &:hover {
-                    background-color: darken(#f4f4f4, 3%);        
+                    background-color: darken(#f4f4f4, 3%);
                 }
                 td {
                     &:first-child {
@@ -29,8 +29,8 @@ html {
                     }
                     &:last-child {
                         border-radius: 0 4px 4px 0;
-                    }                
-                } 
+                    }
+                }
             }
         }
         th,
@@ -39,7 +39,8 @@ html {
         }
         td {
             font-size: 13px;
-            word-wrap:break-word        
+            word-wrap: break-word;
+            color: #a6a6c4;
         }
         .nv-icon {
             &:before {
