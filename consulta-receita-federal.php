@@ -292,7 +292,7 @@
 						<h2>Comentários</h2>
 					</div>
 
-					<div class="content-inner">
+					<!-- <div class="content-inner">
 
 						<div class="item">
 							<div class="timeline">
@@ -342,6 +342,56 @@
 							</div>
 						</div>
 
+					</div> -->
+
+					<div class="content-inner chat">
+						<div class="msg-wrapper">
+
+							<div class="msg-inner">
+								<div class="msg recebida">
+									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+									<div class="msg-body">
+										<span class="nome">John</span>
+										<span class="texto">
+											Bom trabalho!
+										</span>
+									</div>
+								</div>
+
+								<div class="msg enviada">
+									<span class="texto">
+										Obrigado!
+									</span>
+								</div>
+								
+								<div class="msg recebida">
+									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+									<div class="msg-body">
+										<span class="nome">Jackeline</span>
+										<span class="texto">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
+										</span>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="caixa-texto">
+							<div class="ls-form ls-form-horizontal row">
+								<div class="col-sm-9">
+									<label class="ls-label field-has-icon">
+										<textarea rows="4" placeholder="mensagem"></textarea>
+									</label>
+								</div>        
+								<div class="col-sm-3 btn-wrapper">
+									<button class="ls-btn ls-btn-primary">
+										Enviar
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 

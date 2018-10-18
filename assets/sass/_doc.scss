@@ -862,6 +862,87 @@ $doc_pagina-largura: 875px;
 				}
 			}
 		}
+
+		.chat {
+			max-width: 600px;
+			margin: 0 auto;
+
+			.msg-wrapper {
+				overflow: auto;
+				height: 400px;
+				padding-right: 15px;
+
+				.msg-inner {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.msg {
+					display: flex;
+					align-items: center;
+
+					~ .msg {
+						margin-top: 20px;
+					}
+
+					&.recebida {
+						align-self: flex-start;
+
+						.avatar {
+							display: inline-block;
+							width: 32px;
+							height: 32px;
+							border-radius: 100%;
+						}
+
+						.msg-body {
+							display: flex;
+							flex-direction: column;
+							margin-left: 10px;
+
+							.nome {
+								display: inline-block;
+								margin-bottom: 5px;
+								font-weight: bold;
+								color: #a6a6c4;
+							}
+
+							.texto {
+								padding: 10px 20px;
+								text-align: left;
+								color: #fff;
+								background: #7aa9f1;
+								border-radius: 0px 20px 8px 18px;
+							}
+						}
+					}
+
+					&.enviada {
+						align-self: flex-end;
+						padding: 10px 20px;
+						text-align: right;
+						color: #fff;
+						background: #5a6172;
+						border-radius: 8px 20px 0px 18px;
+					}
+				}
+			}
+
+			.caixa-texto {
+
+				.btn-wrapper {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+
+					.ls-btn {
+						margin: 0;
+						padding-right: 30px;
+						padding-left: 30px;
+					}
+				}
+			}
+		}
 	}
 }
 
