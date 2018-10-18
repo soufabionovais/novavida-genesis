@@ -202,7 +202,7 @@
 					<div id="sidebarMenu" class="sidebar-menu">
 						<button class="btn btn-fechar" data-conteudo="fechar">X</button>
 						<button class="btn btn-info" data-conteudo="info"><img src="assets/img/doc/icons/icon-info.png" alt="" /></button>
-						<button class="btn btn-chat" data-conteudo="chat"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
+						<button class="btn btn-comentarios" data-conteudo="comentarios"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
 						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
 						<button class="btn btn-trechos" data-conteudo="trechos"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
 						<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
@@ -238,11 +238,161 @@
 				</div>
 
 				<div id="docSidebar" class="doc-sidebar info-sidebar">
-					1
+					<div class="doc-sidebar-header">
+						<h2>Informações</h2>
+					</div>
+
+					<div class="content-inner">
+						<div class="dados-row">
+							<span class="titulo">
+								Data de consulta:
+							</span>
+							<span class="valor">
+								15 de janeiro de 1098 às 15:23
+							</span>
+						</div>
+						
+						<div class="dados-row">
+							<span class="titulo">
+								Link:
+							</span>
+							<span class="valor">
+								<a href="http://www.receita.fazenda.org.br" target="_blank">http://www.receita.fazenda.org.br </a>
+							</span>
+						</div>
+						
+						<div class="dados-row">
+							<span class="titulo">
+								Operador:
+							</span>
+							<span class="valor">
+								Cristóvão Almeida
+							</span>
+						</div>
+						
+						<div class="dados-row">
+							<span class="titulo">
+								Token:
+							</span>
+							<span class="valor">
+								2i3u4hoc2148934y598 30598uv20358u60958bu604m69b8u4m07n8mu
+							</span>
+						</div>
+
+						<h3 class="subtitulo">Evidência de fonte de consulta</h3>
+
+						<div class="preview">
+							<img src="assets/img/doc/info-thumb.png" alt="" />
+						</div>
+					</div>
 				</div>
 
-				<div id="chatSidebar" class="doc-sidebar chat-sidebar">
-					2
+				<div id="comentariosSidebar" class="doc-sidebar comentarios-sidebar">
+					<div class="doc-sidebar-header">
+						<h2>Comentários</h2>
+					</div>
+
+					<!-- <div class="content-inner">
+
+						<div class="item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+
+					</div> -->
+
+					<div class="content-inner chat">
+						<div class="msg-wrapper">
+
+							<div class="msg-inner">
+								<div class="msg recebida">
+									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+									<div class="msg-body">
+										<span class="nome">John</span>
+										<span class="texto">
+											Bom trabalho!
+										</span>
+									</div>
+								</div>
+
+								<div class="msg enviada">
+									<span class="texto">
+										Obrigado!
+									</span>
+								</div>
+								
+								<div class="msg recebida">
+									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+									<div class="msg-body">
+										<span class="nome">Jackeline</span>
+										<span class="texto">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
+										</span>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="caixa-texto">
+							<div class="ls-form ls-form-horizontal row">
+								<div class="col-sm-9">
+									<label class="ls-label field-has-icon">
+										<textarea rows="4" placeholder="mensagem"></textarea>
+									</label>
+								</div>        
+								<div class="col-sm-3 btn-wrapper">
+									<button class="ls-btn ls-btn-primary">
+										Enviar
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div id="filtroSidebar" class="doc-sidebar filtro-sidebar">

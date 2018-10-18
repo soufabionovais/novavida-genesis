@@ -7,6 +7,18 @@ function abrirModalPopup(data) {
 		afterOpen: function(){
 			///habilitaCheckbox();
 			locastyle.init();
+
+			if( $('input[type="number"]').length ) {
+				$('input[type="number"]').niceNumber({
+					buttonDecrement: '-',
+					buttonIncrement: "+",
+					buttonPosition: 'right'
+				});
+			}
+
+			if( $('.select-field').length ) {
+				$('.select-field').select2();
+			}
 		}
 	});
 }
@@ -146,6 +158,7 @@ $('[data-toggle="popover"]').on("mouseenter", function(){
 	console.log("TesteXXXX");
 });
 
+
 $('[data-toggle="popover"]').each(function () {
 	$(this).popover({
 		trigger: 'click',
@@ -179,3 +192,8 @@ $('[data-toggle="popover"]').on('shown.bs.popover', function () {
 $('[data-ls-module="tabs"]').on('tab:activated', function () {
 	esconderPopovers();
 });
+
+
+// PLUGIN INPUT NUMERICO
+$('input[type="number"]').niceNumber();
+
