@@ -202,7 +202,7 @@
 					<div id="sidebarMenu" class="sidebar-menu">
 						<button class="btn btn-fechar" data-conteudo="fechar">X</button>
 						<button class="btn btn-info" data-conteudo="info"><img src="assets/img/doc/icons/icon-info.png" alt="" /></button>
-						<button class="btn btn-chat" data-conteudo="chat"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
+						<button class="btn btn-comentarios" data-conteudo="comentarios"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
 						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
 						<button class="btn btn-trechos" data-conteudo="trechos"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
 						<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
@@ -257,7 +257,7 @@
 								Link:
 							</span>
 							<span class="valor">
-								<a href="http://www.receita.fazenda.org.br ">http://www.receita.fazenda.org.br </a>
+								<a href="http://www.receita.fazenda.org.br" target="_blank">http://www.receita.fazenda.org.br </a>
 							</span>
 						</div>
 						
@@ -287,8 +287,62 @@
 					</div>
 				</div>
 
-				<div id="chatSidebar" class="doc-sidebar chat-sidebar">
-					2
+				<div id="comentariosSidebar" class="doc-sidebar comentarios-sidebar">
+					<div class="doc-sidebar-header">
+						<h2>Comentários</h2>
+					</div>
+
+					<div class="content-inner">
+
+						<div class="item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
 
 				<div id="filtroSidebar" class="doc-sidebar filtro-sidebar">

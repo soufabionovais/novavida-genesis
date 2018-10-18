@@ -805,6 +805,64 @@ $doc_pagina-largura: 875px;
 			}
 		}
 	}
+
+	&.comentarios-sidebar {
+		.item {
+			border-radius: 5px;
+			border: solid 1px #f1f1f1;
+
+			~ .item {
+				margin-top: 20px;
+			}
+
+			.timeline {
+				display: flex;
+				align-items: center;
+				padding: 30px;
+
+				.texto-destaque {
+					padding-right: 30px;
+				}
+
+				.linha {
+					flex: 1 1 auto;
+					position: relative;
+					height: 2px;
+					border-radius: 42px;
+					background-color: #e6e6e6;
+
+					.marcador {
+						position: absolute;
+						top: 0;
+						left: 10%;
+						width: 3px;
+						height: 15px;
+						border-radius: 6px;
+						background: #8399f5;
+						background: -moz-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+						background: -webkit-linear-gradient(top, #8399f5 0%,#7aa9f1 100%);
+						background: linear-gradient(to bottom, #8399f5 0%,#7aa9f1 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8399f5', endColorstr='#7aa9f1',GradientType=0 );
+						transform: translateY(-50%);
+					}
+				}
+			}
+
+			.comentario {
+				padding: 20px 30px;
+				font-size: 13px;
+				color: #a6a6c4;
+				background-color: #f4f4f4;
+
+				.titulo {
+					display: inline-block;
+					margin-bottom: 8px;
+					font-weight: normal;
+					color: #7ea1f3;
+				}
+			}
+		}
+	}
 }
 
 .menu-impressao-wrapper {
