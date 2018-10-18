@@ -855,3 +855,44 @@ $doc_pagina-largura: 875px;
 		}
 	}
 }
+
+.modal-adicionar-monitoria {
+	.ls-label-text {
+		margin-right: 15px;
+		font-size: 16px;
+		color: #a6a6c4;
+	}
+	
+	.nice-number {
+		position: relative;
+		width: 65px;
+		height: 40px;
+		background-color: #ffffff;
+		border: solid 1px #e2e2e2;
+		border-radius: 3px;
+
+		input {
+			color: #7ea1f3;
+			border: none;
+		}
+
+		button {
+			display: block;
+			position: absolute;
+			right: 0;
+			width: 24px;
+			height: 20px;
+			color: #7ea1f3;
+			background-color: #ffffff;
+			border: solid 1px #e2e2e2;
+
+			&:first-of-type {
+				bottom: 0;
+			}
+
+			&:last-child {
+				top: 0;
+			}
+		}
+	}
+}
