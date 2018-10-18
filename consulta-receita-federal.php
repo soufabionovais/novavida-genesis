@@ -238,7 +238,53 @@
 				</div>
 
 				<div id="docSidebar" class="doc-sidebar info-sidebar">
-					1
+					<div class="doc-sidebar-header">
+						<h2>Informações</h2>
+					</div>
+
+					<div class="content-inner">
+						<div class="dados-row">
+							<span class="titulo">
+								Data de consulta:
+							</span>
+							<span class="valor">
+								15 de janeiro de 1098 às 15:23
+							</span>
+						</div>
+						
+						<div class="dados-row">
+							<span class="titulo">
+								Link:
+							</span>
+							<span class="valor">
+								<a href="http://www.receita.fazenda.org.br ">http://www.receita.fazenda.org.br </a>
+							</span>
+						</div>
+						
+						<div class="dados-row">
+							<span class="titulo">
+								Operador:
+							</span>
+							<span class="valor">
+								Cristóvão Almeida
+							</span>
+						</div>
+						
+						<div class="dados-row">
+							<span class="titulo">
+								Token:
+							</span>
+							<span class="valor">
+								2i3u4hoc2148934y598 30598uv20358u60958bu604m69b8u4m07n8mu
+							</span>
+						</div>
+
+						<h3 class="subtitulo">Evidência de fonte de consulta</h3>
+
+						<div class="preview">
+							<img src="assets/img/doc/info-thumb.png" alt="" />
+						</div>
+					</div>
 				</div>
 
 				<div id="chatSidebar" class="doc-sidebar chat-sidebar">
