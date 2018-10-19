@@ -1,12 +1,13 @@
 /** Modal Popup **/
 function abrirModalPopup(data) {	
+	debugger;
 	$.featherlight(data.url, {
 		otherClose: "[fecha-modal]",
 		variant: data.cssClass || "",
 		closeOnClick: false,
 		afterOpen: function(){
 			///habilitaCheckbox();
-			locastyle.init();
+			//locastyle.init();
 
 			if( $('input[type="number"]').length ) {
 				$('input[type="number"]').niceNumber({
@@ -28,9 +29,18 @@ var btnRelacionarPerfil = $("[data-relacionar-perfil]");
 btnRelacionarPerfil.on("click", function(){
 	var relacionarPefil = {
 		url: "modais/relacionar-perfil.html",
-		cssClass: "modal-relacionar-perfil zoomIn",
+		cssClass: "modal-relacionar-perfil",
 	};
 	abrirModalPopup(relacionarPefil);
+});
+
+var btnAdicionarMonitoriaRelatorio = $("[data-adicionar-monitoria-relatorios]");
+btnAdicionarMonitoriaRelatorio.on("click", function () {
+	var adicionarMonitoriaRelatorio = {
+		url: "modais/adicionar-monitoria-relatorios.html",
+		cssClass: "modal-monitoria-relatorio",
+	};
+	abrirModalPopup(adicionarMonitoriaRelatorio);
 });
 
 /** Upload de Imagem **/
@@ -137,14 +147,20 @@ $('[data-tags]').tagify().on('add', function(e, tagName){
 });
 
 /* Selects Customizados */
- $('.select-field').select2({
-	
- });
-
+ $('.select-field').select2();
+ 
 habilitarClickToggleTabelas();
 function habilitarClickToggleTabelas(){
 	$(".ls-table").off("click").on("click", ".toggle", function(e){
 		$(this).next("tr").toggle();
+		$(this).toggleClass("open");
+	});
+}
+
+habilitarClickToggleLinhaConteudos();
+function habilitarClickToggleLinhaConteudos() {
+	$(".box-linha__cabecalho.toggle").off("click").on("click", function (e) {
+		$(this).next(".box-linha__conteudo").toggle();
 		$(this).toggleClass("open");
 	});
 }
@@ -154,8 +170,39 @@ $('[data-toggle="popover"]').on("mouseenter", function () {
 	$(this).trigger("click");
 });
 
-$('[data-toggle="popover"]').on("mouseenter", function(){
-	console.log("TesteXXXX");
+// $('[data-popover-link]').each(function(){
+// 	var linkPDF = $(this).data("pdf");
+// 	var linkDOC = $(this).data("doc");
+// 	var template = $(this).data("popover-link");
+// 	$(this).popover({
+// 		html: true,
+// 		content: function(){
+// 			return templateCompilado;
+// 		}
+// 	})
+// })
+
+$('[data-popover-link]').each(function () {
+	var linkPDF = $(this).data("pdf");
+	var linkDOC = $(this).data("doc");	
+	$(this).popover({
+		trigger: 'focus',
+		html: true,
+		placement: 'left',
+		content: function (element) {
+			var conteudo = null;
+			var pop = $(this).data("popover-target");
+			$.ajax({
+				url: "modais/template-links-download-relatorios.html",
+				dataType: "html",
+				async: false,
+				success: function (data) {
+					conteudo = data;
+				}
+			});
+			return conteudo;
+		}
+	});
 });
 
 
@@ -186,31 +233,16 @@ function esconderPopovers(){
 
 $('[data-toggle="popover"]').on('shown.bs.popover', function () {
 	habilitarClickToggleTabelas();
+	habilitarClickToggleLinhaConteudos();
+	//locastyle.init();
+	locastyle.tabs.init();
 });
 
 /* Tabs */
-$('[data-ls-module="tabs"]').on('tab:activated', function () {
+$('[data-ls-module="tabs"]').on('tab:activated', function (e) {
 	esconderPopovers();
+	//if (!data) return e.preventDefault();	
 });
-
 
 // PLUGIN INPUT NUMERICO
 $('input[type="number"]').niceNumber();
-
-// SLIDER / RANGE
-$('.slider-input').jRange({
-    from: 0,
-    to: 10,
-    step: 1,
-    scale: [0,1,2,3,4,5,6,7,8,9,10],
-	width: 500,
-    showLabels: false,
-});
-
-$('.slider-input').each(function(){
-
-	if( $(this).hasClass('disabled') ) {
-		$(this).jRange('disable');
-	}
-
-});

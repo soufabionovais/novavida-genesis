@@ -57,10 +57,10 @@
     background: #fff;
     border-radius: 3px;
     display: block;
-    margin-bottom: 15px;
     padding: 13px 15px;
     color: #7ea1f3;
     margin-right: 0;
+    //margin-bottom: 15px;
     .state {
         position: relative;
     }
@@ -94,6 +94,7 @@
     left: 0;
     top: calc((0% - (100% - 1em)) - 8%);
     background-color: transparent;
+
 }
 
 .pretty .state label {
@@ -111,6 +112,20 @@
     width: 20px;
     height: 20px;
 }
+
+.pretty {
+    &.inverted {
+        .state {
+            label {
+                color: #7ea1f3;
+                &:after {
+                    border: solid 1px #707070;
+                }
+            }
+        }         
+    }
+}
+
 
 /* Checkbox Estilo Radio */
 

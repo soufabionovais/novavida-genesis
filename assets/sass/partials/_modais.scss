@@ -45,36 +45,6 @@
     text-align: center;
 }
 
-.modal-popup-conteudo {
-    .ui.checkbox label,
-    .ui.checkbox+label {
-        color: #7ea1f3;
-    }
-    .ui.segment.buttons-segment {
-        .botoes-acao {
-            display: block;
-        }
-    }
-    .botoes-acao {
-        margin-top: 20px;
-        padding: 0 10px 20px;
-        @extend %clear;
-    }
-    .grupo-botoes {
-        float: right;
-    }
-    .ui.search.input {
-        input {
-            background: #fff;
-        }
-    }
-}
-
-.ui.segment.segment-content {
-    max-height: 250px;
-    overflow: auto;
-}
-
 .modal-popup-titulo {
     font-size: 18px;
     font-weight: 100;
@@ -93,6 +63,9 @@
     .featherlight-content {
         max-width: 600px;
         width: 100%;
+        .checkbox-container {
+            margin-bottom: 8px;
+        }
     }
 }
 
@@ -128,10 +101,12 @@
     }
 }
 
-.barra-progresso-container {
-    position: relative;
+.modal-monitoria-relatorio {
+    .featherlight-content {
+        width: 100%;
+        max-width: 450px;
+    }
 }
-
 
 .featherlight {
     &.modal-popover {
@@ -149,14 +124,4 @@
             background: transparent;
         }
     }
-}
-
-.modal-popover {
-    width: 500px;
-    min-height: 300px;
-    background: cyan;
-    position: absolute; // left: -520px;
-    z-index: 2;
-    top: -100px;
-    transform: translateX(calc(-100% - 15px));
 }

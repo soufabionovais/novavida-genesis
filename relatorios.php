@@ -10,6 +10,9 @@
       <div class="container-fluid">
         <div class="page-header">
           <h1 class="ls-title-intro">Relatórios</h1>
+          <div class="page-header-buttons">
+            <button class="ls-btn ls-btn-primary" data-adicionar-blacklist>Criar relatório</button>
+          </div>                 
         </div>
 
         <div class="ls-boxes">
@@ -209,9 +212,11 @@
                         <div class="icon-buttons-group">
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-visibility"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg popup-link"><i class="nv-icon-upload"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg">
+                            <i class="nv-icon-upload"></i>
+                          </button>
                         </div>
 										
                       </td>
@@ -240,9 +245,11 @@
                         <div class="icon-buttons-group">
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-visibility"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg popup-link"><i class="nv-icon-upload"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg">
+                            <i class="nv-icon-upload"></i>
+                          </button>
                         </div>
                       </td>									
                     </tr>
@@ -270,9 +277,11 @@
                         <div class="icon-buttons-group">
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-visibility"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg popup-link"><i class="nv-icon-upload"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg">
+                            <i class="nv-icon-upload"></i>
+                          </button>
                         </div>
                       </td>									
                     </tr>													
@@ -330,9 +339,11 @@
                       </td>
                       <td>		
                         <div class="icon-buttons-group">								
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-visibility"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg popup-link"><i class="nv-icon-upload"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
+                            <i class="nv-icon-upload"></i>
+                          </button>
                         </div>
                       </td>
                     </tr>
@@ -358,9 +369,11 @@
                       </td>
                       <td>			
                         <div class="icon-buttons-group">                        							
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-visibility"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg popup-link"><i class="nv-icon-upload"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo-1.pdf" data-doc="arquivo-1.doc">
+                            <i class="nv-icon-upload"></i>
+                          </button>
                         </div>
                       </td>									
                     </tr>
@@ -386,9 +399,11 @@
                       </td>
                       <td>
                         <div class="icon-buttons-group">                      										
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-visibility"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg popup-link"><i class="nv-icon-upload"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo-2.pdf" data-doc="arquivo-2.doc">
+                            <i class="nv-icon-upload"></i>
+                          </button>
                         </div>
                       </td>									
                     </tr>													
@@ -417,8 +432,10 @@
       </div>
     </main>
 
-    <?php include("includes/scripts.php"); ?>
 
+
+
+    <?php include("includes/scripts.php"); ?>
 
   </body>
 </html>

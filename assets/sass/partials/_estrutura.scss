@@ -15,6 +15,14 @@ p {
     }
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
 html {
     .ls-topbar {
         background: transparent;
@@ -50,7 +58,8 @@ html {
         background: #fff;
         margin-right: 20px;
         border-radius: 0 0 10px 10px;       
-        padding: 0 15px;         
+        padding: 0 15px;    
+        box-shadow: 0 0 5px rgba(0,0,0, 0.3)     
     }    
 }
 
@@ -142,7 +151,7 @@ html {
     padding-bottom: 20px;
     @include pseudoElemento {
         bottom: 0;
-        height: 1px;
+        height: 2px;
         background: #eaeaee;
         width: 100%;
     }

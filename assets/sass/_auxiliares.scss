@@ -38,3 +38,17 @@ a.texto-destaque {
 .uppercase  {
     text-transform: uppercase !important;
 }
+
+.no-margin-top {
+    margin-top: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-bg {
+    background: transparent !important;
+}
+
+.no-pad-left {padding-left: 0 !important;}
