@@ -1279,3 +1279,91 @@ $doc_pagina-largura: 875px;
 		}
 	}
 }
+
+.ls-topbar.monitoria {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+	border-bottom: 1px solid #ebebeb;
+
+	.monitoria-caminho {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 35px;
+		font-size: 16px;
+		color: #a6a6c4;
+
+		.ls-breadcrumb {
+			margin: 0;
+
+			li {
+				min-width: 120px;
+
+				&:first-child {
+					text-align: right;
+					color: #a6a6c4;
+				}
+
+				&:last-child {
+					min-width: 180px;
+				}
+
+				.select2-container {
+
+					.select2-selection {
+						border: none;
+
+						span {
+							padding: 0;
+							color: #8399f5;
+						}
+
+						.select2-selection__arrow {
+							top: 6px;
+							right: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.acoes {
+		display: flex;
+
+		.acao-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-width: 98px;
+			font-size: 24px;
+			border-left: 1px solid #ebebeb;
+
+			&.acao-btn {
+				padding: 0 35px;
+				border: none;
+			}
+
+			&.paginacao {
+				flex-direction: row;
+				padding: 0 25px;
+
+				span {
+					display: inline-block;
+					font-size: 18px;
+					color: #ababbe;
+
+					&.pag-atual {
+						margin-right: 4px;
+						padding: 0 5px;
+						background-color: #f6f6f6;
+						border: solid 1px #ebebeb;
+						border-radius: 2px;
+					}
+				}
+			}
+		}
+	}
+}
