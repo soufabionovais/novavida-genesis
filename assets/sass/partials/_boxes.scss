@@ -41,12 +41,14 @@
 }
 
 /* Boxes Em tabs */
-.box-linha-conteudo {
+.box-linha {
+    position: relative;
     + * {
         margin-top: 15px;
     }
-    &__header {
+    &__cabecalho {
         background: #f4f4f4;
+        position: relative;
     }
     &__titulo {
         font-size: 14px;

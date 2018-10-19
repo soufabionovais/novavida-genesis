@@ -47,5 +47,17 @@ html {
                 margin-right: 10px;
             }
         }
+        &.inverted-table {
+            td {
+                background: #fff;
+                padding: 12px 14px;
+                [class*="nv-icon"] {
+                    color: #7ea0f3;
+                    font-size: 20px;
+                    float: right;
+                    display: flex;
+                }
+            }
+        }
     }
 }

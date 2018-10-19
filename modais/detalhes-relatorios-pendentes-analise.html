@@ -1,240 +1,215 @@
+<!-- Fim popover relatóios pendentes -->
 <div class="detalhes-relatorios-pendentes">
-
-<ul class="ls-tabs-nav">
-  <li class="ls-active"><a data-ls-module="tabs" href="#workflow">Workflow</a></li>
-  <li><a data-ls-module="tabs" href="#historico">Histórico</a></li>
-</ul>
-<div class="ls-tabs-container">
-  <div id="workflow" class="ls-tab-content ls-active">
-        <table class="ls-table fluid">
-            <tr class="toggle">
-                <th class="aprovado">
-                    <span class="table-title">Departamento Jurídico</span>
-                    <!-- <div class="ui popup popup-detalhes-departamento">
-                        <p>SETOR:</p>
-                        <p>André Silva Costa</p>
-                        <p>Amália Rodrigues Pereira</p>
-                        <p>Claylton José Nunes</p>
-                        <p>André Vieira Cintra</p>
-                    </div> -->
-                </th>
-                <th>
-                    Aprovado
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="ui header">
-                        <div class="content">
-                            Alexandre Loes Paz
-                            <div class="sub header">
-                                <i class="nv-icon-talk"></i>
-                                Integer sollicitudin, tortor at tempor placerat quam urna pellentesque dolor</div>
+    <ul class="ls-tabs-nav box-tabs">
+        <li class="ls-active"><a data-ls-module="tabs" href="#tab-workflow">Workflow</a></li>
+        <li><a data-ls-module="tabs" href="#tab-historico">Histórico</a></li>
+    </ul>
+    <div class="ls-tabs-container">
+        <div id="tab-workflow" class="ls-tab-content tab-workflow ls-active">
+            <div class="ls-boxes box-linha aprovado">
+                <div class="ls-box box-linha__cabecalho toggle">
+                    <div class="row">
+                        <div class="col-7">
+                            <h3 class="box-linha__titulo" data-toggle="popover" data-content="hover">Departamento Jurídico</h3>
+                        </div>
+                        <div class="col">
+                            <h3 class="box-linha__titulo">Aprovado</h3>
                         </div>
                     </div>
-                </td>
-                <td>
-                    <div class="ls-label"> <i class="nv-icon-check"></i> Aprovado</div>
-                    <div class="ls-label"> <i class="nv-icomoon-clock-3"></i> 15/02/2018 15:30</div>
-                </td>
-            </tr>
-        </table>
-
-        <table class="ls-table fluid">
-            <tr class="toggle">
-                <th class="reprovado">
-                    <span class="table-title">Departamento Financeiro</span>
-                    <!-- <div class="ui popup popup-detalhes-departamento">
-                        <p>SETOR:</p>
-                        <p>André Silva Costa</p>
-                        <p>Amália Rodrigues Pereira</p>
-                        <p>Claylton José Nunes</p>
-                        <p>André Vieira Cintra</p>
-                    </div> -->
-                </th>
-                <th>
-                    Aprovado
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="ui header">
-                        <div class="content">
-                            Alexandre Loes Paz
-                            <div class="sub header">
-                                <i class="nv-icon-talk"></i>
-                                Integer sollicitudin, tortor at tempor placerat quam urna pellentesque dolor</div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="ui label negativo uppercase"> <i class="nv-icon-remove"></i> Reprovado</div>
-                    <div class="ui label neutro uppercase"> <i class="nv-icomoon-clock-3"></i> 15/02/2018 15:30</div>
-                </td>
-            </tr>
-        </table>
-
-        <table class="ls-table fluid">
-            <tr class="toggle">
-                <th class="aguardando">
-                    <span class="table-title">Departamento Fiscal</span>
-                    <!-- <div class="ui popup popup-detalhes-departamento">
-                        <p>SETOR:</p>
-                        <p>André Silva Costa</p>
-                        <p>Amália Rodrigues Pereira</p>
-                        <p>Claylton José Nunes</p>
-                        <p>André Vieira Cintra</p>
-                    </div> -->
-                </th>
-                <th>
-                    Aguardando
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="ui header">
-                        <div class="content">
-                            Alexandre Loes Paz
-                            <div class="sub header">
-                                <i class="nv-icon-talk"></i>
-                                Integer sollicitudin, tortor at tempor placerat quam urna pellentesque dolor</div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="ui label negativo uppercase"> <i class="nv-icon-remove"></i> Reprovado</div>
-                    <div class="ui label neutro uppercase"> <i class="nv-icomoon-clock-3"></i> 15/02/2018 15:30</div>
-                </td>
-            </tr>
-        </table>
-
-        <table class="ls-table fluid">
-            <tr class="toggle">
-                <th class="aguardando">
-                    <span class="table-title">Departamento Auditoria</span>
-                    <!-- <div class="ui popup popup-detalhes-departamento">
-                        <p>SETOR:</p>
-                        <p>André Silva Costa</p>
-                        <p>Amália Rodrigues Pereira</p>
-                        <p>Claylton José Nunes</p>
-                        <p>André Vieira Cintra</p>
-                    </div> -->
-                </th>
-                <th>
-                    Aguardando
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="ui header">
-                        <div class="content">
-                            Alexandre Loes Paz
-                            <div class="sub header">
-                                <i class="nv-icon-talk"></i>
-                                Integer sollicitudin, tortor at tempor placerat quam urna pellentesque dolor</div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="ui label negativo uppercase"> <i class="nv-icon-remove"></i> Reprovado</div>
-                    <div class="ui label neutro uppercase"> <i class="nv-icomoon-clock-3"></i> 15/02/2018 15:30</div>
-                </td>
-            </tr>
-        </table>
-  </div>
-  <div id="historico" class="ls-tab-content">
-        <table class="table fluid dados-status-relatorio">
-            <tbody>
-                <tr class="toggle">
-                    <th colspan="2" title="Fonte">
-                        Fonte 001
-                    </th>
-                    <th class="warning" title="Status">
-                        <i class="icon exclamation circle"></i> Falha ao processar
-                    </th>
-                </tr>
-                <tr>
-                    <td>55 registors retornados</td>
-                    <td> <i class="icone ico-clock-3"></i> processado em 12 minutos</td>
-                    <td>
-                        <div class="ui header">
-                            <div class="content">
-                                <span class="atencao uppercase">Falha ao processar</span>
-                                <div class="sub header">2 tentativas realizadas</div>
+                </div>
+                <div class="ls-box box-linha__conteudo">
+                    <div class="row row d-flex align-items-center">
+                        <div class="col-7">
+                            <div class="user-data">
+                                <div class="user-data-info">
+                                    <p class="user-data-header">Alexandre Loes Paz</p>
+                                    <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
+                                </div>
                             </div>
-                            <button class="ui basic primary icon-only no-border button"> <i class="icone ico-sync"></i>
-                            </button>
                         </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        <div class="col">
+                            <span class="label positivo nv-icon-check">Aprovado</span>
+                            <span class="label neutro nv-icomoon-clock-3">15/02/2018 15:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ls-boxes box-linha reprovado">
+                <div class="ls-box box-linha__cabecalho toggle">
+                    <div class="row">
+                        <div class="col-7">
+                            <h3 class="box-linha__titulo">Departamento Financeiro</h3>
+                        </div>
+                        <div class="col">
+                            <h3 class="box-linha__titulo">Aprovado</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ls-box box-linha__conteudo">
+                    <div class="row row d-flex align-items-center">
+                        <div class="col-7">
+                            <div class="user-data">
+                                <div class="user-data-info">
+                                    <p class="user-data-header">Alexandre Loes Paz</p>
+                                    <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="label negativo nv-icon-remove">Reprovado</span>
+                            <span class="label neutro nv-icomoon-clock-3">15/02/2018 15:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ls-boxes box-linha">
+                <div class="ls-box box-linha__cabecalho toggle">
+                    <div class="row">
+                        <div class="col-7">
+                            <h3 class="box-linha__titulo">Departamento Fiscal</h3>
+                        </div>
+                        <div class="col">
+                            <h3 class="box-linha__titulo">Aprovado</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ls-box box-linha__conteudo">
+                    <div class="row row d-flex align-items-center">
+                        <div class="col-7">
+                            <div class="user-data">
+                                <div class="user-data-info">
+                                    <p class="user-data-header">Alexandre Loes Paz</p>
+                                    <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="label center-aligned">Aguardando</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ls-boxes box-linha">
+                <div class="ls-box box-linha__cabecalho toggle">
+                    <div class="row">
+                        <div class="col-7">
+                            <h3 class="box-linha__titulo">Departamento Auditoria</h3>
+                        </div>
+                        <div class="col">
+                            <h3 class="box-linha__titulo">Aprovado</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ls-box box-linha__conteudo">
+                    <div class="row row d-flex align-items-center">
+                        <div class="col-7">
+                            <div class="user-data">
+                                <div class="user-data-info">
+                                    <p class="user-data-header">Alexandre Loes Paz</p>
+                                    <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <span class="label center-aligned">Aguardando</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tab-historico" class="ls-tab-content tab-historico">
+            <div class="detalhes-relatorios-processamento">
+                <table class="ls-table">
+                    <tbody>
+                        <tr class="toggle">
+                            <th colspan="2" title="Fonte">
+                                Fonte 001
+                            </th>
+                            <th class="warning" title="Status">
+                                <i class="nv-icon-info-circle"></i> Falha ao processar
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>55 registors retornados</td>
+                            <td> <i class="icone-relogio nv-icomoon-clock-3 texto-destaque"></i> processado em 12
+                                minutos</td>
+                            <td>
+                                <div class="ui header">
+                                    <div class="content">
+                                        <span class="atencao uppercase">Falha ao processar</span>
+                                        <div class="sub header">2 tentativas realizadas</div>
+                                    </div>
+                                    <button class="ls-btn ls-btn-icon secondary no-bg no-padding"> <i class="icone nv-icomoon-sync"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <table class="table fluid dados-status-relatorio">
-            <tbody>
-                <tr class="toggle">
-                    <th colspan="2" title="Fonte">
-                        Fonte 002
-                    </th>
-                    <th class="success" title="Status">
-                        <i class="nv-icon-check circle"></i> Concluído
-                    </th>
-                </tr>
-                <tr>
-                    <td>55 registors retornados</td>
-                    <td> <i class="icone ico-clock-3"></i> processado em 12 minutos</td>
-                    <td>
-                        <p class="sucesso uppercase text-center">Concluído</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                <table class="ls-table">
+                    <tbody>
+                        <tr class="toggle">
+                            <th colspan="2" title="Fonte">
+                                Fonte 002
+                            </th>
+                            <th class="success" title="Status">
+                                <i class="nv-icon-check-circle"></i> Concluído
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>55 registors retornados</td>
+                            <td> <i class="icone-relogio nv-icomoon-clock-3 texto-destaque"></i> processado em 12
+                                minutos</td>
+                            <td>
+                                <p class="sucesso uppercase text-center">Concluído</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <table class="table fluid dados-status-relatorio">
-            <tbody>
-                <tr class="toggle">
-                    <th colspan="2" title="Fonte">
-                        Fonte 003
-                    </th>
-                    <th>
-                        100% concluído
-                    </th>
-                </tr>
-                <tr>
-                    <td>55 registors retornados</td>
-                    <td> <i class="icone ico-clock-3"></i> processado em 12 minutos</td>
-                    <td>
-                        <p class="texto-destaque uppercase text-center">Concluído</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                <table class="ls-table">
+                    <tbody>
+                        <tr class="toggle">
+                            <th colspan="2" title="Fonte">
+                                Fonte 003
+                            </th>
+                            <th>
+                                100% concluído
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>55 registors retornados</td>
+                            <td> <i class="icone-relogio nv-icomoon-clock-3 texto-destaque"></i> processado em 12
+                                minutos</td>
+                            <td>
+                                <p class="texto-destaque uppercase text-center">Concluído</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <table class="table fluid dados-status-relatorio">
-            <tbody>
-                <tr class="toggle">
-                    <th colspan="2" title="Fonte">
-                        Fonte 004
-                    </th>
-                    <th>
-                        <span class="atencao">Aguardando...</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>55 registors retornados</td>
-                    <td> <i class="icone ico-clock-3"></i> processando...</td>
-                    <td>
-                        <p class="atencao uppercase text-center">Aguardando</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-  </div>
+                <table class="ls-table">
+                    <tbody>
+                        <tr class="toggle">
+                            <th colspan="2" title="Fonte">
+                                Fonte 004
+                            </th>
+                            <th>
+                                <span class="atencao">Aguardando...</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>55 registors retornados</td>
+                            <td> <i class="icone-relogio nv-icomoon-clock-3 texto-destaque"></i> processando...</td>
+                            <td>
+                                <p class="atencao uppercase text-center">Aguardando</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
-    
-    
-</div>
-<!-- Popup Status -->
+<!-- Fim popover relatóios pendentes -->
