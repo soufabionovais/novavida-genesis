@@ -197,3 +197,20 @@ $('[data-ls-module="tabs"]').on('tab:activated', function () {
 // PLUGIN INPUT NUMERICO
 $('input[type="number"]').niceNumber();
 
+// SLIDER / RANGE
+$('.slider-input').jRange({
+    from: 0,
+    to: 10,
+    step: 1,
+    scale: [0,1,2,3,4,5,6,7,8,9,10],
+	width: 500,
+    showLabels: false,
+});
+
+$('.slider-input').each(function(){
+
+	if( $(this).hasClass('disabled') ) {
+		$(this).jRange('disable');
+	}
+
+});
