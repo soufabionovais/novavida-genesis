@@ -294,6 +294,7 @@ $doc_pagina-largura: 875px;
 		max-height: 1345px;
 		margin: 32px 0;
 		padding: 30px 50px;
+		background-image: url(../img/doc/brasao-republica-transparencia.png);
 
 		.doc-row {
 			display: flex;
@@ -439,6 +440,126 @@ $doc_pagina-largura: 875px;
 
 			&:last-child {
 				margin-top: 70px;
+			}
+		}
+
+		&.template-2 {
+			.doc-bloco {
+	
+				&-detalhes {
+					display: flex;
+					flex-direction: column;
+	
+					.detalhes-row {
+						display: flex;
+						flex-direction: row;
+						padding: 15px 0;
+						font-size: 13px;
+	
+						.detalhes-titulo {
+							flex: 0 0 15%;
+							line-height: 1.25;
+							font-weight: bold;
+							color: #544364;
+						}
+	
+						.detalhes-destaque {
+							line-height: 1.25;
+							font-weight: bold;
+							color: #7ea1f3;
+						}
+	
+						.detalhes-descricao {
+							line-height: 1.25;
+							color: #a6a6c4;
+						}
+	
+						&.tres-colunas {
+							.detalhes-col {
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+
+								&:nth-child(1) {
+									flex: 0 0 15%;
+								}
+								&:nth-child(2) {
+									flex: 0 0 25%;
+								}
+
+								&:nth-child(3) {
+									flex: 0 0 60%;
+
+									> div {
+										padding: 5px 40px;
+										border-left: 1px solid #d8d8d8;
+									}
+								}
+							}
+						}
+					}
+
+					&.com-borda {
+						.detalhes-row {
+							border-top: 1px solid #d8d8d8;
+						}
+					}
+
+					&.duas-colunas {
+						display: flex;
+						flex-direction: row;
+
+						.doc-bloco-col {
+							display: flex;
+							flex-direction: column;
+
+							&:first-child {
+								flex: 0 0 55%;
+								padding-right: 40px;
+
+								.detalhes-titulo {
+									flex: 0 0 30%;
+								}
+							}
+
+							&:last-child {
+								padding: 5px 40px;
+								border-left: 1px solid #d8d8d8;
+
+								.detalhes-row {
+									display: block;
+								}
+
+								.detalhes-titulo {
+									display: block;
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+	
+				&:last-child {
+					margin-top: 70px;
+				}
+
+				&-destaque {
+					display: flex;
+					margin: 15px 0 80px;
+					padding: 20px 30px;
+					color: #fff;
+					border-radius: 4px;
+					background: #8399f5;
+					background: -moz-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+					background: -webkit-linear-gradient(top, #8399f5 0%,#7aa9f1 100%);
+					background: linear-gradient(to bottom, #8399f5 0%,#7aa9f1 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8399f5', endColorstr='#7aa9f1',GradientType=0 );
+
+					div:first-child {
+						flex: 0 0 15%;
+						font-size: 18px;
+					}
+				}
 			}
 		}
 
