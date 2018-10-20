@@ -1,21 +1,38 @@
 var menu = $( '#menuAgrupamentos' );
+var menuEmpresas = $( '#menuEmpresa' );
+var menuEmpresaDetalhes = $( '#menuEmpresaDetalhes' );
 
 
-$( '.btn-agrupamentos' ).off().on('click', function(){
+$( '#btnMenuAgrupamentos' ).off().on('click', function(){
 
 	menu.fadeToggle();
-	menu.find( '#etapa2' ).hide();
-	menu.find( '#etapa1' ).show();
+	menu.find( '#agrupamentosEtapa2' ).hide();
+	menu.find( '#agrupamentosEtapa1' ).show();
 });
 
-$( '#etapa1' ).find( '.item-line' ).off().on('click', function(){
+$( '#agrupamentosEtapa1' ).find( '.item-line' ).off().on('click', function(){
 
-	menu.find( '#etapa1' ).hide();
-	menu.find( '#etapa2' ).show();
+	menu.find( '#agrupamentosEtapa1' ).hide();
+	menu.find( '#agrupamentosEtapa2' ).show();
 });
 
-$( '#etapa2' ).find( 'header' ).off().on('click', function(){
+$( '#agrupamentosEtapa2' ).find( 'header' ).off().on('click', function(){
 
-	menu.find( '#etapa2' ).hide();
-	menu.find( '#etapa1' ).show();
+	menu.find( '#agrupamentosEtapa2' ).hide();
+	menu.find( '#agrupamentosEtapa1' ).show();
+});
+
+$( '#agrupamentosEtapa2' ).find( '.item-line' ).off().on('click', function(){
+
+	menuEmpresas.fadeToggle();
+});
+
+menuEmpresas.find( '#btnEmpresaDetalhes' ).off().on('click', function(){
+
+	menuEmpresaDetalhes.fadeToggle();
+});
+
+menuEmpresaDetalhes.find( '#btnRelatorios' ).off().on('click', function(){
+
+	$( '#itemRelatorios' ).fadeToggle();
 });
