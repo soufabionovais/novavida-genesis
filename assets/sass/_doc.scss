@@ -1458,9 +1458,16 @@ $doc_pagina-largura: 875px;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			position: relative;
 			min-width: 98px;
 			font-size: 24px;
+			color: #7ea0f3;
 			border-left: 1px solid #ebebeb;
+
+			&:hover,
+			&.ativo {
+				color: #0056b3;
+			}
 
 			&.acao-btn {
 				padding: 0 35px;
@@ -1485,6 +1492,25 @@ $doc_pagina-largura: 875px;
 					}
 				}
 			}
+		}
+	}
+
+	.menu-busca {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		width: 300px;
+		padding: 15px;    
+		background: #fff;
+		box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
+		border-radius: 0 0 4px 4px;
+
+		.select2-container {
+			margin-bottom: 15px;
+		}
+
+		.ls-btn {
+			margin-top: 15px;
 		}
 	}
 }
