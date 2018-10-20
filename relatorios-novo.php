@@ -10,9 +10,12 @@
       <div class="container-fluid">
         <div class="page-header">
           <h1 class="ls-title-intro">Novo relatório</h1>
+          <div class="page-header-buttons">
+            <button class="ls-btn ls-btn-primary" data-conteudo-alvo="editar-perfil-etapa-2">Customizar Perfil</button>
+          </div>                           
         </div>
 
-        <div class="ls-boxes">
+        <div class="ls-boxes" data-id="editar-perfil-etapa-1" data-etapa>
           <!-- <div class="ls-box">
               <h2 class="ls-title">Novo Relatório</h2>
           </div> -->
@@ -154,7 +157,7 @@
           <div class="ls-box">
             <div class="row">
               <div class="col">
-                  <div class="pretty p-icon p-curve p-tada checkbox-container no-bg no-pad-left">
+                  <div class="pretty p-icon p-curve p-tada checkbox-container no-bg no-pad-left" data-adicionar-monitoria>
                       <input type="checkbox" name="radio66">
                       <div class="state p-primary-o">
                           <i class="icon ls-ico-checkmark"></i>
@@ -163,12 +166,169 @@
                   </div>                  
               </div> 
               <div class="col right-aligned">
-                <button class="ls-btn-secondary outlined">Cancelar</button>
-                <button class="ls-btn-primary">Processar</button>            
+                <button class="ls-btn-secondary outlined" data-conteudo-alvo="editar-perfil-etapa-1">Cancelar</button>
+                <button class="ls-btn-primary" data-conteudo-alvo="editar-perfil-etapa-2">Processar</button>            
               </div>
             </div>
           </div>  
         </div>
+
+
+
+        <div class="ls-boxes" data-id="editar-perfil-etapa-2" data-etapa hidden>
+          <div class="ls-box">
+              <h2 class="ls-title">Novo Relatório</h2>
+          </div>          
+          <div class="ls-box bg-grey">
+           <div class="row">
+              <div class="col">
+                <h2 class="ls-title">Fontes selecionadas:</h2>
+                <div class="relacionar-listas bg-medium-grey">
+                  <label class="ls-label field-has-icon ls-ico-search">
+                    <input type="text" placeholder="Filtrar por nome" class="ls-field" required="">
+                  </label>  
+                  <div class="switchable-area" id="switchableArea-1">
+
+                    <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                      <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                      <div class="state p-primary-o">
+                          <i class="icon ls-ico-checkmark"></i>
+                          <label>Alexandre Lopez Paes</label>
+                      </div>
+                      <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                    </div> 
+
+                    <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                      <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                      <div class="state p-primary-o">
+                          <i class="icon ls-ico-checkmark"></i>
+                          <label>Alexandre Lopez Paes</label>
+                      </div>
+                      <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                    </div> 
+
+                    <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                      <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                      <div class="state p-primary-o">
+                          <i class="icon ls-ico-checkmark"></i>
+                          <label>Alexandre Lopez Paes</label>
+                      </div>
+                      <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                    </div> 
+
+                    <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                      <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                      <div class="state p-primary-o">
+                          <i class="icon ls-ico-checkmark"></i>
+                          <label>Alexandre Lopez Paes</label>
+                      </div>
+                      <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                    </div> 
+
+                    <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                      <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                      <div class="state p-primary-o">
+                          <i class="icon ls-ico-checkmark"></i>
+                          <label>Alexandre Lopez Paes</label>
+                      </div>
+                      <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                    </div> 
+
+                    <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                      <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                      <div class="state p-primary-o">
+                          <i class="icon ls-ico-checkmark"></i>
+                          <label>Alexandre Lopez Paes</label>
+                      </div>
+                      <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                    </div>
+
+                  </div> 
+
+                </div>   
+              </div>
+
+              <div class="col">
+                  <h2 class="ls-title">Fontes disponíveis:</h2>
+                  <div class="relacionar-listas bg-blue-gradient">
+                  <label class="ls-label field-has-icon ls-ico-search">
+                    <input type="text" placeholder="Filtrar por nome" class="ls-field" required="">
+                  </label>                      
+                    <div class="switchable-area" id="switchableArea-2">
+
+
+                        <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                          <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                          <div class="state p-primary-o">
+                              <i class="icon ls-ico-checkmark"></i>
+                              <label>Alexandre Lopez Paes</label>
+                          </div>
+                          <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                        </div> 
+
+                        <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                          <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                          <div class="state p-primary-o">
+                              <i class="icon ls-ico-checkmark"></i>
+                              <label>Alexandre Lopez Paes</label>
+                          </div>
+                          <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                        </div> 
+
+                        <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                          <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                          <div class="state p-primary-o">
+                              <i class="icon ls-ico-checkmark"></i>
+                              <label>Alexandre Lopez Paes</label>
+                          </div>
+                          <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                        </div> 
+
+                        <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                          <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                          <div class="state p-primary-o">
+                              <i class="icon ls-ico-checkmark"></i>
+                              <label>Alexandre Lopez Paes</label>
+                          </div>
+                          <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                        </div> 
+
+                        <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                          <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                          <div class="state p-primary-o">
+                              <i class="icon ls-ico-checkmark"></i>
+                              <label>Alexandre Lopez Paes</label>
+                          </div>
+                          <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                        </div> 
+
+                        <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
+                          <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
+                          <div class="state p-primary-o">
+                              <i class="icon ls-ico-checkmark"></i>
+                              <label>Alexandre Lopez Paes</label>
+                          </div>
+                          <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
+                        </div>
+
+                    </div>                            
+                  </div>
+              </div>                      
+          </div>   
+
+        </div>
+
+          <div class="ls-box">
+              <div class="row">
+                <div class="col">
+                    <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="editar-perfil-etapa-1">Cancelar</button>
+                </div>
+                <div class="col right-aligned">
+                  <a href="relatorios.php" class="ls-button ls-btn-primary">Gravar</a>
+                </div>
+          </div>          
+        </div>
+
       </div>
     </main>
 

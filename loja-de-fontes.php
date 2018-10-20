@@ -46,7 +46,7 @@
                       <div class="user-data">
                         <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
                         <div class="user-data-info">
-                          <p class="user-data-header">Alexandre Loes Paz</p>
+                          <p class="user-data-header" data-detalhes-fontes><a href="#" class="texto-destaque">Alexandre Loes Paz</a></p>
                           <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
                         </div>
                       </div>
@@ -74,7 +74,7 @@
                       <div class="user-data">
                         <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
                         <div class="user-data-info">
-                          <p class="user-data-header">Alexandre Loes Paz</p>
+                          <p class="user-data-header" data-detalhes-fontes><a href="#" class="texto-destaque">Alexandre Loes Paz</a></p>
                           <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
                         </div>
                       </div>
@@ -102,7 +102,7 @@
                       <div class="user-data">
                         <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
                         <div class="user-data-info">
-                          <p class="user-data-header">Alexandre Loes Paz</p>
+                          <p class="user-data-header" data-detalhes-fontes><a href="#" class="texto-destaque">Alexandre Loes Paz</a></p>
                           <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
                         </div>
                       </div>

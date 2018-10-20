@@ -21,12 +21,15 @@
     }
 }
 
-.with-featherlight {
-    html,
-    body {
-        overflow: hidden;
-    }
+html {
+    &.with-featherlight { 
+        body {
+            position: fixed;
+            width: 100%;
+        }
+    }    
 }
+
 
 .modal-popup {
     min-width: 400px;
@@ -122,6 +125,29 @@
         }
         &:last-of-type {
             background: transparent;
+        }
+    }
+}
+
+.detalhes-fontes {
+    width: 980px;
+    .content-slider {
+        width: 680px;
+        margin: 0 auto;
+        .slick-arrow {
+            width: 31px;
+            height: 52px;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 2;
+            &.slick-prev {
+                left: -80px;
+                background: url("../../assets/img/slider/arrow-prev-slide.png") no-repeat;
+            }
+            &.slick-next {
+                right: -80px;
+                background: url("../../assets/img/slider/arrow-next-slide.png") no-repeat;
+            }
         }
     }
 }

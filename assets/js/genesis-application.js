@@ -34,7 +34,16 @@ btnRelacionarPerfil.on("click", function(){
 	abrirModalPopup(relacionarPefil);
 });
 
-var btnAdicionarMonitoriaRelatorio = $("[data-adicionar-monitoria-relatorios]");
+var btnAdicionarMonitoria = $("[data-adicionar-monitoria]");
+btnAdicionarMonitoria.on("click", function () {
+	var adicionarMonitoria = {
+		url: "modais/adicionar-monitoria.html",
+		cssClass: "modal-monitoria",
+	};
+	abrirModalPopup(adicionarMonitoria);
+});
+
+var btnAdicionarMonitoriaRelatorio = $("[data-adicionar-monitoria-relatorio]");
 btnAdicionarMonitoriaRelatorio.on("click", function () {
 	var adicionarMonitoriaRelatorio = {
 		url: "modais/adicionar-monitoria-relatorios.html",
@@ -170,17 +179,6 @@ $('[data-toggle="popover"]').on("mouseenter", function () {
 	$(this).trigger("click");
 });
 
-// $('[data-popover-link]').each(function(){
-// 	var linkPDF = $(this).data("pdf");
-// 	var linkDOC = $(this).data("doc");
-// 	var template = $(this).data("popover-link");
-// 	$(this).popover({
-// 		html: true,
-// 		content: function(){
-// 			return templateCompilado;
-// 		}
-// 	})
-// })
 
 $('[data-popover-link]').each(function () {
 	var linkPDF = $(this).data("pdf");
@@ -258,9 +256,26 @@ $('.slider-input').jRange({
 });
 
 $('.slider-input').each(function(){
-
 	if( $(this).hasClass('disabled') ) {
 		$(this).jRange('disable');
 	}
+});
 
+/* Slider */
+if($(".content-slider").length) {
+	$(".content-slider").each(function(){
+		$(this).slick({
+			asNavFor: '.content-slider-nav'
+		});
+	});	
+}
+
+$('.content-slider-nav').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.content-slider',
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+  arrows: false
 });
