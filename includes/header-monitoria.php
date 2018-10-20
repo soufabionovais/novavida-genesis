@@ -24,7 +24,7 @@
 			<span class="icon nv-icon-network"></span>
 		</a>
 
-		<div class="acao-item">
+		<div id="menuBusca" class="acao-item">
 			<span class="icon nv-icon-zoom"></span>
 
 			<div class="menu-busca">

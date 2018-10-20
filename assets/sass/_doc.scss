@@ -1463,6 +1463,7 @@ $doc_pagina-largura: 875px;
 			font-size: 24px;
 			color: #7ea0f3;
 			border-left: 1px solid #ebebeb;
+			cursor: pointer;
 
 			&:hover,
 			&.ativo {
@@ -1496,6 +1497,7 @@ $doc_pagina-largura: 875px;
 	}
 
 	.menu-busca {
+		display: none;
 		position: absolute;
 		top: 100%;
 		right: 0;

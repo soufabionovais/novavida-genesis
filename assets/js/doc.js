@@ -58,3 +58,9 @@ btnAdicionarMonitoria.on("click", function(){
 	};
 	abrirModalPopup(adicionarMonitoria);
 });
+
+// HEADER MONITORIA - MENU BUSCA
+$( '.ls-topbar.monitoria' ).find( '#menuBusca' ).off().on('click', function(){
+
+	$( '#menuBusca' ).find( '.menu-busca' ).fadeToggle();
+});
