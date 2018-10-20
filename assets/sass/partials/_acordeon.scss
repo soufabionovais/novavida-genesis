@@ -8,7 +8,30 @@
     padding: 18px 35px 17px 10px;    
 }
 
+.ls-collapse-body {
+    transition: 0.5s;
+    animation-delay: 0.3s;
+    animation-property: height;
+    .ls-collapse-body-container {
+        background: #fff;
+        border-radius: 5px;
+        padding: 20px 25px 1px;
+    }
+}
+
 .ls-collapse {
+    position: relative;
+    .ls-collapse-header {
+        position: relative;
+    }
+    .btn-trash {
+        position: absolute;
+        color: #d0d0ef;
+        top: 50%;
+        right: 40px;
+        font-size: 16px;
+        transform: translateY(-50%);            
+    }    
     .checkbox-container {
         float: left;
         margin-bottom: 0;
@@ -23,6 +46,8 @@
         }
     }    
 }
+
+
 
 
 

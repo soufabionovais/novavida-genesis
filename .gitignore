@@ -6,5 +6,6 @@ node_modules/
 Thumbs.db
 .DS_store
 assets/.sass-cache
+assets/node_modules/
 assets/css/
 assets/css/genesis-application.css.map

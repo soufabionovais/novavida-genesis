@@ -1,0 +1,17 @@
+.lista,
+.sub-lista {
+	list-style: none;
+}
+
+.lista {
+	.lista-titulo {
+		padding-bottom: 10px;
+		border-bottom: solid 1px #ebebeb;
+		font-size: 13px;
+	}
+	.sub-lista {
+		li {
+			padding: 5px 25px;			
+		}
+	}
+}
