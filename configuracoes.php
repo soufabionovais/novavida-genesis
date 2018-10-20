@@ -533,7 +533,7 @@
                             <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
                             <button class="ls-button ls-btn-primary">Avançar</button>
                           </div>
-                      </div>
+                    </div>
                     </div>                                     
                 </div>
             </div>

@@ -1,6 +1,6 @@
 /** Modal Popup **/
 function abrirModalPopup(data) {	
-	debugger;
+	fechaInstanciasModal();	
 	$.featherlight(data.url, {
 		otherClose: "[fecha-modal]",
 		variant: data.cssClass || "",
@@ -8,6 +8,8 @@ function abrirModalPopup(data) {
 		afterOpen: function(){
 			///habilitaCheckbox();
 			//locastyle.init();
+
+			setSliders();
 
 			if( $('input[type="number"]').length ) {
 				$('input[type="number"]').niceNumber({
@@ -34,7 +36,16 @@ btnRelacionarPerfil.on("click", function(){
 	abrirModalPopup(relacionarPefil);
 });
 
-var btnAdicionarMonitoriaRelatorio = $("[data-adicionar-monitoria-relatorios]");
+var btnAdicionarMonitoria = $("[data-adicionar-monitoria]");
+btnAdicionarMonitoria.on("click", function () {
+	var adicionarMonitoria = {
+		url: "modais/adicionar-monitoria.html",
+		cssClass: "modal-monitoria",
+	};
+	abrirModalPopup(adicionarMonitoria);
+});
+
+var btnAdicionarMonitoriaRelatorio = $("[data-adicionar-monitoria-relatorio]");
 btnAdicionarMonitoriaRelatorio.on("click", function () {
 	var adicionarMonitoriaRelatorio = {
 		url: "modais/adicionar-monitoria-relatorios.html",
@@ -42,6 +53,15 @@ btnAdicionarMonitoriaRelatorio.on("click", function () {
 	};
 	abrirModalPopup(adicionarMonitoriaRelatorio);
 });
+
+
+var btnDetalhesFonte = $("[data-detalhes-fontes]");
+btnDetalhesFonte.on("click", function(){
+	abrirModalPopup({
+		url: "modais/detalhes-fontes.html",
+	});
+})
+
 
 /** Upload de Imagem **/
 Dropzone.options.uploadImage = {
@@ -74,18 +94,24 @@ btnSelecionarTodosPerfis.on("click", function(e){
 });
 
 /* Comprar Fontes */
-var btnComprarFonte = $("[data-comprar-fonte]");
-btnComprarFonte.on("click", function(){
-	var comprarFonte = {
+//var btnComprarFonte = $("[data-comprar-fonte]");
+$(document).on("click", "[data-comprar-fonte]", function(){
+	abrirModalPopup({
 		url: "modais/termo-de-uso-fonte.html",
-		cssClass: "modal-termos-uso",
-	};
-	abrirModalPopup(comprarFonte);
+		cssClass: "modal-termos-uso",		
+	});
 });
+
+$(document).on("click", "[data-liberar-fonte]", function(){
+	abrirModalPopup({
+		url: "modais/confirmacao-liberacao-fontes.html",
+		cssClass: "modal-confirmacao"
+	});
+});
+
 
 /* Aceite de compra de fontes */
 function termosDeUsoAceito(){
-	fechaInstanciasModal();
 	var confirmacaoCompra = {
 		url: "modais/confirmacao-compra-fontes.html",
 		cssClass: "modal-confirmacao-compra",
@@ -170,17 +196,6 @@ $('[data-toggle="popover"]').on("mouseenter", function () {
 	$(this).trigger("click");
 });
 
-// $('[data-popover-link]').each(function(){
-// 	var linkPDF = $(this).data("pdf");
-// 	var linkDOC = $(this).data("doc");
-// 	var template = $(this).data("popover-link");
-// 	$(this).popover({
-// 		html: true,
-// 		content: function(){
-// 			return templateCompilado;
-// 		}
-// 	})
-// })
 
 $('[data-popover-link]').each(function () {
 	var linkPDF = $(this).data("pdf");
@@ -258,9 +273,31 @@ $('.slider-input').jRange({
 });
 
 $('.slider-input').each(function(){
-
 	if( $(this).hasClass('disabled') ) {
 		$(this).jRange('disable');
 	}
-
 });
+
+/* Slider */
+function setSliders(){
+	if($(".content-slider").length) {
+		$(".content-slider").each(function(){
+			$(this).slick({
+				asNavFor: '.content-slider-nav',
+				infinite: false
+			});
+		});	
+	}
+
+	$('.content-slider-nav').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  asNavFor: '.content-slider',
+	  dots: false,
+	  centerMode: false,
+	  focusOnSelect: true,
+	  arrows: false,
+	  infinite: false
+	});	
+}
+

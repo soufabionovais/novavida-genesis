@@ -8,6 +8,7 @@
     <script src="vendors/select2/select2.min.js"></script>
     <script src="vendors/TweenMax/TweenMax.min.js"></script>
     <script src="vendors/TweenMax/ScrollToPlugin.min.js"></script>
+    <script src="vendors/slick-slider-1.8.1/slick.min.js"></script>
     <script src="vendors/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/js/graficos.js"></script>
     <script src="vendors/number-input/jquery.nice-number.min.js"></script>
