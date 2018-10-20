@@ -1566,6 +1566,27 @@ $doc_pagina-largura: 875px;
 			.cpf {
 				color: #7ea1f3;
 			}
+
+			.link-mapa {
+				position: absolute;
+				right: -8px;
+				bottom: 5px;
+				width: 46px;
+				height: 46px;
+				line-height: 2.2;
+				text-align: center;
+				font-size: 20px;
+				font-weight: 900;
+				color: #fff;
+				box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+				background-color: #27deac;
+				border-radius: 100%;
+				cursor: pointer;
+		
+				&:hover {
+					background-color: lighten(#27deac, 5%);
+				}
+			}
 		}
 
 		&.relacionado {

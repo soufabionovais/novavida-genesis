@@ -19,6 +19,11 @@
 							<span class="autor">André Ferreida Da Silva</span>
 							<span class="cpf">CPF 368.115.7788-0</span>
 
+							<a href="mapa.php" class="link-mapa">
+								<i class="icone nv-icon-map"></i>
+							</a>
+
+
 							<span class="ligacao esquerda"></span>
 							<span class="ligacao direita"></span>
 							<span class="ligacao baixo"></span>
