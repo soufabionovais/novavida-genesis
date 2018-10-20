@@ -7,6 +7,11 @@
 			<div id="mapaWrapper" class="mapa-wrapper">
 
 				<div class="item-mapa item-usuario">
+
+					<div class="fonte fonte-1">
+						Fonte 1
+					</div>
+
 					<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
 
 					<button class="btn btn-agrupamentos">
@@ -18,7 +23,7 @@
 						<div class="documento">CPF: 999.999.999-99</div>
 					</div>
 
-					<section class="ls-box menu-agrupamentos">
+					<section id="menuAgrupamentos" class="ls-box menu-agrupamentos">
 						<div id="etapa1" class="etapa-1">
 							<header>
 								  Agrupamentos
@@ -65,10 +70,25 @@
                     </section>
 				</div>
 
+				
+
+				<div class="item-mapa item-relatorios">
+					<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+
+					<button class="btn btn-agrupamentos">
+						<span class="icon nv-icon-zoom"></span>
+					</button>
+
+					<div class="dados">
+						<div class="nome">Zoly Alimentos</div>
+						<div class="documento">CPF: 999.999.999-99</div>
+					</div>
+				</div>
+
 			</div>
 		</main>
 
 		<?php include("includes/scripts.php"); ?>
-		<script src="assets/js/doc.js"></script>
+		<script src="assets/js/mapa.js"></script>
 	</body>
 </html>

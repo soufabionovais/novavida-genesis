@@ -65,9 +65,29 @@ $header-altura: 60px;
 				background-color: lighten(#27deac, 5%);
 			}
 		}
+
+		.fonte {
+			box-sizing: content-box;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			z-index: 1;
+			position: absolute;
+			top: -35px;
+			left: 50px;
+			width: 96px;
+			height: 96px;
+			text-align: center;
+			color: #fff;
+			background-color: #79a2f8;
+			border-radius: 100%;
+			border: 18px solid #242733;
+		}
 	}
 
 	.menu-agrupamentos {
+		display: none;
+		z-index: 1;
 		position: absolute;
 		top: 235px;
 		left: 300px;
