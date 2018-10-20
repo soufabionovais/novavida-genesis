@@ -2470,10 +2470,6 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
   padding: 0;
   font-size: 20px; }
 
-html.with-featherlight body {
-  position: fixed;
-  width: 100%; }
-
 .modal-popup {
   min-width: 400px; }
 
@@ -2485,7 +2481,8 @@ html.with-featherlight body {
     font-size: 16px; }
 
 .modal-popup-imagem {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 .modal-popup-titulo {
   font-size: 18px;
@@ -2542,6 +2539,8 @@ html.with-featherlight body {
 
 .detalhes-fontes {
   width: 980px; }
+  .detalhes-fontes .ls-box.slider-wrapper {
+    padding: 50px 0; }
   .detalhes-fontes .content-slider {
     width: 680px;
     margin: 0 auto; }
@@ -2551,12 +2550,17 @@ html.with-featherlight body {
       background-repeat: no-repeat;
       background-position: center;
       z-index: 2; }
+      .detalhes-fontes .content-slider .slick-arrow:before {
+        display: none; }
       .detalhes-fontes .content-slider .slick-arrow.slick-prev {
         left: -80px;
         background: url("../../assets/img/slider/arrow-prev-slide.png") no-repeat; }
       .detalhes-fontes .content-slider .slick-arrow.slick-next {
         right: -80px;
         background: url("../../assets/img/slider/arrow-next-slide.png") no-repeat; }
+
+.modal-confirmacao .modal-popup-titulo {
+  text-align: center; }
 
 .zone-upload-image {
   width: 350px;
@@ -2696,21 +2700,26 @@ html.with-featherlight body {
   opacity: 1;
   color: #a6a6c4; }
 
-.user-data .avatar {
-  width: 35px;
-  float: left;
-  border-radius: 50%;
-  margin-right: 15px; }
-.user-data .user-data-info {
-  float: left; }
-.user-data .user-data-header {
-  color: #7ea1f3;
-  margin: 0; }
-.user-data .user-data-description {
-  margin: 2px 0 0 0; }
-.user-data [class*="nv-icon"]:before {
-  font-size: 11px;
-  margin: 0 8px 0 0; }
+.user-data {
+  background: rgba(255, 0, 0, 0.5);
+  overflow: hidden; }
+  .user-data .avatar {
+    width: 35px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 15px; }
+  .user-data .user-data-info {
+    float: left; }
+  .user-data .user-data-header {
+    color: #7ea1f3;
+    margin: 0; }
+  .user-data .user-data-description {
+    margin: 2px 0 0 0; }
+  .user-data [class*="nv-icon"]:before {
+    font-size: 11px;
+    margin: 0 8px 0 0; }
+  .user-data[data-detalhes-fontes] {
+    cursor: pointer; }
 
 html div[data-ls-module="progressBar"] {
   width: 180px;

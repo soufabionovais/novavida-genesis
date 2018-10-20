@@ -8,7 +8,7 @@
     <main class="ls-main">
       <div class="container-fluid">
         <div class="page-header">
-          <h1 class="ls-title-intro">Loja de Fontes</h1>
+          <h1 class="ls-title-intro">Liberar de Fontes</h1>
         </div>
 
         <div class="ls-boxes">
@@ -35,6 +35,7 @@
                 <thead>
                   <tr>
                     <th>Nome da Fonte</th>
+                    <th>Nome do analista</th>
                     <th>Custo</th>
                     <th>Popularidade</th>
                     <th>&nbsp;</th>
@@ -43,7 +44,7 @@
                 <tbody>
                   <tr>
                     <td>
-                      <div class="user-data" data-detalhes-fontes>
+                      <div class="user-data">
                         <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
                         <div class="user-data-info">
                           <p class="user-data-header">Alexandre Loes Paz</p>
@@ -51,6 +52,7 @@
                         </div>
                       </div>
                     </td>
+                    <td>Maurício de Sousa prado</td>
                     <td>
                       R$2.000
                     </td>                                                        
@@ -64,42 +66,14 @@
                       </div>
                     </td>
                     <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary" data-comprar-fonte>
-                        Comprar
+                      <button class="ls-btn ls-btn-primary" data-liberar-fonte>
+                        Liberar
                       </button>
                     </td> 
                   </tr>
                   <tr>
                     <td>
-                      <div class="user-data" data-detalhes-fontes>
-                        <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                        <div class="user-data-info">
-                          <p class="user-data-header"</p>
-                          <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      R$2.000
-                    </td>                                                        
-                    <td>
-                      <div class="rating">
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot"></i>
-                        <i class="dot"></i>
-                      </div>
-                    </td>
-                    <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary" data-comprar-fonte>
-                        Comprar
-                      </button>
-                    </td> 
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="user-data" data-detalhes-fontes>
+                      <div class="user-data">
                         <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
                         <div class="user-data-info">
                           <p class="user-data-header">Alexandre Loes Paz</p>
@@ -107,6 +81,7 @@
                         </div>
                       </div>
                     </td>
+                    <td>Maurício de Sousa prado</td>
                     <td>
                       R$2.000
                     </td>                                                        
@@ -120,8 +95,37 @@
                       </div>
                     </td>
                     <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary" data-comprar-fonte>
-                        Comprar
+                      <button class="ls-btn ls-btn-primary" data-liberar-fonte>
+                        Liberar
+                      </button>
+                    </td> 
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-data">
+                        <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+                        <div class="user-data-info">
+                          <p class="user-data-header">Alexandre Loes Paz</p>
+                          <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Maurício de Sousa prado</td>
+                    <td>
+                      R$2.000
+                    </td>                                                        
+                    <td>
+                      <div class="rating">
+                        <i class="dot filled"></i>
+                        <i class="dot filled"></i>
+                        <i class="dot filled"></i>
+                        <i class="dot"></i>
+                        <i class="dot"></i>
+                      </div>
+                    </td>
+                    <td class="right-aligned">
+                      <button class="ls-btn ls-btn-primary" data-liberar-fonte>
+                        Liberar
                       </button>
                     </td> 
                   </tr>                  

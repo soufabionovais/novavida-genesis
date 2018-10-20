@@ -1,4 +1,6 @@
 .user-data {
+    background: rgba(red, 0.5);
+    overflow: hidden;
     .avatar {
         width: 35px;
         float: left;
@@ -20,5 +22,8 @@
             font-size: 11px;
             margin: 0 8px 0 0;   
         }
+    }
+    &[data-detalhes-fontes] {
+        cursor: pointer;
     }
 }
