@@ -1,0 +1,182 @@
+$header-altura: 60px;
+
+.ls-main.mapa {
+	height: auto;
+	margin: 0;
+	padding: $header-altura 0 0;
+}
+
+.mapa-wrapper {
+	position: relative;
+	min-width: 1280px;
+	max-width: 100%;
+	height: calc( 100vh - #{$header-altura} );
+	background: rgba(0,0,0, .7);
+
+	.item-mapa {
+		position: absolute;
+		top: 250px;
+		left: 40px;
+
+		&-inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 430px;
+			height: 430px;
+			text-align: center;
+			background-color: #1c1f27;
+			border-radius: 100%;
+	
+			.avatar {
+				width: 140px;
+				height: 140px;
+				border-radius: 100%;
+			}
+	
+			.dados {
+				position: absolute;
+				top: 300px;
+				left: 50%;
+				font-size: 16px;
+				transform: translateX(-50%);
+	
+				.nome {
+					color: #7ea1f2;
+				}
+	
+				.documento {
+					color: #ffffff;
+				}
+			}
+	
+			.btn {
+				position: absolute;
+				top: 235px;
+				left: 240px;
+				width: 46px;
+				height: 46px;
+				color: #fff;
+				background-color: #27deac;
+				box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+				border-radius: 100%;
+				cursor: pointer;
+		
+				&:hover {
+					background-color: lighten(#27deac, 5%);
+				}
+			}
+	
+			.fonte {
+				box-sizing: content-box;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				z-index: 1;
+				position: absolute;
+				top: -35px;
+				left: 50px;
+				width: 96px;
+				height: 96px;
+				text-align: center;
+				color: #fff;
+				background-color: #79a2f8;
+				border-radius: 100%;
+				border: 18px solid #242733;
+			}
+		}
+		
+		&.item-relatorios {
+			display: none;
+			top: 325px;
+			left: 700px;
+		}
+	}
+
+	.menu-agrupamentos {
+		display: none;
+		z-index: 1;
+		position: absolute;
+		top: 235px;
+		left: 300px;
+		width: 300px;
+		padding: 0;
+		background-color: #f9f9f9;
+		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+
+		.etapa-1 { display: none; }
+		.etapa-2 {
+			display: block;
+
+			header {
+				cursor: pointer;
+			}
+		}
+
+		header {
+			position: relative;
+			padding: 20px 15px;
+			text-align: left;
+			font-size: 16px;
+			color: #544364;
+			background: #fff;
+			border: 1px solid #ececec;
+
+			span {
+				&:before {
+					margin-right: 10px;
+					color: #7aa9f1;
+				}
+			}
+
+			&:after {
+				content: " ";
+				right: 100%;
+				top: 50%;
+				height: 0;
+				width: 0;
+				margin-top: -10px;
+				position: absolute;
+				border: solid transparent;
+				border-color: rgba(136, 183, 213, 0);
+				border-right-color: #ececec;
+				border-width: 10px;
+				pointer-events: none;
+			}
+		}
+
+		.item-line {
+			width: 95%;
+			margin: 10px auto;
+			color: #a6a6c4;
+			background-color: #ffffff;
+			border: 1px solid #f1f1f1;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: .25s;
+
+			&:hover {
+				background: lighten(#7aa9f1, 25%);
+			}
+		}
+	}
+
+	.menu-empresa {
+		display: none;
+		z-index: 2;
+		position: absolute;
+		top: 80px;
+		left: 600px;
+		width: 300px;
+	}
+
+	.menu-empresa-detalhes {
+		display: none;
+		z-index: 3;
+		position: absolute;
+		top: 80px;
+		left: 400px;
+		width: 300px;
+	}
+}

@@ -8,4 +8,5 @@ Thumbs.db
 assets/.sass-cache
 assets/node_modules/
 assets/css/
+assets/css
 assets/css/genesis-application.css.map
