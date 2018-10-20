@@ -24,7 +24,8 @@ $( '#agrupamentosEtapa2' ).find( 'header' ).off().on('click', function(){
 
 $( '#agrupamentosEtapa2' ).find( '.item-line' ).off().on('click', function(){
 
-	menuEmpresas.fadeToggle();
+	menuEmpresas.show();
+	menu.hide();
 });
 
 menuEmpresas.find( '#btnEmpresaDetalhes' ).off().on('click', function(){
@@ -34,5 +35,7 @@ menuEmpresas.find( '#btnEmpresaDetalhes' ).off().on('click', function(){
 
 menuEmpresaDetalhes.find( '#btnRelatorios' ).off().on('click', function(){
 
-	$( '#itemRelatorios' ).fadeToggle();
+	menuEmpresas.hide();
+	menuEmpresaDetalhes.hide();
+	$( '#itemRelatorios' ).show();
 });
