@@ -63,7 +63,7 @@ btnDetalhesFonte.on("click", function(){
 })
 
 
-/** Upload de Imagem **/
+/** Upload de Logo **/
 Dropzone.options.uploadImage = {
 	acceptedFiles: "image/*",
 	url: "upload/upload.html",
@@ -76,6 +76,28 @@ Dropzone.options.uploadImage = {
 	addRemoveLinks: true,
 	thumbnailWidth: "350",
 	thumbnailHeight: "350",	
+	init: function () {
+		this.on("addedfile", function () {
+			if (this.files[1] != null) {
+				this.removeFile(this.files[0]);
+			}
+		});
+	}		
+};
+
+/** Upload de Imagem de Perfil **/
+Dropzone.options.uploadImage = {
+	acceptedFiles: "image/*",
+	url: "upload/upload.html",
+	dictDefaultMessage: "Seleciona sua imagem de perfil",
+	dictRemoveFile: "Remover arquivo",
+	maxFiles: 1,
+	parallelUploads: 1,
+	maxFilesize: 1,
+	clickable: ".zone-upload-profile-image",
+	addRemoveLinks: true,
+	thumbnailWidth: "130",
+	thumbnailHeight: "130",	
 	init: function () {
 		this.on("addedfile", function () {
 			if (this.files[1] != null) {
