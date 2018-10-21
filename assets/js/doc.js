@@ -64,3 +64,8 @@ $( '.ls-topbar.monitoria' ).find( '#menuBusca' ).off().on('click', function(){
 
 	$( '#menuBusca' ).find( '.menu-busca' ).fadeToggle();
 });
+
+function adicionarMonitoria() {
+	$( '#semMonitoria' ).hide();
+	$( '#comMonitoria' ).show();
+}

@@ -29,13 +29,13 @@
 							</li>
 							<li class="doc-menu-item">
 								<span class="marcador"></span>
-								<a href="">04. Grupo Fonte 01</a>
+								<a href="consulta-receita-federal-1.php">04. Grupo Fonte 01</a>
 								<ol class="doc-submenu">
-									<li class="doc-menu-item atual">
-										<a href="">04.1 Nome da Fonte 1</a>
-									</li>
 									<li class="doc-menu-item">
-										<a href="">04.2 Nome da Fonte 2</a>
+										<a href="consulta-receita-federal.php">04.1 Nome da Fonte 1</a>
+									</li>
+									<li class="doc-menu-item atual">
+										<a href="consulta-receita-federal-template-2.php">04.2 Nome da Fonte 2</a>
 									</li>
 								</ol>
 							</li>
@@ -596,7 +596,7 @@
 					</div>
 
 					<!-- POSSUI MONITORIA -->
-					<div class="content-inner">
+					<div id="comMonitoria" class="content-inner lista-monitoria">
 
 						<div class="item">
 							<span class="pretty p-icon p-curve p-tada checkbox-container">
@@ -656,12 +656,12 @@
 					</div>
 
 					<!-- NÃO POSSUI MONITORIA -->
-					<!-- <div class="content-inner lista-monitoria-vazia">
+					<div id="semMonitoria" class="content-inner lista-monitoria-vazia">
 						<span>
 							Você ainda não tem nada sendo monitorado.
 						</span>
 						<button class="ls-btn ls-btn-primary" data-adicionar-monitoria>Adicionar monitoria</button>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</main>

@@ -10,7 +10,7 @@
 				<div id="docPrincipal" class="doc-principal">
 
 					<div class="doc-menu">
-						<a href="capa.php" class="doc-menu-titulo">
+						<a href="capa.php" class="doc-menu-titulo atual">
 							<span class="ls-show-sidebar ls-ico-text2"></span>
 							Capa
 						</a>
@@ -29,13 +29,13 @@
 							</li>
 							<li class="doc-menu-item">
 								<span class="marcador"></span>
-								<a href="">04. Grupo Fonte 01</a>
+								<a href="consulta-receita-federal-1.php">04. Grupo Fonte 01</a>
 								<ol class="doc-submenu">
 									<li class="doc-menu-item atual">
-										<a href="">04.1 Nome da Fonte 1</a>
+										<a href="consulta-receita-federal.php">04.1 Nome da Fonte 1</a>
 									</li>
 									<li class="doc-menu-item">
-										<a href="">04.2 Nome da Fonte 2</a>
+										<a href="consulta-receita-federal-template-2.php">04.2 Nome da Fonte 2</a>
 									</li>
 								</ol>
 							</li>
@@ -571,7 +571,7 @@
 					</div>
 
 					<!-- POSSUI MONITORIA -->
-					<!-- <div class="content-inner">
+					<div id="comMonitoria" class="content-inner lista-monitoria">
 
 						<div class="item">
 							<span class="pretty p-icon p-curve p-tada checkbox-container">
@@ -628,10 +628,10 @@
 							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
 						</div>
 
-					</div> -->
+					</div>
 
 					<!-- NÃO POSSUI MONITORIA -->
-					<div class="content-inner lista-monitoria-vazia">
+					<div id="semMonitoria" class="content-inner lista-monitoria-vazia">
 						<span>
 							Você ainda não tem nada sendo monitorado.
 						</span>

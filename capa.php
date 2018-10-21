@@ -8,7 +8,7 @@
 				<div id="docPrincipal" class="doc-principal">
 
 					<div class="doc-menu">
-					<a href="capa.php" class="doc-menu-titulo atual">
+						<a href="capa.php" class="doc-menu-titulo atual">
 							<span class="ls-show-sidebar ls-ico-text2"></span>
 							Capa
 						</a>
@@ -27,13 +27,13 @@
 							</li>
 							<li class="doc-menu-item">
 								<span class="marcador"></span>
-								<a href="">04. Grupo Fonte 01</a>
+								<a href="consulta-receita-federal-1.php">04. Grupo Fonte 01</a>
 								<ol class="doc-submenu">
 									<li class="doc-menu-item">
-										<a href="">04.1 Nome da Fonte 1</a>
+										<a href="consulta-receita-federal.php">04.1 Nome da Fonte 1</a>
 									</li>
 									<li class="doc-menu-item">
-										<a href="">04.2 Nome da Fonte 2</a>
+										<a href="consulta-receita-federal-template-2.php">04.2 Nome da Fonte 2</a>
 									</li>
 								</ol>
 							</li>
