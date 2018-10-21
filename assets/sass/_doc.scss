@@ -1434,9 +1434,12 @@ $doc_pagina-largura: 875px;
 					min-width: 180px;
 				}
 
-				.select2-container {
+				.choices {
 
-					.select2-selection {
+					.choices__inner {
+						min-height: auto;
+						padding: 0;
+						background: none;
 						border: none;
 
 						span {
