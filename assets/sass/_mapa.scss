@@ -8,8 +8,9 @@ $header-altura: 60px;
 
 .mapa-wrapper {
 	position: relative;
-	min-width: 1280px;
+	min-width: 1260px;
 	max-width: 100%;
+	min-height: 840px;
 	height: calc( 100vh - #{$header-altura} );
 	background: rgba(0,0,0, .7);
 
@@ -80,10 +81,15 @@ $header-altura: 60px;
 				width: 96px;
 				height: 96px;
 				text-align: center;
+				font-size: 16px;
 				color: #fff;
 				background-color: #79a2f8;
 				border-radius: 100%;
 				border: 18px solid #242733;
+
+				&.fonte-1 {
+					display: none;
+				}
 			}
 		}
 		
@@ -168,7 +174,116 @@ $header-altura: 60px;
 		position: absolute;
 		top: 80px;
 		left: 600px;
-		width: 300px;
+		width: 610px;
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			padding: 50px 40px 50px 140px;
+			background-color: rgba( #242833, .8 );
+			border: 1px solid rgba(15, 15, 15, 0.35);
+			border-top-left-radius: 120px;
+			border-top-right-radius: 10px;
+
+			.icon-fonte {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 120px;
+				height: 120px;
+				text-align: center;
+				font-size: 16px;
+				color: #fff;
+				background-color: #79a2f8;
+				border-radius: 100%;
+			
+				.btn {
+					position: absolute;
+					right: 0px;
+					bottom: 0px;
+					width: 46px;
+					height: 46px;
+					color: #fff;
+					background-color: #27deac;
+					border-radius: 100%;
+					box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+					cursor: pointer;
+			
+					&:hover {
+						background-color: lighten(#27deac, 5%);
+					}					
+				}
+
+				.linha-ligacao {
+					display: block;
+					position: absolute;
+					top: -110px;
+					left: -175px;
+					width: 2px;
+					height: 440px;
+					background: #79a2f8;
+					transform: rotate(75deg);
+
+					&:after {
+						content: '';
+						display: block;
+						position: absolute;
+						bottom: -7px;
+						left: -7px;
+						width: 14px;
+						height: 14px;
+						background: #79a2f8;
+						border-radius: 100%;
+					}
+				}
+			}
+
+			.dados {
+				display: flex;
+				flex-direction: column;
+				font-size: 18px;
+				text-align: center;
+				color: #ffffff;
+			}
+		}
+
+		.menu-body {
+			padding: 20px 30px;
+			background-color: rgba( #1c1f27, .8 );
+			border: 1px solid rgba(15, 15, 15, 0.35);
+
+			table {
+				margin: 0;
+				background: none;
+
+				thead {
+					th {
+						padding-bottom: 0;
+					}
+				}
+
+				tbody{
+					tr {
+						background-color: #2f3343;
+						border: solid 1px #3b3e48;
+						border-radius: 5px;
+
+						.user-data {
+							background: none;
+						}
+
+						.participacao {
+							font-size: 18px;
+							color: #27deac;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.menu-empresa-detalhes {
@@ -177,6 +292,173 @@ $header-altura: 60px;
 		position: absolute;
 		top: 80px;
 		left: 400px;
-		width: 300px;
+		width: 560px;
+		background-color: #ffffff;
+		border: 1px solid #ececec;
+		border-radius: 6px;
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 25px;
+
+			.nome {
+				font-size: 18px;
+				color: #544364;
+			}
+
+			.acoes {
+				display: flex;
+				align-items: center;
+
+				.fechar-menu {
+					padding-left: 15px;
+					font-size: 26px;
+				}
+			}
+		}
+
+		.menu-body {
+			.ls-tabs-nav {
+				border-top: 1px solid #ececec;
+
+				li {
+					margin: 0;
+					border-right: 1px solid #ececec;
+
+					&:after {
+						display: none;
+					}
+
+					&:last-child {
+						border-right: none;
+					}
+
+					&.ls-active {
+						background: #79a2f8;
+
+						a {
+							color: #fff;
+						}
+					}
+
+					a {
+						padding-top: 15px;
+						padding-bottom: 15px;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.lista-dados {
+				padding: 0 25px 30px;
+				&-item {
+					display: flex;
+					justify-content: space-between;
+					padding: 5px 0;
+					text-transform: uppercase;
+					font-weight: 13px;
+
+					.titulo {
+						color: #7ea1f3;
+					}
+
+					.valor {
+						color: #a6a6c4;
+					}
+				}
+			}
+
+			.lista-antigos-proprietarios {
+
+				header {
+					padding: 25px;
+					font-size: 16px;
+					color: #a6a6c4;
+					border-top: 1px solid #e2e2e2;
+					border-bottom: 1px solid #e2e2e2;
+				}
+
+				.lista-body {
+					padding: 15px;
+					background: #f9f9f9;
+
+					.lista-item {
+						display: flex;
+						justify-content: space-between;
+						padding: 15px;
+						background-color: #ffffff;
+						border: solid 1px #f1f1f1;
+						border-radius: 3px;
+
+						~ .lista-item {
+							margin-top: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.ls-topbar.mapa {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+	border-bottom: 1px solid #ebebeb;
+
+	.mapa-caminho {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 35px;
+		font-size: 16px;
+		color: #a6a6c4;
+
+		.ls-breadcrumb {
+			margin: 0;
+
+			li {
+
+				&:first-child {
+					color: #a6a6c4;
+				}
+			}
+		}
+	}
+
+	.acoes {
+		display: flex;
+
+		.acao-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			min-width: 98px;
+			font-size: 24px;
+			color: #7ea0f3;
+			border-left: 1px solid #ebebeb;
+			cursor: pointer;
+
+			&:hover,
+			&.ativo {
+				color: #0056b3;
+			}
+
+			&.acao-btn {
+				padding: 0 35px;
+			}
+
+			&.zoom {
+				flex-direction: row;
+
+				a {
+					padding: 0 10px;
+				}
+			}
+		}
 	}
 }

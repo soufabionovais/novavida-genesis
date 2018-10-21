@@ -8,8 +8,19 @@ html {
                 background: #7fa1f3;
             }
             .icon {
-                font-size: 30px;
+                background: red;
+                width: 26px;
+                display: block;
+                height: 30px;
             }
+
+            &:first-child{
+                .icon {
+                    background: url(../../assets/img/arrows/arrow-slider-prev.png) no-repeat center;
+                    text-indent: -9999px;
+                }
+            }
+
             &:first-child,
             &:last-child {
                 a {

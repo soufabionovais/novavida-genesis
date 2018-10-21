@@ -90,7 +90,7 @@ Dropzone.options.uploadImage = {
 	acceptedFiles: "image/*",
 	url: "upload/upload.html",
 	dictDefaultMessage: "Seleciona sua imagem de perfil",
-	dictRemoveFile: "Remover arquivo",
+	dictRemoveFile: "Remover imagem",
 	maxFiles: 1,
 	parallelUploads: 1,
 	maxFilesize: 1,
@@ -131,14 +131,20 @@ $(document).on("click", "[data-liberar-fonte]", function(){
 	});
 });
 
+/* Modal Mapa e Informações*/
+var btnMapaInformacoes = $("#mapaInformacoes");
+	btnMapaInformacoes.on("click", function(){
+		abrirModalPopup({
+			url: "modais/mapa.html",
+		});
+	});
 
 /* Aceite de compra de fontes */
 function termosDeUsoAceito(){
-	var confirmacaoCompra = {
+	abrirModalPopup({
 		url: "modais/confirmacao-compra-fontes.html",
-		cssClass: "modal-confirmacao-compra",
-	};
-	abrirModalPopup(confirmacaoCompra);
+		cssClass: "modal-confirmacao-compra"		
+	});
 	return false;	
 }
 
@@ -195,7 +201,20 @@ $('[data-tags]').tagify().on('add', function(e, tagName){
 });
 
 /* Selects Customizados */
- $('.select-field').select2();
+ //$('.select-field').select2();
+
+
+$(".select-field").each(function(){
+	var choices = new Choices($(this)[0], {
+		searchEnabled: true,
+		loadingText: 'Carregando...',
+		noResultsText: 'Nenhum resultado encontrado',
+		noChoicesText: 'Nenhuma opção disponível',
+		itemSelectText: 'Clique para selecionar',
+		searchPlaceholderValue: "Pesquisar na lista"
+	});
+});
+
  
 habilitarClickToggleTabelas();
 function habilitarClickToggleTabelas(){

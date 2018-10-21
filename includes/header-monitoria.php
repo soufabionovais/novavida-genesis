@@ -85,7 +85,7 @@
 			<span>de 103</span>
 		</div>
 
-		<a class="acao-item" href="visualizar-estrutura.php">
+		<a class="acao-item" href="">
 			<span class="icon nv-icon-remove"></span>
 		</a>
 	</div>

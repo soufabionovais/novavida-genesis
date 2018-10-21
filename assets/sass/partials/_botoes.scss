@@ -80,8 +80,20 @@
         background: transparent;
     }
     &.no-padding {
-        padding: 0 !important;
+        padding: 0;
     }    
+}
+
+.btn-remove {
+    padding: 10px 5px !important;
+    margin-left: 10px;    
+    i {
+        color: #7ea0f3;
+        font-size: 20px;
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;  
+    }
 }
 
 .ls-form-horizontal {

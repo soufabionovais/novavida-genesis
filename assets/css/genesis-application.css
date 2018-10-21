@@ -15,6 +15,8 @@
 @import url(../../vendors/select2/select2.min.css);
 @import url(../../vendors/number-input/jquery.nice-number.min.css);
 @import url(../../vendors/jRange/jquery.range.css);
+@import url(../../vendors/choicesjs/choices.css);
+@import url(../../vendors/sweet-dropdown/jquery.sweet-dropdown.min.css);
 /* Fontes e Ícones */
 /*Vendors*/
 .tagify {
@@ -428,8 +430,9 @@
 
 .mapa-wrapper {
   position: relative;
-  min-width: 1280px;
+  min-width: 1260px;
   max-width: 100%;
+  min-height: 840px;
   height: calc( 100vh - 60px );
   background: rgba(0, 0, 0, 0.7); }
   .mapa-wrapper .item-mapa {
@@ -485,10 +488,13 @@
         width: 96px;
         height: 96px;
         text-align: center;
+        font-size: 16px;
         color: #fff;
         background-color: #79a2f8;
         border-radius: 100%;
         border: 18px solid #242733; }
+        .mapa-wrapper .item-mapa-inner .fonte.fonte-1 {
+          display: none; }
     .mapa-wrapper .item-mapa.item-relatorios {
       display: none;
       top: 325px;
@@ -550,14 +556,195 @@
     position: absolute;
     top: 80px;
     left: 600px;
-    width: 300px; }
+    width: 610px; }
+    .mapa-wrapper .menu-empresa header {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 50px 40px 50px 140px;
+      background-color: rgba(36, 40, 51, 0.8);
+      border: 1px solid rgba(15, 15, 15, 0.35);
+      border-top-left-radius: 120px;
+      border-top-right-radius: 10px; }
+      .mapa-wrapper .menu-empresa header .icon-fonte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        background-color: #79a2f8;
+        border-radius: 100%; }
+        .mapa-wrapper .menu-empresa header .icon-fonte .btn {
+          position: absolute;
+          right: 0px;
+          bottom: 0px;
+          width: 46px;
+          height: 46px;
+          color: #fff;
+          background-color: #27deac;
+          border-radius: 100%;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          cursor: pointer; }
+          .mapa-wrapper .menu-empresa header .icon-fonte .btn:hover {
+            background-color: #3de1b5; }
+        .mapa-wrapper .menu-empresa header .icon-fonte .linha-ligacao {
+          display: block;
+          position: absolute;
+          top: -110px;
+          left: -175px;
+          width: 2px;
+          height: 440px;
+          background: #79a2f8;
+          transform: rotate(75deg); }
+          .mapa-wrapper .menu-empresa header .icon-fonte .linha-ligacao:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -7px;
+            left: -7px;
+            width: 14px;
+            height: 14px;
+            background: #79a2f8;
+            border-radius: 100%; }
+      .mapa-wrapper .menu-empresa header .dados {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        text-align: center;
+        color: #ffffff; }
+    .mapa-wrapper .menu-empresa .menu-body {
+      padding: 20px 30px;
+      background-color: rgba(28, 31, 39, 0.8);
+      border: 1px solid rgba(15, 15, 15, 0.35); }
+      .mapa-wrapper .menu-empresa .menu-body table {
+        margin: 0;
+        background: none; }
+        .mapa-wrapper .menu-empresa .menu-body table thead th {
+          padding-bottom: 0; }
+        .mapa-wrapper .menu-empresa .menu-body table tbody tr {
+          background-color: #2f3343;
+          border: solid 1px #3b3e48;
+          border-radius: 5px; }
+          .mapa-wrapper .menu-empresa .menu-body table tbody tr .user-data {
+            background: none; }
+          .mapa-wrapper .menu-empresa .menu-body table tbody tr .participacao {
+            font-size: 18px;
+            color: #27deac; }
   .mapa-wrapper .menu-empresa-detalhes {
     display: none;
     z-index: 3;
     position: absolute;
     top: 80px;
     left: 400px;
-    width: 300px; }
+    width: 560px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 6px; }
+    .mapa-wrapper .menu-empresa-detalhes header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 25px; }
+      .mapa-wrapper .menu-empresa-detalhes header .nome {
+        font-size: 18px;
+        color: #544364; }
+      .mapa-wrapper .menu-empresa-detalhes header .acoes {
+        display: flex;
+        align-items: center; }
+        .mapa-wrapper .menu-empresa-detalhes header .acoes .fechar-menu {
+          padding-left: 15px;
+          font-size: 26px; }
+    .mapa-wrapper .menu-empresa-detalhes .menu-body .ls-tabs-nav {
+      border-top: 1px solid #ececec; }
+      .mapa-wrapper .menu-empresa-detalhes .menu-body .ls-tabs-nav li {
+        margin: 0;
+        border-right: 1px solid #ececec; }
+        .mapa-wrapper .menu-empresa-detalhes .menu-body .ls-tabs-nav li:after {
+          display: none; }
+        .mapa-wrapper .menu-empresa-detalhes .menu-body .ls-tabs-nav li:last-child {
+          border-right: none; }
+        .mapa-wrapper .menu-empresa-detalhes .menu-body .ls-tabs-nav li.ls-active {
+          background: #79a2f8; }
+          .mapa-wrapper .menu-empresa-detalhes .menu-body .ls-tabs-nav li.ls-active a {
+            color: #fff; }
+        .mapa-wrapper .menu-empresa-detalhes .menu-body .ls-tabs-nav li a {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 20px; }
+    .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-dados {
+      padding: 0 25px 30px; }
+      .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-dados-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        text-transform: uppercase;
+        font-weight: 13px; }
+        .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-dados-item .titulo {
+          color: #7ea1f3; }
+        .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-dados-item .valor {
+          color: #a6a6c4; }
+    .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-antigos-proprietarios header {
+      padding: 25px;
+      font-size: 16px;
+      color: #a6a6c4;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2; }
+    .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-antigos-proprietarios .lista-body {
+      padding: 15px;
+      background: #f9f9f9; }
+      .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-antigos-proprietarios .lista-body .lista-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: #ffffff;
+        border: solid 1px #f1f1f1;
+        border-radius: 3px; }
+        .mapa-wrapper .menu-empresa-detalhes .menu-body .lista-antigos-proprietarios .lista-body .lista-item ~ .lista-item {
+          margin-top: 8px; }
+
+.ls-topbar.mapa {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ebebeb; }
+  .ls-topbar.mapa .mapa-caminho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 35px;
+    font-size: 16px;
+    color: #a6a6c4; }
+    .ls-topbar.mapa .mapa-caminho .ls-breadcrumb {
+      margin: 0; }
+      .ls-topbar.mapa .mapa-caminho .ls-breadcrumb li:first-child {
+        color: #a6a6c4; }
+  .ls-topbar.mapa .acoes {
+    display: flex; }
+    .ls-topbar.mapa .acoes .acao-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      min-width: 98px;
+      font-size: 24px;
+      color: #7ea0f3;
+      border-left: 1px solid #ebebeb;
+      cursor: pointer; }
+      .ls-topbar.mapa .acoes .acao-item:hover, .ls-topbar.mapa .acoes .acao-item.ativo {
+        color: #0056b3; }
+      .ls-topbar.mapa .acoes .acao-item.acao-btn {
+        padding: 0 35px; }
+      .ls-topbar.mapa .acoes .acao-item.zoom {
+        flex-direction: row; }
+        .ls-topbar.mapa .acoes .acao-item.zoom a {
+          padding: 0 10px; }
 
 .ls-main.doc {
   height: auto;
@@ -566,7 +753,7 @@
 
 .doc-wrapper {
   position: relative;
-  min-width: 1280px;
+  min-width: 1260px;
   max-width: 100%;
   height: 100%;
   background: #090e1c; }
@@ -600,7 +787,7 @@
   justify-content: space-between;
   position: relative;
   right: 0;
-  min-width: 1280px;
+  min-width: 1260px;
   width: 100%;
   height: calc(100vh - 60px);
   margin: 0 auto;
@@ -2535,7 +2722,17 @@ html .box-tabs + .ls-tabs-container {
   [class*="ls-btn"].no-bg {
     background: transparent; }
   [class*="ls-btn"].no-padding {
-    padding: 0 !important; }
+    padding: 0; }
+
+.btn-remove {
+  padding: 10px 5px !important;
+  margin-left: 10px; }
+  .btn-remove i {
+    color: #7ea0f3;
+    font-size: 20px;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0; }
 
 .ls-form-horizontal [class*="ls-btn"] {
   margin-top: 0; }
@@ -2616,7 +2813,13 @@ html [class*="ls-pagination"] li a {
 html [class*="ls-pagination"] li.ls-active {
   background: #7fa1f3; }
 html [class*="ls-pagination"] li .icon {
-  font-size: 30px; }
+  background: red;
+  width: 26px;
+  display: block;
+  height: 30px; }
+html [class*="ls-pagination"] li:first-child .icon {
+  background: url(../../assets/img/arrows/arrow-slider-prev.png) no-repeat center;
+  text-indent: -9999px; }
 html [class*="ls-pagination"] li:first-child a, html [class*="ls-pagination"] li:last-child a {
   padding: 0 7px 1px;
   color: #808495; }

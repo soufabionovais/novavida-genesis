@@ -12,5 +12,7 @@
     <script src="vendors/chartjs/Chart.bundle.min.js"></script>
     <script src="assets/js/graficos.js"></script>
     <script src="vendors/number-input/jquery.nice-number.min.js"></script>
+    <script src="vendors/choicesjs/choices.min.js"></script>
+    <script src="vendors/sweet-dropdown/jquery.sweet-dropdown.min.js"></script>
     <script src="vendors/jRange/jquery.range-min.js"></script>
     <script src="assets/js/genesis-application.js"></script>
