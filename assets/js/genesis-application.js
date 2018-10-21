@@ -301,3 +301,30 @@ function setSliders(){
 	});	
 }
 
+/* Adicionar livro */
+var btnAreaAdicionarLivro = $("#btAreaAdicionarLivro");
+var areaAdicionarLivro = $("#areaAdicionarLivro");
+var	areaListaLivros = $("#areaListaLivros");
+	btnAreaAdicionarLivro.on("click", function(){
+		areaListaLivros.hide();
+		areaAdicionarLivro.show();
+	});
+
+var btnAdicionarNovoLivro = $("#btnAdicionarNovoLivro");	
+	btnAdicionarNovoLivro.on("click", function(){
+		areaAdicionarLivro.hide();
+		areaListaLivros.show();		
+		alert("Chamada de função para adicionar novo livro");
+	});
+
+var areaLivrosAcessoRestrito = $("#areaAcessoRestrito");
+var tipoAcesso = $("[name='tipo-acesso']");	
+	tipoAcesso.on("change", function(){
+		var valorSelecionado = $(this).val();
+		if (valorSelecionado == "acessoRestrito") {
+			areaLivrosAcessoRestrito.removeClass("hidden-area");
+		} else {
+			areaLivrosAcessoRestrito.addClass("hidden-area");
+		}		
+	});
+

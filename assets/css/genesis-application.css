@@ -2186,6 +2186,22 @@ html .box-tabs + .ls-tabs-container {
 
 .data-table__container {
   position: relative; }
+.data-table__header {
+  position: relative;
+  padding: 10px 10px 20px; }
+  .data-table__header .row > div {
+    display: flex;
+    align-items: center; }
+.data-table__item {
+  position: relative;
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 5px; }
+  .data-table__item .row > div {
+    display: flex;
+    align-items: center; }
+  .data-table__item + * {
+    margin-top: 8px; }
 
 .ls-breadcrumb {
   margin-bottom: 20px;
@@ -2876,7 +2892,6 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
   color: #a6a6c4; }
 
 .user-data {
-  background: rgba(255, 0, 0, 0.5);
   overflow: hidden; }
   .user-data .avatar {
     width: 35px;
@@ -3184,6 +3199,9 @@ html div[data-ls-module="progressBar"] {
 
 .texto-destaque {
   color: #7ea1f3 !important; }
+
+.hidden-area {
+  display: none; }
 
 a.texto-destaque {
   color: #0aabf4 !important; }

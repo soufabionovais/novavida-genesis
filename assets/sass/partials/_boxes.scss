@@ -105,6 +105,24 @@
         position: relative;
     }
     &__header {
-        
+        position: relative;
+        padding: 10px 10px 20px;
+        .row > div {
+            display: flex;
+            align-items: center;
+        }          
+    }   
+    &__item {
+        position: relative;
+        background: #fff;
+        padding: 8px 10px;
+        border-radius: 5px;
+        .row > div {
+            display: flex;
+            align-items: center;
+        }   
+        + * {
+            margin-top: 8px;
+        }     
     }
 }
