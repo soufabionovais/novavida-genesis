@@ -60,7 +60,7 @@ btnAdicionarMonitoria.on("click", function(){
 });
 
 // HEADER MONITORIA - MENU BUSCA
-$( '.ls-topbar.monitoria' ).find( '#menuBusca' ).off().on('click', function(){
+$( '#menuBusca' ).find( '.click-wrapper' ).off().on('click', function(){
 
 	$( '#menuBusca' ).find( '.menu-busca' ).fadeToggle();
 });

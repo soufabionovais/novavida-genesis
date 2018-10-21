@@ -25,7 +25,9 @@
 		</a>
 
 		<div id="menuBusca" class="acao-item">
-			<span class="icon nv-icon-zoom"></span>
+			<div class="click-wrapper">
+				<span class="icon nv-icon-zoom"></span>
+			</div>
 
 			<div class="menu-busca">
 				<div class="ls-form">
