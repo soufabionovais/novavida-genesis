@@ -11,7 +11,7 @@
         <div class="page-header">
           <h1 class="ls-title-intro">Relatórios</h1>
           <div class="page-header-buttons">
-            <button class="ls-btn ls-btn-primary" data-adicionar-blacklist>Criar relatório</button>
+            <a href="relatorios-novo.php" class="ls-btn ls-btn-primary">Criar relatório</a>
           </div>                 
         </div>
 
@@ -25,8 +25,8 @@
                       </label>                        
                   </div>
                   <div class="col">
-                      <select class="select-field" style="width: 100%">
-                          <option value="0" selected> Livros </option>
+                      <select class="select-field">
+                          <option placeholder> Livros </option>
                           <option value="1"> Opção 1 </option>
                           <option value="2"> Opção 2 </option>
                           <option value="3"> Opção 3 </option>
@@ -34,8 +34,8 @@
                       </select>                                                         
                   </div>
                   <div class="col">
-                      <select class="select-field" style="width: 100%">
-                          <option value="0" selected> Responsáveis </option>
+                      <select class="select-field">
+                          <option placeholder> Responsáveis </option>
                           <option value="1"> Opção 1 </option>
                           <option value="2"> Opção 2 </option>
                           <option value="3"> Opção 3 </option>
@@ -43,8 +43,8 @@
                       </select>                                                         
                   </div>
                   <div class="col">
-                      <select class="select-field" style="width: 100%">
-                          <option value="0" selected> Data </option>
+                      <select class="select-field">
+                          <option placeholder> Data </option>
                           <option value="1"> Opção 1 </option>
                           <option value="2"> Opção 2 </option>
                           <option value="3"> Opção 3 </option>
@@ -52,8 +52,8 @@
                       </select>                                                         
                   </div>
                   <div class="col">
-                      <select class="select-field" style="width: 100%">
-                          <option value="1" selected> Segmento </option>
+                      <select class="select-field">
+                          <option placeholder> Segmento </option>
                           <option value="1"> Opção 1 </option>
                           <option value="2"> Opção 2 </option>
                           <option value="3"> Opção 3 </option>
@@ -212,9 +212,9 @@
                         <div class="icon-buttons-group">
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg">
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
+                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
                             <i class="nv-icon-upload"></i>
                           </button>
                         </div>
@@ -245,9 +245,9 @@
                         <div class="icon-buttons-group">
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg">
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
+                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
                             <i class="nv-icon-upload"></i>
                           </button>
                         </div>
@@ -277,9 +277,9 @@
                         <div class="icon-buttons-group">
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
                           <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg">
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
+                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
                             <i class="nv-icon-upload"></i>
                           </button>
                         </div>
@@ -339,8 +339,8 @@
                       </td>
                       <td>		
                         <div class="icon-buttons-group">								
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
+                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
                           <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
                             <i class="nv-icon-upload"></i>
                           </button>
@@ -369,8 +369,8 @@
                       </td>
                       <td>			
                         <div class="icon-buttons-group">                        							
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
+                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
                           <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo-1.pdf" data-doc="arquivo-1.doc">
                             <i class="nv-icon-upload"></i>
                           </button>
@@ -399,8 +399,8 @@
                       </td>
                       <td>
                         <div class="icon-buttons-group">                      										
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorios><i class="nv-icon-visibility"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></button>
+                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
+                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
                           <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo-2.pdf" data-doc="arquivo-2.doc">
                             <i class="nv-icon-upload"></i>
                           </button>

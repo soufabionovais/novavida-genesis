@@ -1,0 +1,57 @@
+/*Botão dropdown*/
+.btn-dropdown {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    background-color: #fff;
+    padding: 4px 7px 4px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2.5px;
+    font-size: 13px;
+    min-height: 40px;
+    overflow: hidden; 
+    color: #a6a6c4;
+    font-size: 13px;   
+    text-align: left;
+    padding: 0 15px;
+    font-weight: 100;        
+    position: relative;
+    @include pseudoElemento {
+    	width: 15px;
+    	height: 15px;
+    	background: url("../img/arrows/arrow-dropdown.png") no-repeat;
+    	right: 20px;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	transition: 0.5s;
+    	//transition-property: transform;
+    }
+    &.dropdown-open {
+    	@include pseudoElemento {
+    		transform: scaleY(-1) translateY(50%);
+    	}
+    }
+}
+
+.dropdown-menu {
+	padding: 10px;
+    width: calc(100% - 30px);
+    background: #f6f6f6;	
+	.lista {
+		box-shadow: none;
+		background: none;
+		li {
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;	
+			background: #fff;
+			border: solid 1px #e6e6e6;
+			padding: 5px 10px 5px 20px;
+			color: #a6a6c4;
+			font-size: 13px;
+			~ li {
+				margin-top: 5px;
+			}
+		}
+	}
+}

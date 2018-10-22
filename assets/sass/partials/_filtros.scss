@@ -7,7 +7,14 @@
         &.small-gutters {
             [class*="col"] {
                 padding-right: 0;
-                //padding-left: 8px;
+            }
+            .field-has-icon {
+                input {
+                    padding-right: 30px;
+                }
+                &:before {
+                    right: 5px;
+                }
             }
         }
     }

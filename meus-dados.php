@@ -16,7 +16,7 @@
           <div class="ls-box">
             <div class="row">
                 <div class="col-2">
-                    <form action="upload/upload.html" class="dropzone zone-upload-profile-image" id="uploadImage"></form>                       
+                    <form action="upload/upload.html" class="dropzone zone-upload-profile-image" id="uploadProfileImage"></form>                       
                     <!-- <div class="profile-image">
                         <img src="assets/img/avatar-usuario.png" alt="">
                     </div>                  --> 

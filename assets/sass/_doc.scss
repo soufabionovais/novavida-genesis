@@ -1382,6 +1382,7 @@ $doc_pagina-largura: 875px;
 		input {
 			color: #7ea1f3;
 			border: none;
+			box-shadow: none;
 		}
 
 		button {
@@ -1392,7 +1393,7 @@ $doc_pagina-largura: 875px;
 			height: 20px;
 			color: #7ea1f3;
 			background-color: #ffffff;
-			border: solid 1px #e2e2e2;
+			//border: solid 1px #e2e2e2;
 
 			&:first-of-type {
 				bottom: 0;

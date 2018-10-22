@@ -14,11 +14,14 @@
         &:only-child {
             border-radius: 4px;
         }
+        &.small-space {
+            padding: 5px;
+        }
     }
     .ls-title {
         color: #544364;
         font-size: 18px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
     .ls-box-header {
         display: flex;

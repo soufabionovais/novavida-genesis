@@ -86,6 +86,8 @@
   right: 11px;
   top: 50%;
   transform: translateY(-50%);
+  transition: 0.5s;
+  transition-property: transform;
 }
 
 .choices[data-type*="select-one"].is-open:after {
@@ -135,7 +137,7 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: #fff;
   padding: 4px 7px 4px;
   border: 1px solid #DDDDDD;
   border-radius: 2.5px;
@@ -166,6 +168,7 @@
   display: inline-block;
   padding: 4px 16px 4px 4px;
   width: 100%;
+  text-align: left;
 }
 
 [dir="rtl"] .choices__list--single {
@@ -228,9 +231,16 @@
     /* border-bottom-right-radius: 5px; */
     /* overflow: hidden; */
     white-space: nowrap;
-    min-width: 220px;
+      min-width: 220px;
     border-radius: 5px;
+    z-index: 5;
 }
+
+.choices.right .choices__list--dropdown {
+  right: 0;
+  min-width: 220px;
+}
+
 
 .choices__list--dropdown.is-active {
   display: block;
@@ -242,32 +252,35 @@
   border-color: #e2e2e2;
 }
 
-.choices__list.choices__list--dropdown.is-active:before {
+.choices__list.choices__list--dropdown.is-active:before,
+.choices__list.choices__list--dropdown.is-active:after {
     display: block;
     content: "";
     width: 15px;
     height: 15px;
     background: #fff;
-    position: absolute;
+    position: absolute;  
+    transform: rotate(45deg);   
+    right: 25px; 
+}
+
+.choices__list.choices__list--dropdown.is-active:before {
     top: -8px;
-    transform: rotate(45deg);
-    left: 25px;
     border: solid 1px #e2e2e2;
 }
 
 .choices__list.choices__list--dropdown.is-active:after {
-    display: block;
-    content: "";
-    width: 15px;
-    height: 14px;
-    background: #fff;
-    position: absolute;
     top: -7px;
-    transform: rotate(45deg);
-    left: 25px;
-    background: #fff;
     border: solid 1px #fff;
 }
+
+/*.choices.right .choices__list.choices__list--dropdown.is-active:before,
+.choices.right .choices__list.choices__list--dropdown.is-active:after {
+  left: initial;
+  right: 25px;
+}*/
+
+
 
 .is-flipped .choices__list--dropdown {
   top: auto;
@@ -283,6 +296,7 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   will-change: scroll-position;
+  color: #a6a6c4;
 }
 
 .choices__list--dropdown .choices__item {
@@ -326,6 +340,7 @@
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted:after {
   opacity: .5;
+  display: none;
 }
 
 .choices__item {

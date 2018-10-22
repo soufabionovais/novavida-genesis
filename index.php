@@ -138,10 +138,12 @@
                                 Livros Recentes
                               </div>
                               <div class="col">
-                                <select class="select-field" style="width: 100%">
-                                    <option value="0" selected> Mês </option>
+                                <select class="select-field" data-position="right">
+                                    <option placeholder> Mês </option>
+                                    <option value="1"> Dia </option>
                                     <option value="1"> Semana </option>
-                                    <option value="2"> Ano </option>
+                                    <option value="3"> Mês </option>
+                                    <option value="4"> Ano </option>
                                 </select>                                
                               </div>
                             </div>
@@ -266,10 +268,12 @@
                               Ranking de Relatórios
                             </div>
                             <div class="col">
-                                <select class="select-field" style="width: 100%">
-                                    <option value="0" selected> Mês </option>
+                                <select class="select-field" data-position="right">
+                                    <option placeholder> Mês </option>
+                                    <option value="1"> Dia </option>
                                     <option value="1"> Semana </option>
-                                    <option value="2"> Ano </option>
+                                    <option value="3"> Mês </option>
+                                    <option value="4"> Ano </option>
                                 </select>                               
                             </div>
                         </div>

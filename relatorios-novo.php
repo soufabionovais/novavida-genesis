@@ -10,41 +10,34 @@
       <div class="container-fluid">
         <div class="page-header">
           <h1 class="ls-title-intro">Novo relatório</h1>
-          <div class="page-header-buttons">
+          <!-- <div class="page-header-buttons">
             <button class="ls-btn ls-btn-primary" data-conteudo-alvo="editar-perfil-etapa-2">Customizar Perfil</button>
-          </div>                           
+          </div> -->                           
         </div>
 
         <div class="ls-boxes" data-id="editar-perfil-etapa-1" data-etapa>
-          <!-- <div class="ls-box">
-              <h2 class="ls-title">Novo Relatório</h2>
-          </div> -->
 
           <!-- Filtros -->
-          <div class="ls-box container-filtros">
+          <div class="ls-box">
               <div class="ls-form ls-form-horizontal row">
-                  <div class="col">
-                      <label class="ls-label">
-                        <select class="select-field option-button" style="width: 100%">
-                            <option value="0" selected> Selecione o Perfil </option>
-                            <option value="1"> Opção 1 </option>
-                            <option value="2"> Opção 2 </option>
-                            <option value="3"> Opção 3 </option>
-                            <option value="4"> Opção 4 </option>
-                        </select>   
-                      </label> 
+                  <div class="col-6">
+                      <button class="btn-dropdown" data-dropdown="#listaSelecaoPerfil">Selecione um perfil</button>                   
+                      <div class="dropdown-menu dropdown-anchor-top-left" id="listaSelecaoPerfil">
+                        <ul class="lista">
+                          <li>Pefil 001 <button class="ls-btn ls-btn-primary small" data-conteudo-alvo="editar-perfil-etapa-2">Customizar Perfil</button></li>
+                          <li>Pefil 002 <button class="ls-btn ls-btn-primary small" data-conteudo-alvo="editar-perfil-etapa-2">Customizar Perfil</button></li>
+                        </ul>
+                      </div>                      
                   </div>
 
-                  <div class="col">
-                      <label class="ls-label">
-                        <select class="select-field" style="width: 100%">
-                            <option value="0" selected> Selecione o Livro </option>
-                            <option value="1"> Opção 1 </option>
-                            <option value="2"> Opção 2 </option>
-                            <option value="3"> Opção 3 </option>
-                            <option value="4"> Opção 4 </option>
-                        </select>  
-                      </label>  
+                  <div class="col-6">
+                    <select class="select-field">
+                        <option placeholder> Selecione o Livro </option>
+                        <option value="1"> Opção 1 </option>
+                        <option value="2"> Opção 2 </option>
+                        <option value="3"> Opção 3 </option>
+                        <option value="4"> Opção 4 </option>
+                    </select>  
                   </div>                  
               </div>                        
           </div>
@@ -147,7 +140,25 @@
 
               <!-- Upload de lista -->
               <div id="uploadLista" class="ls-tab-content no-bg">
-                  <h1>Upload</h1>
+                  <div class="ls-box">
+                  <h2 class="ls-title">Selecione a lista para upload <small>(Formatos aceitos: .txt ou .csv)</small></h2>
+                  <div class="row">
+                    <div class="col-10">
+                        <label class="ls-label">
+                            <div class="file-upload-wrapper">
+                                <input type="file" class="input-file-text ls-field">
+                                <input type="text" class="text-field" placeholder="Selecione uma lista para importar">                              
+                            </div>
+                        </label>                        
+                    </div>   
+                    <div class="col-2 right-aligned">
+                        <button class="ls-btn ls-btn-primary">Enviar</button>
+                    </div>
+                      <!--                     <div class="col-2 right-aligned">
+                        <button class="ls-btn ls-btn-primary ls-btn-icon-only"><i class="nv-icon-remove"></i></button>
+                    </div>    -->                 
+                    </div>
+                  </div>               
               </div>
               <!-- Fim Upload de lista -->
 
@@ -157,8 +168,8 @@
           <div class="ls-box">
             <div class="row">
               <div class="col">
-                  <div class="pretty p-icon p-curve p-tada checkbox-container no-bg no-pad-left" data-adicionar-monitoria>
-                      <input type="checkbox" name="radio66">
+                  <div class="pretty p-icon p-curve p-tada checkbox-container no-bg no-pad-left">
+                      <input type="checkbox" name="monitorarRelatorio" id="monitorarRelatorio">
                       <div class="state p-primary-o">
                           <i class="icon ls-ico-checkmark"></i>
                           <label>Monitorar relatório completo</label>

@@ -9,7 +9,13 @@ function abrirModalPopup(data) {
 			///habilitaCheckbox();
 			//locastyle.init();
 
-			setSliders();
+			if($(".featherlight").find(".ls-tabs-nav").length) {
+				locastyle.tabs.init()
+			}
+
+			if($(".featherlight").find(".slider-wrapper").length) {
+				setSliders();
+			}
 
 			if( $('input[type="number"]').length ) {
 				$('input[type="number"]').niceNumber({
@@ -20,11 +26,21 @@ function abrirModalPopup(data) {
 			}
 
 			if( $('.select-field').length ) {
-				$('.select-field').select2();
+				setSelectCustomizado();
 			}
 		}
 	});
 }
+
+var checkMonitorarRelatorio = $("#monitorarRelatorio");
+	checkMonitorarRelatorio.on("click", function(){
+		var isChecked = $(this).is(":checked");
+		if(isChecked) {
+			abrirModalPopup({
+				url: "modais/adicionar-monitoria.html"
+			});
+		}
+	});
 
 /** Relacionar Perfil **/ 
 var btnRelacionarPerfil = $("[data-relacionar-perfil]");
@@ -47,8 +63,17 @@ btnAdicionarMonitoria.on("click", function () {
 
 var btnAdicionarMonitoriaRelatorio = $("[data-adicionar-monitoria-relatorio]");
 btnAdicionarMonitoriaRelatorio.on("click", function () {
+	abrirModalPopup({
+		url: "modais/adicionar-monitoria-relatorio.html",
+		cssClass: "modal-monitoria",		
+	});
+});
+
+
+var btnAdicionarMonitoriaRelatorio = $("[data-adicionar-monitoria-relatorio]");
+btnAdicionarMonitoriaRelatorio.on("click", function () {
 	var adicionarMonitoriaRelatorio = {
-		url: "modais/adicionar-monitoria-relatorios.html",
+		url: "modais/adicionar-monitoria-relatorio.html",
 		cssClass: "modal-monitoria-relatorio",
 	};
 	abrirModalPopup(adicionarMonitoriaRelatorio);
@@ -86,7 +111,7 @@ Dropzone.options.uploadImage = {
 };
 
 /** Upload de Imagem de Perfil **/
-Dropzone.options.uploadImage = {
+Dropzone.options.uploadProfileImage = {
 	acceptedFiles: "image/*",
 	url: "upload/upload.html",
 	dictDefaultMessage: "Seleciona sua imagem de perfil",
@@ -106,6 +131,36 @@ Dropzone.options.uploadImage = {
 		});
 	}		
 };
+
+
+Dropzone.options.uploadLista = {
+	acceptedFiles: ".txt,.csv",
+	url: "upload/upload.html",
+	dictDefaultMessage: "Selecione uma lista",
+	dictRemoveFile: "Remover lista",
+	maxFiles: 1,
+	parallelUploads: 1,
+	maxFilesize: 1,
+	clickable: "#uploadLista",
+	addRemoveLinks: true,
+	init: function () {
+		this.on("addedfile", function () {
+			if (this.files[1] != null) {
+				this.removeFile(this.files[0]);
+			}
+		});
+	}		
+};
+
+$(".file-upload-wrapper").each(function(){
+	var fileField = $(this).find(".input-file-text");
+	var placeholderField = $(this).find(".text-field");
+	fileField.on("change", function(){
+		var selectedFile = $(this)[0].files[0].name; 
+		placeholderField.val(selectedFile);
+	})
+});
+
 
 /* Selecionar Todos os Perfis */
 var btnSelecionarTodosPerfis = $("#btnSelecionarTodoPerfis");
@@ -204,15 +259,30 @@ $('[data-tags]').tagify().on('add', function(e, tagName){
  //$('.select-field').select2();
 
 
-$(".select-field").each(function(){
-	var choices = new Choices($(this)[0], {
-		searchEnabled: true,
-		loadingText: 'Carregando...',
-		noResultsText: 'Nenhum resultado encontrado',
-		noChoicesText: 'Nenhuma opção disponível',
-		itemSelectText: 'Clique para selecionar',
-		searchPlaceholderValue: "Pesquisar na lista"
-	});
+
+setSelectCustomizado();
+function setSelectCustomizado(){
+	$(".select-field").each(function(){
+		var position = $(this).data("position") ||  "left";
+		var choices = new Choices($(this)[0], {
+			searchEnabled: true,
+			loadingText: 'Carregando...',
+			noResultsText: 'Nenhum resultado encontrado',
+			noChoicesText: 'Nenhuma opção disponível',
+			itemSelectText: 'Clique para selecionar',
+			searchPlaceholderValue: "Pesquisar na lista",
+		    classNames: {
+		      containerOuter: 'choices' + " " + position,
+		    }
+		});
+	});	
+}
+
+
+$(".btn-dropdown.dropdown-open").on("click", function(){
+	alert("TEste");
+	var targetItem = $(this).data("dropdown");
+	$(targetItem).removeClass("dropdown-opened");
 });
 
  

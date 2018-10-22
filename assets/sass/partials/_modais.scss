@@ -144,6 +144,9 @@
             background-repeat: no-repeat;
             background-position: center;
             z-index: 2;
+            &.slick-disabled {
+                opacity: 0.1;
+            }
             &:before {
                 display: none;
             }

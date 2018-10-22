@@ -124,6 +124,7 @@
 .icon-buttons-group {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     [class*="ls-btn"].ls-btn-icon {
         padding: 0;
         [class*="ico"] {
@@ -134,3 +135,5 @@
         }                
     }
 }
+
+

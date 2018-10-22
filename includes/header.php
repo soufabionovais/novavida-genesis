@@ -13,33 +13,33 @@
     <div class="ls-alerts-list">
       <a href="#" class="nv-icon-notifications" data-counter="8" data-ls-module="topbarCurtain" data-target="#ls-notification-curtain"></a>
     </div>
-    <!-- <aside class="ls-notification">
+    <aside class="ls-notification">
       <nav class="ls-notification-list" id="ls-notification-curtain" style="left: 1716px;">
         <h3 class="ls-title-2">Notificações</h3>
         <ul>
           <li class="ls-dismissable">
-            <a href="#">Blanditiis est est dolorem iure voluptatem eos deleniti repellat et laborum consequatur</a>
+            <a href="#">Notificação 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Similique eos rerum perferendis voluptatibus</a>
+            <a href="#">Notificação 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Qui numquam iusto suscipit nisi qui unde</a>
+            <a href="#">Notificação 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Nisi aut assumenda dignissimos qui ea in deserunt quo deleniti dolorum quo et consequatur</a>
+            <a href="#">Notificação 4 Lorem.</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Sunt consequuntur aut aut a molestiae veritatis assumenda voluptas nam placeat eius ad</a>
+            <a href="#">Notificação 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
         </ul>
       </nav>
-    </aside> -->
+    </aside>
 
 
     <!-- Dropdown com detalhes da conta de usuário -->
@@ -52,12 +52,19 @@
         </div>        
       </a>
 
-      <!-- <nav class="ls-dropdown-nav ls-user-menu">
+      <nav class="ls-dropdown-nav ls-user-menu">
+        <div class="ls-form">
+              <span class="">Translate</span> 
+              <span class="ls-group-btn">
+                <a href="#" class="ls-btn ls-btn-primary small">PT</a>
+                <a href="#" class="ls-btn ls-btn-primary small">EN</a>
+              </span>          
+        </div>
         <ul>
-          <li><a href="#">Meus dados</a></li>
+          <li><a href="meus-dados.php" title="Editar meus dados">Meus dados</a></li>
           <li><a href="#">Sair</a></li>
          </ul>
-      </nav> -->
+      </nav>
     </div>
   </div>
 
