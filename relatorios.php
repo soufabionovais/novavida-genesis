@@ -108,7 +108,7 @@
                       <td>Livro ABC-02</td>
                       <td>Felipe Coutinho Almeida</td>
                       <td>
-                        <span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+                        <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
                       </td>
                       <td class="center-aligned">
                           <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
@@ -128,7 +128,7 @@
                       </td>
                       <td>Livro ABC-02</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
                             <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
@@ -147,7 +147,7 @@
                       </td>
                       <td>Livro ABC-02</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
                             <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
@@ -198,7 +198,7 @@
                       </td>
                       <td>Industrial</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-pendentes-analise.html">
                           <div class="rating status">
@@ -233,7 +233,7 @@
                       </td>
                       <td>Industrial</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="rating status">
                             <i class="dot filled"></i>
@@ -265,7 +265,7 @@
                       </td>
                       <td>Industrial</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="rating status">
                             <i class="dot filled"></i>
@@ -329,7 +329,7 @@
                       </td>
                       <td>Industrial</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="rating status">
                             <i class="dot filled"></i>
@@ -359,7 +359,7 @@
                       </td>
                       <td>Industrial</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="rating status">
                             <i class="dot filled"></i>
@@ -389,7 +389,7 @@
                       </td>
                       <td>Industrial</td>
                       <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span></td>
+                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="rating status">
                             <i class="dot filled"></i>
@@ -420,6 +420,15 @@
                     <li><a href="#">5</a></li>
                     <li><a href="#"><span class="icon">&raquo;</span></a></li>
                   </ul>
+
+                  <div class="ls-filter-view">
+                      <select name="" id="" class="select-field">
+                        <option value="10">10/pg</option>
+                        <option value="30">30/pg</option>
+                        <option value="50">50/pg</option>
+                      </select>
+                  </div>
+
                 </div>                 
               </div>
               <!-- Fim Relatórios concluídos --> 

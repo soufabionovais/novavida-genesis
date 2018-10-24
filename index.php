@@ -188,7 +188,7 @@
                             <div class="row d-flex align-items-center">
                               <div class="col">
                                 Feed de notícias
-                                <i class="icone nv-icon-notifications"></i>
+                                <i class="icone nv-icomoon-bell"></i>
                               </div>
                             </div>
                         </header>

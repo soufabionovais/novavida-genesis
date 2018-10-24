@@ -61,12 +61,21 @@
         }
     }
 
-    .choices[data-type*="select-one"] .choices__inner {
+    .choices[data-type*="select-one"] {
+        &:after {
+              background-image: url(../../assets/img/arrows/arrow-dropdown-monocolor.png);
+        }
+        .choices__inner {
             height: 30px;
             border-radius: 5px;
             box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05);
             border: solid 1px rgba(255, 255, 255, 0.28);
             background-color: rgba(255, 255, 255, 0.22);        
+        }        
+    }
+
+    .mCSB_outside + .mCSB_scrollTools {
+        right: -5px;
     }
 
 
@@ -155,10 +164,10 @@
             @include pseudoElemento($tipo: before) {
                 width: 10px;
                 height: 10px;
-                background: #eef1f3;
+                background: #d9dde6;
                 border-radius: 10px;
                 left: -5px;
-                top: 12px;
+                top: 16px;
             }
             &.item-pj {
                 &:before {
@@ -198,6 +207,22 @@
             height: 515px;
             overflow: auto;
             // padding-right: 5px;            
+        }
+        .mCSB_outside + .mCSB_scrollTools {
+            right: -15px;
+        }        
+    }
+}
+
+.mCSB_scrollTools {
+    .mCSB_dragger {
+        .mCSB_dragger_bar {
+            background: #27deac;
+        }
+        &.mCSB_dragger_onDrag {
+            .mCSB_dragger_bar {
+                background: #f5842a;
+            }
         }
     }
 }

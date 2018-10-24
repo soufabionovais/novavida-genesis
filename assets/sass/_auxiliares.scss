@@ -27,6 +27,18 @@
     color: $texto-destaque !important;
 }
 
+.texto-destaque {
+    &.icone-calendario {
+        &:before {
+            font-size: 17px;
+            position: relative;
+            top: 2px;
+            margin-right: 5px;   
+        }     
+    }
+}
+
+
 .hidden-area {
     display: none;
 }

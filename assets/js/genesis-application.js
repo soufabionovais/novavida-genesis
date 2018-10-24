@@ -265,7 +265,7 @@ function setSelectCustomizado(){
 	$(".select-field").each(function(){
 		var position = $(this).data("position") ||  "left";
 		var choices = new Choices($(this)[0], {
-			searchEnabled: true,
+			searchEnabled: false,
 			loadingText: 'Carregando...',
 			noResultsText: 'Nenhum resultado encontrado',
 			noChoicesText: 'Nenhuma opção disponível',
@@ -438,4 +438,14 @@ var tipoAcesso = $("[name='tipo-acesso']");
 			areaLivrosAcessoRestrito.addClass("hidden-area");
 		}		
 	});
+
+
+/* Custom Scrollbar */	
+var contentScrollArea = $(".content-area");
+if(contentScrollArea.length) {
+	$(contentScrollArea).mCustomScrollbar({
+		scrollbarPosition: "outside",
+		autoDraggerLength: false
+	});
+}
 

@@ -5,7 +5,6 @@
     <script src="vendors/dropzone/dropzone.js"></script>
     <script src="vendors/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="vendors/tagify/jquery.tagify.js"></script>
-    <script src="vendors/select2/select2.min.js"></script>
     <script src="vendors/TweenMax/TweenMax.min.js"></script>
     <script src="vendors/TweenMax/ScrollToPlugin.min.js"></script>
     <script src="vendors/slick-slider-1.8.1/slick.min.js"></script>
@@ -14,5 +13,7 @@
     <script src="vendors/number-input/jquery.nice-number.min.js"></script>
     <script src="vendors/choicesjs/choices.min.js"></script>
     <script src="vendors/sweet-dropdown/jquery.sweet-dropdown.min.js"></script>
+    <script src="vendors/custom-scrollbar/js/minified/jquery.mCustomScrollbar.min.js"></script>
+    <script src="vendors/custom-scrollbar/js/minified/jquery.mousewheel-3.0.6.min.js"></script>
     <script src="vendors/jRange/jquery.range-min.js"></script>
     <script src="assets/js/genesis-application.js"></script>

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon-novavida';
   src:
-    url('fonts/icomoon-novavida.ttf?2l2cqw') format('truetype'),
-    url('fonts/icomoon-novavida.woff?2l2cqw') format('woff'),
-    url('fonts/icomoon-novavida.svg?2l2cqw#icomoon-novavida') format('svg');
+    url('fonts/icomoon-novavida.ttf?r7ddwm') format('truetype'),
+    url('fonts/icomoon-novavida.woff?r7ddwm') format('woff'),
+    url('fonts/icomoon-novavida.svg?r7ddwm#icomoon-novavida') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nv-icomoon-bell-o:before {
+  content: "\e91b";
+}
+.nv-icomoon-bell:before {
+  content: "\e91c";
+}
+.nv-icomoon-alarm1:before {
+  content: "\e91d";
+}
+.nv-icomoon-file-pdf:before {
+  content: "\eadf";
+}
+.nv-icomoon-file-word:before {
+  content: "\eae1";
+}
+.nv-icomoon-file-excel:before {
+  content: "\eae2";
+}
+.nv-icomoon-libreoffice:before {
+  content: "\eae3";
+}
 .nv-icomoon-linkedin:before {
   content: "\e9ea";
 }
@@ -2035,16 +2056,4 @@
 }
 .nv-icomoon-ellipsis:before {
   content: "\e9e9";
-}
-.nv-icomoon-file-pdf:before {
-  content: "\eadf";
-}
-.nv-icomoon-file-word:before {
-  content: "\eae1";
-}
-.nv-icomoon-file-excel:before {
-  content: "\eae2";
-}
-.nv-icomoon-libreoffice:before {
-  content: "\eae3";
 }
