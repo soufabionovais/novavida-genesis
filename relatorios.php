@@ -167,6 +167,13 @@
                     <li><a href="#">5</a></li>
                     <li><a href="#"><span class="icon">&raquo;</span></a></li>
                   </ul>
+                  <div class="ls-filter-view">
+                      <select name="" id="" class="select-field">
+                        <option value="10">10/pg</option>
+                        <option value="30">30/pg</option>
+                        <option value="50">50/pg</option>
+                      </select>
+                  </div>                  
                 </div>                 
               </div>
               <!-- Fim Relatórios em processamento -->
@@ -298,6 +305,13 @@
                     <li><a href="#">5</a></li>
                     <li><a href="#"><span class="icon">&raquo;</span></a></li>
                   </ul>
+                  <div class="ls-filter-view">
+                      <select name="" id="" class="select-field">
+                        <option value="10">10/pg</option>
+                        <option value="30">30/pg</option>
+                        <option value="50">50/pg</option>
+                      </select>
+                  </div>                  
                 </div>                 
               </div>
               <!-- Fim Relatórios pendentes de análise -->
@@ -420,7 +434,6 @@
                     <li><a href="#">5</a></li>
                     <li><a href="#"><span class="icon">&raquo;</span></a></li>
                   </ul>
-
                   <div class="ls-filter-view">
                       <select name="" id="" class="select-field">
                         <option value="10">10/pg</option>
@@ -428,7 +441,6 @@
                         <option value="50">50/pg</option>
                       </select>
                   </div>
-
                 </div>                 
               </div>
               <!-- Fim Relatórios concluídos --> 
