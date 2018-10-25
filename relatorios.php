@@ -198,7 +198,7 @@
                       <td>
                         <div class="user-data">
                           <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
+                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
                             <p class="user-data-description">333.222.666/0001-00</p>
                           </div>
                         </div>								
@@ -233,7 +233,7 @@
                       <td>
                         <div class="user-data">
                           <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
+                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
                             <p class="user-data-description">333.222.666/0001-00</p>
                           </div>
                         </div>								
@@ -265,7 +265,7 @@
                       <td>
                         <div class="user-data">
                           <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
+                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
                             <p class="user-data-description">333.222.666/0001-00</p>
                           </div>
                         </div>								
@@ -336,7 +336,7 @@
                       <td>
                         <div class="user-data">
                           <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
+                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
                             <p class="user-data-description">333.222.666/0001-00</p>
                           </div>
                         </div>								
@@ -366,7 +366,7 @@
                       <td>
                         <div class="user-data">
                           <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
+                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
                             <p class="user-data-description">333.222.666/0001-00</p>
                           </div>
                         </div>								
@@ -396,7 +396,7 @@
                       <td>
                         <div class="user-data">
                           <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
+                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
                             <p class="user-data-description">333.222.666/0001-00</p>
                           </div>
                         </div>								

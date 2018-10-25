@@ -442,8 +442,17 @@ var tipoAcesso = $("[name='tipo-acesso']");
 
 /* Custom Scrollbar */	
 var contentScrollArea = $(".content-area");
+
 if(contentScrollArea.length) {
 	$(contentScrollArea).mCustomScrollbar({
+		scrollbarPosition: "outside",
+		autoDraggerLength: false
+	});
+}
+
+var notificationList = $(".ls-notification.ls-notification-list");
+if(notificationList.length) {
+	$(notificationList).mCustomScrollbar({
 		scrollbarPosition: "outside",
 		autoDraggerLength: false
 	});

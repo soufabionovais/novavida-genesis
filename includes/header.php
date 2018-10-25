@@ -11,7 +11,7 @@
 
     <!-- Links de apoio -->
     <div class="ls-alerts-list">
-      <a href="#" class="nv-icon-notifications" data-counter="8" data-ls-module="topbarCurtain" data-target="#ls-notification-curtain"></a>
+      <a href="#" class="nv-icomoon-bell" data-counter="8" data-ls-module="topbarCurtain" data-target="#ls-notification-curtain"></a>
     </div>
     <aside class="ls-notification">
       <nav class="ls-notification-list" id="ls-notification-curtain" style="left: 1716px;">

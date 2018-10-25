@@ -72,3 +72,10 @@ a.texto-destaque {
 }
 
 .no-pad-left {padding-left: 0 !important;}
+
+.icone-calendario:before {
+    position: relative;
+    font-size: 17px;
+    top: 2px;
+    margin-right: 5px;
+}

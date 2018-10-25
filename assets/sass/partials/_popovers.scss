@@ -66,16 +66,26 @@
             }
             &.warning {
                 color: #ffca83;
+                i {
+                    &:before {
+                        font-size: 18px;
+                    }
+                }
             }
             &.success {
                 color: #27deac;
+                i {
+                    &:before {
+                        font-size: 18px;
+                    }
+                }                
             }
         }
         td,
         th {
             &:last-child {
                 width: 220px;
-                padding-left: 20px;
+                padding-left: 15px;
             }
         }
         .icone {
@@ -227,4 +237,17 @@
 
 .anchor-wrapper:hover .link-anchor {
     opacity: 1;
+}
+
+.the_tooltip {
+    position: absolute;
+    left: calc(100% + 20px);
+    top: -14px;
+    min-width: 150px;
+    width: 100%;
+    max-width: 250px;
+    z-index: 2;
+    border-radius: 5px;
+    padding: 20px;
+    background: red;
 }

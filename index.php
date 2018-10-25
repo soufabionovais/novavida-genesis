@@ -157,23 +157,23 @@
                     <div class="ls-box bg-grey content-area">
                       <div class="item-line">
                           <span class="texto-destaque nv-icon-note"><a href="#" title="Nome do livro">Alpha Contabilidade</a></span>
-                          <span class="nv-icon-calendar">25/06/94</span>
+                          <span class="icone-calendario nv-icomoon-calendar-full">25/06/94</span>
                       </div>
                       <div class="item-line">
                           <span class="texto-destaque nv-icon-note"><a href="#" title="Nome do livro">Alpha Contabilidade</a></span>
-                          <span class="nv-icon-calendar">25/06/94</span>
+                          <span class="icone-calendario nv-icomoon-calendar-full">25/06/94</span>
                       </div>
                       <div class="item-line">
                           <span class="texto-destaque nv-icon-note"><a href="#" title="Nome do livro">Alpha Contabilidade</a></span>
-                          <span class="nv-icon-calendar">25/06/94</span>
+                          <span class="icone-calendario nv-icomoon-calendar-full">25/06/94</span>
                       </div>
                       <div class="item-line">
                           <span class="texto-destaque nv-icon-note"><a href="#" title="Nome do livro">Alpha Contabilidade</a></span>
-                          <span class="nv-icon-calendar">25/06/94</span>
+                          <span class="icone-calendario nv-icomoon-calendar-full">25/06/94</span>
                       </div>
                       <div class="item-line">
                           <span class="texto-destaque nv-icon-note"><a href="#" title="Nome do livro">Alpha Contabilidade</a></span>
-                          <span class="nv-icon-calendar">25/06/94</span>
+                          <span class="icone-calendario nv-icomoon-calendar-full">25/06/94</span>
                       </div> 
                     </div>   
                     <div class="ls-box center-aligned">
@@ -195,23 +195,23 @@
                     </div>
                     <div class="ls-box bg-grey content-area">
                       <div class="item-line item-line-block d-block">
-                          <span class="texto-destaque nv-icon-calendar"><a href="#" title="Nome da notícia">Hoje 16:24</a></span>
+                          <span class="texto-destaque icone-calendario nv-icomoon-calendar-full"><a href="#" title="Nome da notícia">Hoje 16:24</a></span>
                           <div class="sub-content">Fonte da empresa Piraju atualizada</div>
                       </div>
                       <div class="item-line item-line-block d-block">
-                          <span class="texto-destaque nv-icon-calendar"><a href="#" title="Nome da notícia">Ontem 16:24</a></span>
+                          <span class="texto-destaque icone-calendario nv-icomoon-calendar-full"><a href="#" title="Nome da notícia">Ontem 16:24</a></span>
                           <div class="sub-content">Fonte da empresa Piraju atualizada</div>
                       </div>
                       <div class="item-line item-line-block d-block">
-                          <span class="texto-destaque nv-icon-calendar"><a href="#" title="Nome da notícia">25/06/94</a></span>
+                          <span class="texto-destaque icone-calendario nv-icomoon-calendar-full"><a href="#" title="Nome da notícia">25/06/94</a></span>
                           <div class="sub-content">Fonte da empresa Piraju atualizada</div>
                       </div>
                       <div class="item-line item-line-block d-block">
-                          <span class="texto-destaque nv-icon-calendar"><a href="#" title="Nome da notícia">25/06/94</a></span>
+                          <span class="texto-destaque icone-calendario nv-icomoon-calendar-full"><a href="#" title="Nome da notícia">25/06/94</a></span>
                           <div class="sub-content">Fonte da empresa Piraju atualizada</div>
                       </div>
                       <div class="item-line item-line-block d-block">
-                          <span class="texto-destaque nv-icon-calendar"><a href="#" title="Nome da notícia">25/06/94</a></span>
+                          <span class="texto-destaque icone-calendario nv-icomoon-calendar-full"><a href="#" title="Nome da notícia">25/06/94</a></span>
                           <div class="sub-content">Fonte da empresa Piraju atualizada</div>
                       </div> 
                     </div>  
