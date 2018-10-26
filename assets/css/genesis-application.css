@@ -2431,6 +2431,8 @@ html .box-tabs + .ls-tabs-container {
   .box-linha__titulo_container {
     display: inline-block;
     position: relative; }
+    .box-linha__titulo_container:hover .the_tooltip {
+      display: block; }
   .box-linha .label {
     color: #fff;
     padding: 5px 20px;
@@ -3556,13 +3558,38 @@ html div[data-ls-module="progressBar"] {
   position: absolute;
   left: calc(100% + 20px);
   top: -14px;
-  min-width: 150px;
-  width: 100%;
-  max-width: 250px;
+  width: 220px;
   z-index: 2;
   border-radius: 5px;
-  padding: 20px;
-  background: red; }
+  padding: 10px 20px;
+  background: #8399f5;
+  background: -moz-linear-gradient(left, #8399f5 0%, #7aa9f1 100%);
+  background: -webkit-linear-gradient(left, #8399f5 0%, #7aa9f1 100%);
+  background: linear-gradient(to right, #8399f5 0%, #7aa9f1 100%);
+  color: #fff;
+  display: none; }
+  .the_tooltip p {
+    font-size: 14px;
+    margin-bottom: 5px; }
+    .the_tooltip p:not(:first-child) {
+      margin: 3px 0 0;
+      font-size: 12px; }
+  .the_tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -14;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: #8399f5;
+    position: absolute;
+    left: -6px;
+    top: 15px;
+    transform: rotate(-45deg);
+    border-radius: 3px; }
 
 /*Botão dropdown*/
 .btn-dropdown {

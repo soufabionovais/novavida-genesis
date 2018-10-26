@@ -71,6 +71,11 @@
     &__titulo_container {
         display: inline-block;
         position: relative;
+        &:hover {
+            .the_tooltip {
+                display: block;
+            }            
+        }
     }
     .label {
         color: #fff;
