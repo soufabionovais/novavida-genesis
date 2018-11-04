@@ -150,7 +150,7 @@
                       <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
                       <td class="center-aligned">
                           <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
-                            <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
+                            <div data-ls-module="progressBar" class="error" role="progressbar" aria-valuenow="100"></div>
                           </div>
                       </td>
                     </tr>													

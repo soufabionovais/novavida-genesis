@@ -15,6 +15,23 @@ html {
                 display: none;
             }               
         }
+        &.error {
+            margin-left: 25px;
+            width: 155px;
+            span {
+                background: #ffca83;
+            }
+            &:before {
+                display: block;
+                content: '\e817';
+                font-family: "nova-vida-icones" !important;
+                color: #ffca83;
+                position: absolute;
+                font-size: 18px;
+                left: -30px;
+                top: -6px;
+            }
+        }
     }
 }
 

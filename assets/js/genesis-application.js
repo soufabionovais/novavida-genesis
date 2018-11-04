@@ -362,6 +362,12 @@ $('[data-toggle="popover"]').on('shown.bs.popover', function () {
 	habilitarClickToggleLinhaConteudos();
 	//locastyle.init();
 	locastyle.tabs.init();
+
+	var tabScrollArea = $(".tab-workflow");
+	if(tabScrollArea.length) {
+		$(tabScrollArea).mCustomScrollbar();	
+	}	
+
 });
 
 /* Tabs */
@@ -448,6 +454,11 @@ if(contentScrollArea.length) {
 		scrollbarPosition: "outside",
 		autoDraggerLength: false
 	});
+}
+
+var tabScrollArea = $(".tab-workflow");
+if(tabScrollArea.length) {
+	$(tabScrollArea).mCustomScrollbar();	
 }
 
 var notificationList = $(".ls-notification.ls-notification-list");

@@ -3311,6 +3311,20 @@ html div[data-ls-module="progressBar"] {
     min-height: 13px; }
     html div[data-ls-module="progressBar"] span:before {
       display: none; }
+  html div[data-ls-module="progressBar"].error {
+    margin-left: 25px;
+    width: 155px; }
+    html div[data-ls-module="progressBar"].error span {
+      background: #ffca83; }
+    html div[data-ls-module="progressBar"].error:before {
+      display: block;
+      content: '\e817';
+      font-family: "nova-vida-icones" !important;
+      color: #ffca83;
+      position: absolute;
+      font-size: 18px;
+      left: -30px;
+      top: -6px; }
 
 .barra-progresso-container {
   position: relative; }
