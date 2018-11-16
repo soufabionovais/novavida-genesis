@@ -253,8 +253,8 @@
                           </div>
                           <div class="col right-aligned">
                               <ol class="ls-breadcrumb passos">
-                                <li><a href="#">Configurações gerais</a></li>
-                                <li><a href="#">Configurações de fontes</a></li>
+                                <li class="active"><a href="#">Configurações gerais</a></li>
+                                <li data-conteudo-alvo="perfil-relatorios-etapa-3"><a href="#">Configurações de fontes</a></li>
                               </ol>                          
                           </div>
                         </div>
@@ -388,8 +388,8 @@
                           </div>
                           <div class="col right-aligned">
                               <ol class="ls-breadcrumb passos">
-                                <li><a href="#">Configurações gerais</a></li>
-                                <li><a href="#">Configurações de fontes</a></li>
+                                <li data-conteudo-alvo="perfil-relatorios-etapa-2"><a href="#">Configurações gerais</a></li>
+                                <li class="active"><a href="#">Configurações de fontes</a></li>
                               </ol>                          
                           </div>
                         </div>

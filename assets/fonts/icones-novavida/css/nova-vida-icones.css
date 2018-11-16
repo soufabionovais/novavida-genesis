@@ -29,7 +29,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: .1em;
   text-align: center;
   /* opacity: .8; */
  
@@ -42,7 +42,7 @@
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: .1em;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -61,8 +61,8 @@
 .nv-icon-bars-graphic:before { content: '\e807'; } /* '' */
 .nv-icon-calendar:before { content: '\e808'; } /* '' */
 .nv-icon-camera:before { content: '\e809'; } /* '' */
-.nv-icon-check-circle-thin:before { content: '\e80a'; } /* '' */
-.nv-icon-check-circle:before { content: '\e80b'; } /* '' */
+.nv-icon-check-circle:before { content: '\e80a'; } /* '' */
+.nv-icon-check-circle-thin:before { content: '\e80b'; } /* '' */
 .nv-icon-check:before { content: '\e80c'; } /* '' */
 .nv-icon-config:before { content: '\e80e'; } /* '' */
 .nv-icon-customer:before { content: '\e80f'; } /* '' */

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon-novavida';
   src:
-    url('fonts/icomoon-novavida.ttf?r7ddwm') format('truetype'),
-    url('fonts/icomoon-novavida.woff?r7ddwm') format('woff'),
-    url('fonts/icomoon-novavida.svg?r7ddwm#icomoon-novavida') format('svg');
+    url('fonts/icomoon-novavida.ttf?nb92i9') format('truetype'),
+    url('fonts/icomoon-novavida.woff?nb92i9') format('woff'),
+    url('fonts/icomoon-novavida.svg?nb92i9#icomoon-novavida') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nv-icomoon-checkmark1:before {
+  content: "\e9ab";
+}
+.nv-icomoon-checkmark3:before {
+  content: "\e9ac";
+}
+.nv-icomoon-checkmark4:before {
+  content: "\e9af";
+}
+.nv-icomoon-indeterminate_check_box:before {
+  content: "\e9a5";
+}
+.nv-icomoon-check_circle:before {
+  content: "\e9a6";
+}
+.nv-icomoon-check_box_outline_blank:before {
+  content: "\e9a8";
+}
+.nv-icomoon-check_box:before {
+  content: "\e9a9";
+}
+.nv-icomoon-check2:before {
+  content: "\e9aa";
+}
+.nv-icomoon-check-square-o:before {
+  content: "\e91e";
+}
+.nv-icomoon-check-circle:before {
+  content: "\e9a1";
+}
+.nv-icomoon-check-square1:before {
+  content: "\e9a3";
+}
+.nv-icomoon-check1:before {
+  content: "\e9a4";
+}
 .nv-icomoon-bell-o:before {
   content: "\e91b";
 }
@@ -31,6 +67,33 @@
 }
 .nv-icomoon-alarm1:before {
   content: "\e91d";
+}
+.nv-icomoon-bubble1:before {
+  content: "\e99f";
+}
+.nv-icomoon-sphere:before {
+  content: "\e9cf";
+}
+.nv-icomoon-earth1:before {
+  content: "\e9d0";
+}
+.nv-icomoon-checkmark:before {
+  content: "\ea10";
+}
+.nv-icomoon-checkmark2:before {
+  content: "\ea11";
+}
+.nv-icomoon-checkbox-checked:before {
+  content: "\ea52";
+}
+.nv-icomoon-checkbox-unchecked:before {
+  content: "\ea53";
+}
+.nv-icomoon-radio-checked:before {
+  content: "\ea54";
+}
+.nv-icomoon-radio-checked2:before {
+  content: "\ea55";
 }
 .nv-icomoon-file-pdf:before {
   content: "\eadf";

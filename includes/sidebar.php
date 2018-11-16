@@ -4,7 +4,7 @@
 
       <nav class="ls-menu">
         <ul>
-            <li><a href="relatorios.php" class="nv-icon-bars-graphic" title="Relatórios">Relatórios</a></li>
+            <li><a href="relatorios.php" class="nv-icon-bars-graphic active" title="Relatórios">Relatórios</a></li>
             <li><a href="livros.php" class="nv-icon-reader-mode" title="Livros">Livros</a></li>
             <li><a href="localizador.php" class="nv-icon-fingerprint" title="Localizador">Localizador</a></li>
             <li><a href="monitoria.php" class="nv-icon-visibility" title="Monitoria">Monitoria</a></li>

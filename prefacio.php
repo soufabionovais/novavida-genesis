@@ -244,7 +244,7 @@
 									<div class="marcacao">
 										<div class="linha"></div>
 										<div class="marcador">
-											<i class="icone nv-icon-check-circle-thin"></i>
+											<i class="icone nv-icon-check-circle-thin-thin"></i>
 										</div>
 									</div>
 

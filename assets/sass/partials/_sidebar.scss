@@ -32,7 +32,8 @@ html {
             }            
             &:hover,
             &:focus,
-            &:active {
+            &:active,
+            &.active {
                 color: $sidebar-link-color-hover;
                 background-color: transparent;
                 padding-left: 15px;

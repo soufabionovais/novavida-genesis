@@ -27,6 +27,10 @@
     color: $texto-destaque !important;
 }
 
+.atencao {
+    color: #ffca83;
+}
+
 .texto-destaque {
     &.icone-calendario {
         &:before {

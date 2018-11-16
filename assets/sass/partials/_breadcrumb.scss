@@ -54,8 +54,20 @@
                 justify-content: center;
                 color: #a6a6c4;             
             } 
+            a:hover {
+                color: #8399f5;
+            }
             &:after {
                 display: none;
+            }
+            &.active {
+                &:before {
+                    color: #fff;    
+                    @include gradiente(#8399f5, #7aa9f1, $direcao: "vertical");
+                }
+                a {
+                    color: #8399f5;
+                }
             }
         }
     }

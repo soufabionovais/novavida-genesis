@@ -187,6 +187,7 @@
                   </div>
                   <div class="col-3">
                     <div class="ls-box bg-medium-grey small-space">
+                      <h2 class="sidebar-title">Acompanhamento: Alpha Jurídica</h2>
                       <div class="data-table__container">
                         <div class="data-table__item">
                           <p class="texto-destaque">Alteração da data do relatório</p>  

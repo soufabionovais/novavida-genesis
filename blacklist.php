@@ -57,7 +57,7 @@
                       Márcio dos Santos Santana
                     </td> 
                     <td>
-                      <span class="texto-destaque nv-icon icon-calendar">25/06/2018 às 16:24</span>
+                      <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">25/06/2018 às 16:24</span>
                     </td>
                     <td class="right-aligned">
                       <button class="ls-btn ls-btn-primary small">
@@ -79,7 +79,7 @@
                       Márcio dos Santos Santana
                     </td> 
                     <td>
-                      <span class="texto-destaque nv-icon icon-calendar">25/06/2018 às 16:24</span>
+                      <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">25/06/2018 às 16:24</span>
                     </td>
                     <td class="right-aligned">
                       <button class="ls-btn ls-btn-primary small">
@@ -101,7 +101,7 @@
                       Márcio dos Santos Santana
                     </td> 
                     <td>
-                      <span class="texto-destaque nv-icon icon-calendar">25/06/2018 às 16:24</span>
+                      <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">25/06/2018 às 16:24</span>
                     </td>
                     <td class="right-aligned">
                       <button class="ls-btn ls-btn-primary small">
