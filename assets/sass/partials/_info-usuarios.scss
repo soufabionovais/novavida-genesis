@@ -1,6 +1,8 @@
 .user-data {
     //background: rgba(red, 0.5);
     overflow: hidden;
+    display: flex;
+    align-items: center;
     .avatar {
         width: 35px;
         float: left;
@@ -62,5 +64,70 @@
             font-size: 12px;            
         }
     }
+}
+
+.switchable-area {
+    min-height: 310px;
+    .user-data {
+        background: #fff;
+        padding: 8px 15px;
+        border-radius: 3px;
+        margin-bottom: 8px;
+        .avatar {
+            width: 20px;
+        }
+        .btn-remover {
+            display: none;
+            margin: 0;
+            padding: 0;
+            .text {
+                display: none;
+            }            
+        }
+        [class*="nv-icon"]:before {
+            margin: 0;
+            font-size: 15px;
+            color: #a6a6c4;
+        }
+    }
+    .user-data-info {
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;        
+    }
+}
+
+.switchable-area-2 {
+    &:empty {
+        &:before {
+            content: "Arraste as fontes para cá!";
+            display: flex;
+            color: #fff;
+            justify-content: center;
+            min-height: 380px;
+            align-items: center;  
+            font-size: 18px;                  
+        }
+    }
+    // .empty-message {
+    //     display: flex;
+    //     color: #fff;
+    //     justify-content: center;
+    //     min-height: 380px;
+    //     align-items: center;        
+    //     p {
+    //         font-size: 18px;
+    //     }
+    // }
+    .user-data {
+        .avatar {
+            display: none;
+        }
+        .btn-remover {
+            display: block;
+        }        
+    }   
 }
 

@@ -401,125 +401,57 @@
                             <label class="ls-label field-has-icon ls-ico-search">
                               <input type="text" placeholder="Filtrar por nome" class="ls-field" required="">
                             </label>  
-                            <div class="switchable-area" id="switchableArea-1">
+                            <div class="switchable-area switchable-area-1" id="switchableArea-1">
 
-                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Alexandre Lopez Paes</label>
+                              <div class="user-data">
+                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+                                <div class="user-data-info">
+                                  <p class="user-data-header">Alexandre Loes Paz</p>
+                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
                                 </div>
-                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                              </div> 
-
-                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Alexandre Lopez Paes</label>
+                              </div>  
+                              <div class="user-data">
+                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+                                <div class="user-data-info">
+                                  <p class="user-data-header">Alexandre Loes Paz</p>
+                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
                                 </div>
-                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                              </div> 
-
-                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Alexandre Lopez Paes</label>
+                              </div>  
+                              <div class="user-data">
+                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+                                <div class="user-data-info">
+                                  <p class="user-data-header">Alexandre Loes Paz</p>
+                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
                                 </div>
-                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                              </div> 
-
-                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Alexandre Lopez Paes</label>
+                              </div>  
+                              <div class="user-data">
+                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+                                <div class="user-data-info">
+                                  <p class="user-data-header">Alexandre Loes Paz</p>
+                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
                                 </div>
-                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                              </div> 
-
-                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Alexandre Lopez Paes</label>
+                              </div>  
+                              <div class="user-data">
+                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+                                <div class="user-data-info">
+                                  <p class="user-data-header">Alexandre Loes Paz</p>
+                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
                                 </div>
-                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                              </div> 
-
-                              <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Alexandre Lopez Paes</label>
+                              </div>  
+                              <div class="user-data">
+                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+                                <div class="user-data-info">
+                                  <p class="user-data-header">Alexandre Loes Paz</p>
+                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
                                 </div>
-                                <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                              </div>
-
+                              </div>  
                             </div> 
 
                           </div>   
                         </div>
                         <div class="col">
                             <div class="relacionar-listas bg-blue-gradient">
-                              <div class="switchable-area" id="switchableArea-2">
-
-                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                    <div class="state p-primary-o">
-                                        <i class="icon ls-ico-checkmark"></i>
-                                        <label>Alexandre Lopez Paes</label>
-                                    </div>
-                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                                  </div> 
-
-                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                    <div class="state p-primary-o">
-                                        <i class="icon ls-ico-checkmark"></i>
-                                        <label>Alexandre Lopez Paes</label>
-                                    </div>
-                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                                  </div> 
-
-                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                    <div class="state p-primary-o">
-                                        <i class="icon ls-ico-checkmark"></i>
-                                        <label>Alexandre Lopez Paes</label>
-                                    </div>
-                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                                  </div> 
-
-                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                    <div class="state p-primary-o">
-                                        <i class="icon ls-ico-checkmark"></i>
-                                        <label>Alexandre Lopez Paes</label>
-                                    </div>
-                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                                  </div> 
-
-                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                    <div class="state p-primary-o">
-                                        <i class="icon ls-ico-checkmark"></i>
-                                        <label>Alexandre Lopez Paes</label>
-                                    </div>
-                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                                  </div> 
-
-                                  <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                    <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                    <div class="state p-primary-o">
-                                        <i class="icon ls-ico-checkmark"></i>
-                                        <label>Alexandre Lopez Paes</label>
-                                    </div>
-                                    <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">       
-                                  </div>
-
-                              </div>                            
+                              <div class="switchable-area switchable-area-2" id="switchableArea-2"></div>                            
                             </div>
                         </div>                      
                     </div>   

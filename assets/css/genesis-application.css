@@ -2484,9 +2484,12 @@ html .box-tabs + .ls-tabs-container {
     margin-top: 8px; }
 
 .sidebar-title {
-  font-size: 13px;
+  font-size: 14px;
   margin: 10px 0 20px 0;
-  font-weight: bold; }
+  text-transform: uppercase;
+  border-bottom: solid 1px #a6a6c4;
+  padding-bottom: 15px;
+  color: #7ea1f3; }
 
 .ls-breadcrumb {
   margin-bottom: 20px;
@@ -3265,7 +3268,9 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
   color: #a6a6c4; }
 
 .user-data {
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  align-items: center; }
   .user-data .avatar {
     width: 35px;
     float: left;
@@ -3308,6 +3313,45 @@ html [class*="ls-pagination"] li:first-child.ls-disabled a, html [class*="ls-pag
     margin-top: -3px;
     text-align: center;
     font-size: 12px; }
+
+.switchable-area {
+  min-height: 310px; }
+  .switchable-area .user-data {
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-bottom: 8px; }
+    .switchable-area .user-data .avatar {
+      width: 20px; }
+    .switchable-area .user-data .btn-remover {
+      display: none;
+      margin: 0;
+      padding: 0; }
+      .switchable-area .user-data .btn-remover .text {
+        display: none; }
+    .switchable-area .user-data [class*="nv-icon"]:before {
+      margin: 0;
+      font-size: 15px;
+      color: #a6a6c4; }
+  .switchable-area .user-data-info {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; }
+
+.switchable-area-2:empty:before {
+  content: "Arraste as fontes para cá!";
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  min-height: 380px;
+  align-items: center;
+  font-size: 18px; }
+.switchable-area-2 .user-data .avatar {
+  display: none; }
+.switchable-area-2 .user-data .btn-remover {
+  display: block; }
 
 html div[data-ls-module="progressBar"] {
   width: 180px;

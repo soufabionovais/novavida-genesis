@@ -469,3 +469,8 @@ if(notificationList.length) {
 	});
 }
 
+
+$("#switchableArea-2").on("click", ".btn-remover", function(e){
+	e.preventDefault();
+	$(this).parents(".user-data").remove();
+});
