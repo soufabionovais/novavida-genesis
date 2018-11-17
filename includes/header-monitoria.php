@@ -15,9 +15,9 @@
 
 	<div class="acoes">
 		<div class="acao-item acao-btn">
-			<button class="ls-btn ls-btn-primary large">
+			<a class="ls-btn ls-btn-primary large" href="configuracoes.php#!/#perfilRelatorio">
 				Editar relatório
-			</button>
+			</a>
 		</div>
 
 		<a class="acao-item" href="visualizar-estrutura.php">
