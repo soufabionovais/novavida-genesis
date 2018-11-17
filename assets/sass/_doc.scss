@@ -817,25 +817,25 @@ $doc_pagina-largura: 875px;
 	}
 
 	.btn-bloco-relevante {
-		position: absolute;
-		right: 80px;
-		bottom: -4px;
-		width: 55px;
-		height: 55px;
-		text-align: center;
-		font-size: 32px;
-		font-weight: 900;
-		color: #fff;
-		background: #8399f5;
-		background: -moz-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
-		background: -webkit-linear-gradient(top, #8399f5 0%,#7aa9f1 100%);
-		background: linear-gradient(to bottom, #8399f5 0%,#7aa9f1 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8399f5', endColorstr='#7aa9f1',GradientType=0 );
-		border: none;
-		border-radius: 100%;
-		box-shadow: 0 3px 6px 0 rgba(126, 162, 243, 0.43);
-		cursor: pointer;
-
+	    position: absolute;
+	    right: -40px;
+	    top: 50%;
+	    width: 40px;
+	    height: 40px;
+	    text-align: center;
+	    font-size: 26px;
+	    font-weight: 900;
+	    color: #fff;
+	    background: #8399f5;
+	    background: -moz-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+	    background: -webkit-linear-gradient(top, #8399f5 0%, #7aa9f1 100%);
+	    background: linear-gradient(to bottom, #8399f5 0%, #7aa9f1 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8399f5', endColorstr='#7aa9f1',GradientType=0 );
+	    border: none;
+	    border-radius: 100%;
+	    box-shadow: 0 3px 6px 0 rgba(126, 162, 243, 0.43);
+	    cursor: pointer;
+	    transform: translateY(-50%);
 		&:hover {
 			background-color: lighten(#8399f5, 5%);
 		}
@@ -846,7 +846,7 @@ $doc_pagina-largura: 875px;
 		z-index: 2;
 		position: absolute;
 		top: 0;
-		right: 150px;
+		right: 30px;
 		text-align: right;
 
 		.btn {

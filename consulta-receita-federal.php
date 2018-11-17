@@ -167,11 +167,10 @@
 											<td>423</td>
 											<td>Aenean euismod</td>
 											<td class="bloco-relevante">
-												<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</span>
-												<button id="abreMenuBlocoRelevante" class="btn-bloco-relevante">...</button>
-
-												<div id="menuBlocoRelevante" class="menu-bloco-relevante">
-													<button id="fechaMenuBlocoRelevante" class="btn btn-fechar" data-conteudo="fechar">X</button>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo
+												<button  class="btn-bloco-relevante">...</button>
+												<div class="menu-bloco-relevante">
+													<button  class="btn btn-fechar" data-conteudo="fechar">X</button>
 													<div class="menu-bloco-relevante-opcoes">
 														<button class="btn-opcoes">Muito</button>
 														<button class="btn-opcoes">Médio</button>
@@ -185,13 +184,37 @@
 										<tr>
 											<td>423</td>
 											<td>Aenean euismod</td>
-											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
+											<td class="bloco-relevante">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo
+												<button  class="btn-bloco-relevante">...</button>
+												<div class="menu-bloco-relevante">
+													<button  class="btn btn-fechar" data-conteudo="fechar">X</button>
+													<div class="menu-bloco-relevante-opcoes">
+														<button class="btn-opcoes">Muito</button>
+														<button class="btn-opcoes">Médio</button>
+														<button class="btn-opcoes">Pouco</button>
+														<button class="btn-opcoes"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
+													</div>
+													<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
+												</div>
+											</td>
 										</tr>
-										<tr>
+										<!-- <tr>
 											<td>423</td>
 											<td>Aenean euismod</td>
-											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo</td>
-										</tr>
+											<td class="bloco-relevante">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo
+												<button  class="btn-bloco-relevante">...</button>
+												<div class="menu-bloco-relevante">
+													<button  class="btn btn-fechar" data-conteudo="fechar">X</button>
+													<div class="menu-bloco-relevante-opcoes">
+														<button class="btn-opcoes">Muito</button>
+														<button class="btn-opcoes">Médio</button>
+														<button class="btn-opcoes">Pouco</button>
+														<button class="btn-opcoes"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
+													</div>
+													<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
+												</div>												
+											</td>
+										</tr> -->
 									</table>
 								</div>
 							</div>

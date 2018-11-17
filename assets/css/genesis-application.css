@@ -1250,12 +1250,12 @@
     background: #e3e3ed; }
   .bloco-relevante .btn-bloco-relevante {
     position: absolute;
-    right: 80px;
-    bottom: -4px;
-    width: 55px;
-    height: 55px;
+    right: -40px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 900;
     color: #fff;
     background: #8399f5;
@@ -1266,7 +1266,8 @@
     border: none;
     border-radius: 100%;
     box-shadow: 0 3px 6px 0 rgba(126, 162, 243, 0.43);
-    cursor: pointer; }
+    cursor: pointer;
+    transform: translateY(-50%); }
     .bloco-relevante .btn-bloco-relevante:hover {
       background-color: #9bacf7; }
   .bloco-relevante .menu-bloco-relevante {
@@ -1274,7 +1275,7 @@
     z-index: 2;
     position: absolute;
     top: 0;
-    right: 150px;
+    right: 30px;
     text-align: right; }
     .bloco-relevante .menu-bloco-relevante .btn {
       display: inline-block;

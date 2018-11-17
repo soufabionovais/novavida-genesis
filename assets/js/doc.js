@@ -34,19 +34,19 @@ $( '#sidebarMenu' ).find( '.btn' ).off().on('click', function(){
 });
 
 // BLOCO RELEVANTE
-$( '#abreMenuBlocoRelevante' ).off().on('click', toggleMenuBlocoRelevante);
-$( '#fechaMenuBlocoRelevante' ).off().on('click', toggleMenuBlocoRelevante);
+$( '.btn-bloco-relevante' ).off().on('click', toggleMenuBlocoRelevante);
+$( '.menu-bloco-relevante .btn-fechar' ).off().on('click', toggleMenuBlocoRelevante);
 
 function toggleMenuBlocoRelevante() {
+	//$(".menu-bloco-relevante").removeClass("open");
+	$(this).parents(".bloco-relevante").find( '.menu-bloco-relevante' ).toggleClass( 'open' );
 
-	$( '#menuBlocoRelevante' ).toggleClass( 'open' );
+	if( $(this).parents(".bloco-relevante").find( '.menu-bloco-relevante' ).hasClass( 'open' ) ) {
 
-	if( $( '#menuBlocoRelevante' ).hasClass( 'open' ) ) {
-
-		$( '#abreMenuBlocoRelevante' ).fadeOut();
+		$(this).parents(".bloco-relevante").find( '.btn-bloco-relevante' ).fadeOut();
 
 	} else {
-		$( '#abreMenuBlocoRelevante' ).fadeIn();
+		$(this).parents(".bloco-relevante").find( '.btn-bloco-relevante' ).fadeIn();
 	}
 }
 
