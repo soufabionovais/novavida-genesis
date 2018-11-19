@@ -4,6 +4,10 @@ $doc_menu-bg-color: #a6a6c4;
 $doc_sidebar-largura: 1100px;
 $doc_pagina-largura: 875px;
 
+html.no-scroll {
+	overflow: hidden;
+}
+
 .ls-main.doc {
 	height: auto;
 	margin: 0;
@@ -21,11 +25,13 @@ $doc_pagina-largura: 875px;
 	&.open {
 		.doc-principal {
 			overflow: hidden;
-			right: $doc_sidebar-largura;
+			right: 100vw;
 		}
 
 		.sidebar-menu {
 			margin-right: 0;
+			position: fixed;
+			left: 0;
 		}
 
 		.doc-sidebar {
@@ -40,10 +46,10 @@ $doc_pagina-largura: 875px;
 		min-width: $doc_pagina-largura;
 
 		.doc-principal {
-			.doc-menu {
-				overflow: hidden;
-				width: 0;
-			}
+			// .doc-menu {
+			// 	overflow: hidden;
+			// 	width: 0;
+			// }
 	
 			.sidebar-menu {
 				width: $doc_sidebar-menu-largura--smallscreen;
@@ -64,21 +70,22 @@ $doc_pagina-largura: 875px;
 
 	&.no-sidebar {
 		.doc-principal {
-			justify-content: center;
+			justify-content: space-between;
+			max-width: 1440px;
 		}
 	}
 }
 
 .doc-principal {
-	overflow: auto;
+	//overflow: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	//justify-content: space-between;
 	position: relative;
 	right: 0;
-	min-width: 1260px;
+	//min-width: 1260px;
 	width: 100%;
-	height: calc(100vh - #{$header-altura});
+	//height: calc(100vh - #{$header-altura});
 	margin: 0 auto;
 	transition: all 300ms ease-in-out;
 }
@@ -87,7 +94,6 @@ $doc_pagina-largura: 875px;
 	float: left;
 	width: 260px;
 	padding: 40px;
-
 	ol {
 		list-style: none;
 		padding-left: 30px;
@@ -166,8 +172,8 @@ $doc_pagina-largura: 875px;
 .doc-pagina {
 	float: left;
 	width: $doc_pagina-largura;
-	height: 1348px;
-	background: #f9f9f9 url(../img/doc/brasao-republica.png) center no-repeat;
+	//height: 1348px;
+	background: #f9f9f9;
 
 	&.capa,
 	&.folha-rosto,
@@ -175,8 +181,25 @@ $doc_pagina-largura: 875px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		height: 1010px;
-		padding: 74px 110px;
+		padding: 30px 110px 75px;
+		width: calc(100% - 260px - 5vw);
+		margin-right: 18vw;
+		@include for-desktop {
+			margin-right: 5vw;
+		}
+
+	}
+	.custom-image {
+		height: 350px;
+		margin-bottom: 80px;
+		text-align: center;
+		position: relative;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 
 	&.capa {
@@ -291,10 +314,11 @@ $doc_pagina-largura: 875px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		max-height: 1345px;
+		//max-height: 1345px;
 		margin: 32px 0;
 		padding: 30px 50px;
 		background-image: url(../img/doc/brasao-republica-transparencia.png);
+		@extend %clear;
 
 		.doc-row {
 			display: flex;
@@ -566,6 +590,10 @@ $doc_pagina-largura: 875px;
 		&.dashboard {
 			padding: 0;
 			background-image: none;
+			margin-right: 5vw;	
+			&.grupos-fontes {
+				margin-right: 0;	
+			}		
 			
 			.conteudo-wrapper {
 				padding: 30px 50px;

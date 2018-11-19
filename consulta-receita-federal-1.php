@@ -42,7 +42,7 @@
 						</ol>
 					</div>
 
-					<div class="doc-pagina consulta-receita-federal dashboard">
+					<div class="doc-pagina consulta-receita-federal dashboard grupos-fontes">
 						<div class="conteudo-wrapper">
 
 							<div class="doc-header">

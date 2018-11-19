@@ -42,6 +42,9 @@
 
 					<div class="doc-pagina capa">
 						<div class="conteudo-wrapper">
+							<div class="custom-image">
+								<img src="assets/img/doc/brasao-republica-transparencia.png" alt="">
+							</div>
 							<div class="item">
 								<span class="item-nome">Critério Consultado:</span>
 								<span class="item-valor">111.111.111-11</span>

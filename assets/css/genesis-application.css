@@ -17,6 +17,13 @@
 @import url(../../vendors/choicesjs/choices.css);
 @import url(../../vendors/sweet-dropdown/jquery.sweet-dropdown.min.css);
 @import url(../../vendors/custom-scrollbar/jquery.mCustomScrollbar.css);
+.doc-pagina.consulta-receita-federal:before, .doc-pagina.consulta-receita-federal:after {
+  display: block;
+  content: "";
+  width: 100%;
+  clear: both;
+  float: none; }
+
 /* Fontes e Ícones */
 /*Vendors*/
 .tagify {
@@ -746,6 +753,9 @@
         .ls-topbar.mapa .acoes .acao-item.zoom a {
           padding: 0 10px; }
 
+html.no-scroll {
+  overflow: hidden; }
+
 .ls-main.doc {
   height: auto;
   margin: 0;
@@ -759,17 +769,16 @@
   background: #090e1c; }
   .doc-wrapper.open .doc-principal {
     overflow: hidden;
-    right: 1100px; }
+    right: 100vw; }
   .doc-wrapper.open .sidebar-menu {
-    margin-right: 0; }
+    margin-right: 0;
+    position: fixed;
+    left: 0; }
   .doc-wrapper.open .doc-sidebar {
     right: 0; }
   @media screen and (max-width: 1279px) {
     .doc-wrapper {
       min-width: 875px; }
-      .doc-wrapper .doc-principal .doc-menu {
-        overflow: hidden;
-        width: 0; }
       .doc-wrapper .doc-principal .sidebar-menu {
         width: 40px; }
       .doc-wrapper .doc-sidebar {
@@ -778,18 +787,15 @@
       .doc-wrapper.open .doc-principal {
         right: 840px; } }
   .doc-wrapper.no-sidebar .doc-principal {
-    justify-content: center; }
+    justify-content: space-between;
+    max-width: 1440px; }
 
 .doc-principal {
-  overflow: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   position: relative;
   right: 0;
-  min-width: 1260px;
   width: 100%;
-  height: calc(100vh - 60px);
   margin: 0 auto;
   transition: all 300ms ease-in-out; }
 
@@ -847,14 +853,27 @@
 .doc-pagina {
   float: left;
   width: 875px;
-  height: 1348px;
-  background: #f9f9f9 url(../img/doc/brasao-republica.png) center no-repeat; }
+  background: #f9f9f9; }
   .doc-pagina.capa, .doc-pagina.folha-rosto, .doc-pagina.sumario {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 1010px;
-    padding: 74px 110px; }
+    padding: 30px 110px 75px;
+    width: calc(100% - 260px - 5vw);
+    margin-right: 18vw; }
+    @media screen and (min-width: 1200px) {
+      .doc-pagina.capa, .doc-pagina.folha-rosto, .doc-pagina.sumario {
+        margin-right: 5vw; } }
+  .doc-pagina .custom-image {
+    height: 350px;
+    margin-bottom: 80px;
+    text-align: center;
+    position: relative; }
+    .doc-pagina .custom-image img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   .doc-pagina.capa .item {
     padding: 12px 0;
     line-height: 1.22;
@@ -925,7 +944,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-height: 1345px;
     margin: 32px 0;
     padding: 30px 50px;
     background-image: url(../img/doc/brasao-republica-transparencia.png); }
@@ -1093,7 +1111,10 @@
         font-size: 18px; }
     .doc-pagina.consulta-receita-federal.dashboard {
       padding: 0;
-      background-image: none; }
+      background-image: none;
+      margin-right: 5vw; }
+      .doc-pagina.consulta-receita-federal.dashboard.grupos-fontes {
+        margin-right: 0; }
       .doc-pagina.consulta-receita-federal.dashboard .conteudo-wrapper {
         padding: 30px 50px; }
       .doc-pagina.consulta-receita-federal.dashboard .doc-header {

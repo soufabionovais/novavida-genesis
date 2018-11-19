@@ -2,6 +2,7 @@
 function toggleSidebar() {
 
 	$( '#docWrapper' ).toggleClass( 'open' );
+	$("html").toggleClass("no-scroll");
 
 	if( $( '#docWrapper' ).hasClass( 'open' ) ) {
 
@@ -18,18 +19,22 @@ $( '#sidebarMenu' ).find( '.btn' ).off().on('click', function(){
 
 	$( '.doc-sidebar' ).hide();
 	$( '.' + tipoConteudo + '-sidebar' ).show();
+
 	
 	$( '#sidebarMenu' ).find( '.btn' ).removeClass( 'atual' );
 	$( '#sidebarMenu' ).find( '.btn-' + tipoConteudo ).addClass( 'atual' );
 
 	if( tipoConteudo == 'impressora' ) {
 
-		$( '#impressoraSidebar' ).toggle();
+		$( '#impressoraSidebar' ).fadeToggle();
 
 	} else if( !$( '#docWrapper' ).hasClass( 'open' ) || tipoConteudo == 'fechar' ) {
 
 		toggleSidebar();
+
 	}
+
+	$(".doc-sidebar").mCustomScrollbar();	
 
 });
 

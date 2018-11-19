@@ -198,7 +198,7 @@
 												</div>
 											</td>
 										</tr>
-										<!-- <tr>
+										<tr>
 											<td>423</td>
 											<td>Aenean euismod</td>
 											<td class="bloco-relevante">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed enim fringilla, tristique eros vitae, semper nulla. Aliquam eget justo nec libero faucibus vulputate. Fusce commo
@@ -214,7 +214,7 @@
 													<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
 												</div>												
 											</td>
-										</tr> -->
+										</tr>
 									</table>
 								</div>
 							</div>

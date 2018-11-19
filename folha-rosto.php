@@ -42,6 +42,9 @@
 
 					<div class="doc-pagina folha-rosto">
 						<div class="conteudo-wrapper">
+							<div class="custom-image">
+								<img src="assets/img/doc/brasao-republica-transparencia.png" alt="">
+							</div>							
 							<div class="titulo">
 								Jinglebell Representações Comercias
 							</div>
