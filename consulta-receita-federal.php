@@ -42,7 +42,7 @@
 						</ol>
 					</div>
 
-					<div class="doc-pagina consulta-receita-federal">
+					<div class="doc-pagina consulta-receita-federal" style="background-image: url(assets/img/doc/brasao-republica-transparencia.png)">
 						<div class="conteudo-wrapper">
 
 							<div class="doc-header">

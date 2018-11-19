@@ -352,7 +352,7 @@
 									</div>        
 									<div class="col-sm-3 btn-wrapper">
 										<button class="ls-btn ls-btn-primary">
-											Enviar
+											Gravar
 										</button>
 									</div>
 								</div>

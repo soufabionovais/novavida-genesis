@@ -317,7 +317,9 @@ html.no-scroll {
 		//max-height: 1345px;
 		margin: 32px 0;
 		padding: 30px 50px;
-		background-image: url(../img/doc/brasao-republica-transparencia.png);
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: center;
 		@extend %clear;
 
 		.doc-row {
@@ -643,7 +645,7 @@ html.no-scroll {
 				.content-area {
 					.box-notificacoes {
 						justify-content: flex-start;
-
+						padding: 5px 10px;
 						~ .box-notificacoes {
 							margin-top: 25px;
 						}

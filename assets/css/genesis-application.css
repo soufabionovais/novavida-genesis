@@ -946,7 +946,9 @@ html.no-scroll {
     justify-content: flex-start;
     margin: 32px 0;
     padding: 30px 50px;
-    background-image: url(../img/doc/brasao-republica-transparencia.png); }
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center; }
     .doc-pagina.consulta-receita-federal .doc-row {
       display: flex;
       flex-direction: row; }
@@ -1140,7 +1142,8 @@ html.no-scroll {
           .doc-pagina.consulta-receita-federal.dashboard .box-resumo .header.small-header .icone {
             float: right; }
       .doc-pagina.consulta-receita-federal.dashboard .box-resumo .content-area .box-notificacoes {
-        justify-content: flex-start; }
+        justify-content: flex-start;
+        padding: 5px 10px; }
         .doc-pagina.consulta-receita-federal.dashboard .box-resumo .content-area .box-notificacoes ~ .box-notificacoes {
           margin-top: 25px; }
         .doc-pagina.consulta-receita-federal.dashboard .box-resumo .content-area .box-notificacoes a {

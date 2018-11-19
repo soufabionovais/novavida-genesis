@@ -38,6 +38,10 @@ $( '#sidebarMenu' ).find( '.btn' ).off().on('click', function(){
 
 });
 
+$("#btnRetornar").on("click", function(){
+	window.history.back();
+});
+
 // BLOCO RELEVANTE
 $( '.btn-bloco-relevante' ).off().on('click', toggleMenuBlocoRelevante);
 $( '.menu-bloco-relevante .btn-fechar' ).off().on('click', toggleMenuBlocoRelevante);

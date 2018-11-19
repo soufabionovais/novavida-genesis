@@ -87,7 +87,7 @@
 			<span>de 103</span>
 		</div>
 
-		<a class="acao-item" href="">
+		<a class="acao-item" href="#" id="btnRetornar">
 			<span class="icon nv-icon-remove"></span>
 		</a>
 	</div>
