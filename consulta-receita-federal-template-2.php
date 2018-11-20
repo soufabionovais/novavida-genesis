@@ -321,29 +321,48 @@
 						<div class="msg-wrapper">
 
 							<div class="msg-inner">
-								<div class="msg recebida">
-									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
-									<div class="msg-body">
-										<span class="nome">John</span>
-										<span class="texto">
-											Bom trabalho!
-										</span>
+								<div class="msg">
+									<div class="msg-col">
+										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<div class="msg-body">
+											<span class="nome">John</span>
+											<span class="texto">
+												Bom trabalho!
+											</span>
+										</div>
+									</div>
+									<div class="msg-col">
+										<div>15/06/2017 às 16:32</div>
 									</div>
 								</div>
 
-								<div class="msg enviada">
-									<span class="texto">
-										Obrigado!
-									</span>
+								<div class="msg">
+									<div class="msg-col">
+										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<div class="msg-body">
+											<span class="nome">Jackeline</span>
+											<span class="texto">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
+											</span>
+										</div>
+									</div>
+									<div class="msg-col">
+										<div>15/06/2017 às 16:32</div>
+									</div>
 								</div>
 								
-								<div class="msg recebida">
-									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
-									<div class="msg-body">
-										<span class="nome">Jackeline</span>
-										<span class="texto">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
-										</span>
+								<div class="msg">
+									<div class="msg-col">
+										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<div class="msg-body">
+											<span class="nome">Jackeline</span>
+											<span class="texto">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
+											</span>
+										</div>
+									</div>
+									<div class="msg-col">
+										<div>15/06/2017 às 16:32</div>
 									</div>
 								</div>
 
@@ -355,7 +374,7 @@
 							<div class="ls-form ls-form-horizontal row">
 								<div class="col-sm-9">
 									<label class="ls-label field-has-icon">
-										<textarea rows="4" placeholder="mensagem"></textarea>
+										<textarea rows="4" placeholder="Deixe seu comentário"></textarea>
 									</label>
 								</div>        
 								<div class="col-sm-3 btn-wrapper">

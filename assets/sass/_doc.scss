@@ -1275,13 +1275,14 @@ html.no-scroll {
 	&.comentarios-sidebar {
 
 		.chat {
-			max-width: 600px;
-			margin: 0 auto;
+			max-width: 800px;
+			margin: 0 auto 40px;
+			padding: 0;
 
 			.msg-wrapper {
 				overflow: auto;
-				height: 400px;
-				padding-right: 15px;
+				min-height: 400px;
+				padding: 40px 60px;
 
 				.msg-inner {
 					display: flex;
@@ -1290,56 +1291,93 @@ html.no-scroll {
 
 				.msg {
 					display: flex;
+					flex: 1 1 100%;
+					justify-content: space-between;
 					align-items: center;
+					padding: 15px 25px;
+					background: #f5f6fa;
+					border-radius: 5px;
+					cursor: pointer;
+					transition: .25s;
+
+					&:hover {
+						background: #8399f5;
+
+						.msg-col {
+							&:nth-child(2) { color:  #fff; }
+
+							.msg-body {
+								.nome,
+								.texto {
+									color:  #fff;
+								}
+							}
+						}
+					}
 
 					~ .msg {
-						margin-top: 20px;
+						margin-top: 10px;
 					}
 
-					&.recebida {
-						align-self: flex-start;
+					.msg-col {
+						display: flex;
+						flex: 1 1 100%;
+						align-items: center;
+						min-width: 0;
 
-						.avatar {
-							display: inline-block;
-							width: 32px;
-							height: 32px;
-							border-radius: 100%;
-						}
-
-						.msg-body {
+						&:nth-child(2) {
 							display: flex;
+							flex: 0 0 auto;
+							align-self: stretch;
 							flex-direction: column;
-							margin-left: 10px;
-
-							.nome {
-								display: inline-block;
-								margin-bottom: 5px;
-								font-weight: bold;
-								color: #a6a6c4;
-							}
-
-							.texto {
-								padding: 10px 20px;
-								text-align: left;
-								color: #fff;
-								background: #7aa9f1;
-								border-radius: 0px 20px 8px 18px;
-							}
+							justify-content: flex-start;
+							font-weight: bold;
+							color: #7ea1f3;
 						}
 					}
 
-					&.enviada {
-						align-self: flex-end;
-						padding: 10px 20px;
-						text-align: right;
-						color: #fff;
-						background: #5a6172;
-						border-radius: 8px 20px 0px 18px;
+					.avatar {
+						display: inline-block;
+						width: 38px;
+						height: 38px;
+						border-radius: 100%;
+					}
+
+					.msg-body {
+						display: flex;
+						flex-direction: column;
+						max-width: 80%;
+						min-width: 0;
+						margin-left: 15px;
+
+						.nome {
+							display: inline-block;
+							font-weight: bold;
+							font-size: 16px;
+							color: #544364;
+						}
+
+						.texto {
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							text-align: left;
+							color: #a6a6c4;
+						}
 					}
 				}
 			}
 
 			.caixa-texto {
+				padding: 0 30px;
+				border-top: 1px solid #eee;
+
+				textarea {
+					padding-top: 30px;
+					background: none;
+					border: none;
+					resize: none;
+				}
 
 				.btn-wrapper {
 					display: flex;

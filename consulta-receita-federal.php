@@ -315,85 +315,52 @@
 						<h2>Comentários</h2>
 					</div>
 
-					<!-- <div class="content-inner">
-
-						<div class="item">
-							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
-								<div class="linha">
-									<span class="marcador"></span>
-								</div>
-							</div>
-
-							<div class="comentario">
-								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
-								<p>
-									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
-								</p>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
-								<div class="linha">
-									<span class="marcador"></span>
-								</div>
-							</div>
-
-							<div class="comentario">
-								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
-								<p>
-									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
-								</p>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
-								<div class="linha">
-									<span class="marcador"></span>
-								</div>
-							</div>
-
-							<div class="comentario">
-								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
-								<p>
-									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
-								</p>
-							</div>
-						</div>
-
-					</div> -->
-
 					<div class="content-inner chat">
 						<div class="msg-wrapper">
 
 							<div class="msg-inner">
-								<div class="msg recebida">
-									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
-									<div class="msg-body">
-										<span class="nome">John</span>
-										<span class="texto">
-											Bom trabalho!
-										</span>
+								<div class="msg">
+									<div class="msg-col">
+										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<div class="msg-body">
+											<span class="nome">John</span>
+											<span class="texto">
+												Bom trabalho!
+											</span>
+										</div>
+									</div>
+									<div class="msg-col">
+										<div>15/06/2017 às 16:32</div>
 									</div>
 								</div>
 
-								<div class="msg enviada">
-									<span class="texto">
-										Obrigado!
-									</span>
+								<div class="msg">
+									<div class="msg-col">
+										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<div class="msg-body">
+											<span class="nome">Jackeline</span>
+											<span class="texto">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
+											</span>
+										</div>
+									</div>
+									<div class="msg-col">
+										<div>15/06/2017 às 16:32</div>
+									</div>
 								</div>
 								
-								<div class="msg recebida">
-									<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
-									<div class="msg-body">
-										<span class="nome">Jackeline</span>
-										<span class="texto">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
-										</span>
+								<div class="msg">
+									<div class="msg-col">
+										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<div class="msg-body">
+											<span class="nome">Jackeline</span>
+											<span class="texto">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt modi veritatis rem molestiae eligendi ea, cupiditate temporibus qui nostrum deleniti vitae officiis blanditiis tempora consectetur velit sunt facilis sequi!
+											</span>
+										</div>
+									</div>
+									<div class="msg-col">
+										<div>15/06/2017 às 16:32</div>
 									</div>
 								</div>
 
@@ -405,7 +372,7 @@
 							<div class="ls-form ls-form-horizontal row">
 								<div class="col-sm-9">
 									<label class="ls-label field-has-icon">
-										<textarea rows="4" placeholder="mensagem"></textarea>
+										<textarea rows="4" placeholder="Deixe seu comentário"></textarea>
 									</label>
 								</div>        
 								<div class="col-sm-3 btn-wrapper">
