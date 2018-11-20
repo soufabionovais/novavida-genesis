@@ -317,59 +317,7 @@
 						<h2>Comentários</h2>
 					</div>
 
-					<div class="content-inner">
-
-						<div class="item">
-							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
-								<div class="linha">
-									<span class="marcador"></span>
-								</div>
-							</div>
-
-							<div class="comentario">
-								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
-								<p>
-									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
-								</p>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
-								<div class="linha">
-									<span class="marcador"></span>
-								</div>
-							</div>
-
-							<div class="comentario">
-								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
-								<p>
-									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
-								</p>
-							</div>
-						</div>
-						
-						<div class="item">
-							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
-								<div class="linha">
-									<span class="marcador"></span>
-								</div>
-							</div>
-
-							<div class="comentario">
-								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
-								<p>
-									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
-								</p>
-							</div>
-						</div>
-
-					</div>
-
-					<!-- <div class="content-inner chat">
+					<div class="content-inner chat">
 						<div class="msg-wrapper">
 
 							<div class="msg-inner">
@@ -417,7 +365,7 @@
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
 
 				<div id="filtroSidebar" class="doc-sidebar filtro-sidebar">
@@ -590,8 +538,11 @@
 				<div id="monitoriaSidebar" class="doc-sidebar monitoria-sidebar">
 					<div class="doc-sidebar-header">
 						<h2>Monitoria</h2>
-						<button class="ls-btn ls-btn-primary">
+						<button id="btnCompararMonitoria" class="ls-btn ls-btn-primary btn-comparar-monitoria">
 							COMPARAR
+						</button>
+						<button id="btnVoltarMonitoria" class="ls-btn ls-btn-secondary btn-voltar-monitoria">
+							Voltar
 						</button>
 					</div>
 
@@ -661,6 +612,59 @@
 							Você ainda não tem nada sendo monitorado.
 						</span>
 						<button class="ls-btn ls-btn-primary" data-adicionar-monitoria>Adicionar monitoria</button>
+					</div>
+
+					<!-- COMPARAÇÃO DE MONITORIA -->
+					<div id="monitoriaComparacao" class="content-inner comparacao-monitoria">
+
+						<div class="comparacao-item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+						
+						<div class="comparacao-item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+						
+						<div class="comparacao-item">
+							<div class="timeline">
+								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="linha">
+									<span class="marcador"></span>
+								</div>
+							</div>
+
+							<div class="comentario">
+								<h3 class="titulo">Alteração na fonte 001 linha 02 </h3>
+								<p>
+									Cras fringilla ornare tortor eget maximus. Etiam sit amet augue non felis facilisis viverra. Morbi facilisis sem sit amet iaculis condimentum. Nullam vel eros magna. Ut tempus scelerisque libero sed aliquam. Suspendisse imperdiet tincidunt diam quis posuere. Proin scelerisque erat diam. 
+								</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

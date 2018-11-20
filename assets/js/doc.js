@@ -77,4 +77,30 @@ $( '#menuBusca' ).find( '.click-wrapper' ).off().on('click', function(){
 function adicionarMonitoria() {
 	$( '#semMonitoria' ).hide();
 	$( '#comMonitoria' ).show();
+	$( '#btnCompararMonitoria' ).fadeIn().off('click').on('click', compararMonitoria);
+}
+
+function voltarListaMonitoria() {
+	$( '#comMonitoria' ).show();
+	$( '#monitoriaComparacao' ).hide();
+	$( '#btnVoltarMonitoria' ).hide();
+	$( '#btnCompararMonitoria' ).fadeIn().off('click').on('click', compararMonitoria);
+}
+
+function compararMonitoria() {
+
+	var temItemSelecionado = false;
+
+	$( '#comMonitoria' ).find('input[type=checkbox]').each(function(){
+		if( $(this).prop('checked') ) {
+			temItemSelecionado = true;
+		}
+	});
+
+	if( temItemSelecionado ) {
+		$( '#comMonitoria' ).hide();
+		$( '#monitoriaComparacao' ).show();
+		$( '#btnCompararMonitoria' ).hide();
+		$( '#btnVoltarMonitoria' ).fadeIn().off('click').on('click', voltarListaMonitoria);
+	}
 }
