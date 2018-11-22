@@ -190,23 +190,23 @@
                       <h2 class="sidebar-title">Acompanhamento: Alpha Jurídica</h2>
                       <div class="data-table__container">
                         <div class="data-table__item">
-                          <p class="texto-destaque">Alteração da data do relatório</p>  
+                          <p class="texto-destaque"><a href="capa.php" class="texto-destaque">Alteração da data do relatório</a></p>  
                           <p class="right-aligned">01/10/2018 às 19:00</p>                       
                         </div>
                         <div class="data-table__item">
-                          <p class="texto-destaque">Alteração da data do relatório</p>  
+                          <p class="texto-destaque"><a href="capa.php" class="texto-destaque">Alteração da data do relatório</a></p>  
                           <p class="right-aligned">01/10/2018 às 19:00</p>                       
                         </div>
                         <div class="data-table__item">
-                          <p class="texto-destaque">Alteração da data do relatório</p>  
+                          <p class="texto-destaque"><a href="capa.php" class="texto-destaque">Alteração da data do relatório</a></p>  
                           <p class="right-aligned">01/10/2018 às 19:00</p>                       
                         </div>
                         <div class="data-table__item">
-                          <p class="texto-destaque">Alteração da data do relatório</p>  
+                          <p class="texto-destaque"><a href="capa.php" class="texto-destaque">Alteração da data do relatório</a></p>  
                           <p class="right-aligned">01/10/2018 às 19:00</p>                       
                         </div>
                         <div class="data-table__item">
-                          <p class="texto-destaque">Alteração da data do relatório</p>  
+                          <p class="texto-destaque"><a href="capa.php" class="texto-destaque">Alteração da data do relatório</a></p>  
                           <p class="right-aligned">01/10/2018 às 19:00</p>                       
                         </div>                                                                                                
                       </div>
