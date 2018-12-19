@@ -1,0 +1,118 @@
+.status-relatorios {
+	max-width: 650px;
+	.accordion-item {
+		+ * {
+			margin-top: 8px;
+		}
+	}
+	.accordion-header {
+		[class*="col"] {
+		    font-size: 15px;
+		    font-weight: bold;
+		    padding: 10px 15px;
+		}
+	}
+	.accordion-title-content {
+		background-color: #F4F4F4;		
+	}
+	.accordion-content {
+		padding: 10px 15px;	
+	}
+	.accordion-title-text {
+		text-transform: uppercase;
+		.title {
+			position: relative;
+			&:before {
+				display: inline-block;
+				content: "\e936";
+				font-family: 'icomoon-novavida';
+			    font-size: 11px;
+			    margin-right: 5px;				
+			}
+		}
+	}
+	.accordion-item.open {
+		.accordion-title-text {
+			.title {
+				&:before {
+					content: "\e937";
+				}
+			}
+		}		
+	}
+	.details {
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;	
+	    font-weight: bold;
+	    .btn {
+	    	font-size: 30px;
+	    }	
+	    > p {
+	    	display: block;
+	    	width: 100%;
+	    	text-align: center;
+	    	text-transform: uppercase;
+	    }
+	}
+	[class*="clock"] {
+		&:before {
+			color: #7ea1f3;
+		}
+	}
+}
+
+.workflow-relatorios {
+	@extend .status-relatorios;
+	// @include pseudoElement($tipo: before) {
+	// 	width: 1px;	
+	//     height: calc(100% - 35px);
+	//     background: #e6e6e6;
+	//     left: -25px;
+	//     top: 20px;		
+	// }
+	padding-left: 40px;
+	.accordion-item {
+		@include pseudoElement($tipo: before) {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #a6a6c4;
+			left: -40px;
+			top: 7px;
+			content: "...";
+			font-family: "icomoon-novavida";			
+			color: #fff;
+			text-align: center;
+		    font-size: 15px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;			
+		    z-index: 1;
+		}
+
+		&:not(:last-child) {
+			@include pseudoElement {
+			    left: -25px;
+			    width: 2px;
+			    height: 100%;
+			   	background: #e6e6e6;
+			    top: 25px;
+			}			
+		}
+
+		&.aprovado {
+			&:before {
+				content: "\ea10";
+				background-color: #27deac;
+			}
+		}
+		&.reprovado {
+			&:before {
+				content: "\ea0f";
+				background-color: #ff6565;
+				font-size: 13px;
+			}
+		}		
+	}
+}

@@ -1,0 +1,22 @@
+.filters-wrapper {
+	display: flex;
+	align-items: center;
+	//@extend %clear;
+	&.block {
+		display: block;
+		
+	}
+	.row {
+		.checkbox-radio-group.inline {
+			.radio-check-field {
+				margin-bottom: 0;
+			}
+		}
+		~ .row {
+			margin-top: 15px;
+		}
+	}
+	.form-label {
+		margin-bottom: 0;
+	}
+}

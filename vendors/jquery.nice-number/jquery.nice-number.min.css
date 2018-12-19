@@ -1,0 +1,68 @@
+.nice-number{display:inline-flex;justify-content:stretch; position: relative;}
+.nice-number input{vertical-align:middle;-moz-appearance:textfield;box-sizing:content-box;margin:0;text-align:center}
+.nice-number input::-webkit-inner-spin-button,.nice-number input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+
+.nice-number input:focus {
+    outline: none;
+}
+
+
+.nice-number input {
+	box-shadow: none;
+    padding: 14px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: none;
+    border: solid 1px #e2e2e2;   
+    width: 65px;
+    
+    color: #7ea1f3;
+
+}
+.nice-number .nice-number {
+	border: none;
+}
+
+.nice-number button:first-of-type,
+.nice-number button:last-child {
+    background-size: 40%;
+    text-indent: -999px;	
+    border: 0;
+    border-left: solid 1px #e2e2e2;
+}
+
+.nice-number button:first-of-type {
+    width: 20px;
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    height: 50%;
+    border: solid 1px #e2e2e2;
+    border-width: 1px 1px 1px 0;
+    border-radius: 0 0 3px 0;  
+    
+}
+
+.nice-number button:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50%;
+    bottom: inherit;
+    width: 20px;
+    right: -20px;
+    left: inherit;
+    border: solid 1px #e2e2e2;
+    border-width: 1px 1px 0 0;
+    border-radius: 0 3px 0 0;
+}
+
+.nice-number button:first-of-type {
+    background: url(../../img/arrows/arrow-dropdown-down.png) no-repeat center 7px / 50% auto;  
+    bottom: 0;  
+}
+
+.nice-number button:last-child {
+    background: url(../../img/arrows/arrow-dropdown-up.png) no-repeat center 7px / 50% auto;   
+    top: 0; 
+}
+

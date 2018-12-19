@@ -1,0 +1,93 @@
+.pagination-wrap {
+	position: relative;
+	margin-top: 20px;
+	@extend %clear;
+	//overflow: hidden;
+	.paginatin-list {
+		list-style: none;
+		float: left;
+		li {
+			list-style: none;
+			float: left;
+			a {
+				color: #a6a6c4;	
+				text-decoration: none;
+				display: block;
+			    padding: 7px 14px;
+			    font-size: 13px;
+				border: solid 1px #d7dae2;
+				background-color: #ffffff;	
+				transition: 0.3s;
+				&:hover,
+				&.active,
+				&.active:hover {
+					background-color: #7fa1f3;
+					color: #fff;
+					border-color: #7fa1f3;
+				}
+			}
+			&:first-child,
+			&:last-child {
+				a {
+					width: 32px;
+					padding: 16px 0;
+					position: relative;	
+					&:before,
+					i:before {
+					    position: absolute;
+					    top: 12px;
+					    font-weight: bold;
+					    font-size: 12px;							
+					}
+				}
+			}
+			&:first-child {
+				a {
+					border-radius: 3px 0 0 3px;
+					&:before {					
+					    left: 6px;
+					}
+					i:before {
+						left: 11px;						
+					}	
+					&:hover {
+						border-right: solid 1px #fff;
+					}
+				}
+			}
+			&:last-child {
+				a {
+					border-radius: 0 3px 3px 0;
+					&:before {					
+					    right: 6px;
+					}
+					i:before {
+						right: 11px;						
+					}	
+					&:hover {
+						border-left: solid 1px #fff;
+					}					
+				}
+			}			
+		}
+	}
+	.fstElement {
+		float: left;
+		width: auto;
+		margin-left: 10px;
+		.fstToggleBtn {
+			padding: 7px 10px 8px;
+			width: 75px;
+		}
+		.fstQueryInput {
+			height: 0;
+			padding: 0;
+			overflow: hidden;
+			font-size: 0;
+			border: none;
+		}
+		// .fstQueryInput {
+		// 	display: none;
+		// }
+	}
+}

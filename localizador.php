@@ -1,226 +1,166 @@
 <?php include("includes/head.php"); ?>
-  <body>
-    
-    <?php include("includes/header.php"); ?>
+<body>
+	
+<?php include ("includes/header.php"); ?>	
 
-    <?php include("includes/sidebar.php"); ?>
+<div class="main-wrap">
 
+	<?php include("includes/sidebar.php"); ?>
 
-    <main class="ls-main">
-      <div class="container-fluid">
-        <div class="page-header">
-          <h1 class="ls-title-intro">Localizador de CPF/CNPJ</h1>
-        </div>
+	<main class="main-content">
+		<header class="page-header">
+			<h1 class="page-header-title">Localizador de CPF/CNPJ</h1>
+		</header>	
 
-        <div class="ls-boxes">
-          <div class="ls-box">
-            <ul class="ls-tabs-nav box-tabs">
-              <li class="ls-active"><a data-ls-module="tabs" href="#localizadorPessosFisica">Localizar Pessoa Física</a></li>
-              <li><a data-ls-module="tabs" href="#localizadorPessosJuridica">Localizar Pessoa Jurídica</a></li>
-            </ul>
-            <div class="ls-tabs-container">
-              <!-- Localizador Pessoa Física -->
-              <div id="localizadorPessosFisica" class="ls-tab-content ls-active">
-                  <div class="ls-form ls-form-horizontal row">
-                      <div class="col">
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Nome" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="Data de nascimento" placeholder="Data de nascimento" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Nome da mãe" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Telefone" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="E-mail" class="ls-field" required>
-                        </label>                      
-                      </div>
+		<div class="boxes-group">
+			<div class="box-content">
+				<div class="tabs-wrapper">
+					<ul class="tabs-group" data-tabs-group="tabsGroupLocalizador">
+						<li class="tab active"><a href="#localizarPessoaFisica">Localizador Pessoa Física</a></li>
+						<li class="tab"><a href="#localizarPessoaJuridica">Localizador Pessoa Jurídica</a></li>
+					</ul>
 
-                      <div class="col">
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Nome do irmão" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="Data de nascimento" placeholder="Empresa que já trabalhou" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Estado" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Cidade" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Endereço" class="ls-field" required>
-                        </label>                        
-                      </div>
-                  </div>
-                  <button class="ls-btn ls-btn-primary large fluid" data-pesquisar-pf>Pesquisar</button>                  
-              </div>
-              <!-- Fim Localizador Pessoa Física -->
+					<div class="tabs-content-wrapper" data-tabs-target-group="tabsGroupLocalizador">
+						<div class="tab-content active" id="localizarPessoaFisica">
+							<div class="row">
+								<div class="col-md-6">
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Nome">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Data de nascimento" data-mask="data">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Nome da mãe">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Telefone" data-mask="fone-com-ddd">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="E-mail">
+									</label>					
+								</div>
+								<div class="col-md-6">
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Nome do irmão">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Empresa em que já trabalhou">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Estado">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Cidade">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Endereço">
+									</label>	
+								</div>
+							</div>
+							<button class="btn primary fluid" id="btnPesquisarPF">Pesquisar</button>
+						</div>
 
-              <!-- Localizador Pessoa Jurídica -->
-              <div id="localizadorPessosJuridica" class="ls-tab-content">
-                  <div class="ls-form ls-form-horizontal row">
-                      <div class="col">
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Razão social" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="Data de nascimento" placeholder="Ex-sócios" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Nome dos sócios" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Nome fantasia" class="ls-field" required>
-                        </label>                      
-                      </div>
+						<div class="tab-content" id="localizarPessoaJuridica">
+							<div class="row">
+								<div class="col-md-6">
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Razão social">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Ex-sócios">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Nome dos sócios">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Nome fantasia">
+									</label>	
+								</div>
+								<div class="col-md-6">
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Site">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Estado">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Cidade">
+									</label>	
+									<label class="form-label">
+										<input type="text" class="input-text inverted" placeholder="Endereço">
+									</label>	
+								</div>
+							</div>
+							<button class="btn primary fluid" id="btnPesquisarPJ">Pesquisar</button>						
+						</div>
 
-                      <div class="col">
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Site" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="Data de nascimento" placeholder="Estado" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Cidade" class="ls-field" required>
-                        </label>                      
-                        <label class="ls-label">
-                          <input type="text" name="nome" placeholder="Endereço" class="ls-field" required>
-                        </label>                      
-                      </div>
-                  </div>              
-                  <button class="ls-btn ls-btn-primary large fluid" data-pesquisar-pj>Pesquisar</button>                  
-              </div>
-              <!-- Fim Localizador Pessoa Jurídica -->
-            </div> 
-          </div>  
-        </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <div class="ls-boxes" id="resultadoBuscador" hidden>
-          <div class="ls-box">
-          <table class="ls-table">
-            <caption class="right-aligned"><strong class="texto-destaque">92</strong> resultados encontrados</caption>
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Nome da mãe</th>
-                <th class="center-aligned">Idade</th>
-                <th>CPF</th>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
-            </tr>
-          </thead>
-            <tbody>
-              <tr>
-                <td>
-                      Lena Maria Ferreira
-                </td>
-                <td>
-                    Maria Fernanda Moraes
-                </td>
-                <td class="center-aligned">
-                  19
-                </td>
-                <td>
-                  <strong>323.344.444.01</strong>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-primary small">Mais relatório</button>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-secondary small" data-adicionar-blacklist>Adicionar à blacklist</button>
-                </td>				      				      				      				      
-              </tr>
-              <tr>
-                <td>
-                      Lena Maria Ferreira
-                </td>
-                <td>
-                    Maria Fernanda Moraes
-                </td>
-                <td class="center-aligned">
-                  19
-                </td>
-                <td>
-                  <strong>323.344.444.01</strong>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-primary small">Mais relatório</button>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-secondary small" data-adicionar-blacklist>Adicionar à blacklist</button>
-                </td>				      				      				      				      
-              </tr>
-              <tr>
-                <td>
-                      Lena Maria Ferreira
-                </td>
-                <td>
-                    Maria Fernanda Moraes
-                </td>
-                <td class="center-aligned">
-                  19
-                </td>
-                <td>
-                  <strong>323.344.444.01</strong>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-primary small">Mais relatório</button>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-secondary small" data-adicionar-blacklist>Adicionar à blacklist</button>
-                </td>				      				      				      				      
-              </tr>
-              <tr>
-                <td>
-                      Lena Maria Ferreira
-                </td>
-                <td>
-                    Maria Fernanda Moraes
-                </td>
-                <td class="center-aligned">
-                  19
-                </td>
-                <td>
-                  <strong>323.344.444.01</strong>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-primary small">Mais relatório</button>
-                </td>
-                <td class="center-aligned">
-                  <button class="ls-btn ls-btn-secondary small" data-adicionar-blacklist>Adicionar à blacklist</button>
-                </td>				      				      				      				      
-              </tr>
-            </tbody>
-          </table>  
+		<div id="resultadoBuscador" class="resultados-buscador" hidden>
+			<div class="box-content">
+				<div class="data-container" data-gutter="1.5">
+					<div class="data-header">
+						<div class="column-2">Nome</div>
+						<div class="column-2">Nome da mãe</div>
+						<div class="column-1 center-aligned">Idade</div>
+						<div class="column-2">CPF</div>
+						<div class="column-5 right-aligned"><b class="highlight-text">92</b> resultados encontrados</div>
+					</div>
+					<div class="data-item">
+						<div class="column-2">
+							<p>Lena Maria Ferreira</p>
+						</div>
+						<div class="column-2">
+							Maria Fernanda Moraes
+						</div>
+						<div class="column-1 center-aligned">
+							45
+						</div>	
+						<div class="column-2">
+							333.980.999-01
+						</div>			
+						<div class="column-5 right-aligned">
+							<div class="inline-buttons-wrapper">
+								<button class="btn primary small">Mais Relatórios</button>
+								<button class="btn secondary small" data-action="adicionarBlackList">Adicionar à Blacklist</button>
+							</div>
+						</div>			
+					</div>
+					<div class="data-item">
+						<div class="column-2">
+							<p>Lena Maria Ferreira</p>
+						</div>
+						<div class="column-2">
+							Maria Fernanda Moraes
+						</div>
+						<div class="column-1 center-aligned">
+							45
+						</div>	
+						<div class="column-2">
+							333.980.999-01
+						</div>			
+						<div class="column-5 right-aligned">
+							<div class="inline-buttons-wrapper">
+								<button class="btn primary small">Mais Relatórios</button>
+								<button class="btn secondary small" data-action="adicionarBlackList">Adicionar à Blacklist</button>
+							</div>
+						</div>			
+					</div>
+				</div>
+				<?php include("includes/pagination.php"); ?>
+			</div>
+		</div>
 
-          <div class="ls-pagination-filter">
-            <ul class="ls-pagination ls-float-left">
-              <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li class="ls-active"><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#"><span class="icon">&raquo;</span></a></li>
-            </ul>
-          </div> 
+	</main>
+</div>	
 
-          </div>    
-        </div>
+	
 
-    
-
-      </div>
-    </main>
-
-    <?php include("includes/scripts.php"); ?>
-
-  </body>
+	
+<?php include("includes/scripts.php"); ?>
+</body>
 </html>

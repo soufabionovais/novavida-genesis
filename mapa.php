@@ -3,7 +3,7 @@
 
 	<?php include("includes/header-mapa.php"); ?>
 
-		<main class="ls-main mapa">
+		<main class="main mapa">
 			<div id="mapaWrapper" class="mapa-wrapper">
 
 				<div class="item-mapa item-usuario">
@@ -13,7 +13,7 @@
 							Fonte 1
 						</div>
 
-						<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+						<img src="img/avatar-usuario.png" alt="" class="avatar" />
 
 						<button id="btnMenuAgrupamentos" class="btn btn-agrupamentos">
 							<span class="icon nv-icon-zoom"></span>
@@ -24,26 +24,26 @@
 							<div class="documento">CPF: 999.999.999-99</div>
 						</div>
 
-						<section id="menuAgrupamentos" class="ls-box menu-agrupamentos">
+						<section id="menuAgrupamentos" class="box menu-agrupamentos">
 							<div id="agrupamentosEtapa1" class="etapa-1">
 								<header>
 									Agrupamentos
 								</header>
 								<button class="item-line">
-									<span class="texto-destaque">Agrupamento Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Agrupamento Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 								<button class="item-line">
-									<span class="texto-destaque">Agrupamento Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Agrupamento Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 								<button class="item-line">
-									<span class="texto-destaque">Agrupamento Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Agrupamento Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 								<button class="item-line">
-									<span class="texto-destaque">Agrupamento Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Agrupamento Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 							</div>
 
@@ -52,20 +52,20 @@
 									<span class="nv-icon-arrow-left-thin">Agrupamento fonte 1</span>
 								</header>
 								<button class="item-line">
-									<span class="texto-destaque">Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 								<button class="item-line">
-									<span class="texto-destaque">Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 								<button class="item-line">
-									<span class="texto-destaque">Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 								<button class="item-line">
-									<span class="texto-destaque">Fonte 1</span>
-									<div class="nv-icon-calendar">5 dias</div>
+									<span class="highlight-text">Fonte 1</span>
+									<div class="has-icon nv-icomoon-calendar-full">5 dias</div>
 								</button>
 							</div>
 						</section>
@@ -74,7 +74,7 @@
 
 				<div id="itemRelatorios" class="item-mapa item-relatorios">
 					<div class="item-mapa-inner">
-						<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+						<img src="img/avatar-usuario.png" alt="" class="avatar" />
 
 						<button class="btn btn-agrupamentos">
 							<span class="icon nv-icon-zoom"></span>
@@ -100,79 +100,77 @@
 							<span class="nome">Nome da empresa</span>
 							<span class="doucmento">CNPJ: 18.283.987/0001-10</span>
 						</div>
-						<button id="btnEmpresaDetalhes" class="ls-btn ls-btn-primary">
+						<button id="btnEmpresaDetalhes" class="btn primary">
 							Detalhes
 						</button>
 					</header>
 					<div class="menu-body">
-						<table class="ls-table ls-no-margin-top">
-							<thead>
-								<tr>
-									<th>Quadro Societário </th>
-									<th>Participação</th>
-									<th>&nbsp;</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="user-data">
-											<img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-											<div class="user-data-info">
-												<p class="user-data-header">André Cintra Gomes da Silva</p>
-												<p class="user-data-description">CPF:368.222.666.77</p>
-											</div>
-										</div>
-									</td>
-									<td class="participacao">
-										33,33%
-									</td>
-									<td class="right-aligned">
-										<button class="ls-btn ls-btn-secondary outlined">
-											Relatório
-										</button>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="user-data">
-											<img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-											<div class="user-data-info">
-												<p class="user-data-header">André Cintra Gomes da Silva</p>
-												<p class="user-data-description">CPF:368.222.666.77</p>
-											</div>
-										</div>
-									</td>
-									<td class="participacao">
-										33,33%
-									</td>
-									<td class="right-aligned">
-										<button class="ls-btn ls-btn-secondary outlined">
-											Relatório
-										</button>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="user-data">
-											<img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-											<div class="user-data-info">
-												<p class="user-data-header">André Cintra Gomes da Silva</p>
-												<p class="user-data-description">CPF:368.222.666.77</p>
-											</div>
-										</div>
-									</td>
-									<td class="participacao">
-										33,33%
-									</td>
-									<td class="right-aligned">
-										<button class="ls-btn ls-btn-secondary outlined">
-											Relatório
-										</button>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+
+						<div class="data-container" data-gutter="2.5">
+							<div class="data-header">
+								<div class="column-6">Quadro societário</div>
+								<div class="column-3">Participação</div>
+								<div class="column-3">Ações</div>
+							</div>
+							<div class="data-item">
+								<div class="column-6">
+									<div class="user-data">
+									  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar">
+									  <div class="user-data-info">
+									    <p class="user-data-header">Alexandre Loes Paz</p>
+									    <p class="user-data-description">333.222.666/0001-00</p>
+									  </div>
+									</div>	
+								</div>
+								<div class="column-3">
+									<p class="participacao">33,33%</p>
+								</div>
+								<div class="column-3 right-aligned">
+									<button class="btn secondary outlined">
+										Relatório
+									</button>
+								</div>				
+							</div>	
+							<div class="data-item">
+								<div class="column-6">
+									<div class="user-data">
+									  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar">
+									  <div class="user-data-info">
+									    <p class="user-data-header">Alexandre Loes Paz</p>
+									    <p class="user-data-description">333.222.666/0001-00</p>
+									  </div>
+									</div>	
+								</div>
+								<div class="column-3">
+									<p class="participacao">33,33%</p>
+								</div>
+								<div class="column-3 right-aligned">
+									<button class="btn secondary outlined">
+										Relatório
+									</button>
+								</div>				
+							</div>	
+							<div class="data-item">
+								<div class="column-6">
+									<div class="user-data">
+									  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar">
+									  <div class="user-data-info">
+									    <p class="user-data-header">Alexandre Loes Paz</p>
+									    <p class="user-data-description">333.222.666/0001-00</p>
+									  </div>
+									</div>	
+								</div>
+								<div class="column-3">
+									<p class="participacao">33,33%</p>
+								</div>
+								<div class="column-3 right-aligned">
+									<button class="btn secondary outlined">
+										Relatório
+									</button>
+								</div>				
+							</div>															
+						</div>
+
 					</div>
 				</section>
 
@@ -180,112 +178,120 @@
 					<header>
 						<div class="nome">Novo Perfil</div>
 						<div class="acoes">
-							<button id="btnRelatorios" class="ls-btn ls-btn-secondary outlined">
+							<button id="btnRelatorios" class="btn secondary outlined">
 								Relatório
 							</button>
 							<a href="" class="fechar-menu">
-								<span class="icon nv-icon-remove"></span>
+								<i class="icon nv-icon-remove"></i>
 							</a>
 						</div>
 					</header>
 					<div class="menu-body">
-						<ul class="ls-tabs-nav box-tabs">
-							<li class="ls-active">
-								<a data-ls-module="tabs" href="#tab1">
-									<span class="icon nv-icon-note-board"></span>
-								</a>
-							</li>
-							<li>
-								<a data-ls-module="tabs" href="#tab2">
-									<span class="icon nv-icon-balance"></span>
-								</a>
-							</li>
-							<li>
-								<a data-ls-module="tabs" href="#tab3">
-									<span class="icon nv-icon-camera"></span>
-								</a>
-							</li>
-						</ul>
-						<div class="ls-tabs-container">
+						<div class="tabs-wrapper">
+							<ul class="tabs-group" data-tabs-group="tabsGroup">
+								<li class="tab active"><a href="#tab1"><span class="icon nv-icomoon-clipboard-text"></span></a></li>
+								<li class="tab"><a href="#tab2"><span class="icon icon nv-icomoon-library1"></span></a></li>
+								<li class="tab"><a href="#tab3"><span class="icon nv-icomoon-camera-2"></span></a></li>								
+							</ul>
 
-							<div id="tab1" class="ls-tab-content ls-active">
-								<div class="lista-dados">
-									<div class="lista-dados-item">
-										<div class="titulo">CNPJ</div>
-										<div class="valor">123.546.32T.234</div>
+							<div class="tabs-content-wrapper" data-tabs-target-group="tabsGroup">
+								<div class="tab-content active" id="tab1">
+									<div class="lista-dados">
+										<div class="lista-dados-item">
+											<div class="titulo">CNPJ</div>
+											<div class="valor">123.546.32T.234</div>
+										</div>
+										
+										<div class="lista-dados-item">
+											<div class="titulo">RAZÃO SOCIAL</div>
+											<div class="valor">IND. E COMERCIO VAREJISTA LTDA.</div>
+										</div>
+										
+										<div class="lista-dados-item">
+											<div class="titulo">ABERTURA</div>
+											<div class="valor">09/04/2012</div>
+										</div>
+										
+										<div class="lista-dados-item">
+											<div class="titulo">SITUAÇÃO</div>
+											<div class="valor">ATIVA</div>
+										</div>
+										
+										<div class="lista-dados-item">
+											<div class="titulo">CNAE</div>
+											<div class="valor">26.89-3-99 | NOME DA ATIVIDADE</div>
+										</div>
 									</div>
-									
-									<div class="lista-dados-item">
-										<div class="titulo">RAZÃO SOCIAL</div>
-										<div class="valor">IND. E COMERCIO VAREJISTA LTDA.</div>
-									</div>
-									
-									<div class="lista-dados-item">
-										<div class="titulo">ABERTURA</div>
-										<div class="valor">09/04/2012</div>
-									</div>
-									
-									<div class="lista-dados-item">
-										<div class="titulo">SITUAÇÃO</div>
-										<div class="valor">ATIVA</div>
-									</div>
-									
-									<div class="lista-dados-item">
-										<div class="titulo">CNAE</div>
-										<div class="valor">26.89-3-99 | NOME DA ATIVIDADE</div>
-									</div>
-								</div>
 
-								<div class="lista-antigos-proprietarios">
-									<header>
-										Antigos proprietários
-									</header>
-									<div class="lista-body">
-										<div class="lista-item">
-											<span class="nome">
-												<span class="texto-destaque icon nv-icon-customer">Alexandre Lopes Paz</span>
-											</span>
-											<span class="documento">
-												CPF: 230.555.666.22
-											</span>
-										</div>
-										
-										<div class="lista-item">
-											<span class="nome">
-												<span class="texto-destaque icon nv-icon-customer">Alexandre Lopes Paz</span>
-											</span>
-											<span class="documento">
-												CPF: 230.555.666.22
-											</span>
-										</div>
-										
-										<div class="lista-item">
-											<span class="nome">
-												<span class="texto-destaque icon nv-icon-customer">Alexandre Lopes Paz</span>
-											</span>
-											<span class="documento">
-												CPF: 230.555.666.22
-											</span>
-										</div>
-										
-										<div class="lista-item">
-											<span class="nome">
-												<span class="texto-destaque icon nv-icon-customer">Alexandre Lopes Paz</span>
-											</span>
-											<span class="documento">
-												CPF: 230.555.666.22
-											</span>
+									<div class="lista-antigos-proprietarios">
+										<header>
+											Antigos proprietários
+										</header>
+										<div class="lista-body">
+											<div class="lista-item">
+												<span class="nome">
+													<span class="highlight-text has-icon nv-icomoon-user">Alexandre Lopes Paz</span>
+												</span>
+												<span class="documento">
+													CPF: 230.555.666.22
+												</span>
+											</div>
+											
+											<div class="lista-item">
+												<span class="nome">
+													<span class="highlight-text has-icon nv-icomoon-user">Alexandre Lopes Paz</span>
+												</span>
+												<span class="documento">
+													CPF: 230.555.666.22
+												</span>
+											</div>
+											
+											<div class="lista-item">
+												<span class="nome">
+													<span class="highlight-text has-icon nv-icomoon-user">Alexandre Lopes Paz</span>
+												</span>
+												<span class="documento">
+													CPF: 230.555.666.22
+												</span>
+											</div>
+											
+											<div class="lista-item">
+												<span class="nome">
+													<span class="highlight-text has-icon nv-icomoon-user">Alexandre Lopes Paz</span>
+												</span>
+												<span class="documento">
+													CPF: 230.555.666.22
+												</span>
+											</div>
 										</div>
 									</div>
 								</div>
+								<div class="tab-content" id="tab2">
+									<div class="boxes-group">
+										<div class="box-content">
+											<h2>Aba 2</h2>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consequatur deserunt quas nam, cumque a velit quam sunt soluta porro tempore sint nobis sapiente omnis facilis nostrum possimus ipsum. Tempore!
+										</div>
+										<div class="box-content grey-bg">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consequatur deserunt quas nam, cumque a velit quam sunt soluta porro tempore sint nobis sapiente omnis facilis nostrum possimus ipsum. Tempore!
+										</div>										
+									</div>
+								</div>
+								<div class="tab-content" id="tab3">
+									<div class="boxes-group">
+										<div class="box-content">
+											<h2>Aba 3</h2>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consequatur deserunt quas nam, cumque a velit quam sunt soluta porro tempore sint nobis sapiente omnis facilis nostrum possimus ipsum. Tempore!
+										</div>
+										<div class="box-content grey-bg">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consequatur deserunt quas nam, cumque a velit quam sunt soluta porro tempore sint nobis sapiente omnis facilis nostrum possimus ipsum. Tempore!
+										</div>										
+									</div>
+								</div>																
 							</div>
 
-							<div id="tab2" class="ls-tab-content">
-							</div>
-
-							<div id="tab3" class="ls-tab-content">
-							</div>
 						</div>
+
 					</div>
 				</section>
 
@@ -293,6 +299,6 @@
 		</main>
 
 		<?php include("includes/scripts.php"); ?>
-		<script src="assets/js/mapa.js"></script>
+		<script src="js/mapa.js"></script>
 	</body>
 </html>

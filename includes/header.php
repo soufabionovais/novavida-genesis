@@ -1,75 +1,65 @@
-<div class="ls-topbar">
+	<header class="main-header user-info">
+		<div class="notifications-wrapper" id="toggleNotification">
+			<div class="btn is-icon-btn">
+				<span class="counter">10</span>
+				<i class="icon nv-icomoon-bell"></i>
+			</div>
+		</div>
+		<div class="notifications-list-wrapper" id="notificationsList">
+			<div class="notifications-list" >
+				<div class="notification">
+					<div class="text"><a href="#">Lorem ipsum dolor sit amet dolor sit amet</a></div>
+					<button class="btn is-icon-btn js-btn-remove">
+						<i class="icon nv-icon-remove"></i>
+					</button>
+				</div>
+				<div class="notification">
+					<div class="text"><a href="#">Lorem ipsum dolor sit amet it amet it amet</a></div>
+					<button class="btn is-icon-btn js-btn-remove">
+						<i class="icon nv-icon-remove"></i>
+					</button>
+				</div>
+				<div class="notification">
+					<div class="text"><a href="#">Lorem ipsum dolor sit amet ipsum dolor</a></div>
+					<button class="btn is-icon-btn js-btn-remove">
+						<i class="icon nv-icon-remove"></i>
+					</button>
+				</div>
+				<div class="notification">
+					<div class="text"><a href="#">Lorem ipsum dolor sit dolor amet</a></div>
+					<button class="btn is-icon-btn js-btn-remove">
+						<i class="icon nv-icon-remove"></i>
+					</button>
+				</div>
+				<div class="notification">
+					<div class="text"><a href="#">Lorem ipsum dolor sit amet</a></div>
+					<button class="btn is-icon-btn js-btn-remove">
+						<i class="icon nv-icon-remove"></i>
+					</button>
+				</div>
+			</div>
+		</div>		
+		<div class="user-data" id="toggleUserInfo">
+		  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar">
+		  <div class="user-data-info">
+		    <p class="user-data-header">Alexandre Loes Paz</p>
+		    <p class="user-data-description highlight-text">IP: 200.255.233.1</p>
+		  </div>
+		</div>
+	    <div class="dropdown-user-info">
+	    	<div class="info-item change-language">
+	    		<span class="text has-icon nv-icomoon-earth">Translate</span>
+	    		<div class="grouped-buttons" data-grouped-buttons>
+	    			<button class="btn">PT</button>
+	    			<button class="btn">EN</button>
+	    		</div>
+	    	</div>
+	    	<div class="info-item">
+	    		<a href="meus-dados.php" class="button has-icon nv-icomoon-user">Meus dados</a>
+	    	</div>
+			<div class="info-item">
+				<button class="button logout has-icon nv-icomoon-enter-left">Sair</button>
+	    	</div>		    	
+	    </div>			
 
-    <h1 class="ls-brand-name">
-      <a href="index.php">
-        <img src="assets/img/logo-nova-vida.png" alt="Nova Vida TI - Genesis" />
-      </a>
-    </h1>
-
-  <!-- Barra de Notificações -->
-  <div class="ls-notification-topbar">
-
-    <!-- Links de apoio -->
-    <div class="ls-alerts-list">
-      <a href="#" class="nv-icomoon-bell" data-counter="8" data-ls-module="topbarCurtain" data-target="#ls-notification-curtain"></a>
-    </div>
-    <aside class="ls-notification">
-      <nav class="ls-notification-list" id="ls-notification-curtain" style="left: 1716px;">
-        <h3 class="ls-title-2">Notificações</h3>
-        <ul>
-          <li class="ls-dismissable">
-            <a href="#">Notificação 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
-          </li>
-          <li class="ls-dismissable">
-            <a href="#">Notificação 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
-          </li>
-          <li class="ls-dismissable">
-            <a href="#">Notificação 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
-          </li>
-          <li class="ls-dismissable">
-            <a href="#">Notificação 4 Lorem.</a>
-            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
-          </li>
-          <li class="ls-dismissable">
-            <a href="#">Notificação 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet.</a>
-            <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
-
-
-    <!-- Dropdown com detalhes da conta de usuário -->
-    <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
-      <a href="#" class="ls-ico-user user-data">
-        <img src="assets/img/avatar-usuario.png" alt="Nome do cliente">
-        <div class="user-data-info">
-          <p class="user-data-header">Alexandre Loes Pas</p>
-          <p class="user-data-description">IP 168.155.788.1</p>
-        </div>        
-      </a>
-
-      <nav class="ls-dropdown-nav ls-user-menu">
-        <div class="ls-form">
-              <span class="">Translate</span> 
-              <span class="ls-group-btn">
-                <a href="#" class="ls-btn ls-btn-primary small">PT</a>
-                <a href="#" class="ls-btn ls-btn-primary small">EN</a>
-              </span>          
-        </div>
-        <ul>
-          <li><a href="meus-dados.php" title="Editar meus dados">Meus dados</a></li>
-          <li><a href="#">Sair</a></li>
-         </ul>
-      </nav>
-    </div>
-  </div>
-
-    <!-- <span class="ls-show-sidebar ls-ico-menu"></span> -->
- 
-</div>
-
-
+	</header>

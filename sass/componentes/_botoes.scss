@@ -1,0 +1,134 @@
+.btn {
+	text-transform: uppercase;
+	padding: 14px 25px 13px;
+	border-radius: 3px;
+	border: none;
+	font-size: 12px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;	
+	text-decoration: none;
+	transition: 0.5s;
+	&:hover {
+		text-decoration: none;
+	}
+	&.fluid {
+		width: 100%;
+	}	
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+	&:focus,
+	&:active {
+		outline: none;
+	}
+	&.small {
+		padding: 8px 15px;
+	}
+	&.large {
+		padding: 17px 25px;
+	}	
+	&.primary {
+		background-color: #27deac;
+		color: #fff;
+		border: solid 1px #27deac;
+		&:hover {
+			background-color: lighten(#27deac, 10%);
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	&.secondary {
+		background-color: #8399f5;
+		border: solid 1px #8399f5;
+		color: #fff;
+		&:hover {
+			background-color: lighten(#8399f5, 10%);
+		}		
+		&.outlined {
+			background: transparent;
+			color: #8399f5;
+			border: solid 1px #8399f5;
+			&:hover {
+				background-color: #fff;
+			}				
+		}
+	}	
+	&.is-icon-btn {
+		border: none;
+		background: transparent;
+		font-size: 16px;
+		color: #d9dde6;
+		padding: 0;
+		&.primary {
+			color: #27deac;
+			background-color: transparent;
+		}
+		&.secondary {
+			color: #8399f5;
+			background-color: transparent;
+		}		
+	}
+}
+
+div.btn {
+	padding: 0;
+	&:hover {
+		cursor: pointer;		
+	}
+	label {
+		padding: 14px 25px 13px;
+		cursor: pointer;
+	}
+	input {
+		opacity: 0.00001;
+	}
+}
+
+.inline-buttons-wrapper {
+	.btn {
+		&:not(:first-child) {
+			margin-left: 10px;
+		}
+	}
+}
+
+.buttons-wrapper {
+	display: flex;
+	justify-content: space-between;
+	.is-icon-btn {
+		font-size: 30px;
+	}
+}
+
+.icon-buttons-group {
+	display: flex;
+	justify-content: space-around;	
+}
+
+/* Botões agrupados */
+.grouped-buttons {
+	position: relative;
+	display: flex;
+	.btn {
+		display: flex;
+		flex-grow: 1;
+		justify-content: center;
+		width: 50%;
+		box-shadow: inset 0 0 0 1px rgba(#e2e2e2,1);
+		color: #a6a6c4;
+		text-transform: uppercase;
+		&:first-child {
+			border-radius: 3px 0 0 3px;
+		}
+		&:last-child {
+			border-radius: 0 3px 3px 0;
+		}	
+		&.active {
+			@include gradient(#8399f5, #7aa9f1);
+			box-shadow: none;
+			color: #FFF;
+		}	
+	}
+}

@@ -3,47 +3,16 @@
     
     <?php include("includes/header-monitoria.php"); ?>
 
-		<main class="ls-main doc">
+		<main class="main doc">
 			<div id="docWrapper" class="doc-wrapper no-sidebar">
 				<div id="docPrincipal" class="doc-principal">
 
-					<div class="doc-menu">
-						<a href="capa.php" class="doc-menu-titulo atual">
-							<span class="ls-show-sidebar ls-ico-text2"></span>
-							Capa
-						</a>
-						<ol>
-							<li class="doc-menu-item">
-								<span class="marcador"></span>
-								<a href="folha-rosto.php">01. Folha de rosto</a>
-							</li>
-							<li class="doc-menu-item">
-								<span class="marcador"></span>
-								<a href="sumario.php">02. Sumário</a>
-							</li>
-							<li class="doc-menu-item">
-								<span class="marcador"></span>
-								<a href="prefacio.php">03. Prefácio</a>
-							</li>
-							<li class="doc-menu-item">
-								<span class="marcador"></span>
-								<a href="consulta-receita-federal-1.php">04. Grupo Fonte 01</a>
-								<ol class="doc-submenu">
-									<li class="doc-menu-item">
-										<a href="consulta-receita-federal.php">04.1 Nome da Fonte 1</a>
-									</li>
-									<li class="doc-menu-item">
-										<a href="consulta-receita-federal-template-2.php">04.2 Nome da Fonte 2</a>
-									</li>
-								</ol>
-							</li>
-						</ol>
-					</div>
+					<?php include("includes/doc-menu.php"); ?>
 
 					<div class="doc-pagina capa">
 						<div class="conteudo-wrapper">
 							<div class="custom-image">
-								<img src="assets/img/doc/brasao-republica-transparencia.png" alt="">
+								<img src="img/doc/brasao-republica-transparencia.png" alt="">
 							</div>
 							<div class="item">
 								<span class="item-nome">Critério Consultado:</span>
@@ -85,6 +54,6 @@
 		</main>
 
 		<?php include("includes/scripts.php"); ?>
-		<script src="assets/js/doc.js"></script>
+		<script src="js/doc.js"></script>
 	</body>
 </html>

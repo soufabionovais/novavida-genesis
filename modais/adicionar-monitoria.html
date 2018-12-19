@@ -3,33 +3,25 @@
 		<h2 class="modal-popup-titulo">Monitoria</h2>
 	</header>
 	<div class="modal-popup-conteudo">
-		<div class="ls-boxes">
-
-			<div class="ls-box">
-				<div class="ls-form ls-form-horizontal row">
-						<div class="col-sm-7">
-							<span class="ls-label-text">Repetir a Cada</span>
-						<input type="number" min="0" value="0" />
-						</div>
-						<div class="col-sm-5">
-							<select class="select-field" data-position="right">
-								<option placeholder> Período </option>
-								<option value="1"> Dia </option>
-								<option value="2"> Mês </option>
-								<option value="3"> Ano </option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="ls-box bg-grey">
+		<div class="boxes-group">
+			<div class="box-content">
 				<div class="row">
-					<div class="col center-aligned">
-						<button onclick="adicionarMonitoria()" class="ls-btn ls-btn-primary" fecha-modal>Salvar</button>
+					<div class="col-sm-7">
+						<span class="label">Repetir a Cada</span>
+						<input type="number" min="1" max="12" step="1" value="0" class="input-text">
+					</div>
+					<div class="col-sm-5">
+						<input type="text" class="select-field" data-url="data/periodos.json" data-search-field-hidden="true" name="periodo" data-placeholder="Período" />
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="box-content grey-bg">
+				<div class="row">
+					<div class="col-12 center-aligned">
+						<button onclick="adicionarMonitoria()" class="btn primary" data-fecha-modal>Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>				
 	</div>
 </div>

@@ -1,0 +1,13 @@
+.mCSB_scrollTools {
+    .mCSB_dragger {
+        .mCSB_dragger_bar {
+            background: #27deac;
+        }
+        &.mCSB_dragger_onDrag {
+            .mCSB_dragger_bar {
+                background: #f5842a;
+            }
+        }
+    }
+}
+

@@ -3,15 +3,15 @@
 
 	<?php include("includes/header-monitoria.php"); ?>
 
-	<?php include("includes/sidebar.php"); ?>
+	<!-- <?php include("includes/sidebar.php"); ?> -->
 
-		<main class="ls-main doc">
+		<main class="main doc">
 			<div id="docWrapper" class="doc-wrapper">
 				<div id="docPrincipal" class="doc-principal">
 
 					<div class="doc-menu">
-						<a href="capa.php" class="doc-menu-titulo">
-							<span class="ls-show-sidebar ls-ico-text2"></span>
+						<a href="capa.php" class="doc-menu-titulo atual nv-icomoon-book-2">
+							<span class="show-sidebar ico-text2"></span>
 							Capa
 						</a>
 						<ol>
@@ -42,7 +42,7 @@
 						</ol>
 					</div>
 
-					<div class="doc-pagina consulta-receita-federal template-2" style="background-image: url(assets/img/doc/brasao-republica-transparencia.png)">
+					<div class="doc-pagina consulta-receita-federal template-2" style="background-image: url(img/doc/brasao-republica-transparencia.png)">
 						<div class="conteudo-wrapper">
 
 							<div class="doc-header">
@@ -50,9 +50,9 @@
 								<div class="doc-row">
 									<h2 class="doc-titulo">Nome da Fonte</h2>
 									<div class="doc-status">
-										<span class="icon ls-ico-checkmark-circle"></span>
+										<span class="icon nv-icon-check-circle-thin"></span>
 										<span class="descricao">
-											aprovado por Leilane Alves em 10/02/2018 às 16:30
+											aprovado por Leilane Alves <span>em 10/02/2018 às 16:30</span>
 										</span>
 									</div>
 								</div>
@@ -158,7 +158,7 @@
 										<div class="detalhes-row">
 											<div class="detalhes-titulo"></div>
 											<div class="detalhes-descricao">
-												<img src="assets/img/doc/cod-barras.png" alt="" class="cod-barras" />
+												<img src="img/doc/cod-barras.png" alt="" class="cod-barras" />
 											</div>
 										</div>
 
@@ -224,41 +224,8 @@
 						</div>
 					</div>
 
-					<div id="sidebarMenu" class="sidebar-menu">
-						<button class="btn btn-fechar" data-conteudo="fechar">X</button>
-						<button class="btn btn-info" data-conteudo="info"><img src="assets/img/doc/icons/icon-info.png" alt="" /></button>
-						<button class="btn btn-comentarios" data-conteudo="comentarios"><img src="assets/img/doc/icons/icon-chat.png" alt="" /></button>
-						<button class="btn btn-filtro" data-conteudo="filtro"><img src="assets/img/doc/icons/icon-filter.png" alt="" /></button>
-						<button class="btn btn-trechos" data-conteudo="trechos"><img src="assets/img/doc/icons/icon-markdown.png" alt="" /></button>
-						<button class="btn btn-monitoria" data-conteudo="monitoria"><img src="assets/img/doc/icons/icon-eye.png" alt="" /></button>
-
-						<div class="menu-impressao-wrapper">
-							<button class="btn btn-impressora" data-conteudo="impressora"><img src="assets/img/doc/icons/icon-print.png" alt="" /></button>
-
-							<div id="impressoraSidebar" class="impressora-menu">
-								<div class="pretty p-icon p-curve p-tada checkbox-container">
-									<input type="checkbox" name="comentarios">
-									<div class="state p-primary-o">
-										<i class="icon ls-ico-checkmark"></i>
-										<label>Com comentários</label>
-									</div>
-								</div>
-
-								<div class="pretty p-icon p-curve p-tada checkbox-container">
-									<input type="checkbox" name="evidencias">
-									<div class="state p-primary-o">
-										<i class="icon ls-ico-checkmark"></i>
-										<label>Com evidências</label>
-									</div>
-								</div>
-
-								<button>
-									<img src="assets/img/doc/icons/icon-print.png" alt="" />
-								</button>
-							</div>
-						</div>
-
-					</div>
+					
+					<?php include("includes/sidebar-menu-relatorios.php"); ?>
 
 				</div>
 
@@ -307,7 +274,7 @@
 						<h3 class="subtitulo">Evidência de fonte de consulta</h3>
 
 						<div class="preview">
-							<img src="assets/img/doc/info-thumb.png" alt="" />
+							<img src="img/doc/info-thumb.png" alt="" />
 						</div>
 					</div>
 				</div>
@@ -323,7 +290,7 @@
 							<div class="msg-inner">
 								<div class="msg">
 									<div class="msg-col">
-										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<img src="img/avatar-usuario.png" alt="" class="avatar" />
 										<div class="msg-body">
 											<span class="nome">John</span>
 											<span class="texto">
@@ -338,7 +305,7 @@
 
 								<div class="msg">
 									<div class="msg-col">
-										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<img src="img/avatar-usuario.png" alt="" class="avatar" />
 										<div class="msg-body">
 											<span class="nome">Jackeline</span>
 											<span class="texto">
@@ -353,7 +320,7 @@
 								
 								<div class="msg">
 									<div class="msg-col">
-										<img src="assets/img/avatar-usuario.png" alt="" class="avatar" />
+										<img src="img/avatar-usuario.png" alt="" class="avatar" />
 										<div class="msg-body">
 											<span class="nome">Jackeline</span>
 											<span class="texto">
@@ -373,12 +340,12 @@
 						<div class="caixa-texto">
 							<div class="ls-form ls-form-horizontal row">
 								<div class="col-sm-9">
-									<label class="ls-label field-has-icon">
-										<textarea rows="4" placeholder="Deixe seu comentário"></textarea>
+									<label class="form-label field-has-icon">
+										<textarea class="input-text textarea" placeholder="Deixe seu comentário"></textarea>
 									</label>
 								</div>        
 								<div class="col-sm-3 btn-wrapper">
-									<button class="ls-btn ls-btn-primary">
+									<button class="btn primary">
 										Enviar
 									</button>
 								</div>
@@ -393,76 +360,95 @@
 					</div>
 
 					<div class="content-inner">
-						<div class="ls-form ls-form">
+						<div class="ls-form">
 							<div class="col">
-								<label class="ls-label">
-									<input type="text" name="nome_filtro" placeholder="Nome filtro" class="ls-field">
+								<label class="form-label">
+									<input type="text" name="nome_filtro" placeholder="Nome do Filtro" class="input-text inverted">
 								</label>
 							</div>
 
 							<div class="col">
-								<label class="ls-label">
-									<input type="text" name="nome_filtro" placeholder="Nome filtro" class="ls-field">
+								<label class="form-label">
+									<input type="text" name="nome_filtro" placeholder="Nome do Filtro" class="input-text inverted">
 								</label>
 							</div>
 
 							<div class="col">
 								<h3 class="form-subtitulo">Checkbox</h3>
-								<div class="pretty p-icon p-curve p-tada checkbox-container">
-									<input type="checkbox" name="checkbox-1">
-									<div class="state p-primary-o">
-										<i class="icon ls-ico-checkmark"></i>
-										<label>Checkbox</label>
-									</div>
-								</div>
-								
-								<div class="pretty p-icon p-curve p-tada checkbox-container">
-									<input type="checkbox" name="checkbox-2">
-									<div class="state p-primary-o">
-										<i class="icon ls-ico-checkmark"></i>
-										<label>Checkbox</label>
-									</div>
-								</div>
-								
-								<div class="pretty p-icon p-curve p-tada checkbox-container">
-									<input type="checkbox" name="checkbox-3">
-									<div class="state p-primary-o">
-										<i class="icon ls-ico-checkmark"></i>
-										<label>Checkbox</label>
-									</div>
-								</div>
+								<div class="checkbox-radio-group block">
+									<span class="radio-check-field">
+										<input type="checkbox">
+										<label class="highlight-text">Nome do botão</label>
+									</span>
+									<span class="radio-check-field">
+										<input type="checkbox">
+										<label class="highlight-text">Nome do botão</label>
+									</span>	
+									<span class="radio-check-field">
+										<input type="checkbox">
+										<label class="highlight-text">Nome do botão</label>
+									</span>	
+									<span class="radio-check-field">
+										<input type="checkbox">
+										<label class="highlight-text">Nome do botão</label>
+									</span>	
+									<span class="radio-check-field">
+										<input type="checkbox">
+										<label class="highlight-text">Nome do botão</label>
+									</span>										
+								</div>								
 							</div>
 
 							<div class="col">
 								<h3 class="form-subtitulo">Radio Button</h3>
-
-								<div class="pretty p-default p-round p-thick radio-style">
-									<input type="radio" name="radio-1" />
-									<div class="state">
-										<label>Radio Button</label>
-									</div>
-								</div>
-
-								<div class="pretty p-default p-round p-thick radio-style">
-									<input type="radio" name="radio-2" />
-									<div class="state">
-										<label>Radio Button</label>
-									</div>
-								</div>
-
-								<div class="pretty p-default p-round p-thick radio-style">
-									<input type="radio" name="radio-3" />
-									<div class="state">
-										<label>Radio Button</label>
-									</div>
-								</div>
-
+								<div class="checkbox-radio-group inline">
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão</label>
+									</span>
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão</label>
+									</span>	
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão Nome</label>
+									</span>				
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão nome do botão</label>
+									</span>	
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão</label>
+									</span>
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão</label>
+									</span>	
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão Nome</label>
+									</span>				
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão nome do botão</label>
+									</span>	
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão nome do botão</label>
+									</span>	
+									<span class="radio-check-field radio inverted">
+										<input type="checkbox">
+										<label>Nome do botão Nome botão Nome</label>
+									</span>	
+								</div>		
 							</div>
 
 						</div>
 
 						<div class="col right-aligned">
-							<button class="ls-btn ls-btn-primary large">Filtrar</button>
+							<button class="btn primary large">Filtrar</button>
 						</div>
 
 					</div>
@@ -484,13 +470,13 @@
 								<div class="autor">
 									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
 									<div class="data">
-										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
 									</div>
 								</div>
 							</div>
 							<div class="acoes">
-								<button class="ls-btn ls-btn-primary">Desmarcar</button>
-								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+								<button class="btn primary">Desmarcar</button>
+								<button class="btn secondary outlined">Ler mais</button>
 							</div>
 						</div>
 						
@@ -503,13 +489,13 @@
 								<div class="autor">
 									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
 									<div class="data">
-										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
 									</div>
 								</div>
 							</div>
 							<div class="acoes">
-								<button class="ls-btn ls-btn-primary">Desmarcar</button>
-								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+								<button class="btn primary">Desmarcar</button>
+								<button class="btn secondary outlined">Ler mais</button>
 							</div>
 						</div>
 						
@@ -522,13 +508,13 @@
 								<div class="autor">
 									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
 									<div class="data">
-										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
 									</div>
 								</div>
 							</div>
 							<div class="acoes">
-								<button class="ls-btn ls-btn-primary">Desmarcar</button>
-								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+								<button class="btn primary">Desmarcar</button>
+								<button class="btn secondary outlined">Ler mais</button>
 							</div>
 						</div>
 						
@@ -541,13 +527,13 @@
 								<div class="autor">
 									<div class="usuario">ALEXANDRE NOVAIS MOREIRA</div>
 									<div class="data">
-										<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
 									</div>
 								</div>
 							</div>
 							<div class="acoes">
-								<button class="ls-btn ls-btn-primary">Desmarcar</button>
-								<button class="ls-btn ls-btn-secondary outlined">Ler mais</button>
+								<button class="btn primary">Desmarcar</button>
+								<button class="btn secondary outlined">Ler mais</button>
 							</div>
 						</div>
 
@@ -557,10 +543,10 @@
 				<div id="monitoriaSidebar" class="doc-sidebar monitoria-sidebar">
 					<div class="doc-sidebar-header">
 						<h2>Monitoria</h2>
-						<button id="btnCompararMonitoria" class="ls-btn ls-btn-primary btn-comparar-monitoria">
+						<button id="btnCompararMonitoria" class="btn primary btn-comparar-monitoria">
 							COMPARAR
 						</button>
-						<button id="btnVoltarMonitoria" class="ls-btn ls-btn-secondary btn-voltar-monitoria">
+						<button id="btnVoltarMonitoria" class="btn secondary btn-voltar-monitoria">
 							Voltar
 						</button>
 					</div>
@@ -568,61 +554,64 @@
 					<!-- POSSUI MONITORIA -->
 					<div id="comMonitoria" class="content-inner lista-monitoria">
 
-						<div class="item">
-							<span class="pretty p-icon p-curve p-tada checkbox-container">
-								<input type="checkbox" name="comentarios">
-								<div class="state p-primary-o">
-									<i class="icon ls-ico-checkmark"></i>
-									<label>Alteração na fonte 001 linha 02</label>
-								</div>
-							</span>
-							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
-						</div>
-						
-						<div class="item">
-							<span class="pretty p-icon p-curve p-tada checkbox-container">
-								<input type="checkbox" name="comentarios">
-								<div class="state p-primary-o">
-									<i class="icon ls-ico-checkmark"></i>
-									<label>Alteração na fonte 001 linha 02</label>
-								</div>
-							</span>
-							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
-						</div>
-						
-						<div class="item">
-							<span class="pretty p-icon p-curve p-tada checkbox-container">
-								<input type="checkbox" name="comentarios">
-								<div class="state p-primary-o">
-									<i class="icon ls-ico-checkmark"></i>
-									<label>Alteração na fonte 001 linha 02</label>
-								</div>
-							</span>
-							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
-						</div>
-						
-						<div class="item">
-							<span class="pretty p-icon p-curve p-tada checkbox-container">
-								<input type="checkbox" name="comentarios">
-								<div class="state p-primary-o">
-									<i class="icon ls-ico-checkmark"></i>
-									<label>Alteração na fonte 001 linha 02</label>
-								</div>
-							</span>
-							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
-						</div>
-						
-						<div class="item">
-							<span class="pretty p-icon p-curve p-tada checkbox-container">
-								<input type="checkbox" name="comentarios">
-								<div class="state p-primary-o">
-									<i class="icon ls-ico-checkmark"></i>
-									<label>Alteração na fonte 001 linha 02</label>
-								</div>
-							</span>
-							<span class="texto-destaque nv-icon-calendar">01/01/2000 às 19:00</span>
-						</div>
 
+						<div class="checkbox-radio-group block">
+							<div class="item">
+								<div class="row d-flex fluid align-items-center justify-content-between">
+									<div class="col-md-8">
+										<span class="radio-check-field">
+											<input type="checkbox">
+											<label>Alteração na fonte 001 linha 02</label>
+										</span>									
+									</div>
+									<div class="col-md-4 right-aligned">
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
+									</div>	
+								</div>						
+							</div>	
+
+							<div class="item">
+								<div class="row d-flex fluid align-items-center justify-content-between">
+									<div class="col-md-8">
+										<span class="radio-check-field">
+											<input type="checkbox">
+											<label>Alteração na fonte 001 linha 02</label>
+										</span>									
+									</div>
+									<div class="col-md-4 right-aligned">
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
+									</div>	
+								</div>						
+							</div>						
+
+							<div class="item">
+								<div class="row d-flex fluid align-items-center justify-content-between">
+									<div class="col-md-8">
+										<span class="radio-check-field">
+											<input type="checkbox">
+											<label>Alteração na fonte 001 linha 02</label>
+										</span>									
+									</div>
+									<div class="col-md-4 right-aligned">
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
+									</div>	
+								</div>						
+							</div>						
+
+							<div class="item">
+								<div class="row d-flex fluid align-items-center justify-content-between">
+									<div class="col-md-8">
+										<span class="radio-check-field">
+											<input type="checkbox">
+											<label>Alteração na fonte 001 linha 02</label>
+										</span>									
+									</div>
+									<div class="col-md-4 right-aligned">
+										<span class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
+									</div>	
+								</div>						
+							</div>						
+						</div>																	
 					</div>
 
 					<!-- NÃO POSSUI MONITORIA -->
@@ -630,7 +619,7 @@
 						<span>
 							Você ainda não tem nada sendo monitorado.
 						</span>
-						<button class="ls-btn ls-btn-primary" data-adicionar-monitoria>Adicionar monitoria</button>
+						<button class="btn primary" data-adicionar-monitoria>Adicionar monitoria</button>
 					</div>
 
 					<!-- COMPARAÇÃO DE MONITORIA -->
@@ -638,7 +627,7 @@
 
 						<div class="comparacao-item">
 							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000</div>
 								<div class="linha">
 									<span class="marcador"></span>
 								</div>
@@ -654,7 +643,7 @@
 						
 						<div class="comparacao-item">
 							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000</div>
 								<div class="linha">
 									<span class="marcador"></span>
 								</div>
@@ -670,7 +659,7 @@
 						
 						<div class="comparacao-item">
 							<div class="timeline">
-								<div class="texto-destaque nv-icon-calendar">01/01/2000</div>
+								<div class="highlight-text has-icon nv-icomoon-calendar-full">01/01/2000</div>
 								<div class="linha">
 									<span class="marcador"></span>
 								</div>
@@ -690,6 +679,6 @@
 		</main>
 
 		<?php include("includes/scripts.php"); ?>
-		<script src="assets/js/doc.js"></script>
+		<script src="js/doc.js"></script>
 	</body>
 </html>

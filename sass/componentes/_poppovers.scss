@@ -1,0 +1,169 @@
+$positions: top, right, bottom, left;
+.tippy-popper {    
+    //width: 680px;
+    display: block;
+    .poppover-relatorios-theme {
+        background: #fff;   
+        width: 100%; 
+        max-width: none;
+        padding: 20px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+        color: #a6a6c4;
+        max-height: 450px;
+        overflow: hidden;
+        overflow-y: auto;
+        will-change: initial;
+        width: 680px;
+    }
+    .tippy-content {
+        font-size: 14px;
+        font-family: 'Segoe UI';
+        text-align: left;
+    }
+    &[x-placement^=left] {
+        .tippy-arrow {
+            border-left: 8px solid #fff;
+        }
+    }
+}
+
+
+.tippy-popper {    
+    display: block;
+    .export-reports-theme {
+        background: #fff;   
+        padding: 5px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+        color: #a6a6c4;
+        width: 150px;
+        will-change: initial;
+        .tippy-backdrop {
+            background: #fff;
+        }
+        a {
+            color: #7da2f2;
+            display: block;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;            
+            padding: 10px;    
+            transition: 0.4s;    
+            &:before {
+                transition: 0.4s;    
+            }    
+            &:not(:last-child) {
+                border-bottom: solid 1px #f1f1f1;
+            }
+            &:hover {
+                color: darken(#7da2f2, 20%);
+                &[class*="pdf"] {
+                    &:before {
+                        color: #ff0000;
+                    }
+                }                
+            }
+        }
+    }
+    .tippy-content {
+        font-size: 14px;
+        font-family: 'Segoe UI';
+        text-align: left;
+    }
+}
+
+
+
+.accordion-title-text-inner {
+    position: relative;
+    display: inline-block;
+    .tooltip {
+        width: 230px;
+        @include gradient(#8399f5, #7aa9f1);
+        color: #fff;
+        position: absolute;
+        padding: 15px;
+        z-index: 1;
+        left: calc(100% + 20px);
+        transform: translateY(-50%);
+        top: 50%;
+        display: none;
+        @include pseudoElement {
+            width: 0;
+            height: 0;
+            border: solid 5px;
+            border-color: transparent #8399f5 transparent transparent;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        } 
+        p {
+            text-transform: none;
+        }
+    }
+    &:hover {
+        .tooltip {
+            display: block;
+        }
+    }
+}
+
+
+/* Inline Tooltip */
+.tippy-popper {    
+    display: block;   
+    .inline-tooltip-theme &{
+        .menu-tooltip-theme {
+            display: none !important;
+        }
+    }     
+    .inline-tooltip-theme {
+        @include gradient(#8399f5, #7aa9f1);
+        .tippy-content {
+            font-size: 14px;
+            font-family: 'Segoe UI';
+            text-align: center;
+            color: #FFF;
+        }    
+        
+    }   
+    @each $position in $positions {
+        &[x-placement^=#{$position}] {
+            .inline-tooltip-theme {
+                .tippy-arrow  {
+                    border-#{$position}-color: #8399f5;
+                }  
+            }  
+        }        
+    }
+}
+
+.tooltip-menu-item {
+    left: 65px;
+    position: absolute;
+    @include gradient(#8399f5, #7aa9f1);
+    color: #fff;
+    z-index: 3;
+    padding: 8px;
+    font-size: 16px;
+    transform: translateY(50%);
+    border-radius: 5px;   
+    display: block !important;
+    &:before {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border: solid 7px;
+        border-color: transparent #8399f5 transparent transparent;
+        position: absolute;
+        left: -14px;
+        top: 50%;
+        transform: translateY(-50%);
+    } 
+    .is-sidebar-menu-open & {
+        display: none !important;
+    }
+}
+

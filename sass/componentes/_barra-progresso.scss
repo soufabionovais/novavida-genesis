@@ -1,0 +1,32 @@
+.progressbar_container {
+	display: inline-block;
+	position: relative;
+	height: 14px;
+	border-radius: 10px;
+	background-color: #e5e5e5;	
+	width: 100%;
+	//max-width: 170px;
+	.progress {
+		@include gradient(#8399f5, #7aa9f1);
+		border-radius: 5px;	
+		height: 100%;
+		display: block;
+	
+	}
+	&.failed {
+	    width: calc(100% - 20px);
+	    margin-left: 20px;		
+		.progress {
+			background: #ffca83;	
+		}
+		&.has-icon {
+			&:before {
+			    position: absolute;
+			    left: -25px;
+			    top: -2px;
+			    font-size: 18px;
+			    color: #ffca83;	
+			}
+		}
+	}	
+}

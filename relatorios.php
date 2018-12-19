@@ -1,462 +1,361 @@
 <?php include("includes/head.php"); ?>
-  <body>
-    
-    <?php include("includes/header.php"); ?>
+<body>
 
-    <?php include("includes/sidebar.php"); ?>
+<?php include ("includes/header.php"); ?>
+	
+<div class="main-wrap">
 
+	<?php include("includes/sidebar.php"); ?>
 
-    <main class="ls-main">
-      <div class="container-fluid">
-        <div class="page-header">
-          <h1 class="ls-title-intro">Relatórios</h1>
-          <div class="page-header-buttons">
-            <a href="relatorios-novo.php" class="ls-btn ls-btn-primary">Criar relatório</a>
-          </div>                 
-        </div>
+	<main class="main-content">
+		<header class="page-header">
+			<h1 class="page-header-title">Relatórios</h1>
+			<div class="page-header-buttons">
+				<a href="relatorios-novo.php" class="btn primary">Criar relatório</a>
+			</div>			
+		</header>	
 
-        <div class="ls-boxes">
-          <!-- Filtros -->
-          <div class="ls-box container-filtros small-gutters">
-              <div class="ls-form ls-form-horizontal row">
-                  <div class="col">
-                      <label class="ls-label field-has-icon ls-ico-search">
-                        <input type="text" placeholder="Filtrar por nome" class="ls-field" required="">
-                      </label>                        
-                  </div>
-                  <div class="col">
-                      <select class="select-field">
-                          <option placeholder> Livros </option>
-                          <option value="1"> Opção 1 </option>
-                          <option value="2"> Opção 2 </option>
-                          <option value="3"> Opção 3 </option>
-                          <option value="4"> Opção 4 </option>
-                      </select>                                                         
-                  </div>
-                  <div class="col">
-                      <select class="select-field">
-                          <option placeholder> Responsáveis </option>
-                          <option value="1"> Opção 1 </option>
-                          <option value="2"> Opção 2 </option>
-                          <option value="3"> Opção 3 </option>
-                          <option value="4"> Opção 4 </option>
-                      </select>                                                         
-                  </div>
-                  <div class="col">
-                      <select class="select-field">
-                          <option placeholder> Data </option>
-                          <option value="1"> Opção 1 </option>
-                          <option value="2"> Opção 2 </option>
-                          <option value="3"> Opção 3 </option>
-                          <option value="4"> Opção 4 </option>
-                      </select>                                                         
-                  </div>
-                  <div class="col">
-                      <select class="select-field">
-                          <option placeholder> Segmento </option>
-                          <option value="1"> Opção 1 </option>
-                          <option value="2"> Opção 2 </option>
-                          <option value="3"> Opção 3 </option>
-                          <option value="4"> Opção 4 </option>
-                      </select>                                                         
-                  </div>
-                  <div class="col">
-                    <div class="ls-group-btn ls-group-active">
-                      <button type="button" class="ls-btn ls-btn-primary ls-active">CPF</button>
-                      <button type="button" class="ls-btn ls-btn-primary">CNPJ</button>
-                    </div>                    
-                  </div>                     
-              </div>                        
-          </div>
-          <!-- Fim Filtros -->
+		<div class="boxes-group">
+			<div class="box-content box-content-filters">
+				<?php include("includes/filtros-completos.php") ?>
+			</div>
+			<div class="box-content">
+				<div class="tabs-wrapper">
+					<ul class="tabs-group" data-tabs-group="tabsGroup">
+						<li class="tab active"><a href="#relatoriosProcessamento">Em Processamento</a></li>
+						<li class="tab"><a href="#relatoriosPendentes">Pendente de Análise</a></li>
+						<li class="tab"><a href="#relatoriosConcluidos">Concluídos</a></li>					
+					</ul>
 
-          <div class="ls-box">
-            <ul class="ls-tabs-nav box-tabs bg">
-              <li class="ls-active"><a data-ls-module="tabs" href="#relatoriosEmProcessamento">Em processamento</a></li>
-              <li><a data-ls-module="tabs" href="#relatoriosPendentes">Pendente de análise</a></li>
-              <li><a data-ls-module="tabs" href="#relatoriosConcluidos">Concluídos</a></li>
-            </ul>
+					<div class="tabs-content-wrapper" data-tabs-target-group="tabsGroup">
+						<div class="tab-content active" id="relatoriosProcessamento">
+							<div class="data-container" data-gutter="2.5">
+								<div class="data-header">
+									<div class="column-1">ID</div>
+									<div class="column-3">Critério</div>
+									<div class="column-2">Segmento</div>
+									<div class="column-2">Responsável</div>
+									<div class="column-3">Data</div>
+									<div class="column-2">Status</div>
+								</div>
+								<div class="data-item">
+									<div class="column-1">
+										<a href="#" class="highlight-text">#5558468</a>
+									</div>
+									<div class="column-3">
+										<div class="user-data">
+										  <div class="user-data-info">
+										    <p class="user-data-header">Alexandre Loes Paz</p>
+										    <p class="user-data-description">333.222.666/0001-00</p>
+										  </div>
+										</div>
+									</div>
+									<div class="column-2">
+										<p>Livro ABC-02</p>
+									</div>
+									<div class="column-2">
+										<p>Alexandre Loes Paz</p>
+									</div>
+									<div class="column-3">
+										<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+									</div>
+									<div class="column-2">
+										<div class="popup-detalhes-processamento">
+											<div class="progressbar_container">
+												<span class="progress" style="width: 50%"></span>
+											</div>
+										</div>
+									</div>				
+								</div>
+								<div class="data-item">
+									<div class="column-1">
+										<a href="#" class="highlight-text">#5558468</a>
+									</div>
+									<div class="column-3">
+										<div class="user-data">
+										  <div class="user-data-info">
+										    <p class="user-data-header">Alexandre Loes Paz</p>
+										    <p class="user-data-description">333.222.666/0001-00</p>
+										  </div>
+										</div>
+									</div>
+									<div class="column-2">
+										<p>Livro ABC-02</p>
+									</div>
+									<div class="column-2">
+										<p>Alexandre Loes Paz</p>
+									</div>
+									<div class="column-3">
+										<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+									</div>
+									<div class="column-2">
+										<div class="popup-detalhes-processamento">
+											<div class="progressbar_container failed has-icon nv-icon-info-circle">
+												<span class="progress" style="width: 50%"></span>
+											</div>
+										</div>
+									</div>				
+								</div>								
+							</div>
+							<?php include("includes/pagination.php"); ?>
+						</div>
 
-            <div class="ls-tabs-container">
-              
-              <!-- Relatórios em processamento -->
-              <div id="relatoriosEmProcessamento" class="ls-tab-content ls-active">
-                <table class="ls-table">						
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Critério</th>
-                      <th>Segmento</th>
-                      <th>Responsável</th>
-                      <th>Data</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>	
-                    <tr>
-                      <td>
-                        <a href="#" class="texto-destaque">#999</a>
-                      </td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Livro ABC-02</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td>
-                        <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span>
-                      </td>
-                      <td class="center-aligned">
-                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
-                            <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
-                          </div>
-                      </td>
-                      </tr>
-                      <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Livro ABC-02</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
-                            <div data-ls-module="progressBar" role="progressbar" aria-valuenow="60"></div>
-                          </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header">Alexandre Loes Paz</p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Livro ABC-02</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-processamento.html">
-                            <div data-ls-module="progressBar" class="error" role="progressbar" aria-valuenow="100"></div>
-                          </div>
-                      </td>
-                    </tr>													
-                  </tbody>
-                </table>
+						<div class="tab-content" id="relatoriosPendentes">
+							<div class="data-container" data-gutter="2.5">
+								<div class="data-header">
+									<div class="column-1">ID</div>
+									<div class="column-2">Critério</div>
+									<div class="column-2">Livro</div>
+									<div class="column-2">Responsável</div>
+									<div class="column-2">Data</div>
+									<div class="column-2">Status</div>
+									<div class="column-2">Ações</div>
+								</div>
+								<div class="data-item">
+									<div class="column-1">
+										<a href="capa.php" class="highlight-text">#5558468</a>
+									</div>
+									<div class="column-2">
+										<div class="user-data">
+										  <div class="user-data-info">
+										    <p class="user-data-header"><a href="capa.php">Alexandre Loes Paz</a></p>
+										    <p class="user-data-description">333.222.666/0001-00</p>
+										  </div>
+										</div>
+									</div>
+									<div class="column-2">
+										<p>Livro ABC-02</p>
+									</div>
+									<div class="column-2">
+										<p>Airton José da Silva</p>
+									</div>
+									<div class="column-2">
+										<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+									</div>
+									<div class="column-2">
+										<div class="popup-detalhes-relatorios-pendentes">
+											<div class="status_container status">
+												<span class="status_dot filled"></span>
+												<span class="status_dot"></span>
+												<span class="status_dot"></span>
+											</div>
+										</div>
+									</div>
+									<div class="column-2">
+										<div class="icon-buttons-group">
+											<button class="btn is-icon-btn secondary"><i class="nv-icomoon-checkmark"></i></button>
+											<button class="btn is-icon-btn secondary"><i class="nv-icomoon-cross1"></i></button>
+											<button class="btn is-icon-btn secondary" data-action='adicionarMonitoriaRelatorio'><i class="nv-icomoon-eye1"></i></button>
+											<a href="mapa.php" class="btn is-icon-btn secondary"><i class="nv-icomoon-map1"></i></a>
+											<button class="btn is-icon-btn secondary btn-exportar"><i class="nv-icomoon-box-remove"></i></button>
+										</div>
+									</div>				
+								</div>
+								<div class="data-item">
+									<div class="column-1">
+										<a href="capa.php" class="highlight-text">#5558468</a>
+									</div>
+									<div class="column-2">
+										<div class="user-data">
+										  <div class="user-data-info">
+										    <p class="user-data-header"><a href="capa.php">Alexandre Loes Paz</a></p>
+										    <p class="user-data-description">333.222.666/0001-00</p>
+										  </div>
+										</div>
+									</div>
+									<div class="column-2">
+										<p>Livro ABC-02</p>
+									</div>
+									<div class="column-2">
+										<p>Airton José da Silva</p>
+									</div>
+									<div class="column-2">
+										<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+									</div>
+									<div class="column-2">
+										<div class="popup-detalhes-relatorios-pendentes">
+											<div class="status_container status">
+												<span class="status_dot filled"></span>
+												<span class="status_dot"></span>
+												<span class="status_dot"></span>
+											</div>
+										</div>
+									</div>
+									<div class="column-2">
+										<div class="icon-buttons-group">
+											<button class="btn is-icon-btn secondary"><i class="nv-icomoon-checkmark"></i></button>
+											<button class="btn is-icon-btn secondary"><i class="nv-icomoon-cross1"></i></button>
+											<button class="btn is-icon-btn secondary" data-action='adicionarMonitoriaRelatorio'><i class="nv-icomoon-eye1"></i></button>
+											<a href="mapa.php" class="btn is-icon-btn secondary"><i class="nv-icomoon-map1"></i></a>
+											<button class="btn is-icon-btn secondary btn-exportar"><i class="nv-icomoon-box-remove"></i></button>
+										</div>
+									</div>				
+								</div>								
+							
+							</div>
+							<?php include("includes/pagination.php"); ?>
+						</div>
 
-                <div class="ls-pagination-filter">
-                  <ul class="ls-pagination ls-float-left">
-                    <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li class="ls-active"><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                  </ul>
-                  <div class="ls-filter-view">
-                      <select name="" id="" class="select-field">
-                        <option value="10">10/pg</option>
-                        <option value="30">30/pg</option>
-                        <option value="50">50/pg</option>
-                      </select>
-                  </div>                  
-                </div>                 
-              </div>
-              <!-- Fim Relatórios em processamento -->
+						<div class="tab-content" id="relatoriosConcluidos">
+							<div class="data-container" data-gutter="2.5">
+								<div class="data-header">
+									<div class="column-1">ID</div>
+									<div class="column-2">Critério</div>
+									<div class="column-2">Livro</div>
+									<div class="column-2">Responsável</div>
+									<div class="column-2">Data</div>
+									<div class="column-2">Status</div>
+									<div class="column-2">Ações</div>
+								</div>
+								<div class="data-item">
+									<div class="column-1">
+										<a href="#" class="highlight-text">#5558468</a>
+									</div>
+									<div class="column-2">
+										<div class="user-data">
+										  <div class="user-data-info">
+										    <p class="user-data-header">Alexandre Loes Paz</p>
+										    <p class="user-data-description">333.222.666/0001-00</p>
+										  </div>
+										</div>
+									</div>
+									<div class="column-2">
+										<p>Livro ABC-02</p>
+									</div>
+									<div class="column-2">
+										<p>Airton José da Silva</p>
+									</div>
+									<div class="column-2">
+										<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+									</div>
+									<div class="column-2">
+										<div class="status_container status">
+											<span class="status_dot filled"></span>
+											<span class="status_dot"></span>
+											<span class="status_dot"></span>
+										</div>
+									</div>
+									<div class="column-2">
+										<div class="icon-buttons-group">
+											<button class="btn is-icon-btn secondary" data-action='adicionarMonitoriaRelatorio'><i class="nv-icomoon-eye1"></i></button>
+											<a href="mapa.php" class="btn is-icon-btn secondary"><i class="nv-icomoon-map1"></i></a>
+											<button class="btn is-icon-btn secondary btn-exportar"><i class="nv-icomoon-box-remove"></i></button>
+										</div>
+									</div>				
+								</div>
+								<div class="data-item">
+									<div class="column-1">
+										<a href="#" class="highlight-text">#5558468</a>
+									</div>
+									<div class="column-2">
+										<div class="user-data">
+										  <div class="user-data-info">
+										    <p class="user-data-header">Alexandre Loes Paz</p>
+										    <p class="user-data-description">333.222.666/0001-00</p>
+										  </div>
+										</div>
+									</div>
+									<div class="column-2">
+										<p>Livro ABC-02</p>
+									</div>
+									<div class="column-2">
+										<p>Airton José da Silva</p>
+									</div>
+									<div class="column-2">
+										<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+									</div>
+									<div class="column-2">
+										<div class="status_container status">
+											<span class="status_dot filled"></span>
+											<span class="status_dot"></span>
+											<span class="status_dot"></span>
+										</div>
+									</div>
+									<div class="column-2">
+										<div class="icon-buttons-group">
+											<button class="btn is-icon-btn secondary" data-action='adicionarMonitoriaRelatorio'><i class="nv-icomoon-eye1" data-action="adicionarMonitoriaRelatorio"></i></button>
+											<a href="mapa.php" class="btn is-icon-btn secondary"><i class="nv-icomoon-map1"></i></a>
+											<button class="btn is-icon-btn secondary btn-exportar"><i class="nv-icomoon-box-remove"></i></button>
+										</div>
+									</div>				
+								</div>								
+							
+							</div>
+							<?php include("includes/pagination.php"); ?>
+						</div>						
 
-              <!-- Relatórios pendentes de análise -->
-              <div id="relatoriosPendentes" class="ls-tab-content">
-                <table class="ls-table">						
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Critério</th>
-                      <th>Livro</th>
-                      <th>Responsável</th>
-                      <th>Data</th>
-                      <th>Status</th>
-                      <th>Ações</th>
-                    </tr>
-                  </thead>
-                  <tbody>	
-                    <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Industrial</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="barra-progresso-container" data-toggle="popover" data-popover-target="modais/detalhes-relatorios-pendentes-analise.html">
-                          <div class="rating status">
-                            <i class="dot filled"></i>
-                            <i class="dot"></i>
-                            <i class="dot"></i>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="icon-buttons-group">
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
-                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
-                            <i class="nv-icon-upload"></i>
-                          </button>
-                        </div>
-										
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Industrial</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="rating status">
-                            <i class="dot filled"></i>
-                            <i class="dot"></i>
-                            <i class="dot"></i>
-                          </div>
-                      </td>
-                      <td>
-                        <div class="icon-buttons-group">
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
-                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
-                            <i class="nv-icon-upload"></i>
-                          </button>
-                        </div>
-                      </td>									
-                    </tr>
-                    <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Industrial</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="rating status">
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                          </div>
-                      </td>
-                      <td>
-                        <div class="icon-buttons-group">
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-check"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-remove"></i></button>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
-                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
-                            <i class="nv-icon-upload"></i>
-                          </button>
-                        </div>
-                      </td>									
-                    </tr>													
-                    </tbody>
-					
-                </table>
-                <div class="ls-pagination-filter">
-                  <ul class="ls-pagination ls-float-left">
-                    <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li class="ls-active"><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                  </ul>
-                  <div class="ls-filter-view">
-                      <select name="" id="" class="select-field">
-                        <option value="10">10/pg</option>
-                        <option value="30">30/pg</option>
-                        <option value="50">50/pg</option>
-                      </select>
-                  </div>                  
-                </div>                 
-              </div>
-              <!-- Fim Relatórios pendentes de análise -->
+					</div>
+				</div>
+			</div>
+		</div>
 
-              <!-- Relatórios concluídos --> 
-              <div id="relatoriosConcluidos" class="ls-tab-content">
-                <table class="ls-table">						
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Critério</th>
-                      <th>Livro</th>
-                      <th>Responsável</th>
-                      <th>Data</th>
-                      <th>Status</th>
-                      <th>Ações</th>
-                    </tr>
-                  </thead>
-                  <tbody>	
-                    <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Industrial</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="rating status">
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                          </div>
-                      </td>
-                      <td>		
-                        <div class="icon-buttons-group">								
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
-                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo.pdf" data-doc="arquivo.doc">
-                            <i class="nv-icon-upload"></i>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Industrial</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="rating status">
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                          </div>
-                      </td>
-                      <td>			
-                        <div class="icon-buttons-group">                        							
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
-                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo-1.pdf" data-doc="arquivo-1.doc">
-                            <i class="nv-icon-upload"></i>
-                          </button>
-                        </div>
-                      </td>									
-                    </tr>
-                    <tr>
-                      <td><a href="#" class="texto-destaque">#999</a></td>
-                      <td>
-                        <div class="user-data">
-                          <div class="user-data-info">
-                            <p class="user-data-header"><a href="capa.php" class="texto-destaque">Alexandre Loes Paz</a></p>
-                            <p class="user-data-description">333.222.666/0001-00</p>
-                          </div>
-                        </div>								
-                      </td>
-                      <td>Industrial</td>
-                      <td>Felipe Coutinho Almeida</td>
-                      <td><span class="texto-destaque icone-calendario nv-icomoon-calendar-full">01/01/2000 às 19:00</span></td>
-                      <td class="center-aligned">
-                          <div class="rating status">
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                            <i class="dot filled"></i>
-                          </div>
-                      </td>
-                      <td>
-                        <div class="icon-buttons-group">                      										
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-adicionar-monitoria-relatorio><i class="nv-icon-visibility"></i></button>
-                          <a href="mapa.php" class="ls-btn ls-btn-icon secondary no-bg"><i class="nv-icon-map"></i></a>
-                          <button class="ls-btn ls-btn-icon secondary no-bg" data-toggle="popover" data-popover-link=".tpl-popover-links" data-pdf="arquivo-2.pdf" data-doc="arquivo-2.doc">
-                            <i class="nv-icon-upload"></i>
-                          </button>
-                        </div>
-                      </td>									
-                    </tr>													
-                    </tbody>
-					
-                </table>
-                <div class="ls-pagination-filter">
-                  <ul class="ls-pagination ls-float-left">
-                    <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li class="ls-active"><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                  </ul>
-                  <div class="ls-filter-view">
-                      <select name="" id="" class="select-field">
-                        <option value="10">10/pg</option>
-                        <option value="30">30/pg</option>
-                        <option value="50">50/pg</option>
-                      </select>
-                  </div>
-                </div>                 
-              </div>
-              <!-- Fim Relatórios concluídos --> 
+		<div id="resultadoBuscador" class="resultados-buscador" hidden>
+			<div class="box-content">
+				<div class="data-container" data-gutter="1.5">
+					<div class="data-header">
+						<div class="column-2">Nome</div>
+						<div class="column-2">Nome da mãe</div>
+						<div class="column-1 center-aligned">Idade</div>
+						<div class="column-2">CPF</div>
+						<div class="column-5 right-aligned"><b class="highlight-text">92</b> resultados encontrados</div>
+					</div>
+					<div class="data-item">
+						<div class="column-2">
+							<p>Lena Maria Ferreira</p>
+						</div>
+						<div class="column-2">
+							Maria Fernanda Moraes
+						</div>
+						<div class="column-1 center-aligned">
+							45
+						</div>	
+						<div class="column-2">
+							333.980.999-01
+						</div>			
+						<div class="column-5 right-aligned">
+							<div class="inline-buttons-wrapper">
+								<button class="btn primary small">Mais Relatórios</button>
+								<button class="btn secondary small" data-action="adicionarBlackList">Adicionar à Blacklist</button>
+							</div>
+						</div>			
+					</div>
+					<div class="data-item">
+						<div class="column-2">
+							<p>Lena Maria Ferreira</p>
+						</div>
+						<div class="column-2">
+							Maria Fernanda Moraes
+						</div>
+						<div class="column-1 center-aligned">
+							45
+						</div>	
+						<div class="column-2">
+							333.980.999-01
+						</div>			
+						<div class="column-5 right-aligned">
+							<div class="inline-buttons-wrapper">
+								<button class="btn primary small">Mais Relatórios</button>
+								<button class="btn secondary small" data-action="adicionarBlackList">Adicionar à Blacklist</button>
+							</div>
+						</div>			
+					</div>
+				</div>
+				<?php include("includes/pagination.php"); ?>
+			</div>
+		</div>
 
-            </div> 
-          </div>  
-        </div>
-  
-
-      </div>
-    </main>
+	</main>
+</div>	
 
 
+<div class="tpl-popover-links">
+	<div class="popover-exportar-relatorios">
+		<a href="#" class="link-pdf nv-icomoon-file-pdf" title="Exportar em PDF" target="_blank">Exporta em PDF</a>
+		<a href="#" class="link-doc nv-icomoon-file-word" title="Exportar em DOC" target="_blank">Exporta em DOC</a>
+	</div>
+</div>
 
 
-    <?php include("includes/scripts.php"); ?>
-
-  </body>
+<?php include("includes/scripts.php"); ?>
+</body>
 </html>

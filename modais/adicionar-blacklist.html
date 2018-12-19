@@ -3,33 +3,77 @@
         <h2 class="modal-popup-titulo">Adicionar à uma blacklist</h2>
     </header>
     <div class="modal-popup-conteudo">
-        <div class="ls-boxes">
-            <div class="ls-box">
-            <ul class="ls-tabs-nav box-tabs">
-              <li class="ls-active"><a data-ls-module="tabs" href="#blackListPessosFisica">Inserir Pessoa Física</a></li>
-              <li><a data-ls-module="tabs" href="#blacklistPessosJuridica">Inserir Pessoa Jurídica</a></li>
-            </ul>
-            <div class="ls-tabs-container">
-                <div id="blackListPessosFisica" class="ls-tab-content ls-active">
-                    <div class="ls-form ls-form-horizontal row">
-                        <div class="col">
-                            <label class="ls-label">
-                                <input type="text" name="nome" placeholder="Inserir CPF" class="ls-field ls-mask-cpf" required>
-                            </label>
-                        </div>
-                    </div>                    
-                </div>
-                <div id="blacklistPessosJuridica" class="ls-tab-content">
-                    <div class="ls-form ls-form-horizontal row">
-                        <div class="col">
-                            <label class="ls-label">
-                                <input type="text" name="nome" placeholder="Inserir CNPJ" class="ls-field ls-mask-cnpj" required>
-                            </label>
-                        </div>
-                    </div>  
+        <div class="boxes-content">
+            <div class="tabs-wrapper">
+                <ul class="tabs-group" data-tabs-group="tabsGroup">
+                    <li class="tab active"><a href="#inserirPF">Inserir Pessoa Física</a></li>
+                    <li class="tab"><a href="#InserirPJ">Inserir Pessoa Jurídica</a></li>
+                </ul>
+            </div>                
+            <div class="box-content grey-bg">
+                <div class="tabs-content-wrapper" data-tabs-target-group="tabsGroup">
+                    <div class="tab-content active" id="inserirPF">
+                        <label class="form-label">
+                            <input type="text" class="input-text" placeholder="Inserir Pessoa Física" data-mask="cpf">
+                        </label>
+                    </div>
+                    <div class="tab-content" id="InserirPJ">
+                        <label class="form-label">
+                            <input type="text" class="input-text" placeholder="Inserir Pessoa Jurídica" data-mask="cnpj">
+                        </label>
+                    </div>
                 </div>                
-            </div>            
+                <p class="box-content-label"><b>Selecionar regra:</b></p>                
+                <div class="checkbox-radio-group inline single-line">
+                    <span class="radio-check-field radio outlined">
+                        <input type="radio" name="grupo-1">
+                        <label>Bloquear relatórios</label>
+                    </span>                    
+                    <span class="radio-check-field radio outlined">
+                        <input type="radio" name="grupo-1">
+                        <label>Permitir relatórios, mas notificar gestor</label>
+                    </span>                    
+                    <span class="radio-check-field radio outlined">
+                        <input type="radio" name="grupo-1">
+                        <label>Permitir relatórios e notificar gestor</label>
+                    </span>                    
+                </div>
+            </div>
+            <div class="box-content">
+                <div class="inline-buttons-wrapper right-aligned">
+                    <button class="btn secondary outlined" data-fecha-modal>Cancelar</button>
+                    <button class="btn primary" onClick="adicionaListaEmBlackList()">Finalizar</button>
+                </div>
+            </div>                        
+        </div>
 
+
+        <!-- <div class="ls-boxes">
+            <div class="ls-box">
+                <ul class="ls-tabs-nav box-tabs">
+                  <li class="ls-active"><a data-ls-module="tabs" href="#blackListPessosFisica">Inserir Pessoa Física</a></li>
+                  <li><a data-ls-module="tabs" href="#blacklistPessosJuridica">Inserir Pessoa Jurídica</a></li>
+                </ul>
+                <div class="ls-tabs-container">
+                    <div id="blackListPessosFisica" class="ls-tab-content ls-active">
+                        <div class="ls-form ls-form-horizontal row">
+                            <div class="col">
+                                <label class="ls-label">
+                                    <input type="text" name="nome" placeholder="Inserir CPF" class="ls-field ls-mask-cpf" required>
+                                </label>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div id="blacklistPessosJuridica" class="ls-tab-content">
+                        <div class="ls-form ls-form-horizontal row">
+                            <div class="col">
+                                <label class="ls-label">
+                                    <input type="text" name="nome" placeholder="Inserir CNPJ" class="ls-field ls-mask-cnpj" required>
+                                </label>
+                            </div>
+                        </div>  
+                    </div>                
+                </div>    
             </div>
             <div class="ls-box">
                 <p>Selecionar regra:</p>
@@ -66,7 +110,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 
 
         <!-- <form class="ui form" action="" onsubmit="return adicionaListaEmBlackList();">

@@ -1,0 +1,88 @@
+.vertical-centered {
+	display: flex;
+	align-items: center;
+}
+
+@for $i from 1 through 12 {
+	.column-#{$i} {
+		@include column($i/12);
+	}
+
+	[data-gutter="0"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 0);
+		}		
+	}	
+
+	[data-gutter="0.1"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 0.1);
+		}		
+	}
+	[data-gutter="0.2"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 0.2);
+		}		
+	}	
+	[data-gutter="0.3"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 0.3);
+		}		
+	}	
+	[data-gutter="0.4"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 0.4);
+		}		
+	}
+	[data-gutter="0.5"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 0.5);
+		}	
+	}	
+	[data-gutter="1"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 1);
+		}		
+	}
+	[data-gutter="1.5"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 1.5);
+		}		
+	}	
+	[data-gutter="2"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 2);
+		}		
+	}	
+	[data-gutter="2.5"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 2.5);
+		}		
+	}		
+
+	[data-gutter="3"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 3);
+		}		
+	}	
+	[data-gutter="3.5"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 3.5);
+		}		
+	}		
+	[data-gutter="4"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 4);
+		}		
+	}	
+	[data-gutter="4.5"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 4.5);
+		}		
+	}		
+	[data-gutter="5"] {
+		.column-#{$i} {
+			@include column($i/12, $gutter: 5);
+		}		
+	}			
+}

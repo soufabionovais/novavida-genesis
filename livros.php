@@ -1,125 +1,109 @@
 <?php include("includes/head.php"); ?>
-  <body>
+<body>
+	
+<?php include ("includes/header.php"); ?>	
 
-    <?php include("includes/header.php"); ?>
+<div class="main-wrap">
 
-    <?php include("includes/sidebar.php"); ?>
+	<?php include("includes/sidebar.php"); ?>
 
-    <main class="ls-main">
-      <div class="container-fluid">
-        <div class="page-header">
-          <h1 class="ls-title-intro">Livros <sup>(213)</sup></h1>
-        </div>
+	<main class="main-content">
+		<header class="page-header">
+			<h1 class="page-header-title">Livros</h1>
+		</header>	
 
-        <div class="ls-boxes">
-            <div class="ls-box container-filtros">
-                <div class="ls-form ls-form-horizontal row">
-                    <div class="col-3">
-                      <label class="ls-label field-has-icon ls-ico-search">
-                        <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
-                      </label>                            
-                    </div>
-                    <div class="col right-aligned">
-                      <div class="ls-group-btn ls-group-active">
-                        <button type="button" class="ls-btn ls-btn-primary ls-active">CPF</button>
-                        <button type="button" class="ls-btn ls-btn-primary">CNPJ</button>
-                      </div>                    
-                      <a href="livros-adicionar.php" class="ls-btn ls-btn-secondary outlined">Adicionar</a>
-                    </div>   
-                </div>
-            </div>
-            <div class="ls-box">
-                <table class="ls-table ls-no-margin-top">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Livro</th>
-                    <th>Autor</th>
-                    <th>Data</th>
-                    <th>&nbsp;</th>
-                  </tr>
-                </thead>						
-                <tbody>
-                  <tr>
-                    <td>
-                       <a href="#" class="texto-destaque">#555</a>
-                    </td>
-                    <td>
-                      Fonte da empresa Piraju atualizada...
-                    </td>
-                    <td>
-                      <span class="texto-destaque">Alexandre Loes Paz</span>
-                    </td>                                                        
-                    <td>
-                      <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">25/06/2018 às 16:24</span>
-                    </td>
-                    <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary">
-                        Visualizar
-                      </button>
-                    </td> 
-                  </tr>
+		<div class="boxes-group">
+			<div class="box-content box-content-filters">
+				<div class="filters-wrapper" data-gutter="1">
+					<div class="column-3">
+						<label class="form-label has-icon nv-icon-zoom">
+							<input type="text" class="input-text" placeholder="Pesquisar por termo">
+						</label>
+					</div>
+					<div class="column-5">&nbsp;</div>
+					<div class="column-2">
+						<div class="grouped-buttons" data-grouped-buttons>
+							<button class="btn active">CPF</button>
+							<button class="btn">CNPJ</button>
+						</div>				
+					</div>
+					<div class="column-2">
+						<a class="btn secondary outlined fluid" href="livros-adicionar.php">Adicionar</a>
+					</div>
+				</div>
+			</div>
+			<div class="box-content">
+				<div class="data-container" data-gutter="2.5">
+					<div class="data-header">
+						<div class="column-1">ID</div>
+						<div class="column-3">Livro</div>
+						<div class="column-3">Autor</div>
+						<div class="column-3">Data</div>
+						<div class="column-2">Ações</div>
+					</div>
+					<div class="data-item">
+						<div class="column-1">
+							<a href="livros-adicionar.php" class="highlight-text">#5558468</a>
+						</div>
+						<div class="column-3">
+							<p>Fonte da empresa Piraju atualizada</p>
+						</div>
+						<div class="column-3">
+							<p class="highlight-text">Alexandre Loes Paz</p>
+						</div>
+						<div class="column-3">
+							<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+						</div>
+						<div class="column-2">
+							<a href="livros-adicionar.php" class="btn primary fluid">Visualizar</a>
+						</div>				
+					</div>
+					<div class="data-item">
+						<div class="column-1">
+							<a href="livros-adicionar.php" class="highlight-text">#5558468</a>
+						</div>
+						<div class="column-3">
+							<p>Fonte da empresa Piraju atualizada</p>
+						</div>
+						<div class="column-3">
+							<p class="highlight-text">Alexandre Loes Paz</p>
+						</div>
+						<div class="column-3">
+							<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+						</div>
+						<div class="column-2">
+							<a href="livros-adicionar.php" class="btn primary fluid">Visualizar</a>
+						</div>				
+					</div>
+					<div class="data-item">
+						<div class="column-1">
+							<a href="livros-adicionar.php" class="highlight-text">#5558468</a>
+						</div>
+						<div class="column-3">
+							<p>Fonte da empresa Piraju atualizada</p>
+						</div>
+						<div class="column-3">
+							<p class="highlight-text">Alexandre Loes Paz</p>
+						</div>
+						<div class="column-3">
+							<p class="highlight-text highlight-text has-icon nv-icomoon-calendar-full">25/06/2018 às 16:24</p>
+						</div>
+						<div class="column-2">
+							<a href="livros-adicionar.php" class="btn primary fluid">Visualizar</a>
+						</div>				
+					</div>
+				</div>
 
-                  <tr>
-                    <td>
-                       <a href="#" class="texto-destaque">#555</a>
-                    </td>
-                    <td>
-                      Fonte da empresa Piraju atualizada...
-                    </td>
-                    <td>
-                      <span class="texto-destaque">Alexandre Loes Paz</span>
-                    </td>                                                        
-                    <td>
-                      <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">25/06/2018 às 16:24</span>
-                    </td>
-                    <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary">
-                        Visualizar
-                      </button>
-                    </td> 
-                  </tr>
+				<?php include("includes/pagination.php"); ?>
 
-                  <tr>
-                    <td>
-                       <a href="#" class="texto-destaque">#555</a>
-                    </td>
-                    <td>
-                      Fonte da empresa Piraju atualizada...
-                    </td>
-                    <td>
-                      <span class="texto-destaque">Alexandre Loes Paz</span>
-                    </td>                                                        
-                    <td>
-                      <span class="texto-destaque icone-calendario nv-icomoon-calendar-full">25/06/2018 às 16:24</span>
-                    </td>
-                    <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary">
-                        Visualizar
-                      </button>
-                    </td> 
-                  </tr>                                    
+			</div>
+		</div>
+	</main>
+</div>	
 
-                </tbody>
-                </table> 
+	
 
-                <div class="ls-pagination-filter">
-                  <ul class="ls-pagination ls-float-left">
-                    <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li class="ls-active"><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                  </ul>
-                </div>                        
-            </div>            
-        </div>
-
-      </div>
-    </main>
-    
-    <?php include("includes/scripts.php"); ?>
-  </body>
+	
+<?php include("includes/scripts.php"); ?>
+</body>
 </html>

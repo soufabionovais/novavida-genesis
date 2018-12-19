@@ -1,735 +1,536 @@
 <?php include("includes/head.php"); ?>
-  <body>
+<body>
+	
+<?php include ("includes/header.php"); ?>
+	
+<div class="main-wrap">
 
-    <?php include("includes/header.php"); ?>
+	<?php include("includes/sidebar.php"); ?>
 
-    <?php include("includes/sidebar.php"); ?>
+	<main class="main-content">
+		<header class="page-header">
+			<ul class="tabs-group" data-tabs-group="tabsGroup">
+				<li class="tab active"><a href="#templates">Templates</a></li>
+				<li class="tab"><a href="#perfilRelatorios">Perfil de Relatório</a></li>
+				<li class="tab"><a href="#fontes">Fontes</a></li>
+			</ul>
+		</header>	
 
-    <main class="ls-main">
-      <div class="container-fluid">
-        <div class="page-header">
-          <!-- <h1 class="ls-title-intro">Página inicial</h1> -->
-            <ul class="ls-tabs-nav page-title-tabs">
-              <li class="ls-active"><a data-ls-module="tabs" href="#templates">Templates</a></li>
-              <li><a data-ls-module="tabs" href="#perfilRelatorio">Perfil de Relatório</a></li>
-              <li><a data-ls-module="tabs" href="#fontes">Fontes</a></li>
-            </ul>   
-        </div>
+		<div class="breadcrumb-container">
+			<ol>
+				<li><a href="#">Configurações</a></li>
+				<li class="active"><a href="#">Templates</a></li>
+			</ol>
+		</div>
 
-          <ol class="ls-breadcrumb">
-            <li><a href="#">Configurações</a></li>
-            <li>Templates</li>
-          </ol>        
+		<div class="tabs-content-wrapper" data-tabs-target-group="tabsGroup">
+			<div class="tab-content active" id="templates">
+				<div class="boxes-group" data-id="templates-etapa-1" data-etapa>
+					<div class="box-content box-content-filters">
+						<div class="filters-wrapper">
+							<div class="row d-flex fluid justify-content-between no-gutters">
+								<div class="col-md-7">
+									<label class="form-label has-icon nv-icon-zoom">
+										<input type="text" class="input-text" placeholder="Pesquisar por termo">
+									</label>									
+								</div>
+								<div class="col-md-3">
+									<button class="btn secondary outlined fluid" data-conteudo-alvo="templates-etapa-2">Adicionar</button>			
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box-content">
+						<div class="data-container" data-gutter="2.5">
+							<div class="data-header">
+								<div class="column-9">Template</div>
+								<div class="column-3">Ações</div>
+							</div>
+							<div class="data-item">
+								<div class="column-9">
+									<p>Nome do template 1</p>
+								</div>
+								<div class="column-3 right-aligned">
+									<button class="btn primary small fluid" data-action="relacionarPerfil">Relacionar perfil</button>
+								</div>				
+							</div>
+							<div class="data-item">
+								<div class="column-9">
+									<p>Nome do template 1</p>
+								</div>
+								<div class="column-3 right-aligned">
+									<button class="btn primary small fluid" data-action="relacionarPerfil">Relacionar perfil</button>
+								</div>				
+							</div>						
+						</div>
+						<?php include("includes/pagination.php"); ?>
+					</div>					
+				</div>
 
-          <!-- Conteúdos Abas -->
-          <div class="ls-tabs-container">
-            <!-- Aba Templates -->
-            <div id="templates" class="ls-tab-content ls-active">
-                <div class="ls-boxes" data-id="templates-etapa-1" data-etapa>  
-                    <div class="ls-box container-filtros">
-                        <div class="ls-form ls-form-horizontal row">
-                            <label class="ls-label col-9 field-has-icon ls-ico-search">
-                              <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
-                            </label>
-                            <div class="col right-aligned">
-                              <button class="ls-btn ls-btn-secondary outlined" data-conteudo-alvo="templates-etapa-2">Adicionar</button>
-                            </div>        
-                        </div>
-                    </div>
-                    <div class="ls-box">
-                        <table class="ls-table ls-no-margin-top">
-                        <colgroup>
-                          <col>
-                          <col width="24%">
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th>Template</th>
-                            <th>Ações</th>
-                          </tr>
-                        </thead>						
-                        <tbody>
-                          <tr>
-                            <td>
-                              Nome do template 1
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 2
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
-                            </td>				      				      				      				      
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 3
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
-                            </td>				      				      				      				      
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 4
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
-                            </td>				      				      				      				      
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 5
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Relacionar perfil</button>
-                            </td>		      
-                          </tr>	
-                        </tbody>
-                        </table> 
-
-                        <div class="ls-pagination-filter">
-                          <ul class="ls-pagination ls-float-left">
-                            <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="ls-active"><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                          </ul>
-                        </div>                        
-                    </div>
-                </div>
-
-                <div class="ls-boxes" data-id="templates-etapa-2" data-etapa hidden> 
-                    <div class="ls-box container-filtros">
-                        <div class="ls-form ls-form-horizontal row">
-                            <label class="ls-label col-6 field-has-icon">
-                              <input type="text" placeholder="Escolha o nome" class="ls-field" required>
-                            </label>
-                            <label class="ls-label col-6 field-has-icon">
-                              <input type="text" placeholder="Texto da marca d'água" class="ls-field" required>
-                            </label>
-                            <label class="ls-label col-12 field-has-icon">
-                              <input type="text" placeholder="Termos" class="ls-field" data-tags>
-                            </label>
-                        </div>                    
-                    </div>
-                    <div class="ls-box area-upload">
-                        <div class="row">
+				<div class="boxes-group" data-id="templates-etapa-2" data-etapa hidden>
+					<div class="box-content">
+						<div class="row">
+							<div class="col-md-6">
+								<label class="form-label">
+									<input type="text" class="input-text" placeholder="Escolha o nome">
+								</label>
+							</div>
+							<div class="col-md-6">
+								<label class="form-label">
+									<input type="text" class="input-text" placeholder="Texto marca d'água">
+								</label>	
+							</div>
+							<div class="col-md-12">
+								<label class="form-label">
+									<input type="text" class="input-text inverted" placeholder="Termos" id="tagsField">
+								</label>
+							</div>														
+						</div>
+					</div>
+					<div class="box-content grey-bg area-upload">
+						<div class="row">
                           <div class="col">
                             <div class="conteudo-upload">
                               <p>Upload de arquivo para Logotipo Oficial</p>
-                              <button class="ls-btn ls-btn-secondary outlined large" id="btnUploadLoad">Selecionar arquivo</button>
+                              <button class="btn secondary outlined large dz-clickable" id="btnUploadLoad">Selecionar arquivo</button>
                               <small>Tamanho máximo: 3MB | Extensões permitidas: .jpg, .png ou .gif</small>
                             </div>	
                           </div>
                           <div class="col">
-                              <form action="upload/upload.html" class="dropzone zone-upload-image" id="uploadImage"></form>						
+                              <form action="upload/upload.html" class="dropzone zone-upload-image dz-clickable" id="uploadImage"><div class="dz-default dz-message"><span>Arraste o arquivo para cá <br>(use imagem em alta resolução)</span></div></form>	
                           </div>
                         </div>
-                    </div>
-                    <div class="ls-box">
-                        <div class="row">
-                          <div class="col right-aligned">
-                            <button class="ls-btn ls-btn-secondary outlined" data-conteudo-alvo="templates-etapa-1">Cancelar</button>
-                            <button class="ls-btn ls-btn-primary">Salvar</button>
-                          </div>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-            <!-- Fim Aba Templates -->
+					</div>
+					<div class="box-content right-aligned">
+						<div class="inline-buttons-wrapper">
+							<button class="btn secondary outlined" data-conteudo-alvo="templates-etapa-1">Cancelar</button>
+							<button class="btn primary" data-conteudo-alvo="templates-etapa-1">Salvar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content" id="perfilRelatorios">
+				<div class="boxes-group" data-id="perfil-relatorios-1" data-etapa>
+					<div class="box-content box-content-filters">
+						<div class="filters-wrapper">
+							<div class="row d-flex fluid justify-content-between no-gutters">
+								<div class="col-md-5">
+									<label class="form-label has-icon nv-icon-zoom">
+										<input type="text" class="input-text" placeholder="Pesquisar por termo">
+									</label>									
+								</div>
+								<div class="col-md-3">
+									<label class="form-label">
+										<input type="text" class="select-field" data-url="data/fontes.json" name="fontes" data-placeholder="Fontes utilizadas" data-search-placeholder="Buscar livro" />	
+									</label>									
+								</div>								
+								<div class="col-md-3">
+									<button class="btn secondary outlined fluid" data-conteudo-alvo="perfil-relatorios-2">Adicionar</button>			
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="box-content">
+						<div class="data-container" data-gutter="2.5">
+							<div class="data-header">
+								<div class="column-2">Versão</div>
+								<div class="column-7">Perfil</div>
+								<div class="column-3">Ações</div>
+							</div>
+							<div class="data-item">
+								<div class="column-2">
+									<p class="highlight-text">V1</p>
+								</div>
+								<div class="column-7">
+									Nome do Perfil
+								</div>
+								<div class="column-3">
+									<button class="btn primary small fluid" data-action="relacionarPerfil">Duplicar e Customizar</button>
+								</div>												
+							</div>
+							<div class="data-item">
+								<div class="column-2">
+									<p class="highlight-text">V1</p>
+								</div>
+								<div class="column-7">
+									Nome do Perfil
+								</div>
+								<div class="column-3">
+									<button class="btn primary small fluid" data-action="relacionarPerfil">Duplicar e Customizar</button>
+								</div>												
+							</div>							
+					
+						</div>
+						<?php include("includes/pagination.php"); ?>
+					</div>
+				</div>
+				<div class="boxes-group" data-id="perfil-relatorios-2" data-etapa hidden>
+					<div class="box-content">
+						<div class="row">
+							<div class="col-md-6">
+								<h3 class="box-content-title">
+									Novo Perfil
+								</h3>								
+							</div>
+							<div class="col-md-6">
+								<div class="breadcrumb-steps">
+									<button class="breadcrumb-item active" data-conteudo-alvo="perfil-relatorios-2">Configurações gerais</button>
+									<button class="breadcrumb-item" data-conteudo-alvo="perfil-relatorios-3">Configurações de fontes</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="box-content">
+						<div class="filters-wrapper">
+							<div class="row d-flex fluid justify-content-between no-gutters">
+								<div class="col-md-5">
+									<label class="form-label has-icon nv-icon-zoom">
+										<input type="text" class="input-text" placeholder="Pesquisar por nome">
+									</label>									
+								</div>
+								<div class="col-md-3">
+									<label class="form-label">
+										<input type="text" class="select-field" data-url="data/livros.json" name="livros" data-placeholder="Livros" data-search-placeholder="Buscar livro" />	
+									</label>									
+								</div>								
+								<div class="col-md-3">
+									<button class="btn secondary outlined fluid">Pré-visualizar</button>			
+								</div>
+							</div>
+						</div>						
+					</div>	
+					<div class="box-content grey-bg">
+						<p class="permissao-acesso">Permissão de acesso: <a href="#" class="highlight-text" id="btnSelecionarTodoPerfis" data-initial-text="Marcar todas" data-toggle-text="Desmarcar todas">Marcar todas</a></p>
+						<div class="accordion-wrapper" id="containerTodosPerfis">
+							<div class="accordion-item">
+								<div class="accordion-title">
+									<div class="accordion-title-content">
+										<div class="icon">
+											<span class="radio-check-field">
+												<input type="checkbox" data-toggle-check-group="grupo-1">
+												<label></label>
+											</span>
+										</div>
+										<h3 class="accordion-title-text">Grupo 1</h3>
+										<div class="action">
+										</div>
+									</div>
+								</div>
+								<div class="accordion-content blue-gradient-bg">
+									<div class="inverted" data-gutter="0.2">
+										<div class="data-item">
+											<span class="radio-check-field">
+												<input type="checkbox" data-toggle-check-target="grupo-1">
+												<label></label>
+											</span>		
+											<div class="user-data">
+											  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar small">
+											  <div class="user-data-info">
+											    <p class="user-data-header">Alexandre Loes Paz</p>
+											  </div>
+											</div>	
+										</div>
+										<div class="data-item">
+											<span class="radio-check-field">
+												<input type="checkbox" data-toggle-check-target="grupo-1">
+												<label></label>
+											</span>		
+											<div class="user-data">
+											  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar small">
+											  <div class="user-data-info">
+											    <p class="user-data-header">Alexandre Loes Paz</p>
+											  </div>
+											</div>	
+										</div>									
+									</div>
+								</div>
+							</div>
 
-            <!-- Aba Perfil Relatórios -->
-            <div id="perfilRelatorio" class="ls-tab-content">
-                <div class="ls-boxes" data-id="perfil-relatorios-etapa-1" data-etapa>  
-                    <div class="ls-box container-filtros">
-                        <div class="ls-form ls-form-horizontal row">
-                            <label class="ls-label col-6 field-has-icon ls-ico-search">
-                              <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
-                            </label>
-                            <label class="col-3">
-                                <select class="select-field" style="width: 100%">
-                                    <option value="1" selected> Opção 1 </option>
-                                    <option value="1"> Opção 1 </option>
-                                    <option value="2"> Opção 2 </option>
-                                    <option value="3"> Opção 3 </option>
-                                    <option value="4"> Opção 4 </option>
-                                </select>
-                            </label>
-                            <div class="col right-aligned">
-                              <button class="ls-btn ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-2">Adicionar</button>
-                            </div>        
-                        </div>
-                    </div>
-                    <div class="ls-box">
-                        <table class="ls-table ls-no-margin-top">
-                        <colgroup>
-                            <col span="2">
-                            <col width="28%">                        
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th>Versão</th>
-                            <th>Perfil</th>
-                            <th class="actions">Ações</th>
-                          </tr>
-                        </thead>						
-                        <tbody>
-                          <tr>
-                            <td><span class="texto-destaque">V1</span></td>
-                            <td>
-                              Nome do perfil 1
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td><span class="texto-destaque">V1.1</span></td>                      
-                            <td>
-                              Nome do perfil 2
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
-                            </td>				      				      				      				      
-                          </tr>
-                          <tr>
-                            <td><span class="texto-destaque">V2.0</span></td>
-                            <td>
-                              Nome do perfil 3
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
-                            </td>				      				      				      				      
-                          </tr>
-                          <tr>
-                            <td><span class="texto-destaque">V2.1</span></td>
-                            <td>
-                              Nome do perfil 4
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
-                            </td>				      				      				      				      
-                          </tr>
-                          <tr>
-                            <td><span class="texto-destaque">V2.2</span></td>
-                            <td>
-                              Nome do perfil 5
-                            </td>
-                            <td class="right-aligned">
-                              <button class="ls-btn ls-btn-primary small" data-relacionar-perfil>Duplicar e customizar</button>
-                            </td>		      
-                          </tr>	
-                        </tbody>
-                        </table> 
+							<div class="accordion-item">
+								<div class="accordion-title">
+									<div class="accordion-title-content">
+										<div class="icon">
+											<span class="radio-check-field">
+												<input type="checkbox" data-toggle-check-group="grupo-2">
+												<label></label>
+											</span>
+										</div>
+										<h3 class="accordion-title-text">Grupo 2</h3>
+										<div class="action">
+										</div>
+									</div>
+								</div>
+								<div class="accordion-content blue-gradient-bg">
+									<div class="inverted" data-gutter="0.2">
+										<div class="data-item">
+											<span class="radio-check-field">
+												<input type="checkbox" data-toggle-check-target="grupo-2">
+												<label></label>
+											</span>		
+											<div class="user-data">
+											  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar small">
+											  <div class="user-data-info">
+											    <p class="user-data-header">Alexandre Loes Paz</p>
+											  </div>
+											</div>	
+										</div>
+										<div class="data-item">
+											<span class="radio-check-field">
+												<input type="checkbox" data-toggle-check-target="grupo-2">
+												<label></label>
+											</span>		
+											<div class="user-data">
+											  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar small">
+											  <div class="user-data-info">
+											    <p class="user-data-header">Alexandre Loes Paz</p>
+											  </div>
+											</div>	
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>	
+					<div class="box-content right-aligned">
+						<div class="inline-buttons-wrapper">
+							<button class="btn secondary outlined" data-conteudo-alvo="perfil-relatorios-1">Cancelar</button>
+							<button class="btn primary" data-conteudo-alvo="perfil-relatorios-3">Avançar</button>
+						</div>
+					</div>			
+				</div>
+				<div class="boxes-group" data-id="perfil-relatorios-3" data-etapa hidden>
+					<div class="box-content">
+						<div class="row">
+							<div class="col-md-6">
+								<h3 class="box-content-title">
+									Novo Perfil
+								</h3>								
+							</div>
+							<div class="col-md-6">
+								<div class="breadcrumb-steps">
+									<button class="breadcrumb-item" data-conteudo-alvo="perfil-relatorios-2">Configurações gerais</button>
+									<button class="breadcrumb-item active" data-conteudo-alvo="perfil-relatorios-3">Configurações de fontes</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="box-content grey-bg">
+						<div class="row">
+							<div class="col">
+								<div class="relacionar-listas medium-grey-bg">
+									<label class="form-label has-icon nv-icon-zoom">
+										<input type="text" class="input-text" placeholder="Pesquisar por nome">
+									</label>
+									<div class="switchable-area switchable-area-1" id="switchableArea-1">
+										<div class="user-data">
+		                                	<img src="img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+		                                	<div class="user-data-info">
+		                                  		<p class="user-data-header">Alexandre Loes Paz</p>
+		                                  		<button class="btn is-icon-btn nv-icon-trash btn-remover"><span class="text">Remover</span></button>
+		                                  	</div>
+		                                </div>
+										<div class="user-data">
+		                                	<img src="img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+		                                	<div class="user-data-info">
+		                                  		<p class="user-data-header">Alexandre Loes Paz</p>
+		                                  		<button class="btn is-icon-btn nv-icon-trash btn-remover"><span class="text">Remover</span></button>
+		                                  	</div>
+		                                </div>
+										<div class="user-data">
+		                                	<img src="img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+		                                	<div class="user-data-info">
+		                                  		<p class="user-data-header">Alexandre Loes Paz</p>
+		                                  		<button class="btn is-icon-btn nv-icon-trash btn-remover"><span class="text">Remover</span></button>
+		                                  	</div>
+		                                </div>
+										<div class="user-data">
+		                                	<img src="img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
+		                                	<div class="user-data-info">
+		                                  		<p class="user-data-header">Alexandre Loes Paz</p>
+		                                  		<button class="btn is-icon-btn nv-icon-trash btn-remover"><span class="text">Remover</span></button>
+		                                  	</div>
+		                                </div>                         		                                
+									</div>	
+								</div>
+							</div>
+							<div class="col">
+								<div class="relacionar-listas blue-gradient-bg">
+									<div class="switchable-area switchable-area-2" id="switchableArea-2" data-placeholder="Arraste as fontes para cá!"></div>					
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="box-content">
+						<div class="row">
+							<div class="col">
+								<button class="btn secondary" data-conteudo-alvo="perfil-relatorios-2">Voltar</button>
+							</div>
+							<div class="col right-aligned">
+								<div class="inline-buttons-wrapper">
+									<button class="btn secondary outlined" data-conteudo-alvo="perfil-relatorios-1">Cancelar</button>
+									<button class="btn primary">Avançar</button>
+								</div>								
+							</div>							
+						</div>
+					</div>			
+				</div>
+			</div>
+			<div class="tab-content" id="fontes">
+				<div class="boxes-group" data-id="fontes-1" data-etapa>
+					<div class="box-content">
+						<div class="data-container" data-gutter="2.5">
+							<div class="data-header">
+								<div class="column-4">Nome da Fonte</div>
+								<div class="column-3">Relevância</div>
+								<div class="column-4">Oservações</div>
+								<div class="column-1">Ações</div>
+							</div>
+							<div class="data-item">
+								<div class="column-4">
+									<p>Nome do template 1</p>
+								</div>
+								<div class="column-3">
+									<div class="status_container">
+										<span class="status_dot filled"></span>
+										<span class="status_dot filled"></span>
+										<span class="status_dot filled"></span>
+										<span class="status_dot"></span>
+										<span class="status_dot"></span>
+									</div>
+								</div>
+								<div class="column-4">
+									<p>Texto de observação</p>
+								</div>								
+								<div class="column-1">
+									<div class="icon-buttons-group">
+										<button class="btn is-icon-btn secondary" data-conteudo-alvo="fontes-2"><i class="nv-icon-reader-mode"></i></button>
+									</div>
+								</div>				
+							</div>
+							<div class="data-item">
+								<div class="column-4">
+									<p>Nome do template 1</p>
+								</div>
+								<div class="column-3">
+									<div class="status_container">
+										<span class="status_dot filled"></span>
+										<span class="status_dot filled"></span>
+										<span class="status_dot filled"></span>
+										<span class="status_dot"></span>
+										<span class="status_dot"></span>
+									</div>
+								</div>
+								<div class="column-4">
+									<p>Texto de observação</p>
+								</div>								
+								<div class="column-1">
+									<div class="icon-buttons-group">
+										<button class="btn is-icon-btn secondary" data-conteudo-alvo="fontes-2"><i class="nv-icon-reader-mode"></i></button>
+									</div>
+								</div>				
+							</div>
+							<div class="data-item">
+								<div class="column-4">
+									<p>Nome do template 1</p>
+								</div>
+								<div class="column-3">
+									<div class="status_container">
+										<span class="status_dot filled"></span>
+										<span class="status_dot filled"></span>
+										<span class="status_dot filled"></span>
+										<span class="status_dot"></span>
+										<span class="status_dot"></span>
+									</div>
+								</div>
+								<div class="column-4">
+									<p>Texto de observação</p>
+								</div>								
+								<div class="column-1">
+									<div class="icon-buttons-group">
+										<button class="btn is-icon-btn secondary" data-conteudo-alvo="fontes-2"><i class="nv-icon-reader-mode"></i></button>
+									</div>
+								</div>				
+							</div>														
+						</div>						
+					</div>
+				</div>
+				<div class="boxes-group" data-id="fontes-2" data-etapa hidden>
+					<div class="box-content">
+						<div class="row">
+							<div class="col-md-6">
+								<label class="form-label">
+									<input type="text" class="input-text" placeholder="Nome">
+								</label>
+								<label class="form-label">
+									<input type="text" class="input-text" placeholder="Parâmetros de busca">
+								</label>																	
+							</div>
+							<div class="col-md-6">
+								<label class="form-label">
+									<textarea class="input-text textarea inverted" placeholder="Descrição"></textarea>
+								</label>								
+							</div>							
+						</div>
+					</div>
 
-                        <div class="ls-pagination-filter">
-                          <ul class="ls-pagination ls-float-left">
-                            <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="ls-active"><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                          </ul>
-                        </div>                        
-                    </div>
-                </div>
+					<div class="box-content grey-bg">
+						<div class="checkbox-radio-group inline">
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão</label>
+							</span>
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão</label>
+							</span>	
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão Nome</label>
+							</span>				
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão nome do botão</label>
+							</span>	
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão</label>
+							</span>
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão</label>
+							</span>	
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão Nome</label>
+							</span>				
+							<span class="radio-check-field radio inverted">
+								<input type="checkbox">
+								<label>Nome do botão nome do botão</label>
+							</span>										
+						</div>
+					</div>
 
-                <div class="ls-boxes" data-id="perfil-relatorios-etapa-2" data-etapa hidden>
-                    <div class="ls-box">
-                        <div class="row">
-                          <div class="col d-flex align-items-center">
-                            <h2 class="ls-title">Novo Perfil</h2>
-                          </div>
-                          <div class="col right-aligned">
-                              <ol class="ls-breadcrumb passos">
-                                <li class="active"><a href="#">Configurações gerais</a></li>
-                                <li data-conteudo-alvo="perfil-relatorios-etapa-3"><a href="#">Configurações de fontes</a></li>
-                              </ol>                          
-                          </div>
-                        </div>
-                    </div>
-                    <div class="ls-box container-filtros">
-                        <div class="ls-form ls-form-horizontal row">
-                            <label class="ls-label col-6 field-has-icon ls-ico-search">
-                              <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
-                            </label>
-                            <label class="col-3">
-                                <select class="select-field" style="width: 100%">
-                                    <option value="1"> Opção 1 </option>
-                                    <option value="2"> Opção 2 </option>
-                                    <option value="3"> Opção 3 </option>
-                                    <option value="4"> Opção 4 </option>
-                                </select>
-                            </label>
-                            <div class="col right-aligned">
-                              <button class="ls-btn ls-btn-secondary outlined">Pré-visualizar</button>
-                            </div>        
-                        </div>
-                    </div>
-                    <div class="ls-box bg-grey" id="containerTodosPerfis">
-                      <p>Permissão de acesso <a href="#" class="link" id="btnSelecionarTodoPerfis" ><span class="texto-destaque" data-ls-module="toggleText" data-toggle-text="Desmarcar todas">Marcar todas</span></a></p> 
-                     
-                        <div class="ls-collapse-group">
-                          <div data-ls-module="collapse" data-target="#accordeon0" class="ls-collapse">
-                              <div class="pretty p-icon p-curve p-tada checkbox-container">
-                                <input type="checkbox" name="radio66" data-ls-module="checkboxToggle" data-checkbox-target="grupo-1">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label></label>
-                                </div>
-                              </div>   
-                            <a href="#" class="ls-collapse-header">
-                              <h3 class="ls-collapse-title">Título 1</h3>
-                            </a>
-                            <div class="ls-collapse-body bg-blue-gradient" id="accordeon0">
+					<div class="box-content">
+						<div class="row">
+							<div class="col right-aligned">
+								<div class="inline-buttons-wrapper">
+									<button class="btn secondary outlined" data-conteudo-alvo="fontes-1">Cancelar</button>
+									<button class="btn primary" data-conteudo-alvo="fontes-1">Avançar</button>
+								</div>								
+							</div>							
+						</div>
+					</div>
 
-                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                  <div class="state p-primary-o">
-                                      <i class="icon ls-ico-checkmark"></i>
-                                      <label>Alexandre Lopez Paes</label>
-                                  </div>
-                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
-                                </div> 
+				</div>
+			</div>								
+		</div>
 
-                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                  <div class="state p-primary-o">
-                                      <i class="icon ls-ico-checkmark"></i>
-                                      <label>Alexandre Lopez Paes</label>
-                                  </div>
-                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
-                                </div> 
-                                
-                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-1">
-                                  <div class="state p-primary-o">
-                                      <i class="icon ls-ico-checkmark"></i>
-                                      <label>Alexandre Lopez Paes</label>
-                                  </div>
-                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
-                                </div>  
+	</main>
+</div>	
 
-                            </div>
-                          </div>
-                          <div data-ls-module="collapse" data-target="#accordeon1" class="ls-collapse">
+	
 
-                              <div class="pretty p-icon p-curve p-tada checkbox-container">
-                                <input type="checkbox" name="radio66" data-ls-module="checkboxToggle" data-checkbox-target="grupo-2">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label></label>
-                                </div>
-                              </div>                            
-                            <a href="#" class="ls-collapse-header">
-                              <h3 class="ls-collapse-title">Título 2</h3>
-                            </a>
-                            <div class="ls-collapse-body bg-blue-gradient" id="accordeon1">
-
-                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-2">
-                                  <div class="state p-primary-o">
-                                      <i class="icon ls-ico-checkmark"></i>
-                                      <label>Alexandre Lopez Paes</label>
-                                  </div>
-                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
-                                </div> 
-
-                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-2">
-                                  <div class="state p-primary-o">
-                                      <i class="icon ls-ico-checkmark"></i>
-                                      <label>Alexandre Lopez Paes</label>
-                                  </div>
-                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
-                                </div> 
-                                
-                                <div class="pretty p-icon p-curve p-tada checkbox-container with-avatar">
-                                  <input type="checkbox" name="radio66" data-checkbox-toggle="grupo-2">
-                                  <div class="state p-primary-o">
-                                      <i class="icon ls-ico-checkmark"></i>
-                                      <label>Alexandre Lopez Paes</label>
-                                  </div>
-                                  <img src="assets/img/avatar-usuario.png" alt="" class="user-avatar">                               
-                                </div>  
-
-                            </div>
-                          </div>
-                        </div>
-                    </div> 
-  
-                    <div class="ls-box">
-                        <div class="row">
-                          <div class="col right-aligned">
-                            <!-- <button class="ls-button ls-btn-secondary">Voltar</button> -->
-                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
-                            <button class="ls-button ls-btn-primary" data-conteudo-alvo="perfil-relatorios-etapa-3">Avançar</button>
-                          </div>
-                      </div>
-                    </div>                                        
-                </div>
-
-                <div class="ls-boxes" data-id="perfil-relatorios-etapa-3" data-etapa hidden>
-                    <div class="ls-box">
-                        <div class="row">
-                          <div class="col d-flex align-items-center">
-                            <h2 class="ls-title">Novo Perfil</h2>
-                          </div>
-                          <div class="col right-aligned">
-                              <ol class="ls-breadcrumb passos">
-                                <li data-conteudo-alvo="perfil-relatorios-etapa-2"><a href="#">Configurações gerais</a></li>
-                                <li class="active"><a href="#">Configurações de fontes</a></li>
-                              </ol>                          
-                          </div>
-                        </div>
-                    </div>                
-                    <div class="ls-box bg-grey">
-                     <div class="row">
-                        <div class="col">
-                          <div class="relacionar-listas bg-medium-grey">
-                            <label class="ls-label field-has-icon ls-ico-search">
-                              <input type="text" placeholder="Filtrar por nome" class="ls-field" required="">
-                            </label>  
-                            <div class="switchable-area switchable-area-1" id="switchableArea-1">
-
-                              <div class="user-data">
-                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                                <div class="user-data-info">
-                                  <p class="user-data-header">Alexandre Loes Paz</p>
-                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
-                                </div>
-                              </div>  
-                              <div class="user-data">
-                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                                <div class="user-data-info">
-                                  <p class="user-data-header">Alexandre Loes Paz</p>
-                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
-                                </div>
-                              </div>  
-                              <div class="user-data">
-                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                                <div class="user-data-info">
-                                  <p class="user-data-header">Alexandre Loes Paz</p>
-                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
-                                </div>
-                              </div>  
-                              <div class="user-data">
-                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                                <div class="user-data-info">
-                                  <p class="user-data-header">Alexandre Loes Paz</p>
-                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
-                                </div>
-                              </div>  
-                              <div class="user-data">
-                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                                <div class="user-data-info">
-                                  <p class="user-data-header">Alexandre Loes Paz</p>
-                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
-                                </div>
-                              </div>  
-                              <div class="user-data">
-                                <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                                <div class="user-data-info">
-                                  <p class="user-data-header">Alexandre Loes Paz</p>
-                                  <button class="ls-btn ls-btn-icon nv-icon-trash btn-remover"><span class="text">Remover</span></button>
-                                </div>
-                              </div>  
-                            </div> 
-
-                          </div>   
-                        </div>
-                        <div class="col">
-                            <div class="relacionar-listas bg-blue-gradient">
-                              <div class="switchable-area switchable-area-2" id="switchableArea-2"></div>                            
-                            </div>
-                        </div>                      
-                    </div>   
-
-                    <div class="ls-box">
-                        <div class="row">
-                          <div class="col">
-                            <button class="ls-button ls-btn-secondary" data-conteudo-alvo="perfil-relatorios-etapa-2">Voltar</button>  
-                          </div>
-                          <div class="col right-aligned">
-                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="perfil-relatorios-etapa-1">Cancelar</button>
-                            <button class="ls-button ls-btn-primary">Avançar</button>
-                          </div>
-                    </div>
-                    </div>                                     
-                </div>
-            </div>
-            </div>
-            <!-- Fim Aba Perfil Rel atórios-->
-
-            <!-- Aba Fontes -->         
-            <div id="fontes" class="ls-tab-content">
-                <div class="ls-boxes" data-id="fontes-etapa-1" data-etapa>
-                    <div class="ls-box">
-                        <table class="ls-table ls-no-margin-top">
-                        <colgroup>
-                          <col>
-                          <col>
-                          <col>
-                          <col width="8%">
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th>Nome da fonte</th>
-                            <th>Relevância</th>
-                            <th>Observação</th>
-                            <th>Ações</th>
-                          </tr>
-                        </thead>						
-                        <tbody>
-                          <tr>
-                            <td>
-                              Nome do template 1
-                            </td>
-                            <td>
-                              <div class="rating">  
-                                <i class="dot filled"></i>
-                                <i class="dot filled"></i>
-                                <i class="dot filled"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                              </div>
-                            </td>
-                            <td>
-                              <span class="nv-icon icon-talk">Texto de observação</span>
-                            </td>                                                        
-                            <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon-reader-mode"></i>
-                              </button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 1
-                            </td>
-                            <td>
-                              <div class="rating">  
-                                <i class="dot filled"></i>
-                                <i class="dot filled"></i>
-                                <i class="dot filled"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                              </div>
-                            </td>
-                            <td>
-                              <span class="nv-icon icon-talk">Texto de observação</span>
-                            </td>                                                        
-                            <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon-reader-mode"></i>
-                              </button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 1
-                            </td>
-                            <td>
-                              <div class="rating">  
-                                <i class="dot filled"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                              </div>
-                            </td>
-                            <td>
-                              <span class="nv-icon icon-talk">Texto de observação</span>
-                            </td>                                                        
-                            <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon-reader-mode"></i>
-                              </button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 1
-                            </td>
-                            <td>
-                              <div class="rating">  
-                                <i class="dot filled"></i>
-                                <i class="dot filled"></i>
-                                <i class="dot filled"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                              </div>
-                            </td>
-                            <td>
-                              <span class="nv-icon icon-talk">Texto de observação</span>
-                            </td>                                                        
-                            <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon-reader-mode"></i>
-                              </button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>
-                              Nome do template 1
-                            </td>
-                            <td>
-                              <div class="rating">  
-                                <i class="dot filled"></i>
-                                <i class="dot filled"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                                <i class="dot"></i>
-                              </div>
-                            </td>
-                            <td>
-                              <span class="nv-icon icon-talk">Texto de observação</span>
-                            </td>                                                        
-                            <td class="center-aligned">
-                              <button class="ls-btn ls-btn-icon secondary no-bg" data-conteudo-alvo="fontes-etapa-2">
-                                <i class="nv-icon-reader-mode"></i>
-                              </button>
-                            </td> 
-                          </tr>
-                        </tbody>
-                        </table> 
-
-                        <div class="ls-pagination-filter">
-                          <ul class="ls-pagination ls-float-left">
-                            <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="ls-active"><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                          </ul>
-                        </div>                        
-                    </div>              
-                </div>
-
-                <div class="ls-boxes" data-id="fontes-etapa-2" data-etapa hidden>
-
-                    <div class="ls-box container-filtros">
-                        <div class="ls-form ls-form-horizontal row">
-                            <div class="col">
-                              <label class="ls-label field-has-icon">
-                                <input type="text" placeholder="Nome" class="ls-field" required>
-                              </label>                            
-                              <label class="ls-label field-has-icon">
-                                <input type="text" placeholder="Parâmetros de busca" class="ls-field">
-                              </label>                                                          
-                            </div>
-                            <div class="col">
-                              <label class="ls-label field-has-icon">
-                                <textarea rows="4" placeholder="Descrição"></textarea>
-                              </label>
-                            </div>        
-                        </div>
-                    </div>
-
-                    <div class="ls-box bg-grey">
-                        <div class="row">
-                          <div class="col">
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Thick</label>
-                                  </div>
-                              </div>   
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Termo 2</label>
-                                  </div>
-                              </div>    
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Termo 555</label>
-                                  </div>
-                              </div>                  
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Lorem Ipsum</label>
-                                  </div>
-                              </div>  
-                            <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Lorem Ipsum Calium Sared</label>
-                                  </div>
-                              </div> 
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Lorem Ipsum</label>
-                                  </div>
-                              </div>                                                                                                   <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Thick</label>
-                                  </div>
-                              </div>   
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Termo 2</label>
-                                  </div>
-                              </div>    
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Termo 555</label>
-                                  </div>
-                              </div>                  
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Lorem Ipsum</label>
-                                  </div>
-                              </div>  
-                              <div class="pretty p-default p-round p-thick radio-style">
-                                  <input type="checkbox" />
-                                  <div class="state">
-                                      <label>Termo 134</label>
-                                  </div>
-                              </div>                                                                                 
-                          </div>
-                        </div>
-                    </div>                    
-                
-                    <div class="ls-box">
-                        <div class="row">
-                          <div class="col right-aligned">
-                            <button class="ls-button ls-btn-secondary outlined" data-conteudo-alvo="fontes-etapa-1">Cancelar</button>
-                            <button class="ls-button ls-btn-primary">Avançar</button>
-                          </div>
-                      </div>
-                    </div>                 
-
-                </div>
-                
-            </div>   
-            <!-- Fim Aba Fontes -->         
-          </div>
-          <!-- Conteúdos Abas -->        
-
-      </div>
-    </main>
-    
-    <?php include("includes/scripts.php"); ?>
-  </body>
+	
+<?php include("includes/scripts.php"); ?>
+</body>
 </html>

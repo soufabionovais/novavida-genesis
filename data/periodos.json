@@ -1,0 +1,22 @@
+[
+	{
+		"text": "A cada dia", 
+		"value": "dia"
+	},
+	{
+		"text": "A cada semana", 
+		"value": "semana"
+	},
+	{
+		"text": "A cada quinzena", 
+		"value": "quinzena"
+	},	
+	{
+		"text": "A cada mês", 
+		"value": "mes"
+	},		
+	{
+		"text": "A cada ano", 
+		"value": "ano"
+	}
+]

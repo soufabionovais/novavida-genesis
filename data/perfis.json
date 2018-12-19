@@ -1,0 +1,18 @@
+[
+	{
+		"text": "<div class='perfil'><span class='text'>Perfil 1 teste</span><button class='btn-customizar' data-conteudo-alvo='editar-perfil-etapa-2>Customizar Perfil</button</div>", 
+		"value": "pefil1|Perfil 1"
+	},
+	{
+		"text": "Perfil 2", 
+		"value": "perfil2"
+	},
+	{
+		"text": "Perfil 3", 
+		"value": "perfil3"
+	},
+	{
+		"text": "Perfil 4", 
+		"value": "perfil4"
+	}
+]

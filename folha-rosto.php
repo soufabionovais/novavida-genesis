@@ -3,13 +3,13 @@
     
   	<?php include("includes/header-monitoria.php"); ?>
 
-		<main class="ls-main doc">
+		<main class="main doc">
 			<div id="docWrapper" class="doc-wrapper no-sidebar">
 				<div id="docPrincipal" class="doc-principal">
 
 					<div class="doc-menu">
-						<a href="capa.php" class="doc-menu-titulo">
-							<span class="ls-show-sidebar ls-ico-text2"></span>
+						<a href="capa.php" class="doc-menu-titulo atual nv-icomoon-book-2">
+							<span class="show-sidebar ico-text2"></span>
 							Capa
 						</a>
 						<ol>
@@ -43,7 +43,7 @@
 					<div class="doc-pagina folha-rosto">
 						<div class="conteudo-wrapper">
 							<div class="custom-image">
-								<img src="assets/img/doc/brasao-republica-transparencia.png" alt="">
+								<img src="img/doc/brasao-republica-transparencia.png" alt="">
 							</div>							
 							<div class="titulo">
 								Jinglebell Representações Comercias
@@ -60,6 +60,6 @@
 		</main>
 
 		<?php include("includes/scripts.php"); ?>
-		<script src="assets/js/doc.js"></script>
+		<script src="js/doc.js"></script>
 	</body>
 </html>

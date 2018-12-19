@@ -1,30 +1,32 @@
-<div class="ls-topbar mapa">
-
-	<div class="mapa-caminho">
-		<ol class="ls-breadcrumb">
-			<li>Mapa gráfico</li>
-			<li>
-				Título do mapa
-			</li>
-		</ol>
-	</div>
-
-	<div class="acoes">
-		<a class="acao-item zoom" href="">
-			<span class="icon nv-icon-zoom-in"></span>
-			<span class="icon nv-icon-zoom-out"></span>
-		</a>
-		<div class="acao-item acao-btn">
-			<button class="ls-btn ls-btn-primary large">
-				Salvar
-			</button>
+<div class="topbar mapa">
+	<div class="row d-flex align-items-center no-gutters fluid">
+		<div class="col-md-6">
+			<div class="breadcrumb-container">
+				<ol>
+					<li><a href="#">Mapa Gráfico</a></li>
+					<li class="active"><a href="#">Título de Página</a></li>
+				</ol>
+			</div>	
 		</div>
-		<div class="acao-item">
-			<span class="icon nv-icon-fullscreen"></span>
-		</div>
-		<a class="acao-item" href="index.php">
-			<span class="icon nv-icon-remove"></span>
-		</a>
-	</div>
 
+		<div class="col-md-6">
+			<div class="acoes">
+				<div class="acao-item zoom">
+					<button class="btn secondary is-icon-btn"><i class="icon nv-icon-zoom-in"></i></button>
+					<button class="btn secondary is-icon-btn"><i class="icon nv-icon-zoom-out"></i></button>
+				</div>
+				<div class="acao-item acao-btn">
+					<button class="btn primary large">
+						Salvar
+					</button>
+				</div>
+				<div class="acao-item">
+					<button class="btn secondary is-icon-btn"><i class="icon nv-icon-fullscreen"></i></button>
+				</div>
+				<a class="acao-item btn secondary is-icon-btn" href="index.php">
+					<span class="icon nv-icon-remove"></span>
+				</a>
+			</div>	
+		</div>
+	</div>
 </div>

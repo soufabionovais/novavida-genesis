@@ -1,0 +1,59 @@
+/* Ícone */
+@import "../vendors/jeet-master/scss/index";
+@import "../fontes/SegoeUI/stylesheet.css";
+@import "../icones/icomoon-novavida/style.css";
+@import "../icones/icones-novavida/css/nova-vida-icones.css";
+
+
+@import "variaveis";
+@import "media-queries";
+
+/* Vendors */
+@import "../vendors/bootstrap-4/scss/grid.scss";
+@import "../vendors/fastselect/fastselect.css";
+@import "../vendors/accordion/css/accordion.css";
+@import "../vendors/featherlight-1.7.13/featherlight.css";
+@import "../vendors/custom-scrollbar/jquery.mCustomScrollbar.css";
+@import "../vendors/jquery.nice-number/jquery.nice-number.min.css";
+@import "../vendors/slick-slider-1.8.1/slick.scss";
+@import "../vendors/slick-slider-1.8.1/slick-theme.scss";
+@import "../vendors/dropzone/dropzone.css";
+@import "../vendors/jquerytags/jquery.tagsinput.min.css";
+@import "../vendors/jquery-ui-1.12.1.custom/jquery-ui.min.css";
+@import "../vendors/jRange/jquery.range.css";
+
+/*Componentes*/
+@import "mixins";
+@import "funcoes";
+@import "componentes/grid";
+@import "componentes/dados-usuarios";
+@import "componentes/lista-dados";
+@import "componentes/scrollbar";
+@import "componentes/botoes";
+@import "componentes/status";
+@import "componentes/barra-progresso";
+@import "componentes/boxes";
+@import "componentes/filtros";
+@import "componentes/formularios";
+@import "componentes/tabs";
+@import "componentes/paginacao";
+@import "componentes/listas";
+@import "componentes/auxiliares";
+@import "componentes/modais";
+@import "componentes/relatorios";
+@import "componentes/label-tags";
+@import "componentes/poppovers";
+@import "componentes/file-upload";
+@import "componentes/input-number";
+@import "componentes/upload";
+@import "componentes/tags";
+@import "componentes/breadcrumbs";
+@import "componentes/box-notificacao";
+@import "componentes/graficos";
+
+@import "estrutura";
+@import "sidebar";
+@import "dashboard";
+@import "gerais";
+@import "doc";
+@import "mapa";

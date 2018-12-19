@@ -1,0 +1,79 @@
+/*Alinhamentos*/
+.center-aligned {
+	text-align: center !important;
+}
+
+.right-aligned {
+	text-align: right !important;
+}
+
+/* Cores */
+.highlight-text {
+	color: #7ea1f3;
+}
+
+a.highlight-text {
+	text-decoration: none;
+	color: #0aabf4;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.warning-text{
+	color: #ffca83;
+}
+
+.positive-text {
+	color: #27deac;
+}
+
+.negative-text {
+	color: #ff6565;
+}
+
+.grey-bg,
+.gray-bg {
+	background-color: #f9f9f9;
+}
+
+.medium-grey-bg,
+.medium-gray-bg {
+	background-color: #eeeeee;
+}
+
+
+
+.blue-gradient-bg {
+	@include gradient(#8399f5, #7aa9f1);
+}
+
+/* Ícones */
+.has-icon {
+	&:before {
+		font-size: 18px;
+		position: relative;
+		top: 2px;
+		margin-right: 8px;
+	}
+}
+
+.has-small-icon {
+	&:before {
+		font-size: 12px;
+		position: relative;
+		top: 0;
+		margin-right: 8px;
+	}
+}
+
+/* Textos */
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* Espaços */
+.no-padding-bottom {
+	padding-bottom: 0;
+}
+

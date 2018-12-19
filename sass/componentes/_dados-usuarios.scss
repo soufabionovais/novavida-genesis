@@ -1,0 +1,57 @@
+.user-data {
+    overflow: hidden;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    a {
+    	text-decoration: none;
+    	color: #0aabf4;
+    	transition: 0.3s;
+    	&:hover {
+    		text-decoration: underline;
+    	}
+    }
+    .avatar {
+        width: 35px;
+        float: left;
+        border-radius: 50%;
+        margin-right: 15px;
+        &.small {
+            width: 20px;
+            margin-right: 10px;
+            .has-input &{
+                float: none;
+                position: relative;
+                top: 5px;                
+            }
+        }
+    }
+    .user-data-info {
+        float: left;
+    }
+    .user-data-header {
+        color: #7ea1f3;
+        margin: 0;
+    }
+    .user-data-description {
+        margin: 2px 0 0 0;        
+    }
+    .has-icon {
+        &:before {
+		    font-size: 11px;
+		    margin: 0 8px 0 0;
+		    position: relative;
+		    top: -1px;
+        }
+    }
+}
+
+
+[data-action="detalhesFontes"] {
+    cursor: pointer;
+    &:hover {
+        .user-data-header {
+            text-decoration: underline;
+        }
+    }
+}

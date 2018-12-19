@@ -1,0 +1,238 @@
+.form-label {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	&.has-icon {
+		.input-text {
+			padding-right: 30px;
+		}
+		&:before {
+		    position: absolute;
+		    right: 0;
+		    bottom: 0;
+		    color: #8399f5;
+		    display: flex;
+		    align-items: center;
+		    z-index: 1;
+		}
+	}
+}
+
+.form {
+	.form-label {
+		&:only-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.input-text {
+	width: 100%;
+	padding: 13px 10px;
+	border-radius: 2px;
+	border: solid 1px #ebebeb;
+	border-radius: 3px;
+	color: #a6a6c4;
+	font-size: 13px;
+	font-weight: 100;
+	@include placeholders(#a6a6c4);
+	&:focus {
+		outline: none;
+	}
+	&.grey,
+	&.gray,
+	&.inverted {
+		background-color: #f6f6f6;
+	}
+	&.textarea {
+		height: 105px;
+		resize: none;
+		overflow: auto;
+		font-family: 'Segoe UI';
+	}
+}
+
+.radio-check-field {
+	position: relative;
+	padding: 3px 3px 6px;
+	white-space: nowrap;
+	display: inline-block;
+	
+	&.outlined {
+	    border: solid 1px #eeeeee;
+	    padding: 8px 15px 10px 10px;
+	    border-radius: 20px;	
+	    background: #FFF;	
+	}
+
+	input[type='checkbox'],
+	input[type='radio'] {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		opacity: 0.001;
+		z-index: 1;
+	}
+	label {
+		position: relative;
+		padding-left: 30px;
+		@include pseudoElement($tipo: before) {
+			width: 20px;
+			height: 20px;
+			border: solid 1px #4388ff;
+			border-radius: 3px;
+			top: 0;
+			left: 0;
+			transition: 0.2s;
+		}	
+		&:after {
+		    content: "\e9ab";
+		    font-family: 'icomoon-novavida';
+		    width: 20px;
+		    height: 20px;
+		    top: 0;
+		    left: 0;
+		    text-align: center;
+		    padding-top: 3px;
+		    position: absolute;
+		    font-size: 15px;
+			color: #4388ff;		    
+		    transform: scale(0);
+		    transition: 0.4s;		    
+		}
+	}
+
+
+	input[type='checkbox']:checked,
+	input[type='radio']:checked {
+		+ label {
+			&:after {
+			    transform: scale(1)		
+			}
+		}
+	}
+	&.radio {
+		label {
+			&:before {
+				border-radius: 50%;
+			}
+			&:after {
+			    content: "";
+			    width: 8px;
+			    height: 8px;
+			    border-radius: 50%;
+			    position: absolute;
+			    left: 6px;
+			    top: 6px;
+				background: #fff;
+			}
+		}
+		input[type='radio']:checked {
+			+ label {
+				&:before {
+					background: #4388ff;
+				}	
+			}		
+		}
+	}
+}
+
+.checkbox-radio-group {
+	width: 100%;
+    display: flex;
+    flex-wrap: wrap;	
+	+ * {
+		margin-top: 30px;
+	}
+	&.inline {
+		.radio-check-field {
+		    margin-right: 20px;
+		    &.inverted {
+			    background: #fff;
+			    padding: 10px;
+			    border-radius: 20px;
+			    margin-top: 15px;	
+				border: solid 1px #eeeeee;			    
+			    input[type='radio'],	    	
+			    input[type='checkbox'] {
+			    	+ label:after {
+			    		background-color: #4388ff;
+			    	}
+			    }
+		    }
+		}		
+	}
+	&.block {
+		display: block;
+		.radio-check-field {
+			display: block;
+			+ * {
+				margin-top: 8px;
+			}
+		}			
+	}
+	&.list {
+		@extend %clear;
+		.radio-check-field {
+		    float: left;
+		    clear: both;
+			+ * {
+				margin-top: 8px;	
+			}
+		}				    	
+	}
+}
+
+.label {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.has-icon {
+	&.dropdown {
+		.input-text {
+			cursor: pointer;
+			text-align: left;
+		}		
+		@include pseudoElement {
+		    right: 10px;
+		    top: 50%;
+		    width: 15px;
+		    height: 15px;
+		    background: url(../img/arrows/arrow-dropdown.png) no-repeat;
+		    transform: translateY(-50%);
+		    transition: 0.3s;	
+		}
+		&.open {
+			&:after {
+				transform: rotate(180deg) translateY(50%);;
+			}
+		}
+	}
+	.edit-profile-wrapper {
+		position: absolute;
+		left: 0;
+	    background: #f6f6f6;
+	    border: solid 1px #ebebeb;
+	    width: 100%;
+	    display: flex;
+	    padding: 15px;
+	    border-radius: 0 0 3px 3px;
+	    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+	    z-index: 3;
+	    transform-origin: center 0;
+	    transform: scaleY(0);	
+	    transition: 0.3s;  
+	    max-height: 200px;
+	    &.open {
+		    transform: scaleY(1);	
+	    }  
+	}
+}
+
+

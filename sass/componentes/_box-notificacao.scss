@@ -1,0 +1,68 @@
+.box-notificacoes {
+    display: flex;
+    justify-content: center;
+    a {
+        color: #a6a6c4;
+        text-decoration: none;
+        transition: 0.4s;
+        &:hover {
+            text-decoration: none;           
+        }
+    }
+    .icone {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 11px;
+        text-align: center;
+        color: #fff;
+        border-radius: 100%;
+        margin-right: 8px;
+    }
+    [class*="tag"] {
+        padding: 8px 13px;
+        border-radius: 30px;
+        margin-left: 10px;
+        font-size: 14px !important;
+        letter-spacing: initial;
+        border: none;
+    }
+}
+
+$cores : (
+    "orange": (
+        cor: #f5842a
+    ),
+    "purple": (
+        cor: #b08efb
+    ),
+    "blue": (
+        cor: #1878ef
+    ),
+    "green": (
+        cor: #4bd63c
+    )
+);
+
+@each $cor, $chave in $cores {
+    .box-notificacoes {
+        &.#{$cor} {
+            a {
+                &:hover {
+                    &:not(.label-tag) {
+                        color: map-deep-get($cores, $cor, "cor");
+                    }                    
+                }
+            }
+            .icone {
+                background-color: map-deep-get($cores, $cor, "cor");
+                box-shadow: 0 0 0 7px lighten(map-deep-get($cores, $cor, "cor"), 15%);
+            }
+            [class*="tag"] {
+                background-color: map-deep-get($cores, $cor, "cor");
+                color: #FFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.breadcrumb-steps {
+	display: flex;
+	justify-content: flex-end;
+	counter-reset: counter;
+	.breadcrumb-item {
+		font-size: 12px;
+		color: #a9b2c4;
+		display: flex;
+		background: transparent;
+		align-items: center;
+		border: none;
+		cursor: pointer;
+		transition: 0.5s;
+		transition-property: color;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+		@include pseudoElement($position: relative, $tipo: before) {
+			width: 38px;
+			height: 38px;
+			background-color: #eaeaee;
+			color: #a6a6c4;
+			border-radius: 50%;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;			
+			counter-increment: counter;
+			content: counter(counter);
+			position: relative;
+			margin-right: 10px;
+			transition: 0.5s;
+			transition-property: background-color;
+		}
+		&:hover,
+		&.active,
+		&.active:hover {
+			color: #8399f5;
+			&:before {
+				background-color: #8399f5;
+				color: #FFF;
+			}
+		}
+	}
+}
+
+.breadcrumb-container {
+	position: relative;
+	list-style: none;
+    display: flex;
+    align-items: center;	
+	+ * {
+		margin-top: 30px;
+	}
+	ol {
+		display: flex;
+		align-items: center;
+	}
+	li {
+		display: inline-block;
+		position: relative;
+		@include pseudoElement {
+			display: inline-block;
+			content: ">";
+			position: relative;
+			margin: 0 5px;
+		}
+		&.active {
+			a {
+				color: #8399f5;
+			}
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+	a {
+	    color: #a9b2c4;
+	    text-decoration: none;	
+	    font-size: 13px;	
+	}
+	.fstElement {
+		border: none;
+		.fstToggleBtn {
+			color: #7ea0f3;
+		}
+	}
+}

@@ -1,70 +1,47 @@
-<div class="modal-popup">
-    <header class="modal-popup-header">
-        <h2 class="modal-popup-titulo">Relacionar Perfil</h2>
-        <p>Selecione os perfis em que este template estará disponível:</p>
-    </header>
-    <div class="modal-popup-conteudo">       
-
-        <form class="ui form" action="" onsubmit="return relacionarPerfis();">
-            <div class="ls-boxes">
-                <div class="ls-box">
-                    <div class="row container-filtros">
-                        <label class="ls-label col field-has-icon ls-ico-search">
-                            <input type="text" name="nome" placeholder="Primeiro nome" class="ls-field" required="">
-                        </label>
-                    </div>
-                </div>
-                <div class="ls-box bg-grey">
-                    <div class="row"> 
-                        <div class="col-12">
-                            <div class="pretty p-icon p-curve p-tada checkbox-container">
-                                <input type="checkbox" name="radio66">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Nome do perfil 1</label>
-                                </div>
-                            </div>                  
-                        </div> 
-
-                        <div class="col-12">
-                            <div class="pretty p-icon p-curve p-tada checkbox-container">
-                                <input type="checkbox" name="radio66">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Nome do perfil 2</label>
-                                </div>
-                            </div>                  
-                        </div> 
-
-                        <div class="col-12">
-                            <div class="pretty p-icon p-curve p-tada checkbox-container">
-                                <input type="checkbox" name="radio66">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Nome do perfil 3</label>
-                                </div>
-                            </div>                  
-                        </div>                                                    
-
-                        <div class="col-12">
-                            <div class="pretty p-icon p-curve p-tada checkbox-container">
-                                <input type="checkbox" name="radio66">
-                                <div class="state p-primary-o">
-                                    <i class="icon ls-ico-checkmark"></i>
-                                    <label>Nome do perfil 4</label>
-                                </div>
-                            </div>                  
-                        </div> 
-                    </div>
-                </div>
-                <div class="ls-box bg-action-grey right-aligned">
-                    <button class="ls-btn-secondary outlined">Cancelar</button>
-                    <button class="ls-btn-primary">Salvar</button>
-                </div>                                
-            </div>
-            
-
-            </div> 
-        </form>
-    </div>
+<div class="modal-popup modal-adicionar-monitoria">
+	<header class="modal-popup-header">
+		<h2 class="modal-popup-titulo">Relacionar Perfil</h2>
+		<p>Selecione os perfis em que este template estará disponível:</p>
+	</header>
+	<div class="modal-popup-conteudo">
+		<div class="boxes-group">
+			<div class="box-content">
+				<div class="row">
+					<div class="col-12">
+						<label class="form-label has-icon nv-icon-zoom">
+							<input type="text" class="input-text inverted" placeholder="Pesquisar perfil">
+						</label>						
+					</div>
+					<div class="col-12">
+						<div class="checkbox-radio-group block">
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 1</label>
+							</span>
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 2</label>
+							</span>	
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 3</label>
+							</span>	
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 4</label>
+							</span>															
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="box-content grey-bg">
+				<div class="row">
+					<div class="col-12 right-aligned">
+						<button class="btn secondary outlined" data-fecha-modal>Cancelar</button>
+						<button class="btn primary">Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>				
+	</div>
 </div>

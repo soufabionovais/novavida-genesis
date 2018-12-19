@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.accordion-wrapper {
+	width: 100%;	
+	position: relative;
+	/*max-width: 1000px;*/
+	margin: 0 auto;
+}
+
+.accordion-item {
+	position: relative;
+	clear: both;
+}
+
+.accordion-item ~ .accordion-item {margin-top: 0;}
+
+.accordion-title {
+	position: relative;
+	/*  cursor: pointer;*/
+	width: 100%;
+	clear: both;
+	font-weight: normal;
+	color: #a6a6c4;
+}
+
+.accordion-title-content {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: solid 1px #eeeeee;
+    background-color: #ffffff;
+    margin-top: -1px;
+    border-radius: 3px;
+}
+
+.accordion-title-content .data-item .avatar {width: 25px;}
+
+.accordion-title-content .accordion-title-text {
+    color: #a6a6c4;
+    display: flex;
+    flex-grow: 1;
+    font-weight: 100;	
+    cursor: pointer;
+}
+
+.accordion-item.open .accordion-title-content .action:after{
+	transform: rotate(-180deg);	
+}
+
+/*.accordion-item:first-child .accordion-title-content {
+	border-radius: 5px 5px 0 0;
+}
+
+.accordion-item:last-child .accordion-title-content {
+	border-radius: 0 0 5px 5px;
+}
+
+.accordion-item:only-child .accordion-title-content {
+	border-radius: 5px;
+}*/
+
+.accordion-title-content .action {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.accordion-title-content .action .btn:not(only-child) {
+	color: #d0d0ef;
+	margin-right: 5px;
+	font-size: 17px;
+}
+
+.accordion-title-content .action:after {
+	display: block;
+	width: 15px;
+	height: 15px;
+	content: "";
+	background: url("../../../img/arrows/arrow-accordion.png") no-repeat;
+	transition: 0.4s;
+}
+
+.accordion-content {
+	display: none;
+	border: solid 1px #eeeeee; 
+	padding: 20px;
+	font-size: 13px;
+	color: #A6A6C4;
+	margin-top: -1px;
+}

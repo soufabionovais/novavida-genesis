@@ -3,82 +3,54 @@
 		<h2 class="modal-popup-titulo">Monitoria</h2>
 	</header>
 	<div class="modal-popup-conteudo">
-		<div class="ls-boxes">
-
-			<div class="ls-box">
-				<div class="ls-form ls-form-horizontal row">
+		<div class="boxes-group">
+			<div class="box-content">
+				<div class="row">
 					<div class="col-sm-7">
-						<span class="ls-label-text">Repetir a Cada</span>
-						<input type="number" min="0" value="0" />
+						<span class="label">Repetir a Cada</span>
+						<input type="number" min="1" max="12" step="1" value="0" class="input-text">
 					</div>
 					<div class="col-sm-5">
-						<select class="select-field" data-position="right">
-							<option placeholder> Período 11 </option>
-							<option value="1"> A cada mês</option>
-							<option value="2"> A cada semestre </option>
-							<option value="3"> A cada ano</option>
-						</select>
+						<input type="text" class="select-field" data-url="data/periodos.json" data-search-field-hidden="true" name="periodo" data-placeholder="Período" />
 					</div>
 				</div>
 			</div>
-
-			<div class="ls-box">
-				<div class="row"> 
-                    <div class="col-12">
-                      <label class="ls-label field-has-icon ls-ico-search">
-                        <input type="text" placeholder="Pesquisar perfil" class="ls-field" required>
-                      </label>                            
-                    </div>				
-					<div class="col-12">
-						<div class="pretty p-icon p-curve p-tada checkbox-container">
-							<input type="checkbox" name="radio66">
-							<div class="state p-primary-o">
-								<i class="icon ls-ico-checkmark"></i>
-								<label>Nome do perfil 1</label>
-							</div>
-						</div>                  
-					</div> 
-
-					<div class="col-12">
-						<div class="pretty p-icon p-curve p-tada checkbox-container">
-							<input type="checkbox" name="radio66">
-							<div class="state p-primary-o">
-								<i class="icon ls-ico-checkmark"></i>
-								<label>Nome do perfil 2</label>
-							</div>
-						</div>                  
-					</div> 
-
-					<div class="col-12">
-						<div class="pretty p-icon p-curve p-tada checkbox-container">
-							<input type="checkbox" name="radio66">
-							<div class="state p-primary-o">
-								<i class="icon ls-ico-checkmark"></i>
-								<label>Nome do perfil 3</label>
-							</div>
-						</div>                  
-					</div>                                                    
-
-					<div class="col-12">
-						<div class="pretty p-icon p-curve p-tada checkbox-container">
-							<input type="checkbox" name="radio66">
-							<div class="state p-primary-o">
-								<i class="icon ls-ico-checkmark"></i>
-								<label>Nome do perfil 4</label>
-							</div>
-						</div>                  
-					</div> 
-				</div>
-			</div>			
-
-			<div class="ls-box bg-grey">
+			<div class="box-content">
 				<div class="row">
-					<div class="col center-aligned">
-						<button class="ls-btn ls-btn-primary" fecha-modal>Salvar</button>
+					<div class="col-12">
+						<label class="form-label has-icon nv-icon-zoom">
+							<input type="text" class="input-text inverted" placeholder="Pesquisar perfil">
+						</label>						
+					</div>
+					<div class="col-12">
+						<div class="checkbox-radio-group block">
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 1</label>
+							</span>
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 2</label>
+							</span>	
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 3</label>
+							</span>	
+							<span class="radio-check-field">
+								<input type="checkbox">
+								<label class="highlight-text">Nome do perfil 4</label>
+							</span>															
+						</div>						
 					</div>
 				</div>
 			</div>
-
-		
+			<div class="box-content grey-bg">
+				<div class="row">
+					<div class="col-12 center-aligned">
+						<button onclick="adicionarMonitoria()" class="btn primary" data-fecha-modal>Salvar</button>
+					</div>
+				</div>
+			</div>
+		</div>				
 	</div>
 </div>

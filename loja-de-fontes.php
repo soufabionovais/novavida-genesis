@@ -1,152 +1,105 @@
 <?php include("includes/head.php"); ?>
-  <body>
+<body>
+	
+<?php include ("includes/header.php"); ?>	
 
-    <?php include("includes/header.php"); ?>
+<div class="main-wrap">
 
-    <?php include("includes/sidebar.php"); ?>
+	<?php include("includes/sidebar.php"); ?>
 
-    <main class="ls-main">
-      <div class="container-fluid">
-        <div class="page-header">
-          <h1 class="ls-title-intro">Loja de Fontes</h1>
-        </div>
+	<main class="main-content">
+		<header class="page-header">
+			<h1 class="page-header-title">Loja de Fontes</h1>
+		</header>
 
-        <div class="ls-boxes">
-            <div class="ls-box container-filtros">
-                <div class="ls-form ls-form-horizontal row">
-                    <div class="col-9">
-                      <label class="ls-label field-has-icon ls-ico-search">
-                        <input type="text" placeholder="Pesquisar por nome" class="ls-field" required>
-                      </label>                            
-                    </div>
-                    <div class="col right-aligned">
-                        <select class="select-field" style="width: 100%">
-                            <option value="1" selected> Opção 1 </option>
-                            <option value="1"> Opção 1 </option>
-                            <option value="2"> Opção 2 </option>
-                            <option value="3"> Opção 3 </option>
-                            <option value="4"> Opção 4 </option>
-                        </select>
-                    </div>   
-                </div>
-            </div>
-            <div class="ls-box">
-                <table class="ls-table ls-no-margin-top">
-                <thead>
-                  <tr>
-                    <th>Nome da Fonte</th>
-                    <th>Custo</th>
-                    <th>Popularidade</th>
-                    <th>&nbsp;</th>
-                  </tr>
-                </thead>						
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="user-data" data-detalhes-fontes>
-                        <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                        <div class="user-data-info">
-                          <p class="user-data-header">Alexandre Loes Paz</p>
-                          <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      R$2.000
-                    </td>                                                        
-                    <td>
-                      <div class="rating">
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot"></i>
-                        <i class="dot"></i>
-                      </div>
-                    </td>
-                    <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary" data-comprar-fonte>
-                        Comprar
-                      </button>
-                    </td> 
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="user-data" data-detalhes-fontes>
-                        <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                        <div class="user-data-info">
-                          <p class="user-data-header"</p>
-                          <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      R$2.000
-                    </td>                                                        
-                    <td>
-                      <div class="rating">
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot"></i>
-                        <i class="dot"></i>
-                      </div>
-                    </td>
-                    <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary" data-comprar-fonte>
-                        Comprar
-                      </button>
-                    </td> 
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="user-data" data-detalhes-fontes>
-                        <img src="assets/img/avatar-usuario.png" class="avatar" alt="Nome do cliente">
-                        <div class="user-data-info">
-                          <p class="user-data-header">Alexandre Loes Paz</p>
-                          <p class="user-data-description nv-icon-talk">Fonte da empresa Piraju atualizada</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      R$2.000
-                    </td>                                                        
-                    <td>
-                      <div class="rating">
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot filled"></i>
-                        <i class="dot"></i>
-                        <i class="dot"></i>
-                      </div>
-                    </td>
-                    <td class="right-aligned">
-                      <button class="ls-btn ls-btn-primary" data-comprar-fonte>
-                        Comprar
-                      </button>
-                    </td> 
-                  </tr>                  
-                                                 
+		<div class="boxes-group">
+			<div class="box-content box-content-filters">
+				<div class="filters-wrapper" data-gutter="3">
+					<div class="column-9">
+						<label class="form-label has-icon nv-icon-zoom">
+							<input type="text" class="input-text" placeholder="Pesquisar por nome">
+						</label>
+					</div>
+					<div class="column-3">
+						<label class="form-label">
+							<input type="text" class="select-field" data-url="data/segmentos.json" name="segmento" data-placeholder="Segmentos" data-search-placeholder="Buscar segmentos" />	
+						</label>			
+					</div>
+				</div>
+			</div>
+			<div class="box-content">
+				<div class="data-container" data-gutter="1">
+					<div class="data-header">
+						<div class="column-5">Nome da Fonte</div>
+						<div class="column-2">Custo</div>
+						<div class="column-3">Popularidade</div>
+						<div class="column-2">Ações</div>
+					</div>
+					<div class="data-item">
+						<div class="column-5">
+							<div class="user-data" data-action="detalhesFontes">
+							  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar">
+							  <div class="user-data-info">
+							    <p class="user-data-header">Alexandre Loes Paz</p>
+							    <p class="user-data-description has-icon nv-icon-talk">Fonte da empresa Piraju atualizada</p>
+							  </div>
+							</div>
+						</div>
+						<div class="column-2">
+							<p>R$1.500,00</p>
+						</div>
+						<div class="column-3">
+							<div class="status_container">
+								<span class="status_dot filled"></span>
+								<span class="status_dot filled"></span>
+								<span class="status_dot filled"></span>
+								<span class="status_dot"></span>
+								<span class="status_dot"></span>
+							</div>
+						</div>
+						<div class="column-2">
+							<button class="btn primary fluid small" data-action="comprarFonte">Comprar</button>
+						</div>				
+					</div>
+					<div class="data-item">
+						<div class="column-5">
+							<div class="user-data" data-action="detalhesFontes">
+							  <img src="img/avatar-usuario.png" alt="Nome do usuário" class="avatar">
+							  <div class="user-data-info">
+							    <p class="user-data-header">Alexandre Loes Paz</p>
+							    <p class="user-data-description has-icon nv-icon-talk">Fonte da empresa Piraju atualizada</p>
+							  </div>
+							</div>
+						</div>
+						<div class="column-2">
+							<p>R$1.500,00</p>
+						</div>
+						<div class="column-3">
+							<div class="status_container">
+								<span class="status_dot filled"></span>
+								<span class="status_dot filled"></span>
+								<span class="status_dot filled"></span>
+								<span class="status_dot"></span>
+								<span class="status_dot"></span>
+							</div>
+						</div>
+						<div class="column-2">
+							<button class="btn primary fluid small" data-action="comprarFonte">Comprar</button>
+						</div>				
+					</div>				
 
-                </tbody>
-                </table> 
+				</div>
 
-                <div class="ls-pagination-filter">
-                  <ul class="ls-pagination ls-float-left">
-                    <li class="ls-disabled"><a href="#"><span class="icon">&laquo;</span></a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li class="ls-active"><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><span class="icon">&raquo;</span></a></li>
-                  </ul>
-                </div>                        
-            </div>            
-        </div>
+				<?php include("includes/pagination.php"); ?>
 
-      </div>
-    </main>
-    
-    <?php include("includes/scripts.php"); ?>
-  </body>
+			</div>
+		</div>
+	</main>
+</div>	
+
+	
+
+	
+<?php include("includes/scripts.php"); ?>
+</body>
 </html>
